@@ -1,0 +1,233 @@
+
+======================================================================
+CANADIAN MURB GEOMETRY ANALYSIS — METHODOLOGY REPORT
+======================================================================
+Generated: 2026-07-27 19:22 UTC
+Software: murb-geometry v0.1.0
+Data: Statistics Canada Open Database of Buildings v3
+Licence: Open Government Licence — Canada
+
+======================================================================
+1. EXECUTIVE SUMMARY
+======================================================================
+This report documents the national analytical workflow applied to 14,417,429 building footprint records from the Statistics Canada Open Database of Buildings (ODB v3), comprising 15 GeoPackage files totalling 6340 MB.
+
+Key findings:
+  • National median building footprint area: 91 m²
+  • National median aspect ratio: 1.39
+  • Nova Scotia confirmed MURBs (units >= 4): 2,766
+  • NS MURB median footprint: 346 m² (IQR 176–938)
+  • NS MURB median aspect ratio: 1.73
+  • NS MURB median dwelling units: 12
+  • Representative archetypes generated: 6
+
+======================================================================
+2. DATA SOURCE
+======================================================================
+
+2.1 Overview
+------------
+Source: Statistics Canada Open Database of Buildings, Version 3
+Format: GeoPackage (.gpkg)
+CRS: EPSG:3347 (NAD83 / Statistics Canada Lambert)
+Missing value encoding: '..' (two periods)
+All attribute fields stored as TEXT (require parsing)
+
+2.2 National Coverage
+---------------------
+Province    Records     Size(MB)  Type%   Floors%  Units%  Height%  
+--------------------------------------------------------------------
+AB          1,334,404   572       38.5    0.1      0.0     10.6     
+BC          1,303,603   618       11.4    3.2      0.0     26.5     
+MB          656,775     299       0.0     0.0      0.0     0.0      
+NB          661,827     257       17.8    0.2      8.0     3.3      
+NL          187,694     75        0.0     0.0      0.0     0.0      
+NS          528,307     227       25.1    0.8      23.0    0.0      
+NT          11,811      5         94.9    0.0      0.0     0.0      
+ON          2,000,000   890       5.4     3.1      0.0     14.9     
+ON          2,000,000   920       12.2    8.9      1.7     16.9     
+ON          1,695,485   713       25.6    5.6      1.1     3.9      
+PE          85,856      35        0.0     0.0      0.0     0.0      
+QC          2,000,000   862       16.7    0.0      0.0     0.0      
+QC          1,679,721   747       5.2     0.0      0.0     0.0      
+SK          259,461     116       0.1     0.0      0.0     0.0      
+YT          12,485      5         0.0     0.0      0.0     0.0      
+
+TOTAL: 14,417,429 records across 15 files
+
+2.3 Key Data Limitations
+------------------------
+1. Attribute completeness varies dramatically by province (0–95%)
+2. 'Automatically Extracted Buildings' (satellite-derived) have geometry only
+3. Only Nova Scotia has >20% unit-count coverage
+4. Ontario and BC have the richest floor/height data (3–27%)
+5. Building-type classifications are source-specific and not standardized
+6. Footprints may include podiums, garages, and additions
+7. Coverage is non-random (depends on municipal open-data policies)
+
+======================================================================
+3. METHODOLOGY
+======================================================================
+
+3.1 Data Ingestion
+------------------
+• Recursive GeoPackage discovery under data/ directory
+• SQLite-based metadata inspection (no full data load for inventory)
+• pyogrio for CRS and schema verification
+• Field completeness calculated per-province via SQL COUNT queries
+
+3.2 Geometry Metrics
+--------------------
+All calculations performed in EPSG:3347 (projected, metric units).
+
+Metrics computed:
+  • Footprint area (m²): polygon.area
+  • Perimeter (m): polygon.length
+  • Minimum Rotated Rectangle (MRR): shapely minimum_rotated_rectangle
+  • Dimensions: major/minor axis of MRR
+  • Aspect ratio: MRR_length / MRR_width (always >= 1)
+  • Orientation: azimuth of major axis from north [0°, 180°)
+  • Compactness (Polsby-Popper): 4*pi * area / perimeter^2
+  • Rectangularity: area / MRR_area
+  • Convexity: area / convex_hull_area
+  • Holes: count and area of interior rings
+  • Components: count of disconnected polygon parts
+
+3.3 MURB Classification
+-----------------------
+Evidence-based classification with priority-ordered rules:
+
+  R001: Explicit apartment/multi-residential type → confirmed_murb (1.0)
+  R002: Dwelling units >= 4 → high_confidence_murb (0.85)
+  R003: Floors >= 4 AND area >= 400 m² → probable_murb (0.70)
+  R004: Area >= 600 m² AND residential type → possible_murb (0.50)
+  R005: Height >= 12 m → possible_murb (0.45)
+  R010: Explicit non-MURB type → non_murb (0.0)
+  R011: Footprint < 200 m² → non_murb (0.0)
+  R999: No matching rule → insufficient_information (null)
+
+Minimum MURB unit threshold: 4 dwelling units (configurable)
+
+3.4 Archetype Generation
+------------------------
+Method: K-means clustering with medoid selection
+Features: footprint_area_m2, aspect_ratio, compactness, rectangularity
+Preprocessing: StandardScaler normalization
+Number of clusters: 6 (configurable)
+Random seed: 42 (reproducible)
+
+The medoid (most central actual building) is selected as the
+representative for each cluster — NOT an averaged polygon.
+
+3.5 gbXML Export
+----------------
+Intermediate building geometry model exported to gbXML 7.03:
+  • Rectangular extrusion from MRR dimensions
+  • Storey-by-storey surface generation
+  • Proper surface types (ExteriorWall, Roof, UndergroundSlab)
+  • Floor-to-floor height: 3.0 m (configurable)
+  • WWR by orientation: N=0.30, E=0.30, S=0.40, W=0.30 (assumed)
+
+======================================================================
+4. RESULTS
+======================================================================
+
+4.1 National Building Footprint Statistics
+------------------------------------------
+Sample size: 7500 buildings (500 per file × 15 files)
+Valid records: 7500
+Min: 2 m² | Max: 64877 m²
+Mean: 148 m² | Median: 91 m²
+Std: 834 m²
+P5: 12 | P25: 34 | P75: 157 | P95: 317 m²
+IQR: 123 m²
+
+4.2 Nova Scotia MURB Characterization
+-------------------------------------
+Population: 2,766 buildings with units >= 4
+Source: ODB_v3_NS.gpkg, SQL-filtered on units field
+
+Metric        Min     P25     Median  P75     Max     Mean    Std     
+----------------------------------------------------------------------
+Area (m²)     5       176     346     938     8833    727     895     
+Aspect Ratio  1.00    1.32    1.73    2.42    20.12   2.00    0.99    
+Units         4       5       12      36      359     27      36      
+
+
+4.3 Representative Archetypes
+-----------------------------
+Archetype   Count   Area(m²)  AR    Description         
+--------------------------------------------------------
+NS-A01      130     1818      4.14  Large elongated     
+NS-A02      1215    236       1.43  Small compact       
+NS-A03      77      3030      1.90  Large mid-ratio     
+NS-A04      462     436       1.62  Medium compact      
+NS-A05      307     1852      2.01  Large mid-ratio     
+NS-A06      575     632       2.75  Medium elongated    
+
+
+4.4 Classification Results
+--------------------------
+National sample: 7500 buildings (500 per file × 15 files)
+Note: Random sampling of first records per file. MURBs are concentrated
+in specific data-rich portions of provincial files.
+
+  Non Murb: 6419 (85.6%)
+  Insufficient Information: 1080 (14.4%)
+  Possible Murb: 1 (0.0%)
+
+======================================================================
+5. LIMITATIONS
+======================================================================
+1. FOOTPRINT ≠ FLOOR PLATE: Ground-level footprints may include podiums,
+   garages, and additions that differ from typical upper-floor plates.
+
+2. NO WINDOW DATA: WWR values are archetypal assumptions, not observed.
+
+3. GEOGRAPHIC BIAS: Only NS has sufficient unit-count data for direct MURB
+   identification. National MURB statistics are dominated by data-rich regions.
+
+4. SAMPLING LIMITATIONS: The national geometry metrics use 500 records per
+   file from the beginning of each file, which may not be representative
+   of the full provincial dataset.
+
+5. CLASSIFICATION COVERAGE: Random sampling finds almost no MURBs (1/7500)
+   because apartments are a tiny fraction of all buildings. Targeted SQL
+   queries on attribute-rich records are necessary.
+
+6. SINGLE-PROVINCE ARCHETYPES: The 6 archetypes are derived from NS only.
+   National archetypes require multi-province MURB identification first.
+
+7. STOREY ASSUMPTIONS: Floor-to-floor height (3.0 m) and storey count are
+   assumptions for most buildings. Only 0–9% have observed floor counts.
+
+======================================================================
+6. REPRODUCIBILITY
+======================================================================
+All results are reproducible with:
+  • Software: murb-geometry v0.1.0
+  • Python: 3.12+
+  • Configuration: config/default.yaml
+  • Random seed: 42
+  • Data: Statistics Canada ODB v3 GeoPackage files
+
+Regeneration command:
+  python scripts/national_run.py
+
+Figures:
+  python scripts/generate_figures.py
+
+======================================================================
+7. REFERENCES
+======================================================================
+1. Statistics Canada. Open Database of Buildings, Version 3.
+   https://www.statcan.gc.ca/en/lode/databases/odb
+
+2. Green Building XML (gbXML) Schema, Version 7.03.
+   http://www.gbxml.org/schema
+
+3. OpenStudio. National Renewable Energy Laboratory.
+   https://openstudio.net/
+
+4. EnergyPlus. U.S. Department of Energy.
+   https://energyplus.net/

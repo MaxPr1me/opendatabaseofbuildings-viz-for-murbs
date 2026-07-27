@@ -73,8 +73,8 @@ htmlcov/
 .pyright/
 
 # --- Outputs (regenerable) ---
-# Most outputs are excluded but sample reports are committed for reference
-outputs/figures/*
+# Most outputs are excluded but key reports and figures are committed
+outputs/figures/*.html
 outputs/maps/*
 outputs/archetypes/*
 outputs/gbxml/*
@@ -82,7 +82,12 @@ outputs/gbxml/*
 !outputs/reports/inventory.json
 !outputs/reports/summary_stats.json
 !outputs/reports/classification_summary.json
+!outputs/reports/ns_murb_analysis.json
+!outputs/reports/methodology_report.txt
+!outputs/figures/*.png
 !outputs/excel/murb_national_summary.xlsx
+!outputs/archetypes/ns_archetypes.json
+!outputs/gbxml/ns_a05_archetype.xml
 !outputs/reports/.gitkeep
 !outputs/excel/.gitkeep
 !outputs/figures/.gitkeep
