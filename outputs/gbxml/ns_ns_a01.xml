@@ -1,0 +1,549 @@
+<?xml version="1.0" ?>
+<gbXML xmlns="http://www.gbxml.org/schema" temperatureUnit="C" lengthUnit="Meters" areaUnit="SquareMeters" volumeUnit="CubicMeters" version="7.03">
+  <Campus id="Campus-1">
+    <Building id="Building-1" buildingType="MultiFamily">
+      <Name>NS Archetype NS-A01 (215 buildings)</Name>
+      <Area>10369.60</Area>
+      <BuildingStorey id="Storey-0">
+        <Level>0.00</Level>
+        <Name>Floor 1</Name>
+      </BuildingStorey>
+      <Space id="Space-0-Zone-F0" buildingStoreyIdRef="Storey-0">
+        <Name>Zone-F0</Name>
+        <Area>2592.40</Area>
+        <Volume>7777.20</Volume>
+      </Space>
+      <BuildingStorey id="Storey-1">
+        <Level>3.00</Level>
+        <Name>Floor 2</Name>
+      </BuildingStorey>
+      <Space id="Space-1-Zone-F1" buildingStoreyIdRef="Storey-1">
+        <Name>Zone-F1</Name>
+        <Area>2592.40</Area>
+        <Volume>7777.20</Volume>
+      </Space>
+      <BuildingStorey id="Storey-2">
+        <Level>6.00</Level>
+        <Name>Floor 3</Name>
+      </BuildingStorey>
+      <Space id="Space-2-Zone-F2" buildingStoreyIdRef="Storey-2">
+        <Name>Zone-F2</Name>
+        <Area>2592.40</Area>
+        <Volume>7777.20</Volume>
+      </Space>
+      <BuildingStorey id="Storey-3">
+        <Level>9.00</Level>
+        <Name>Floor 4</Name>
+      </BuildingStorey>
+      <Space id="Space-3-Zone-F3" buildingStoreyIdRef="Storey-3">
+        <Name>Zone-F3</Name>
+        <Area>2592.40</Area>
+        <Volume>7777.20</Volume>
+      </Space>
+    </Building>
+    <Surface id="Surface-1" surfaceType="ExteriorWall">
+      <Name>South-F0</Name>
+      <AdjacentSpaceId spaceIdRef="Space-0-Zone-F0"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-2" surfaceType="ExteriorWall">
+      <Name>North-F0</Name>
+      <AdjacentSpaceId spaceIdRef="Space-0-Zone-F0"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-3" surfaceType="ExteriorWall">
+      <Name>East-F0</Name>
+      <AdjacentSpaceId spaceIdRef="Space-0-Zone-F0"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-4" surfaceType="ExteriorWall">
+      <Name>West-F0</Name>
+      <AdjacentSpaceId spaceIdRef="Space-0-Zone-F0"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-5" surfaceType="UndergroundSlab">
+      <Name>Ground</Name>
+      <AdjacentSpaceId spaceIdRef="Space-0-Zone-F0"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-6" surfaceType="ExteriorWall">
+      <Name>South-F1</Name>
+      <AdjacentSpaceId spaceIdRef="Space-1-Zone-F1"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-7" surfaceType="ExteriorWall">
+      <Name>North-F1</Name>
+      <AdjacentSpaceId spaceIdRef="Space-1-Zone-F1"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-8" surfaceType="ExteriorWall">
+      <Name>East-F1</Name>
+      <AdjacentSpaceId spaceIdRef="Space-1-Zone-F1"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-9" surfaceType="ExteriorWall">
+      <Name>West-F1</Name>
+      <AdjacentSpaceId spaceIdRef="Space-1-Zone-F1"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>3.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-10" surfaceType="ExteriorWall">
+      <Name>South-F2</Name>
+      <AdjacentSpaceId spaceIdRef="Space-2-Zone-F2"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-11" surfaceType="ExteriorWall">
+      <Name>North-F2</Name>
+      <AdjacentSpaceId spaceIdRef="Space-2-Zone-F2"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-12" surfaceType="ExteriorWall">
+      <Name>East-F2</Name>
+      <AdjacentSpaceId spaceIdRef="Space-2-Zone-F2"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-13" surfaceType="ExteriorWall">
+      <Name>West-F2</Name>
+      <AdjacentSpaceId spaceIdRef="Space-2-Zone-F2"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>6.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-14" surfaceType="ExteriorWall">
+      <Name>South-F3</Name>
+      <AdjacentSpaceId spaceIdRef="Space-3-Zone-F3"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-15" surfaceType="ExteriorWall">
+      <Name>North-F3</Name>
+      <AdjacentSpaceId spaceIdRef="Space-3-Zone-F3"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-16" surfaceType="ExteriorWall">
+      <Name>East-F3</Name>
+      <AdjacentSpaceId spaceIdRef="Space-3-Zone-F3"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-17" surfaceType="ExteriorWall">
+      <Name>West-F3</Name>
+      <AdjacentSpaceId spaceIdRef="Space-3-Zone-F3"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>9.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+    <Surface id="Surface-18" surfaceType="Roof">
+      <Name>Roof</Name>
+      <AdjacentSpaceId spaceIdRef="Space-3-Zone-F3"/>
+      <PlanarGeometry>
+        <PolyLoop>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>77.2174</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+          <CartesianPoint>
+            <Coordinate>0.0000</Coordinate>
+            <Coordinate>33.5728</Coordinate>
+            <Coordinate>12.0000</Coordinate>
+          </CartesianPoint>
+        </PolyLoop>
+      </PlanarGeometry>
+    </Surface>
+  </Campus>
+</gbXML>

@@ -4,20 +4,30 @@ This document explains every output file in plain language.
 
 ---
 
+## Quick Numbers (What We Found)
+
+- **14.4 million** buildings in the database total
+- **7,567** confirmed apartment buildings identified across 5 provinces
+- **389 m²** is the national median MURB footprint (about 20m × 19m)
+- **1.89** is the national median aspect ratio (slightly longer than wide)
+- **5 provinces** have enough data to identify apartments: NS, NB, ON, BC, AB
+- **25 per-province archetypes** (5 per province)
+- **8 national archetypes** represent the full MURB variety
+- **32 gbXML files** ready for energy simulation
+
+---
+
 ## Summary of All Outputs
 
-| Output | What it is | Where to find it |
-|--------|-----------|-----------------|
-| **Inventory Report** | List of every data file with completeness stats | `outputs/reports/inventory.json` |
-| **Province MURB Analysis** | Size/shape stats for apartments in each province | `outputs/reports/all_provinces_murb_analysis.json` |
-| **Classification Results** | How many buildings we think are apartments | `outputs/reports/classification_summary.json` |
-| **National Summary Stats** | Median size, shape numbers for all buildings | `outputs/reports/summary_stats.json` |
-| **Methodology Report** | Written explanation of what was done and found | `outputs/reports/methodology_report.txt` |
-| **Excel Reports** | Spreadsheets you can open without coding | `outputs/excel/` |
-| **Publication Figures** | Charts ready for papers/presentations | `outputs/figures/` |
-| **Archetype Definitions** | "Typical" apartment building descriptions | `outputs/archetypes/` |
-| **gbXML Files** | 3D building models for energy simulation | `outputs/gbxml/` |
-| **Streamlit App** | Interactive web dashboard (run locally) | `app/streamlit_app.py` |
+| Output | What it is | Where |
+|--------|-----------|-------|
+| **Complete Analysis** | Full stats + archetypes for each province | `outputs/reports/complete_analysis.json` |
+| **Excel Report** | Formatted spreadsheet of all results | `outputs/excel/complete_murb_analysis.xlsx` |
+| **Publication Figures** | 8 PNG charts for papers | `outputs/figures/*.png` |
+| **Per-Province gbXML** | 3D models per archetype per province | `outputs/gbxml/` (32 files) |
+| **National Archetypes** | 8 "typical building" definitions | In `complete_analysis.json` |
+| **Streamlit App** | Interactive web dashboard | `streamlit run app/streamlit_app.py` |
+| **Methodology Report** | Written explanation | `outputs/reports/methodology_report.txt` |
 
 ---
 
@@ -43,10 +53,13 @@ This document explains every output file in plain language.
 | Figure | What it shows |
 |--------|--------------|
 | `fig1_completeness_heatmap.png` | Which provinces have which data fields filled in |
-| `fig2_area_by_province.png` | Building sizes in each province (bar chart with error bars) |
-| `fig3_ns_murb_area_distribution.png` | How big Nova Scotia apartments are (from tiny to huge) |
-| `fig4_archetype_comparison.png` | The 6 "typical" building types we found |
-| `fig5_classification_pie.png` | What fraction of buildings are apartments vs. houses vs. unknown |
+| `fig2_area_by_province.png` | All-building sizes by province (sampled) |
+| `fig3_ns_murb_area_distribution.png` | NS MURB size range (percentiles) |
+| `fig4_archetype_comparison.png` | NS archetype area + aspect ratio |
+| `fig5_classification_pie.png` | National classification breakdown |
+| `province_murb_area.png` | **MURB** median footprint by province with IQR |
+| `national_archetypes_scatter.png` | 8 national archetypes plotted (area vs AR) |
+| `province_archetypes_comparison.png` | All 25 per-province archetypes side-by-side |
 
 ---
 
@@ -54,7 +67,7 @@ This document explains every output file in plain language.
 
 **What they are:** Descriptions of "typical" apartment buildings found by grouping similar ones together.
 
-**How it works:** We measured 8,788 actual apartment buildings, then used a math technique called "clustering" to group similar buildings. Each group has a "representative" — an actual building that best represents its group.
+**How it works:** We measured 7,567 actual apartment buildings across 5 provinces, then used a math technique called "clustering" to group similar buildings. Each group has a "representative" — an actual building that best represents its group.
 
 **Example archetypes from our results:**
 
@@ -76,20 +89,22 @@ This document explains every output file in plain language.
 **What's inside each file:**
 - A simplified 3D box representing a typical apartment building
 - Walls, floor, and roof surfaces with proper orientations (north, south, east, west)
-- Multiple storeys (usually 4 floors)
+- Multiple storeys (4 floors standard)
 - Correct dimensions based on real measured buildings
 
-**Files produced (one per province):**
-- `ns_archetype.xml` — Nova Scotia representative (most data)
-- `nb_archetype.xml` — New Brunswick representative
-- `on_2_archetype.xml` — Ontario representative (region 2)
-- `on_3_archetype.xml` — Ontario representative (region 3)
-- `bc_archetype.xml` — British Columbia representative
-- `ab_archetype.xml` — Alberta representative
+**Files produced (5 archetypes per province = 25 files, plus earlier ones):**
 
-**Who uses these:** Researchers who run building energy simulations in OpenStudio or EnergyPlus. They import these files to simulate heating/cooling energy use for typical apartments.
+| Province | Archetypes | Largest (most common) |
+|----------|-----------|----------------------|
+| NS | ns_ns_a01.xml through ns_ns_a05.xml | NS-A02: 231 m², n=908 (45%) |
+| NB | nb_nb_a01.xml through nb_nb_a05.xml | NB-A05: 297 m², n=947 (47%) |
+| ON | on_on_a01.xml through on_on_a05.xml | ON-A05: 300 m², n=906 (48%) |
+| BC | bc_bc_a01.xml through bc_bc_a05.xml | BC-A02: 957 m², n=136 (35%) |
+| AB | ab_ab_a01.xml through ab_ab_a05.xml | AB-A01: 332 m², n=431 (34%) |
 
-**Important limitation:** These are simplified boxes. Real buildings have balconies, setbacks, and irregular shapes. The gbXML gives a starting point for simulation, not a perfect model.
+**Who uses these:** Researchers who run building energy simulations in OpenStudio or EnergyPlus.
+
+**Important limitation:** These are simplified rectangular extrusions. Real buildings have balconies, setbacks, and irregular shapes. The gbXML gives a data-driven starting point.
 
 ---
 
@@ -152,9 +167,19 @@ This document explains every output file in plain language.
 ## Quick Numbers (What We Found)
 
 - **14.4 million** buildings in the database total
-- **8,788** confirmed apartment buildings identified across 6 provinces
-- **383 m²** is the national median MURB footprint
-- **1.87** is the national median aspect ratio (slightly elongated)
-- **12 units** is the median apartment count (Nova Scotia data)
-- **6 provinces** have enough data to identify apartments
-- **8 archetypes** represent the national MURB variety
+- **7,567** confirmed apartment buildings identified across 5 merged provinces
+- **389 m²** is the national median MURB footprint
+- **1.89** is the national median aspect ratio
+- **5 provinces** have enough data: NS, NB, ON (merged 3 files), BC, AB
+- **25 per-province archetypes** (5 per province via K-means clustering)
+- **8 national archetypes** from combined clustering
+- **32 gbXML files** for energy simulation
+
+---
+
+## How to Reproduce Everything
+
+```bash
+# One command to regenerate all outputs:
+python scripts/complete_run.py
+```
