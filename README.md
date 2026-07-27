@@ -2,9 +2,10 @@
 
 **Characterizing representative multi-unit residential building geometries across Canada using the Statistics Canada Open Database of Buildings**
 
-[![Status: Phase 0 — Repository Initiation](https://img.shields.io/badge/status-Phase%200%20%E2%80%94%20Initiation-blue)]()
+[![Status: National Run Complete](https://img.shields.io/badge/status-National%20Run%20Complete-brightgreen)]()
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)]()
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)]()
+[![Tests: 85 passing](https://img.shields.io/badge/tests-85%20passing-brightgreen)]()
 
 ---
 
@@ -274,7 +275,7 @@ See [docs/methodology.md](docs/methodology.md) for complete details.
 | Repository scaffold | ✅ Complete |
 | Configuration schema | ✅ Complete |
 | Documentation | ✅ Complete |
-| Data inventory (Phase 1) | ✅ Complete |
+| Data inventory — 14.4M records (Phase 1) | ✅ Complete |
 | Geometry metrics (Phase 2) | ✅ Complete |
 | Geometry validation (Phase 2) | ✅ Complete |
 | MURB classification (Phase 3) | ✅ Complete |
@@ -282,12 +283,13 @@ See [docs/methodology.md](docs/methodology.md) for complete details.
 | Excel reports (Phase 4) | ✅ Complete |
 | Streamlit visualization (Phase 4) | ✅ Complete |
 | Enrichment framework (Phase 5) | ✅ Framework |
-| Medoid archetypes (Phase 6) | ✅ Framework |
-| gbXML geometry model (Phase 7) | ✅ Model |
-| External source connectors (Phase 5) | 📋 Planned |
-| National clustering (Phase 6) | 📋 Planned |
-| gbXML XML generation (Phase 7) | 📋 Planned |
-| National analysis (Phase 8) | 📋 Planned |
+| K-means clustering + medoids (Phase 6) | ✅ Complete |
+| gbXML exporter (Phase 7) | ✅ Complete |
+| National production run (Phase 8) | ✅ Complete |
+| NS MURB characterization (2,766 buildings) | ✅ Complete |
+| 6 representative archetypes | ✅ Complete |
+| External source connectors (Phase 5) | 📋 Future |
+| XSD validation + OpenStudio import | 📋 Future |
 
 ---
 
