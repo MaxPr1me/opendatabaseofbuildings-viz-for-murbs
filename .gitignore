@@ -73,13 +73,16 @@ htmlcov/
 .pyright/
 
 # --- Outputs (regenerable) ---
-outputs/reports/*
-outputs/excel/*
+# Most outputs are excluded but sample reports are committed for reference
 outputs/figures/*
 outputs/maps/*
 outputs/archetypes/*
 outputs/gbxml/*
 !outputs/README.md
+!outputs/reports/inventory.json
+!outputs/reports/summary_stats.json
+!outputs/reports/classification_summary.json
+!outputs/excel/murb_national_summary.xlsx
 !outputs/reports/.gitkeep
 !outputs/excel/.gitkeep
 !outputs/figures/.gitkeep

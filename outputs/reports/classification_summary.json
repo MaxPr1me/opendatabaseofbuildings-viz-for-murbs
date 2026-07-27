@@ -1,0 +1,19 @@
+{
+  "NL": {
+    "non_murb": 935,
+    "insufficient_information": 65
+  },
+  "NT": {
+    "non_murb": 915,
+    "insufficient_information": 80,
+    "possible_murb": 5
+  },
+  "PE": {
+    "insufficient_information": 327,
+    "non_murb": 673
+  },
+  "YT": {
+    "non_murb": 872,
+    "insufficient_information": 128
+  }
+}
