@@ -161,8 +161,7 @@ def classify_building(
             rule_name="multi_floor_large_footprint",
             evidence_fields=["floors", "footprint_area_m2"],
             reasoning=(
-                f"Floors ({floors_numeric}) >= 4 and "
-                f"area ({footprint_area_m2:.0f} m2) >= 400"
+                f"Floors ({floors_numeric}) >= 4 and area ({footprint_area_m2:.0f} m2) >= 400"
             ),
         )
 
