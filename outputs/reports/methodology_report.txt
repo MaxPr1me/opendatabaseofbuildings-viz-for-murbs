@@ -2,7 +2,7 @@
 ======================================================================
 CANADIAN MURB GEOMETRY ANALYSIS — METHODOLOGY REPORT
 ======================================================================
-Generated: 2026-07-27 19:22 UTC
+Generated: 2026-07-27 19:33 UTC
 Software: murb-geometry v0.1.0
 Data: Statistics Canada Open Database of Buildings v3
 Licence: Open Government Licence — Canada
