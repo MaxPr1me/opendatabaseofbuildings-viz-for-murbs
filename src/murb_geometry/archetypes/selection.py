@@ -8,7 +8,7 @@ import numpy as np
 from numpy.typing import NDArray
 
 
-def select_medoid(features: NDArray) -> int:
+def select_medoid(features: NDArray[np.floating]) -> int:
     """Select the medoid (most central point) from a feature matrix.
 
     The medoid is the point with minimum sum of distances to all other

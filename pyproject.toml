@@ -62,6 +62,8 @@ dev = [
     "pytest-xdist>=3.5",
     "ruff>=0.5",
     "mypy>=1.10",
+    "types-openpyxl>=3.1",
+    "types-PyYAML>=6.0",
     "pre-commit>=3.7",
     "ipykernel>=6.29",
     "jupyter>=1.0",
@@ -113,15 +115,8 @@ plugins = ["pydantic.mypy"]
 
 [[tool.mypy.overrides]]
 module = [
-    "geopandas.*",
     "pyogrio.*",
     "shapely.*",
-    "duckdb.*",
-    "streamlit.*",
-    "pydeck.*",
-    "plotly.*",
-    "scipy.*",
-    "sklearn.*",
 ]
 ignore_missing_imports = true
 

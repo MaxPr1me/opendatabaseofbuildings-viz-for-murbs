@@ -46,6 +46,7 @@ def create_summary_workbook(
 
     # --- Read Me sheet ---
     ws_readme = wb.active
+    assert ws_readme is not None
     ws_readme.title = "Read Me"
     _write_readme_sheet(ws_readme, metadata)
 

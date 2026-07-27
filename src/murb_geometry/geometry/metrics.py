@@ -44,8 +44,8 @@ def compactness(geom: Geometry) -> float:
     """
     if geom is None or geom.is_empty:
         return 0.0
-    a = geom.area
-    p = geom.length
+    a: float = geom.area
+    p: float = geom.length
     if p == 0:
         return 0.0
     return (4.0 * math.pi * a) / (p * p)

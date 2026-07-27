@@ -9,9 +9,9 @@ from numpy.typing import NDArray
 
 
 def compute_descriptive_stats(
-    values: list[float] | NDArray,
+    values: list[float] | NDArray[np.floating],
     field_name: str = "",
-) -> dict[str, float | int | str]:
+) -> dict[str, float | int | str | None]:
     """Compute standard descriptive statistics for a numeric array.
 
     Parameters
