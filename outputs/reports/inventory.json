@@ -1,11 +1,790 @@
 {
-  "generated_at": "2026-07-27T18:31:57.250665+00:00",
+  "generated_at": "2026-07-27T19:03:08.850545+00:00",
   "software_version": "0.1.0",
   "data_directory": "data",
-  "total_files": 4,
-  "total_records": 297846,
-  "total_size_mb": 120.1,
+  "total_files": 15,
+  "total_records": 14417429,
+  "total_size_mb": 6340.0,
   "files": [
+    {
+      "file_path": "data\\ODB_v3_AB\\ODB_v3_AB.gpkg",
+      "file_name": "ODB_v3_AB.gpkg",
+      "file_size_bytes": 600248320,
+      "file_size_mb": 572.4,
+      "sha256_hash": "",
+      "province_territory": "AB",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_AB",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 1334404,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "height",
+            "floors",
+            "units",
+            "year_built",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "height": "TEXT",
+            "floors": "TEXT",
+            "units": "TEXT",
+            "year_built": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 1334404,
+      "source_organizations": [
+        "City of Airdrie",
+        "City of Calgary",
+        "City of Edmonton",
+        "City of Grande Prairie",
+        "City of Lethbridge",
+        "Government of Canada",
+        "Parkland County",
+        "Strathcona County",
+        "Town of Banff",
+        "Town of Canmore",
+        "Town of Cochrane",
+        "Town of Okotoks"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 1334404,
+          "non_missing_count": 1334404,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1334404
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 1334404,
+          "non_missing_count": 475978,
+          "missing_count": 858426,
+          "completeness_pct": 35.67,
+          "distinct_count": 415092
+        },
+        {
+          "field_name": "source",
+          "total_records": 1334404,
+          "non_missing_count": 1334404,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 12
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 1334404,
+          "non_missing_count": 1334404,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 111
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 1334404,
+          "non_missing_count": 1334404,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 64
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 1334404,
+          "non_missing_count": 1334404,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 64
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 1334404,
+          "non_missing_count": 1334404,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 1334404,
+          "non_missing_count": 2480,
+          "missing_count": 1331924,
+          "completeness_pct": 0.19,
+          "distinct_count": 1968
+        },
+        {
+          "field_name": "type",
+          "total_records": 1334404,
+          "non_missing_count": 513449,
+          "missing_count": 820955,
+          "completeness_pct": 38.48,
+          "distinct_count": 102
+        },
+        {
+          "field_name": "address",
+          "total_records": 1334404,
+          "non_missing_count": 534662,
+          "missing_count": 799742,
+          "completeness_pct": 40.07,
+          "distinct_count": 520718
+        },
+        {
+          "field_name": "height",
+          "total_records": 1334404,
+          "non_missing_count": 141337,
+          "missing_count": 1193067,
+          "completeness_pct": 10.59,
+          "distinct_count": 39929
+        },
+        {
+          "field_name": "floors",
+          "total_records": 1334404,
+          "non_missing_count": 2041,
+          "missing_count": 1332363,
+          "completeness_pct": 0.15,
+          "distinct_count": 12
+        },
+        {
+          "field_name": "units",
+          "total_records": 1334404,
+          "non_missing_count": 0,
+          "missing_count": 1334404,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 1334404,
+          "non_missing_count": 39,
+          "missing_count": 1334365,
+          "completeness_pct": 0.0,
+          "distinct_count": 23
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 1334404,
+          "non_missing_count": 0,
+          "missing_count": 1334404,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:49:02.138784+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_BC\\ODB_v3_BC.gpkg",
+      "file_name": "ODB_v3_BC.gpkg",
+      "file_size_bytes": 648216576,
+      "file_size_mb": 618.2,
+      "sha256_hash": "",
+      "province_territory": "BC",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_BC",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 1303603,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "height",
+            "floors",
+            "units",
+            "year_built",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "height": "TEXT",
+            "floors": "TEXT",
+            "units": "TEXT",
+            "year_built": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 1303603,
+      "source_organizations": [
+        "City of Burnaby",
+        "City of Chilliwack",
+        "City of Coquitlam",
+        "City of Courtenay",
+        "City of Grand Forks",
+        "City of Kamloops",
+        "City of Kelowna",
+        "City of Maple Ridge",
+        "City of Nanaimo",
+        "City of New Westminster",
+        "City of Penticton",
+        "City of Port Coquitlam",
+        "City of Port Moody",
+        "City of Prince George",
+        "City of Surrey",
+        "City of Vancouver",
+        "City of Victoria",
+        "City of White Rock",
+        "District of Lake Country",
+        "District of North Vancouver",
+        "District of Saanich",
+        "District of Squamish",
+        "District of Summerland",
+        "District of West Vancouver",
+        "Government of Canada",
+        "Municipality of North Cowichan",
+        "Regional District of Central Okanagan",
+        "Regional District of Nanaimo",
+        "Resort Municipality of Whistler",
+        "Town of Gibsons"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 1303603,
+          "non_missing_count": 1303603,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1303603
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 1303603,
+          "non_missing_count": 1113483,
+          "missing_count": 190120,
+          "completeness_pct": 85.42,
+          "distinct_count": 1021992
+        },
+        {
+          "field_name": "source",
+          "total_records": 1303603,
+          "non_missing_count": 1303603,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 30
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 1303603,
+          "non_missing_count": 1303603,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 173
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 1303603,
+          "non_missing_count": 1303603,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 315
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 1303603,
+          "non_missing_count": 1303603,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 310
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 1303603,
+          "non_missing_count": 1303603,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 1303603,
+          "non_missing_count": 30388,
+          "missing_count": 1273215,
+          "completeness_pct": 2.33,
+          "distinct_count": 6841
+        },
+        {
+          "field_name": "type",
+          "total_records": 1303603,
+          "non_missing_count": 148882,
+          "missing_count": 1154721,
+          "completeness_pct": 11.42,
+          "distinct_count": 185
+        },
+        {
+          "field_name": "address",
+          "total_records": 1303603,
+          "non_missing_count": 398965,
+          "missing_count": 904638,
+          "completeness_pct": 30.6,
+          "distinct_count": 384903
+        },
+        {
+          "field_name": "height",
+          "total_records": 1303603,
+          "non_missing_count": 345635,
+          "missing_count": 957968,
+          "completeness_pct": 26.51,
+          "distinct_count": 59824
+        },
+        {
+          "field_name": "floors",
+          "total_records": 1303603,
+          "non_missing_count": 41385,
+          "missing_count": 1262218,
+          "completeness_pct": 3.17,
+          "distinct_count": 29
+        },
+        {
+          "field_name": "units",
+          "total_records": 1303603,
+          "non_missing_count": 364,
+          "missing_count": 1303239,
+          "completeness_pct": 0.03,
+          "distinct_count": 75
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 1303603,
+          "non_missing_count": 99516,
+          "missing_count": 1204087,
+          "completeness_pct": 7.63,
+          "distinct_count": 148
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 1303603,
+          "non_missing_count": 254,
+          "missing_count": 1303349,
+          "completeness_pct": 0.02,
+          "distinct_count": 210
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:50:04.251452+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_MB\\ODB_v3_MB.gpkg",
+      "file_name": "ODB_v3_MB.gpkg",
+      "file_size_bytes": 313270272,
+      "file_size_mb": 298.8,
+      "sha256_hash": "",
+      "province_territory": "MB",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_MB",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 656775,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "height",
+            "floors",
+            "year_built",
+            "sq_ft",
+            "units"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "height": "TEXT",
+            "floors": "TEXT",
+            "year_built": "TEXT",
+            "sq_ft": "TEXT",
+            "units": "TEXT"
+          }
+        }
+      ],
+      "total_records": 656775,
+      "source_organizations": [
+        "Government of Canada"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 656775
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 656774
+        },
+        {
+          "field_name": "source",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 5
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 133
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 131
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 656775,
+          "non_missing_count": 656775,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 656775,
+          "non_missing_count": 2,
+          "missing_count": 656773,
+          "completeness_pct": 0.0,
+          "distinct_count": 2
+        },
+        {
+          "field_name": "type",
+          "total_records": 656775,
+          "non_missing_count": 32,
+          "missing_count": 656743,
+          "completeness_pct": 0.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "address",
+          "total_records": 656775,
+          "non_missing_count": 0,
+          "missing_count": 656775,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "height",
+          "total_records": 656775,
+          "non_missing_count": 0,
+          "missing_count": 656775,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "floors",
+          "total_records": 656775,
+          "non_missing_count": 0,
+          "missing_count": 656775,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 656775,
+          "non_missing_count": 0,
+          "missing_count": 656775,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 656775,
+          "non_missing_count": 0,
+          "missing_count": 656775,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "units",
+          "total_records": 656775,
+          "non_missing_count": 0,
+          "missing_count": 656775,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:50:42.385417+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_NB\\ODB_v3_NB.gpkg",
+      "file_name": "ODB_v3_NB.gpkg",
+      "file_size_bytes": 269103104,
+      "file_size_mb": 256.6,
+      "sha256_hash": "",
+      "province_territory": "NB",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_NB",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 661827,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "height",
+            "floors",
+            "year_built",
+            "units",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "height": "TEXT",
+            "floors": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 661827,
+      "source_organizations": [
+        "City of Fredericton",
+        "City of Moncton",
+        "City of Saint John",
+        "Edmundston",
+        "Government of Canada",
+        "Government of New Brunswick",
+        "Government of Nova Scotia",
+        "Government of Qu\u00e9bec"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 661827
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 660957
+        },
+        {
+          "field_name": "source",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 8
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 102
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 266
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 229
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 661827,
+          "non_missing_count": 661827,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 661827,
+          "non_missing_count": 962,
+          "missing_count": 660865,
+          "completeness_pct": 0.15,
+          "distinct_count": 729
+        },
+        {
+          "field_name": "type",
+          "total_records": 661827,
+          "non_missing_count": 117888,
+          "missing_count": 543939,
+          "completeness_pct": 17.81,
+          "distinct_count": 110
+        },
+        {
+          "field_name": "address",
+          "total_records": 661827,
+          "non_missing_count": 137603,
+          "missing_count": 524224,
+          "completeness_pct": 20.79,
+          "distinct_count": 132382
+        },
+        {
+          "field_name": "height",
+          "total_records": 661827,
+          "non_missing_count": 21934,
+          "missing_count": 639893,
+          "completeness_pct": 3.31,
+          "distinct_count": 3842
+        },
+        {
+          "field_name": "floors",
+          "total_records": 661827,
+          "non_missing_count": 1540,
+          "missing_count": 660287,
+          "completeness_pct": 0.23,
+          "distinct_count": 14
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 661827,
+          "non_missing_count": 39816,
+          "missing_count": 622011,
+          "completeness_pct": 6.02,
+          "distinct_count": 205
+        },
+        {
+          "field_name": "units",
+          "total_records": 661827,
+          "non_missing_count": 52788,
+          "missing_count": 609039,
+          "completeness_pct": 7.98,
+          "distinct_count": 105
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 661827,
+          "non_missing_count": 0,
+          "missing_count": 661827,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:51:28.268597+00:00"
+    },
     {
       "file_path": "data\\ODB_v3_NL\\ODB_v3_NL.gpkg",
       "file_name": "ODB_v3_NL.gpkg",
@@ -187,7 +966,195 @@
           "distinct_count": 0
         }
       ],
-      "inspection_timestamp": "2026-07-27T18:31:49.813649+00:00"
+      "inspection_timestamp": "2026-07-27T18:51:42.381619+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_NS\\ODB_v3_NS.gpkg",
+      "file_name": "ODB_v3_NS.gpkg",
+      "file_size_bytes": 237903872,
+      "file_size_mb": 226.9,
+      "sha256_hash": "",
+      "province_territory": "NS",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_NS",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 528307,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "height",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "height": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 528307,
+      "source_organizations": [
+        "Cape Breton Regional Municipality (CBRM)",
+        "Government of Canada",
+        "Government of New Brunswick",
+        "Government of Nova Scotia",
+        "Halifax Regional Municipality",
+        "Town of Truro"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 528307,
+          "non_missing_count": 528307,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 528307
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 528307,
+          "non_missing_count": 416948,
+          "missing_count": 111359,
+          "completeness_pct": 78.92,
+          "distinct_count": 415577
+        },
+        {
+          "field_name": "source",
+          "total_records": 528307,
+          "non_missing_count": 528307,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 6
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 528307,
+          "non_missing_count": 528307,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 21
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 528307,
+          "non_missing_count": 528307,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 91
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 528307,
+          "non_missing_count": 528307,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 86
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 528307,
+          "non_missing_count": 528307,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 528307,
+          "non_missing_count": 2582,
+          "missing_count": 525725,
+          "completeness_pct": 0.49,
+          "distinct_count": 1983
+        },
+        {
+          "field_name": "type",
+          "total_records": 528307,
+          "non_missing_count": 132316,
+          "missing_count": 395991,
+          "completeness_pct": 25.05,
+          "distinct_count": 156
+        },
+        {
+          "field_name": "address",
+          "total_records": 528307,
+          "non_missing_count": 136923,
+          "missing_count": 391384,
+          "completeness_pct": 25.92,
+          "distinct_count": 133389
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 528307,
+          "non_missing_count": 14657,
+          "missing_count": 513650,
+          "completeness_pct": 2.77,
+          "distinct_count": 156
+        },
+        {
+          "field_name": "units",
+          "total_records": 528307,
+          "non_missing_count": 121592,
+          "missing_count": 406715,
+          "completeness_pct": 23.02,
+          "distinct_count": 162
+        },
+        {
+          "field_name": "floors",
+          "total_records": 528307,
+          "non_missing_count": 4020,
+          "missing_count": 524287,
+          "completeness_pct": 0.76,
+          "distinct_count": 7
+        },
+        {
+          "field_name": "height",
+          "total_records": 528307,
+          "non_missing_count": 0,
+          "missing_count": 528307,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 528307,
+          "non_missing_count": 0,
+          "missing_count": 528307,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:52:15.024116+00:00"
     },
     {
       "file_path": "data\\ODB_v3_NT\\ODB_v3_NT.gpkg",
@@ -371,7 +1338,619 @@
           "distinct_count": 0
         }
       ],
-      "inspection_timestamp": "2026-07-27T18:31:50.155727+00:00"
+      "inspection_timestamp": "2026-07-27T18:52:15.236079+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_ON_1\\ODB_v3_ON_1.gpkg",
+      "file_name": "ODB_v3_ON_1.gpkg",
+      "file_size_bytes": 932716544,
+      "file_size_mb": 889.5,
+      "sha256_hash": "",
+      "province_territory": "ON",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_ON_1",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 2000000,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "sq_ft",
+            "height"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "sq_ft": "TEXT",
+            "height": "TEXT"
+          }
+        }
+      ],
+      "total_records": 2000000,
+      "source_organizations": [
+        "City of Brampton",
+        "City of Cornwall",
+        "City of Kingston",
+        "City of Markham",
+        "City of Mississauga",
+        "City of Oshawa",
+        "City of Ottawa",
+        "City of Pickering",
+        "City of Quinte West",
+        "City of Toronto",
+        "County of Frontenac",
+        "County of Lennox & Addington",
+        "County of Simcoe",
+        "District of Muskoka",
+        "Government of Canada",
+        "Government of Ontario",
+        "Government of Qu\u00e9bec",
+        "Regional Municipality of Durham",
+        "Regional Municipality of Peel",
+        "Regional Municipality of York",
+        "Town of Newmarket"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 2000000
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 2000000,
+          "non_missing_count": 1938375,
+          "missing_count": 61625,
+          "completeness_pct": 96.92,
+          "distinct_count": 1818963
+        },
+        {
+          "field_name": "source",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 21
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 240
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 106
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 106
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 2000000,
+          "non_missing_count": 7430,
+          "missing_count": 1992570,
+          "completeness_pct": 0.37,
+          "distinct_count": 5170
+        },
+        {
+          "field_name": "type",
+          "total_records": 2000000,
+          "non_missing_count": 107107,
+          "missing_count": 1892893,
+          "completeness_pct": 5.36,
+          "distinct_count": 212
+        },
+        {
+          "field_name": "address",
+          "total_records": 2000000,
+          "non_missing_count": 993039,
+          "missing_count": 1006961,
+          "completeness_pct": 49.65,
+          "distinct_count": 974894
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 2000000,
+          "non_missing_count": 140,
+          "missing_count": 1999860,
+          "completeness_pct": 0.01,
+          "distinct_count": 72
+        },
+        {
+          "field_name": "units",
+          "total_records": 2000000,
+          "non_missing_count": 223,
+          "missing_count": 1999777,
+          "completeness_pct": 0.01,
+          "distinct_count": 17
+        },
+        {
+          "field_name": "floors",
+          "total_records": 2000000,
+          "non_missing_count": 61557,
+          "missing_count": 1938443,
+          "completeness_pct": 3.08,
+          "distinct_count": 12
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 2000000,
+          "non_missing_count": 0,
+          "missing_count": 2000000,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "height",
+          "total_records": 2000000,
+          "non_missing_count": 298755,
+          "missing_count": 1701245,
+          "completeness_pct": 14.94,
+          "distinct_count": 1960
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:54:33.849011+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_ON_2\\ODB_v3_ON_2.gpkg",
+      "file_name": "ODB_v3_ON_2.gpkg",
+      "file_size_bytes": 964411392,
+      "file_size_mb": 919.7,
+      "sha256_hash": "",
+      "province_territory": "ON",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_ON_2",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 2000000,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "sq_ft",
+            "height"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "sq_ft": "TEXT",
+            "height": "TEXT"
+          }
+        }
+      ],
+      "total_records": 2000000,
+      "source_organizations": [
+        "City of Brampton",
+        "City of Brantford",
+        "City of Burlington",
+        "City of Cambridge",
+        "City of Guelph",
+        "City of Hamilton",
+        "City of Kitchener",
+        "City of Mississauga",
+        "City of Niagara Falls",
+        "City of St. Catharines",
+        "City of Toronto",
+        "City of Waterloo",
+        "City of Welland",
+        "County of Elgin",
+        "County of Simcoe",
+        "Government of Canada",
+        "Government of Ontario",
+        "Niagara Region",
+        "Norfolk County",
+        "Region of Waterloo",
+        "Regional Municipality of Peel",
+        "Regional Municipality of York",
+        "Town of Milton",
+        "Town of Oakville",
+        "Town of Orangeville"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 2000000
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 2000000,
+          "non_missing_count": 1697652,
+          "missing_count": 302348,
+          "completeness_pct": 84.88,
+          "distinct_count": 1139860
+        },
+        {
+          "field_name": "source",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 25
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 293
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 49
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 47
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 2000000,
+          "non_missing_count": 5986,
+          "missing_count": 1994014,
+          "completeness_pct": 0.3,
+          "distinct_count": 5177
+        },
+        {
+          "field_name": "type",
+          "total_records": 2000000,
+          "non_missing_count": 244832,
+          "missing_count": 1755168,
+          "completeness_pct": 12.24,
+          "distinct_count": 226
+        },
+        {
+          "field_name": "address",
+          "total_records": 2000000,
+          "non_missing_count": 1144699,
+          "missing_count": 855301,
+          "completeness_pct": 57.23,
+          "distinct_count": 1108565
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 2000000,
+          "non_missing_count": 74355,
+          "missing_count": 1925645,
+          "completeness_pct": 3.72,
+          "distinct_count": 201
+        },
+        {
+          "field_name": "units",
+          "total_records": 2000000,
+          "non_missing_count": 34234,
+          "missing_count": 1965766,
+          "completeness_pct": 1.71,
+          "distinct_count": 147
+        },
+        {
+          "field_name": "floors",
+          "total_records": 2000000,
+          "non_missing_count": 177566,
+          "missing_count": 1822434,
+          "completeness_pct": 8.88,
+          "distinct_count": 27
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 2000000,
+          "non_missing_count": 67144,
+          "missing_count": 1932856,
+          "completeness_pct": 3.36,
+          "distinct_count": 6136
+        },
+        {
+          "field_name": "height",
+          "total_records": 2000000,
+          "non_missing_count": 338296,
+          "missing_count": 1661704,
+          "completeness_pct": 16.91,
+          "distinct_count": 8728
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:56:51.228147+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_ON_3\\ODB_v3_ON_3.gpkg",
+      "file_name": "ODB_v3_ON_3.gpkg",
+      "file_size_bytes": 747864064,
+      "file_size_mb": 713.2,
+      "sha256_hash": "",
+      "province_territory": "ON",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_ON_3",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 1695485,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "sq_ft",
+            "height"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "sq_ft": "TEXT",
+            "height": "TEXT"
+          }
+        }
+      ],
+      "total_records": 1695485,
+      "source_organizations": [
+        "City of Barrie",
+        "City of Greater Sudbury",
+        "City of Kitchener",
+        "City of London",
+        "City of Sarnia",
+        "City of Thunder Bay",
+        "City of Waterloo",
+        "City of Windsor",
+        "County of Elgin",
+        "County of Essex",
+        "County of Frontenac",
+        "County of Huron",
+        "County of Lennox & Addington",
+        "County of Simcoe",
+        "District of Muskoka",
+        "Government of Canada",
+        "Government of Ontario",
+        "Norfolk County",
+        "Region of Waterloo",
+        "Ville de Rouyn-Noranda"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 1695485,
+          "non_missing_count": 1695485,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1695485
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 1695485,
+          "non_missing_count": 1357317,
+          "missing_count": 338168,
+          "completeness_pct": 80.05,
+          "distinct_count": 1060998
+        },
+        {
+          "field_name": "source",
+          "total_records": 1695485,
+          "non_missing_count": 1695485,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 20
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 1695485,
+          "non_missing_count": 1695485,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 167
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 1695485,
+          "non_missing_count": 1695485,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 312
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 1695485,
+          "non_missing_count": 1695485,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 312
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 1695485,
+          "non_missing_count": 1695485,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 1695485,
+          "non_missing_count": 7669,
+          "missing_count": 1687816,
+          "completeness_pct": 0.45,
+          "distinct_count": 6339
+        },
+        {
+          "field_name": "type",
+          "total_records": 1695485,
+          "non_missing_count": 433290,
+          "missing_count": 1262195,
+          "completeness_pct": 25.56,
+          "distinct_count": 300
+        },
+        {
+          "field_name": "address",
+          "total_records": 1695485,
+          "non_missing_count": 495673,
+          "missing_count": 1199812,
+          "completeness_pct": 29.23,
+          "distinct_count": 479909
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 1695485,
+          "non_missing_count": 2888,
+          "missing_count": 1692597,
+          "completeness_pct": 0.17,
+          "distinct_count": 72
+        },
+        {
+          "field_name": "units",
+          "total_records": 1695485,
+          "non_missing_count": 19168,
+          "missing_count": 1676317,
+          "completeness_pct": 1.13,
+          "distinct_count": 78
+        },
+        {
+          "field_name": "floors",
+          "total_records": 1695485,
+          "non_missing_count": 94719,
+          "missing_count": 1600766,
+          "completeness_pct": 5.59,
+          "distinct_count": 26
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 1695485,
+          "non_missing_count": 69003,
+          "missing_count": 1626482,
+          "completeness_pct": 4.07,
+          "distinct_count": 44746
+        },
+        {
+          "field_name": "height",
+          "total_records": 1695485,
+          "non_missing_count": 66759,
+          "missing_count": 1628726,
+          "completeness_pct": 3.94,
+          "distinct_count": 34705
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T18:58:31.674530+00:00"
     },
     {
       "file_path": "data\\ODB_v3_PE\\ODB_v3_PE.gpkg",
@@ -554,7 +2133,573 @@
           "distinct_count": 0
         }
       ],
-      "inspection_timestamp": "2026-07-27T18:31:56.521462+00:00"
+      "inspection_timestamp": "2026-07-27T18:58:34.769528+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_QC_1\\ODB_v3_QC_1.gpkg",
+      "file_name": "ODB_v3_QC_1.gpkg",
+      "file_size_bytes": 903811072,
+      "file_size_mb": 861.9,
+      "sha256_hash": "",
+      "province_territory": "QC",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_QC_1",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 2000000,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "height",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "height": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 2000000,
+      "source_organizations": [
+        "Government of Canada",
+        "Government of New Brunswick",
+        "Government of Qu\u00e9bec",
+        "Ville de Longueuil",
+        "Ville de Qu\u00e9bec",
+        "Ville de Repentigny",
+        "Ville de Rimouski",
+        "Ville de Shawinigan",
+        "Ville de Sherbrooke"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 2000000
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 2000000,
+          "non_missing_count": 1627170,
+          "missing_count": 372830,
+          "completeness_pct": 81.36,
+          "distinct_count": 1495727
+        },
+        {
+          "field_name": "source",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 9
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 34
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 728
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 709
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 2000000,
+          "non_missing_count": 2000000,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 2000000,
+          "non_missing_count": 981,
+          "missing_count": 1999019,
+          "completeness_pct": 0.05,
+          "distinct_count": 843
+        },
+        {
+          "field_name": "type",
+          "total_records": 2000000,
+          "non_missing_count": 334358,
+          "missing_count": 1665642,
+          "completeness_pct": 16.72,
+          "distinct_count": 50
+        },
+        {
+          "field_name": "address",
+          "total_records": 2000000,
+          "non_missing_count": 184348,
+          "missing_count": 1815652,
+          "completeness_pct": 9.22,
+          "distinct_count": 183606
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 2000000,
+          "non_missing_count": 0,
+          "missing_count": 2000000,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "units",
+          "total_records": 2000000,
+          "non_missing_count": 0,
+          "missing_count": 2000000,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "floors",
+          "total_records": 2000000,
+          "non_missing_count": 0,
+          "missing_count": 2000000,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "height",
+          "total_records": 2000000,
+          "non_missing_count": 0,
+          "missing_count": 2000000,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 2000000,
+          "non_missing_count": 0,
+          "missing_count": 2000000,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T19:01:12.757766+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_QC_2\\ODB_v3_QC_2.gpkg",
+      "file_name": "ODB_v3_QC_2.gpkg",
+      "file_size_bytes": 783028224,
+      "file_size_mb": 746.8,
+      "sha256_hash": "",
+      "province_territory": "QC",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_QC_2",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 1679721,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "height",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "height": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 1679721,
+      "source_organizations": [
+        "City of Ottawa",
+        "Government of Canada",
+        "Government of Ontario",
+        "Government of Qu\u00e9bec",
+        "Ville de Laval",
+        "Ville de Montr\u00e9al",
+        "Ville de Repentigny",
+        "Ville de Rouyn-Noranda",
+        "Ville de Saguenay"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 1679721,
+          "non_missing_count": 1679721,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1679721
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 1679721,
+          "non_missing_count": 975269,
+          "missing_count": 704452,
+          "completeness_pct": 58.06,
+          "distinct_count": 890777
+        },
+        {
+          "field_name": "source",
+          "total_records": 1679721,
+          "non_missing_count": 1679721,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 9
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 1679721,
+          "non_missing_count": 1679721,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 53
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 1679721,
+          "non_missing_count": 1679721,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 439
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 1679721,
+          "non_missing_count": 1679721,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 434
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 1679721,
+          "non_missing_count": 1679721,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 1679721,
+          "non_missing_count": 2266,
+          "missing_count": 1677455,
+          "completeness_pct": 0.13,
+          "distinct_count": 2221
+        },
+        {
+          "field_name": "type",
+          "total_records": 1679721,
+          "non_missing_count": 87031,
+          "missing_count": 1592690,
+          "completeness_pct": 5.18,
+          "distinct_count": 65
+        },
+        {
+          "field_name": "address",
+          "total_records": 1679721,
+          "non_missing_count": 309953,
+          "missing_count": 1369768,
+          "completeness_pct": 18.45,
+          "distinct_count": 309493
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 1679721,
+          "non_missing_count": 0,
+          "missing_count": 1679721,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "units",
+          "total_records": 1679721,
+          "non_missing_count": 0,
+          "missing_count": 1679721,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "floors",
+          "total_records": 1679721,
+          "non_missing_count": 0,
+          "missing_count": 1679721,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "height",
+          "total_records": 1679721,
+          "non_missing_count": 0,
+          "missing_count": 1679721,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 1679721,
+          "non_missing_count": 0,
+          "missing_count": 1679721,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T19:02:49.791558+00:00"
+    },
+    {
+      "file_path": "data\\ODB_v3_SK\\ODB_v3_SK.gpkg",
+      "file_name": "ODB_v3_SK.gpkg",
+      "file_size_bytes": 121516032,
+      "file_size_mb": 115.9,
+      "sha256_hash": "",
+      "province_territory": "SK",
+      "layers": [
+        {
+          "layer_name": "ODB_v3_SK",
+          "geometry_type": "MULTIPOLYGON",
+          "crs_epsg": 3347,
+          "crs_wkt": "EPSG:3347",
+          "row_count": 259461,
+          "field_count": 17,
+          "fields": [
+            "fid",
+            "geom",
+            "id",
+            "source_id",
+            "source",
+            "dataset",
+            "csduid",
+            "csdname",
+            "prov_terr",
+            "name",
+            "type",
+            "address",
+            "year_built",
+            "units",
+            "floors",
+            "height",
+            "sq_ft"
+          ],
+          "field_types": {
+            "fid": "INTEGER",
+            "geom": "MULTIPOLYGON",
+            "id": "TEXT",
+            "source_id": "TEXT",
+            "source": "TEXT",
+            "dataset": "TEXT",
+            "csduid": "TEXT",
+            "csdname": "TEXT",
+            "prov_terr": "TEXT",
+            "name": "TEXT",
+            "type": "TEXT",
+            "address": "TEXT",
+            "year_built": "TEXT",
+            "units": "TEXT",
+            "floors": "TEXT",
+            "height": "TEXT",
+            "sq_ft": "TEXT"
+          }
+        }
+      ],
+      "total_records": 259461,
+      "source_organizations": [
+        "City of Regina",
+        "Government of Canada"
+      ],
+      "field_completeness": [
+        {
+          "field_name": "id",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 259461
+        },
+        {
+          "field_name": "source_id",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 259461
+        },
+        {
+          "field_name": "source",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 2
+        },
+        {
+          "field_name": "dataset",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 19
+        },
+        {
+          "field_name": "csduid",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 124
+        },
+        {
+          "field_name": "csdname",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 124
+        },
+        {
+          "field_name": "prov_terr",
+          "total_records": 259461,
+          "non_missing_count": 259461,
+          "missing_count": 0,
+          "completeness_pct": 100.0,
+          "distinct_count": 1
+        },
+        {
+          "field_name": "name",
+          "total_records": 259461,
+          "non_missing_count": 110,
+          "missing_count": 259351,
+          "completeness_pct": 0.04,
+          "distinct_count": 108
+        },
+        {
+          "field_name": "type",
+          "total_records": 259461,
+          "non_missing_count": 160,
+          "missing_count": 259301,
+          "completeness_pct": 0.06,
+          "distinct_count": 14
+        },
+        {
+          "field_name": "address",
+          "total_records": 259461,
+          "non_missing_count": 66589,
+          "missing_count": 192872,
+          "completeness_pct": 25.66,
+          "distinct_count": 63332
+        },
+        {
+          "field_name": "year_built",
+          "total_records": 259461,
+          "non_missing_count": 0,
+          "missing_count": 259461,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "units",
+          "total_records": 259461,
+          "non_missing_count": 0,
+          "missing_count": 259461,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "floors",
+          "total_records": 259461,
+          "non_missing_count": 0,
+          "missing_count": 259461,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "height",
+          "total_records": 259461,
+          "non_missing_count": 0,
+          "missing_count": 259461,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        },
+        {
+          "field_name": "sq_ft",
+          "total_records": 259461,
+          "non_missing_count": 0,
+          "missing_count": 259461,
+          "completeness_pct": 0.0,
+          "distinct_count": 0
+        }
+      ],
+      "inspection_timestamp": "2026-07-27T19:03:08.313135+00:00"
     },
     {
       "file_path": "data\\ODB_v3_YT\\ODB_v3_YT.gpkg",
@@ -737,7 +2882,7 @@
           "distinct_count": 0
         }
       ],
-      "inspection_timestamp": "2026-07-27T18:31:57.248113+00:00"
+      "inspection_timestamp": "2026-07-27T19:03:08.848409+00:00"
     }
   ]
 }

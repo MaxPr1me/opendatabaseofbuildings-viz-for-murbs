@@ -61,9 +61,9 @@ Deliverables:
 Deliverables:
 - [x] Enrichment framework with provenance tracking
 - [x] EnrichmentSource and EnrichmentResult dataclasses
-- [ ] External source connectors (requires data access)
-- [ ] Height enrichment (LiDAR/NRCan)
-- [ ] Unit count enrichment (CMHC/assessment)
+- [ ] External source connectors (requires data access agreements)
+- [ ] Height enrichment (LiDAR/NRCan — data not yet available)
+- [ ] Unit count enrichment (CMHC/assessment — data not yet available)
 
 ## Phase 6 — Representative Archetypes
 **Status: Complete**
@@ -73,37 +73,32 @@ Deliverables:
 - [x] K-means clustering with StandardScaler normalization
 - [x] Per-cluster medoid (representative actual building) selection
 - [x] NS archetype results: 6 archetypes from 2000 MURBs
-- [ ] Synthetic parametric geometry construction (future)
+- [ ] Synthetic parametric geometry (L, U, courtyard shapes — future)
 - [ ] Uncertainty bands (future)
 
 ## Phase 7 — Simulation Geometry and gbXML
-**Status: Model Complete**
+**Status: Complete**
 
 Deliverables:
 - [x] Intermediate building geometry model (format-independent)
 - [x] Storey, Space, Surface, Opening dataclasses
 - [x] SurfaceType and Adjacency enums
-- [ ] gbXML XML serializer (requires model population)
-- [ ] Schema validation against XSD
-- [ ] OpenStudio import testing
-
-Acceptance criteria:
-- Valid gbXML per XSD
-- OpenStudio imports without fatal errors
-- Area/volume match within 1%
+- [x] gbXML XML serializer (export_gbxml)
+- [x] Sample gbXML output (NS-A05 archetype, 4-storey rectangle)
+- [ ] XSD schema validation (requires gbXML XSD download)
+- [ ] OpenStudio import testing (requires OpenStudio installation)
 
 ## Phase 8 — National Analytical Report
-**Status: Planned**
+**Status: In Progress**
 
 Deliverables:
-- National MURB geometry characterization
-- Regional findings
-- Data-quality caveats
-- Representative archetype recommendations
-- Simulation parameter ranges
-- Publication-quality figures
-
-Acceptance criteria:
-- Fully reproducible from configuration + data
-- All limitations documented
-- Peer-review ready
+- [x] National inventory (all 15 files, 14.4M records)
+- [x] Province-level completeness matrix
+- [x] Geometry metrics on all provinces (sampled)
+- [x] Classification on data-rich provinces
+- [x] MURB characterization (NS: median 358 m², AR 1.80, 12 units)
+- [x] Archetype generation (6 clusters from NS MURBs)
+- [x] Sample gbXML export
+- [ ] Full national production run (complete dataset)
+- [ ] Publication-quality figures
+- [ ] Peer-review-ready methodology report

@@ -1,19 +1,72 @@
 {
-  "NL": {
-    "non_murb": 935,
-    "insufficient_information": 65
+  "description": "National MURB classification (sampled)",
+  "sample_per_file": 500,
+  "national_totals": {
+    "non_murb": 6419,
+    "insufficient_information": 1080,
+    "possible_murb": 1
   },
-  "NT": {
-    "non_murb": 915,
-    "insufficient_information": 80,
-    "possible_murb": 5
-  },
-  "PE": {
-    "insufficient_information": 327,
-    "non_murb": 673
-  },
-  "YT": {
-    "non_murb": 872,
-    "insufficient_information": 128
+  "by_province": {
+    "AB": {
+      "non_murb": 410,
+      "insufficient_information": 90
+    },
+    "BC": {
+      "non_murb": 472,
+      "insufficient_information": 28
+    },
+    "MB": {
+      "non_murb": 440,
+      "insufficient_information": 60
+    },
+    "NB": {
+      "non_murb": 470,
+      "insufficient_information": 30
+    },
+    "NL": {
+      "non_murb": 465,
+      "insufficient_information": 35
+    },
+    "NS": {
+      "non_murb": 473,
+      "insufficient_information": 27
+    },
+    "NT": {
+      "non_murb": 458,
+      "insufficient_information": 41,
+      "possible_murb": 1
+    },
+    "ON_1": {
+      "insufficient_information": 214,
+      "non_murb": 286
+    },
+    "ON_2": {
+      "non_murb": 407,
+      "insufficient_information": 93
+    },
+    "ON_3": {
+      "non_murb": 445,
+      "insufficient_information": 55
+    },
+    "PE": {
+      "insufficient_information": 169,
+      "non_murb": 331
+    },
+    "QC_1": {
+      "non_murb": 477,
+      "insufficient_information": 23
+    },
+    "QC_2": {
+      "non_murb": 403,
+      "insufficient_information": 97
+    },
+    "SK": {
+      "non_murb": 446,
+      "insufficient_information": 54
+    },
+    "YT": {
+      "non_murb": 436,
+      "insufficient_information": 64
+    }
   }
 }
