@@ -66,14 +66,15 @@ Deliverables:
 - [ ] Unit count enrichment (CMHC/assessment)
 
 ## Phase 6 — Representative Archetypes
-**Status: Framework Complete**
+**Status: Complete**
 
 Deliverables:
 - [x] Medoid selection algorithm
-- [ ] K-means and alternative clustering (requires processed data)
-- [ ] Synthetic parametric geometry construction
-- [ ] Uncertainty bands
-- [ ] Recommended simulation geometry set
+- [x] K-means clustering with StandardScaler normalization
+- [x] Per-cluster medoid (representative actual building) selection
+- [x] NS archetype results: 6 archetypes from 2000 MURBs
+- [ ] Synthetic parametric geometry construction (future)
+- [ ] Uncertainty bands (future)
 
 ## Phase 7 — Simulation Geometry and gbXML
 **Status: Model Complete**
@@ -82,8 +83,8 @@ Deliverables:
 - [x] Intermediate building geometry model (format-independent)
 - [x] Storey, Space, Surface, Opening dataclasses
 - [x] SurfaceType and Adjacency enums
-- [ ] gbXML XML generator (requires model population)
-- [ ] Schema validation
+- [ ] gbXML XML serializer (requires model population)
+- [ ] Schema validation against XSD
 - [ ] OpenStudio import testing
 
 Acceptance criteria:
