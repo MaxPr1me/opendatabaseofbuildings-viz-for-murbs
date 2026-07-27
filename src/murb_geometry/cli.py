@@ -3,23 +3,85 @@
 Uses typer for structured CLI commands supporting the full analytical workflow.
 """
 
+from pathlib import Path
+
 import typer
+from rich.console import Console
+from rich.table import Table
+
+from murb_geometry.config import load_config
 
 app = typer.Typer(
     name="murb-geometry",
     help="Canadian MURB Geometry Analysis — characterize representative building geometries.",
     no_args_is_help=True,
 )
+console = Console()
 
 
 @app.command()
 def inventory(
     config: str = typer.Option("config/default.yaml", help="Configuration file path"),
     data_dir: str | None = typer.Option(None, help="Override data directory"),
+    output: str | None = typer.Option(None, help="Output JSON path"),
+    no_hash: bool = typer.Option(False, help="Skip SHA-256 hash computation"),
 ) -> None:
     """Discover and inventory all GeoPackage files in the data directory."""
-    typer.echo("Command 'inventory' is planned for Phase 1.")
-    raise typer.Exit(code=0)
+    from murb_geometry.ingestion.inventory import run_inventory
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    root = Path(data_dir) if data_dir else cfg.paths.data_dir
+    output_path = Path(output) if output else Path("outputs/reports/inventory.json")
+
+    console.print(f"[bold]Scanning:[/bold] {root}")
+    report = run_inventory(
+        data_dir=root,
+        output_path=output_path,
+        missing_markers=cfg.input.missing_value_markers,
+        compute_hashes=not no_hash,
+    )
+
+    # Display summary table
+    table = Table(title="GeoPackage Inventory")
+    table.add_column("File", style="cyan")
+    table.add_column("Province", style="green")
+    table.add_column("Records", justify="right")
+    table.add_column("Size (MB)", justify="right")
+    table.add_column("Sources", justify="right")
+    table.add_column("Type %", justify="right")
+    table.add_column("Floors %", justify="right")
+    table.add_column("Units %", justify="right")
+    table.add_column("Height %", justify="right")
+
+    for item in report.files:
+        completeness = {fc.field_name: fc.completeness_pct for fc in item.field_completeness}
+        table.add_row(
+            item.file_name,
+            item.province_territory,
+            f"{item.total_records:,}",
+            f"{item.file_size_mb:.1f}",
+            str(len(item.source_organizations)),
+            f"{completeness.get('type', 0):.1f}",
+            f"{completeness.get('floors', 0):.1f}",
+            f"{completeness.get('units', 0):.1f}",
+            f"{completeness.get('height', 0):.1f}",
+        )
+
+    table.add_section()
+    table.add_row(
+        "[bold]TOTAL[/bold]",
+        "",
+        f"[bold]{report.total_records:,}[/bold]",
+        f"[bold]{report.total_size_mb:.1f}[/bold]",
+        "",
+        "",
+        "",
+        "",
+        "",
+    )
+
+    console.print(table)
+    console.print(f"\n[green]Inventory saved to:[/green] {output_path}")
 
 
 @app.command()
@@ -28,8 +90,49 @@ def inspect(
     layer: str | None = typer.Option(None, help="Layer name (auto-detected if omitted)"),
 ) -> None:
     """Inspect schema, CRS, row count, and completeness of a GeoPackage file."""
-    typer.echo("Command 'inspect' is planned for Phase 1.")
-    raise typer.Exit(code=0)
+    from murb_geometry.ingestion.inventory import inspect_geopackage
+
+    gpkg_path = Path(file)
+    if not gpkg_path.exists():
+        console.print(f"[red]File not found:[/red] {file}")
+        raise typer.Exit(code=1)
+
+    console.print(f"[bold]Inspecting:[/bold] {gpkg_path.name}")
+    item = inspect_geopackage(gpkg_path)
+
+    for ly in item.layers:
+        console.print(f"\n[bold cyan]Layer:[/bold cyan] {ly.layer_name}")
+        console.print(f"  Geometry type: {ly.geometry_type}")
+        console.print(f"  CRS (EPSG):    {ly.crs_epsg}")
+        console.print(f"  Row count:     {ly.row_count:,}")
+        console.print(f"  Fields ({ly.field_count}):  {', '.join(ly.fields)}")
+
+    if item.field_completeness:
+        table = Table(title="Field Completeness")
+        table.add_column("Field")
+        table.add_column("Non-Missing", justify="right")
+        table.add_column("Completeness", justify="right")
+        table.add_column("Distinct Values", justify="right")
+        for fc in item.field_completeness:
+            style = (
+                "green"
+                if fc.completeness_pct > 50
+                else ("yellow" if fc.completeness_pct > 10 else "red")
+            )
+            table.add_row(
+                fc.field_name,
+                f"{fc.non_missing_count:,}",
+                f"[{style}]{fc.completeness_pct:.1f}%[/{style}]",
+                f"{fc.distinct_count:,}" if fc.distinct_count else "-",
+            )
+        console.print(table)
+
+    if item.source_organizations:
+        console.print(f"\n[bold]Source organizations ({len(item.source_organizations)}):[/bold]")
+        for src in item.source_organizations[:20]:
+            console.print(f"  • {src}")
+        if len(item.source_organizations) > 20:
+            console.print(f"  ... and {len(item.source_organizations) - 20} more")
 
 
 @app.command()

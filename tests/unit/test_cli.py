@@ -14,15 +14,7 @@ def test_cli_help() -> None:
     assert "murb-geometry" in result.stdout.lower() or "Canadian" in result.stdout
 
 
-def test_inventory_command_planned() -> None:
-    """Inventory command exits cleanly with planned message."""
-    result = runner.invoke(app, ["inventory"])
-    assert result.exit_code == 0
-    assert "planned" in result.stdout.lower()
-
-
-def test_inspect_command_planned() -> None:
-    """Inspect command exits cleanly with planned message."""
-    result = runner.invoke(app, ["inspect", "dummy.gpkg"])
-    assert result.exit_code == 0
-    assert "planned" in result.stdout.lower()
+def test_inspect_command_missing_file() -> None:
+    """Inspect command fails with non-existent file."""
+    result = runner.invoke(app, ["inspect", "nonexistent.gpkg"])
+    assert result.exit_code == 1
