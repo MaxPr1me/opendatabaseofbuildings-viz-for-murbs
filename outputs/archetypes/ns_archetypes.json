@@ -1,0 +1,328 @@
+{
+  "description": "MURB archetypes derived from Nova Scotia buildings with units >= 4",
+  "method": "K-means clustering with medoid selection",
+  "n_clusters": 6,
+  "n_buildings": 2000,
+  "features_used": [
+    "footprint_area_m2",
+    "aspect_ratio",
+    "compactness",
+    "rectangularity"
+  ],
+  "random_seed": 42,
+  "inertia": 2304.4131939042063,
+  "archetypes": [
+    {
+      "archetype_id": "NS-A01",
+      "cluster_size": 227,
+      "medoid_index": 1857,
+      "medoid_building_id": "00183749051a0896e7b4a3968441fca2",
+      "representative_metrics": {
+        "footprint_area_m2": 2119.3,
+        "aspect_ratio": 2.34,
+        "compactness": 0.375,
+        "rectangularity": 0.535
+      },
+      "cluster_statistics": {
+        "footprint_area_m2": {
+          "field": "footprint_area_m2",
+          "count": 227,
+          "valid_count": 227,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 21.096643078268627,
+          "max": 5965.694662479606,
+          "mean": 2080.07,
+          "median": 2060.9805905763537,
+          "std": 977.97,
+          "p5": 499.2033436928855,
+          "p10": 991.3414459396473,
+          "p25": 1489.4429199414108,
+          "p75": 2527.04431987118,
+          "p90": 3203.3264584172853,
+          "p95": 3754.3354868555502,
+          "iqr": 1037.6013999297693
+        },
+        "aspect_ratio": {
+          "field": "aspect_ratio",
+          "count": 227,
+          "valid_count": 227,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 1.0003525172377834,
+          "max": 4.293132473655909,
+          "mean": 2.03,
+          "median": 1.99319316290188,
+          "std": 0.74,
+          "p5": 1.0330491158715576,
+          "p10": 1.072335131668838,
+          "p25": 1.3924219952568528,
+          "p75": 2.5388424347081604,
+          "p90": 2.9976026130936577,
+          "p95": 3.3175521139532087,
+          "iqr": 1.1464204394513076
+        }
+      }
+    },
+    {
+      "archetype_id": "NS-A02",
+      "cluster_size": 438,
+      "medoid_index": 1940,
+      "medoid_building_id": "85becdbb089a4ac264681a6b58eddc25",
+      "representative_metrics": {
+        "footprint_area_m2": 632.1,
+        "aspect_ratio": 2.75,
+        "compactness": 0.589,
+        "rectangularity": 0.954
+      },
+      "cluster_statistics": {
+        "footprint_area_m2": {
+          "field": "footprint_area_m2",
+          "count": 438,
+          "valid_count": 438,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 4.699730373363096,
+          "max": 1935.3936169620624,
+          "mean": 599.16,
+          "median": 466.84481218392824,
+          "std": 434.27,
+          "p5": 105.16448326749112,
+          "p10": 136.42599420855663,
+          "p25": 225.0190154246226,
+          "p75": 908.7058004622542,
+          "p90": 1163.1703019526478,
+          "p95": 1423.8180751316372,
+          "iqr": 683.6867850376316
+        },
+        "aspect_ratio": {
+          "field": "aspect_ratio",
+          "count": 438,
+          "valid_count": 438,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 1.6786100421858838,
+          "max": 5.1408297639927305,
+          "mean": 2.72,
+          "median": 2.5966601447690296,
+          "std": 0.52,
+          "p5": 2.109302139433742,
+          "p10": 2.1697573878428074,
+          "p25": 2.3635311575496996,
+          "p75": 2.9996199325701625,
+          "p90": 3.3906230390355887,
+          "p95": 3.768703295822342,
+          "iqr": 0.6360887750204629
+        }
+      }
+    },
+    {
+      "archetype_id": "NS-A03",
+      "cluster_size": 328,
+      "medoid_index": 1444,
+      "medoid_building_id": "bed67de02d0f5d57a106c0143bf9c866",
+      "representative_metrics": {
+        "footprint_area_m2": 436.3,
+        "aspect_ratio": 1.62,
+        "compactness": 0.551,
+        "rectangularity": 0.74
+      },
+      "cluster_statistics": {
+        "footprint_area_m2": {
+          "field": "footprint_area_m2",
+          "count": 328,
+          "valid_count": 328,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 68.44549073651106,
+          "max": 2302.208406255614,
+          "mean": 597.83,
+          "median": 439.064147241898,
+          "std": 481.4,
+          "p5": 119.27558438927015,
+          "p10": 143.1816606592266,
+          "p25": 199.08169619299196,
+          "p75": 915.1887328931934,
+          "p90": 1312.504593860816,
+          "p95": 1458.6453523827013,
+          "iqr": 716.1070367002014
+        },
+        "aspect_ratio": {
+          "field": "aspect_ratio",
+          "count": 328,
+          "valid_count": 328,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 1.0003923679648694,
+          "max": 3.3565223716276096,
+          "mean": 1.65,
+          "median": 1.5866216832173583,
+          "std": 0.49,
+          "p5": 1.0534275137498668,
+          "p10": 1.0939785816540024,
+          "p25": 1.2468825587108763,
+          "p75": 1.9186147657032226,
+          "p90": 2.3529262105811712,
+          "p95": 2.554816940175379,
+          "iqr": 0.6717322069923464
+        }
+      }
+    },
+    {
+      "archetype_id": "NS-A04",
+      "cluster_size": 16,
+      "medoid_index": 1775,
+      "medoid_building_id": "cb19db42fd9108f42b4beb58d625e10b",
+      "representative_metrics": {
+        "footprint_area_m2": 548.4,
+        "aspect_ratio": 6.82,
+        "compactness": 0.346,
+        "rectangularity": 0.97
+      },
+      "cluster_statistics": {
+        "footprint_area_m2": {
+          "field": "footprint_area_m2",
+          "count": 16,
+          "valid_count": 16,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 6.503187474949382,
+          "max": 2235.8971404282142,
+          "mean": 572.06,
+          "median": 470.5497179629989,
+          "std": 556.66,
+          "p5": 23.19741798452828,
+          "p10": 76.9298901901281,
+          "p25": 339.15050766395007,
+          "p75": 585.8630222872193,
+          "p90": 1063.5917183414995,
+          "p95": 1672.9703489625554,
+          "iqr": 246.71251462326927
+        },
+        "aspect_ratio": {
+          "field": "aspect_ratio",
+          "count": 16,
+          "valid_count": 16,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 5.588888595558309,
+          "max": 20.119103744767038,
+          "mean": 8.18,
+          "median": 7.093671659937148,
+          "std": 3.56,
+          "p5": 5.707858771479096,
+          "p10": 5.760530526686948,
+          "p25": 6.158837639784143,
+          "p75": 8.69872649402846,
+          "p90": 10.448569809342203,
+          "p95": 13.030338524115285,
+          "iqr": 2.5398888542443165
+        }
+      }
+    },
+    {
+      "archetype_id": "NS-A05",
+      "cluster_size": 845,
+      "medoid_index": 1499,
+      "medoid_building_id": "731dba52cfe80ae47a56e9d047bef70f",
+      "representative_metrics": {
+        "footprint_area_m2": 236.3,
+        "aspect_ratio": 1.43,
+        "compactness": 0.729,
+        "rectangularity": 0.958
+      },
+      "cluster_statistics": {
+        "footprint_area_m2": {
+          "field": "footprint_area_m2",
+          "count": 845,
+          "valid_count": 845,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 14.319727443277772,
+          "max": 2805.1510097075725,
+          "mean": 282.24,
+          "median": 189.58672419512956,
+          "std": 281.3,
+          "p5": 80.30093336723758,
+          "p10": 103.07900432092278,
+          "p25": 142.10390443009604,
+          "p75": 330.09979810216,
+          "p90": 543.6092811344153,
+          "p95": 685.0078520589519,
+          "iqr": 187.99589367206394
+        },
+        "aspect_ratio": {
+          "field": "aspect_ratio",
+          "count": 845,
+          "valid_count": 845,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 1.0000104722200984,
+          "max": 2.2544360235026772,
+          "mean": 1.49,
+          "median": 1.4503961644617291,
+          "std": 0.31,
+          "p5": 1.0364752773675225,
+          "p10": 1.0849587896539434,
+          "p25": 1.238775481044529,
+          "p75": 1.7160331037954761,
+          "p90": 1.9439430808772238,
+          "p95": 2.0360695293005686,
+          "iqr": 0.4772576227509471
+        }
+      }
+    },
+    {
+      "archetype_id": "NS-A06",
+      "cluster_size": 146,
+      "medoid_index": 865,
+      "medoid_building_id": "92966196e7be2f94e6d5f9057360ca87",
+      "representative_metrics": {
+        "footprint_area_m2": 2294.8,
+        "aspect_ratio": 3.33,
+        "compactness": 0.491,
+        "rectangularity": 0.879
+      },
+      "cluster_statistics": {
+        "footprint_area_m2": {
+          "field": "footprint_area_m2",
+          "count": 146,
+          "valid_count": 146,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 545.824352260306,
+          "max": 7341.05090469016,
+          "mean": 2389.24,
+          "median": 2090.146892388421,
+          "std": 1147.77,
+          "p5": 1100.5742035253977,
+          "p10": 1371.2188736466746,
+          "p25": 1658.462491453422,
+          "p75": 2873.549660561992,
+          "p90": 3739.5379751623645,
+          "p95": 4650.95729464659,
+          "iqr": 1215.08716910857
+        },
+        "aspect_ratio": {
+          "field": "aspect_ratio",
+          "count": 146,
+          "valid_count": 146,
+          "missing_count": 0,
+          "missingness_pct": 0.0,
+          "min": 1.1302449102317376,
+          "max": 5.768932672299651,
+          "mean": 3.43,
+          "median": 3.3962623481079293,
+          "std": 0.99,
+          "p5": 1.8823668932187219,
+          "p10": 2.0287258206563923,
+          "p25": 2.7412010971313365,
+          "p75": 4.142656945142495,
+          "p90": 4.710953388485864,
+          "p95": 5.003014438813567,
+          "iqr": 1.401455848011158
+        }
+      }
+    }
+  ]
+}
