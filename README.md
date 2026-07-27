@@ -5,7 +5,7 @@
 [![Status: National Run Complete](https://img.shields.io/badge/status-National%20Run%20Complete-brightgreen)]()
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)]()
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)]()
-[![Tests: 85 passing](https://img.shields.io/badge/tests-85%20passing-brightgreen)]()
+[![Tests: 99 passing](https://img.shields.io/badge/tests-99%20passing-brightgreen)]()
 
 ---
 

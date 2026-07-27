@@ -79,51 +79,34 @@ This prints a table showing:
 
 ---
 
-## Step 5: Run the Full Inventory
+## Step 5: Run the Complete Analysis
 
-This scans ALL data files and creates a JSON report:
+This is the main command that does everything — finds apartments, measures
+them, clusters them into types, and generates all reports:
 
 ```bash
-murb-geometry inventory --no-hash
+python scripts/complete_run.py
 ```
 
-The `--no-hash` flag skips computing file checksums (saves ~30 min on 6 GB of data).
+This takes about 30 seconds and produces:
+- Per-province statistics for 7,567 MURBs
+- 25 archetypes (5 per province)
+- 32 gbXML simulation files
+- Publication figures
+- Excel report
 
-Output goes to: `outputs/reports/inventory.json`
-
-> **Note:** This takes a while on the full national dataset (14.4 million buildings across 6.3 GB). Be patient — you'll see a summary table when it finishes.
+> **Note:** Ontario's 3 files are automatically merged into one province.
 
 ---
 
-## Step 6: Generate an Excel Report
+## Step 6: Generate Figures and Reports
 
 ```bash
-python -c "
-from pathlib import Path
-import json
-from murb_geometry.excel.workbook import create_summary_workbook
-
-inv = json.loads(Path('outputs/reports/inventory.json').read_text())
-completeness = []
-for f in inv['files']:
-    row = {'province': f['province_territory'], 'records': f['total_records']}
-    for fc in f['field_completeness']:
-        row[fc['field_name'] + '_pct'] = fc['completeness_pct']
-    completeness.append(row)
-
-create_summary_workbook(
-    Path('outputs/excel/murb_inventory_report.xlsx'),
-    completeness_data=completeness,
-    metadata={'Source': 'ODB v3', 'Scope': 'National inventory'},
-)
-print('Done! Open: outputs/excel/murb_inventory_report.xlsx')
-"
+python scripts/generate_figures.py    # Publication-quality PNG charts
+python scripts/generate_report.py     # Written methodology report
 ```
 
-Open the `.xlsx` file in Excel to see:
-- **Read Me** tab — what the report contains
-- **Data Quality** tab — which provinces have what data (colour-coded)
-- **Field Dictionary** tab — what each column means
+Figures are saved as PNG in `outputs/figures/` — ready to paste into papers.
 
 ---
 
@@ -149,29 +132,33 @@ To verify everything is working:
 pytest tests/
 ```
 
-You should see: `83 passed`
+You should see: `99 passed`
 
 ---
 
 ## Where Are My Outputs?
 
-| What | Where |
-|------|-------|
-| Inventory report (JSON) | `outputs/reports/inventory.json` |
-| Excel workbook | `outputs/excel/murb_inventory_report.xlsx` |
-| Streamlit app | Opens in your browser (not saved as a file) |
-| Figures (when generated) | `outputs/figures/` |
-| Maps (when generated) | `outputs/maps/` |
+| What | Where | Format |
+|------|-------|--------|
+| Complete analysis | `outputs/reports/complete_analysis.json` | JSON |
+| Excel workbook | `outputs/excel/complete_murb_analysis.xlsx` | Excel |
+| Province figures | `outputs/figures/province_murb_area.png` | PNG |
+| Archetype scatter | `outputs/figures/national_archetypes_scatter.png` | PNG |
+| All province archetypes | `outputs/figures/province_archetypes_comparison.png` | PNG |
+| Completeness heatmap | `outputs/figures/fig1_completeness_heatmap.png` | PNG |
+| gbXML (per archetype) | `outputs/gbxml/` (32 files) | XML |
+| Methodology report | `outputs/reports/methodology_report.txt` | Text |
+| Streamlit app | Opens in your browser | Web |
 
 ---
 
 ## Example Questions and Answers
 
 ### Q: How many buildings are in the database?
-**A:** About 14.4 million across all provinces and territories. Run `murb-geometry inventory --no-hash` to get the exact count.
+**A:** 14,417,429 across all provinces and territories. The analysis identified 7,567 confirmed apartment buildings from 5 data-rich provinces.
 
 ### Q: Which province has the best data for identifying apartments?
-**A:** Nova Scotia — it has 23% of buildings with unit counts filled in (121,592 buildings). Ontario and BC have the most height data. Run `murb-geometry inspect data/ODB_v3_NS/ODB_v3_NS.gpkg` to see the details.
+**A:** Nova Scotia — 23% of buildings have unit counts (121,592 buildings). Ontario and BC have height/floor data. Run `murb-geometry inspect data/ODB_v3_NS/ODB_v3_NS.gpkg` to see details.
 
 ### Q: Can I just look at one province?
 **A:** Yes. Every command works on individual files:

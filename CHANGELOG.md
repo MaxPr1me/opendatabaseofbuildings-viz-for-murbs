@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Complete national MURB analysis pipeline (Phases 0–8)
 - Repository scaffold and project structure (Phase 0)
 - Comprehensive README.md with research objectives and methodology
 - AGENTS.md coding agent instructions
@@ -35,29 +36,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Intermediate building geometry model for simulation (Phase 7)
 - gbXML XML exporter targeting schema version 7.03 (Phase 7)
 - All 12 CLI commands fully implemented (no placeholders)
-- GETTING_STARTED.md plain-language guide
-- National production run script (scripts/national_run.py)
-- NS MURB deep analysis script (scripts/analyze_ns.py)
-- Sample output generation script (scripts/generate_outputs.py)
+- GETTING_STARTED.md and OUTPUTS_GUIDE.md plain-language guides
+- Synthetic parametric geometry generators (rectangle, L, U, T, courtyard)
+- gbXML structural validator
+- Complete run script with merged provinces (scripts/complete_run.py)
+- Per-province analysis scripts (NS, all provinces)
+- Publication figure generation script
 
-### National Run Results
+### National Run Results (Merged Provinces)
 
 - Inventoried 14,417,429 building records across 15 GeoPackage files (6.3 GB)
-- Computed geometry metrics on 7,500 sampled buildings (500 per file)
-- National median building footprint: 91 m²
-- Nova Scotia MURB characterization: 2,766 confirmed MURBs (units >= 4)
-  - Median footprint: 346 m², IQR 176–938 m²
-  - Median aspect ratio: 1.73
-  - Median dwelling units: 12
-- Generated 6 representative archetypes via K-means clustering
-- Produced sample gbXML (NS-A05: 18.4m x 12.9m, 4-storey rectangle)
+- Identified 7,567 confirmed MURBs across 5 provinces (NS, NB, ON, BC, AB)
+- Ontario files (ON_1 + ON_2 + ON_3) merged as single province
+- National median MURB footprint: 389 m² (IQR 214–737)
+- National median aspect ratio: 1.89
+- 25 per-province archetypes (5 per province via K-means)
+- 8 national archetypes from combined clustering
+- 32 gbXML simulation files (one per archetype per province)
+- 8 publication-quality figures (PNG)
+
+### Per-Province Highlights
+
+- NS: 2,000 MURBs, most common = 231 m² compact (45%)
+- NB: 2,000 MURBs, most common = 297 m² compact (47%)
+- ON: 1,901 MURBs (3 files merged), most common = 300 m² compact (48%)
+- BC: 393 MURBs, largest median (942 m²), some up to 7,575 m²
+- AB: 1,273 MURBs, most common = 332 m² compact (34%)
 
 ### Outputs Committed
 
+- outputs/reports/complete_analysis.json — Full per-province analysis
 - outputs/reports/inventory.json — National file inventory
-- outputs/reports/summary_stats.json — Geometry statistics
-- outputs/reports/classification_summary.json — MURB classification
-- outputs/reports/ns_murb_analysis.json — NS MURB characterization
-- outputs/archetypes/ns_archetypes.json — 6 archetype definitions
-- outputs/excel/murb_national_summary.xlsx — Formatted Excel report
-- outputs/gbxml/ns_a05_archetype.xml — Sample simulation geometry
+- outputs/reports/methodology_report.txt — Written methodology
+- outputs/excel/complete_murb_analysis.xlsx — Main Excel report
+- outputs/figures/ — 8 publication PNG figures
+- outputs/gbxml/ — 32 gbXML files (per archetype per province)
+- outputs/archetypes/national_archetypes.json — 8 national archetypes
