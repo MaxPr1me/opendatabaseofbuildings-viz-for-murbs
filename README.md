@@ -273,16 +273,21 @@ See [docs/methodology.md](docs/methodology.md) for complete details.
 |-----------|--------|
 | Repository scaffold | ✅ Complete |
 | Configuration schema | ✅ Complete |
-| Documentation | ✅ Complete (Phase 0) |
-| Data inventory | 📋 Planned (Phase 1) |
-| Geometry metrics | 📋 Planned (Phase 2) |
-| MURB classification | 📋 Planned (Phase 3) |
-| Streamlit visualization | 📋 Planned (Phase 4) |
-| Excel reports | 📋 Planned (Phase 4) |
-| Data enrichment | 📋 Planned (Phase 5) |
-| Archetypes | 📋 Planned (Phase 6) |
-| gbXML export | 📋 Planned (Phase 7) |
-| National analysis | 📋 Planned (Phase 8) |
+| Documentation | ✅ Complete |
+| Data inventory (Phase 1) | ✅ Complete |
+| Geometry metrics (Phase 2) | ✅ Complete |
+| Geometry validation (Phase 2) | ✅ Complete |
+| MURB classification (Phase 3) | ✅ Complete |
+| Descriptive statistics (Phase 4) | ✅ Complete |
+| Excel reports (Phase 4) | ✅ Complete |
+| Streamlit visualization (Phase 4) | ✅ Complete |
+| Enrichment framework (Phase 5) | ✅ Framework |
+| Medoid archetypes (Phase 6) | ✅ Framework |
+| gbXML geometry model (Phase 7) | ✅ Model |
+| External source connectors (Phase 5) | 📋 Planned |
+| National clustering (Phase 6) | 📋 Planned |
+| gbXML XML generation (Phase 7) | 📋 Planned |
+| National analysis (Phase 8) | 📋 Planned |
 
 ---
 
