@@ -132,6 +132,9 @@ markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
     "integration: marks integration tests requiring data fixtures",
 ]
+filterwarnings = [
+    "ignore::RuntimeWarning:pyogrio",
+]
 
 [tool.coverage.run]
 source = ["src/murb_geometry"]

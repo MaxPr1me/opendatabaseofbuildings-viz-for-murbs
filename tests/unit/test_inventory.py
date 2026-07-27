@@ -195,6 +195,16 @@ def sample_gpkg(tmp_path: Path) -> Path:
 
     conn.commit()
     conn.close()
+
+    # Set GeoPackage magic bytes to suppress pyogrio warnings
+    import struct
+
+    with open(gpkg_path, "r+b") as f:
+        f.seek(68)
+        f.write(struct.pack(">I", 0x47504B47))  # application_id = 'GPKG'
+        f.seek(96)
+        f.write(struct.pack(">I", 10300))  # user_version = 1.3.0
+
     return gpkg_path
 
 
