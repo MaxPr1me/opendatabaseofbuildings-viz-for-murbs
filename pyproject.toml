@@ -117,6 +117,7 @@ plugins = ["pydantic.mypy"]
 module = [
     "pyogrio.*",
     "shapely.*",
+    "geopandas.*",
 ]
 ignore_missing_imports = true
 

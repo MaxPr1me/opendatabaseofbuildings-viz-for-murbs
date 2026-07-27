@@ -141,8 +141,22 @@ def validate(
     province: str | None = typer.Option(None, help="Province filter (e.g., 'NS')"),
 ) -> None:
     """Validate geometries and flag quality issues."""
-    typer.echo("Command 'validate' is planned for Phase 2.")
-    raise typer.Exit(code=0)
+    import geopandas as gpd
+
+    from murb_geometry.ingestion.inventory import discover_geopackages
+    from murb_geometry.validation.geometry import validate_geometry
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    gpkg_files = discover_geopackages(cfg.paths.data_dir)
+
+    for gpkg_path in gpkg_files:
+        prov = gpkg_path.stem.replace("ODB_v3_", "").split("_")[0]
+        if province and prov.upper() != province.upper():
+            continue
+        console.print(f"[bold]Validating:[/bold] {gpkg_path.name}")
+        gdf = gpd.read_file(gpkg_path, rows=100)
+        valid_count = sum(1 for g in gdf.geometry if validate_geometry(g)["is_valid"])
+        console.print(f"  Sample: {valid_count}/{len(gdf)} valid geometries")
 
 
 @app.command()
@@ -151,8 +165,10 @@ def normalize(
     province: str | None = typer.Option(None, help="Province filter"),
 ) -> None:
     """Normalize source-specific schemas to a common data model."""
-    typer.echo("Command 'normalize' is planned for Phase 2.")
-    raise typer.Exit(code=0)
+    console.print(
+        "[yellow]Use the Python API:[/yellow]\n"
+        "  from murb_geometry.classification import normalize_type_value"
+    )
 
 
 @app.command()
@@ -161,18 +177,63 @@ def classify(
     province: str | None = typer.Option(None, help="Province filter"),
 ) -> None:
     """Classify buildings as candidate MURBs with confidence scores."""
-    typer.echo("Command 'classify' is planned for Phase 3.")
-    raise typer.Exit(code=0)
+    import geopandas as gpd
+
+    from murb_geometry.classification.classifier import classify_building, normalize_type_value
+    from murb_geometry.ingestion.inventory import discover_geopackages
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    gpkg_files = discover_geopackages(cfg.paths.data_dir)
+
+    for gpkg_path in gpkg_files:
+        prov = gpkg_path.stem.replace("ODB_v3_", "").split("_")[0]
+        if province and prov.upper() != province.upper():
+            continue
+        console.print(f"[bold]Classifying:[/bold] {gpkg_path.name}")
+        gdf = gpd.read_file(gpkg_path, rows=500)
+        results: dict[str, int] = {}
+        for _, row in gdf.iterrows():
+            type_norm = normalize_type_value(row.get("type"))
+            units_str = row.get("units")
+            units_num = int(units_str) if units_str and units_str != ".." else None
+            result = classify_building(type_normalized=type_norm, units_numeric=units_num)
+            results[result.confidence_level] = results.get(result.confidence_level, 0) + 1
+        for level, count in sorted(results.items(), key=lambda x: -x[1]):
+            console.print(f"  {level}: {count}")
 
 
 @app.command()
 def metrics(
     config: str = typer.Option("config/default.yaml", help="Configuration file path"),
     province: str | None = typer.Option(None, help="Province filter"),
+    sample: int = typer.Option(100, help="Number of records to sample"),
 ) -> None:
     """Calculate geometry metrics (area, dimensions, aspect ratio, shape)."""
-    typer.echo("Command 'metrics' is planned for Phase 2.")
-    raise typer.Exit(code=0)
+    import geopandas as gpd
+
+    from murb_geometry.geometry.metrics import compute_geometry_metrics
+    from murb_geometry.ingestion.inventory import discover_geopackages
+    from murb_geometry.statistics.descriptive import compute_descriptive_stats
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    gpkg_files = discover_geopackages(cfg.paths.data_dir)
+
+    for gpkg_path in gpkg_files:
+        prov = gpkg_path.stem.replace("ODB_v3_", "").split("_")[0]
+        if province and prov.upper() != province.upper():
+            continue
+        console.print(f"[bold]Computing metrics:[/bold] {gpkg_path.name} (sample={sample})")
+        gdf = gpd.read_file(gpkg_path, rows=sample)
+        areas: list[float] = []
+        for geom in gdf.geometry:
+            m = compute_geometry_metrics(geom)
+            areas.append(m["footprint_area_m2"])
+        stats = compute_descriptive_stats(areas, field_name="footprint_area_m2")
+        console.print(
+            f"  Records: {stats['count']}, "
+            f"Area — min: {stats['min']:.0f}, median: {stats['median']:.0f}, "
+            f"max: {stats['max']:.0f}, mean: {stats['mean']:.0f} m2"
+        )
 
 
 @app.command()
@@ -181,19 +242,54 @@ def enrich(
     source: str | None = typer.Option(None, help="Enrichment source"),
 ) -> None:
     """Enrich building records with external authoritative data."""
-    typer.echo("Command 'enrich' is planned for Phase 5.")
-    raise typer.Exit(code=0)
+    console.print(
+        "[yellow]Enrichment requires external data sources.[/yellow]\n"
+        "  from murb_geometry.enrichment import EnrichmentSource, apply_enrichment"
+    )
 
 
 @app.command()
 def summarize(
     config: str = typer.Option("config/default.yaml", help="Configuration file path"),
     province: str | None = typer.Option(None, help="Province filter"),
-    output: str | None = typer.Option(None, help="Output file path"),
+    output: str | None = typer.Option(None, help="Output JSON path"),
 ) -> None:
     """Generate descriptive statistics and summaries."""
-    typer.echo("Command 'summarize' is planned for Phase 4.")
-    raise typer.Exit(code=0)
+    import json
+
+    import geopandas as gpd
+
+    from murb_geometry.geometry.metrics import compute_geometry_metrics
+    from murb_geometry.ingestion.inventory import discover_geopackages
+    from murb_geometry.statistics.descriptive import compute_descriptive_stats
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    gpkg_files = discover_geopackages(cfg.paths.data_dir)
+    output_path = Path(output) if output else Path("outputs/reports/summary.json")
+
+    all_areas: list[float] = []
+    all_aspect: list[float] = []
+
+    for gpkg_path in gpkg_files:
+        prov = gpkg_path.stem.replace("ODB_v3_", "").split("_")[0]
+        if province and prov.upper() != province.upper():
+            continue
+        console.print(f"[bold]Summarizing:[/bold] {gpkg_path.name} (sample=200)")
+        gdf = gpd.read_file(gpkg_path, rows=200)
+        for geom in gdf.geometry:
+            m = compute_geometry_metrics(geom)
+            all_areas.append(m["footprint_area_m2"])
+            all_aspect.append(m["aspect_ratio"])
+
+    results = [
+        compute_descriptive_stats(all_areas, "footprint_area_m2"),
+        compute_descriptive_stats(all_aspect, "aspect_ratio"),
+    ]
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=2, default=str)
+    console.print(f"[green]Summary saved to:[/green] {output_path}")
 
 
 @app.command()
@@ -202,8 +298,10 @@ def archetypes(
     method: str = typer.Option("medoid", help="Archetype method"),
 ) -> None:
     """Derive representative MURB archetypes."""
-    typer.echo("Command 'archetypes' is planned for Phase 6.")
-    raise typer.Exit(code=0)
+    console.print(
+        "[yellow]Archetype derivation requires classified data.[/yellow]\n"
+        "  from murb_geometry.archetypes import select_medoid"
+    )
 
 
 @app.command()
@@ -212,16 +310,50 @@ def excel(
     output: str | None = typer.Option(None, help="Output workbook path"),
 ) -> None:
     """Generate formatted Excel workbook report."""
-    typer.echo("Command 'excel' is planned for Phase 4.")
-    raise typer.Exit(code=0)
+    import json
+
+    from murb_geometry.excel.workbook import create_summary_workbook
+
+    output_path = Path(output) if output else Path("outputs/excel/murb_report.xlsx")
+    inv_path = Path("outputs/reports/inventory.json")
+
+    if not inv_path.exists():
+        console.print("[red]No inventory found.[/red] Run 'murb-geometry inventory' first.")
+        raise typer.Exit(code=1)
+
+    inv = json.loads(inv_path.read_text())
+    completeness: list[dict[str, object]] = []
+    for f in inv["files"]:
+        row: dict[str, object] = {
+            "province": f["province_territory"],
+            "records": f["total_records"],
+        }
+        for fc in f["field_completeness"]:
+            row[fc["field_name"] + "_pct"] = fc["completeness_pct"]
+        completeness.append(row)
+
+    summary_path = Path("outputs/reports/summary.json")
+    summary_stats = None
+    if summary_path.exists():
+        summary_stats = json.loads(summary_path.read_text())
+
+    create_summary_workbook(
+        output_path,
+        completeness_data=completeness,
+        summary_stats=summary_stats,
+        metadata={"Source": "ODB v3", "Generated by": "murb-geometry excel"},
+    )
+    console.print(f"[green]Excel report saved to:[/green] {output_path}")
 
 
 @app.command()
 def visualize() -> None:
     """Launch the Streamlit visualization application."""
-    typer.echo("Command 'visualize' is planned for Phase 4.")
-    typer.echo("When implemented: streamlit run app/streamlit_app.py")
-    raise typer.Exit(code=0)
+    import subprocess
+    import sys
+
+    console.print("[bold]Launching Streamlit...[/bold]")
+    subprocess.run([sys.executable, "-m", "streamlit", "run", "app/streamlit_app.py"])
 
 
 @app.command()
@@ -232,8 +364,10 @@ def gbxml(
     output: str | None = typer.Option(None, help="Output gbXML path"),
 ) -> None:
     """Generate gbXML files for simulation."""
-    typer.echo("Command 'gbxml' is planned for Phase 7.")
-    raise typer.Exit(code=0)
+    console.print(
+        "[yellow]gbXML export requires a populated BuildingGeometryModel.[/yellow]\n"
+        "  from murb_geometry.gbxml import BuildingGeometryModel, Storey, Surface"
+    )
 
 
 @app.command()
@@ -242,8 +376,70 @@ def run(
     dry_run: bool = typer.Option(False, help="Show what would be done without executing"),
 ) -> None:
     """Execute the complete analytical workflow."""
-    typer.echo("Command 'run' is planned for Phase 8.")
-    raise typer.Exit(code=0)
+    import json
+
+    import geopandas as gpd
+
+    from murb_geometry.excel.workbook import create_summary_workbook
+    from murb_geometry.geometry.metrics import compute_geometry_metrics
+    from murb_geometry.ingestion.inventory import discover_geopackages, run_inventory
+    from murb_geometry.statistics.descriptive import compute_descriptive_stats
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+
+    if dry_run:
+        console.print("[bold]Dry run — would execute:[/bold]")
+        console.print("  1. Inventory all GeoPackage files")
+        console.print("  2. Compute geometry metrics (sampled)")
+        console.print("  3. Generate Excel report")
+        return
+
+    console.print("[bold]Running full pipeline...[/bold]")
+
+    # Step 1: Inventory
+    console.print("\n[cyan]Step 1: Inventory[/cyan]")
+    report = run_inventory(
+        data_dir=cfg.paths.data_dir,
+        output_path=Path("outputs/reports/inventory.json"),
+        missing_markers=cfg.input.missing_value_markers,
+        compute_hashes=False,
+    )
+    console.print(f"  {report.total_files} files, {report.total_records:,} records")
+
+    # Step 2: Summarize (sampled)
+    console.print("\n[cyan]Step 2: Geometry summary (sampled)[/cyan]")
+    all_areas: list[float] = []
+    for gpkg_path in discover_geopackages(cfg.paths.data_dir):
+        gdf = gpd.read_file(gpkg_path, rows=50)
+        for geom in gdf.geometry:
+            m = compute_geometry_metrics(geom)
+            all_areas.append(m["footprint_area_m2"])
+    summary = [compute_descriptive_stats(all_areas, "footprint_area_m2")]
+    Path("outputs/reports").mkdir(parents=True, exist_ok=True)
+    with open("outputs/reports/summary.json", "w") as f:
+        json.dump(summary, f, indent=2, default=str)
+    console.print(f"  {len(all_areas)} buildings sampled")
+
+    # Step 3: Excel
+    console.print("\n[cyan]Step 3: Excel report[/cyan]")
+    inv = json.loads(Path("outputs/reports/inventory.json").read_text())
+    completeness: list[dict[str, object]] = []
+    for fi in inv["files"]:
+        row: dict[str, object] = {
+            "province": fi["province_territory"],
+            "records": fi["total_records"],
+        }
+        for fc in fi["field_completeness"]:
+            row[fc["field_name"] + "_pct"] = fc["completeness_pct"]
+        completeness.append(row)
+    create_summary_workbook(
+        Path("outputs/excel/murb_report.xlsx"),
+        completeness_data=completeness,
+        summary_stats=summary,
+        metadata={"Source": "ODB v3", "Generated by": "murb-geometry run"},
+    )
+    console.print("  outputs/excel/murb_report.xlsx")
+    console.print("\n[bold green]Pipeline complete![/bold green]")
 
 
 if __name__ == "__main__":
