@@ -1,0 +1,4 @@
+# Integration Tests
+
+Integration tests that require data fixtures or external resources.
+Place test GeoPackage fixtures in `tests/fixtures/`.

@@ -1,0 +1,147 @@
+# ============================================================================
+# Canadian MURB Geometry Analysis — Default Configuration
+# ============================================================================
+# This file contains all configurable research parameters with their defaults.
+# Override locally with config/local.yaml (not committed to git).
+# ============================================================================
+
+# --- Paths ---
+paths:
+  data_dir: "data"
+  output_dir: "outputs"
+  raw_subdir: "raw"
+  external_subdir: "external"
+  interim_subdir: "interim"
+  processed_subdir: "processed"
+  samples_subdir: "samples"
+
+# --- Input Data ---
+input:
+  file_patterns:
+    - "data/**/ODB_v3_*.gpkg"
+  missing_value_markers:
+    - ".."
+    - ""
+    - "NA"
+    - "N/A"
+  expected_crs: "EPSG:3347"  # NAD83 / Statistics Canada Lambert
+  target_projected_crs: "EPSG:3347"
+
+# --- MURB Classification ---
+classification:
+  # Minimum dwelling units to consider as multi-unit
+  minimum_murb_units: 4
+  # Confidence levels (ordered)
+  confidence_levels:
+    - "confirmed_murb"
+    - "high_confidence_murb"
+    - "probable_murb"
+    - "possible_murb"
+    - "non_murb"
+    - "insufficient_information"
+  # Footprint area thresholds (m²) for geometric MURB candidates
+  footprint_area:
+    minimum_candidate_m2: 200.0
+    maximum_plausible_m2: 50000.0
+
+# --- Storey Bands ---
+storey_bands:
+  low_rise_multifamily:
+    min: 2
+    max: 3
+  small_mid_rise:
+    min: 4
+    max: 6
+  large_mid_rise:
+    min: 7
+    max: 12
+  low_high_rise:
+    min: 13
+    max: 25
+  tall_high_rise:
+    min: 26
+    max: null  # no upper bound
+
+# --- Height-to-Storey Assumptions ---
+height_assumptions:
+  default_floor_to_floor_m: 3.0
+  ground_floor_height_m: 3.5
+  residential_floor_to_floor_m: 2.9
+  commercial_ground_floor_m: 4.0
+
+# --- Geometry Processing ---
+geometry:
+  # Simplification tolerance for shape classification (metres in projected CRS)
+  simplification_tolerance_m: 0.5
+  # Minimum area to retain polygon components
+  minimum_component_area_m2: 10.0
+  # Facade orientation bins (degrees from north, clockwise)
+  facade_orientation_bins:
+    north: [337.5, 22.5]
+    east: [67.5, 112.5]
+    south: [157.5, 202.5]
+    west: [247.5, 292.5]
+    northeast: [22.5, 67.5]
+    southeast: [112.5, 157.5]
+    southwest: [202.5, 247.5]
+    northwest: [292.5, 337.5]
+
+# --- Shape Classification ---
+shape_classification:
+  # Rectangularity threshold for "compact rectangle"
+  rectangularity_threshold: 0.90
+  # Aspect ratio threshold for "elongated"
+  elongation_threshold: 3.0
+  # Convexity threshold below which complex shapes are investigated
+  convexity_threshold: 0.85
+  # Minimum hole area fraction to identify courtyard
+  courtyard_hole_fraction: 0.05
+
+# --- Outlier Detection ---
+outliers:
+  method: "iqr"  # Options: iqr, zscore, percentile
+  iqr_factor: 1.5
+  zscore_threshold: 3.0
+  percentile_lower: 0.5
+  percentile_upper: 99.5
+
+# --- Clustering and Archetypes ---
+archetypes:
+  clustering_method: "kmeans"  # Options: kmeans, dbscan, agglomerative, gmm
+  n_clusters: 8
+  random_seed: 42
+  clustering_features:
+    - "footprint_area_m2"
+    - "aspect_ratio"
+    - "floors"
+    - "compactness"
+    - "shape_class"
+  weighting_method: null  # Options: null, population, dwelling_units
+
+# --- WWR Assumptions ---
+wwr:
+  # Default archetypal assumptions by facade (not observed from footprints)
+  default_north: 0.30
+  default_east: 0.30
+  default_south: 0.40
+  default_west: 0.30
+  source: "archetypal_assumption"
+  note: "WWR cannot be derived from building footprints alone"
+
+# --- gbXML Export ---
+gbxml:
+  schema_version: "7.03"
+  length_unit: "Meters"
+  area_unit: "SquareMeters"
+  volume_unit: "CubicMeters"
+  temperature_unit: "C"
+
+# --- Reproducibility ---
+reproducibility:
+  random_seed: 42
+  deterministic: true
+
+# --- Logging ---
+logging:
+  level: "INFO"
+  format: "structured"

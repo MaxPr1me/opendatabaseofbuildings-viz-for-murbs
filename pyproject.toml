@@ -1,0 +1,141 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "murb-geometry"
+version = "0.1.0"
+description = "National workflow to characterize representative Canadian MURB geometries from the Statistics Canada Open Database of Buildings"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+authors = [
+    { name = "MURB Geometry Research Team" },
+]
+keywords = [
+    "buildings",
+    "MURB",
+    "geometry",
+    "GeoPackage",
+    "EnergyPlus",
+    "OpenStudio",
+    "gbXML",
+    "archetypes",
+    "Canada",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = [
+    "geopandas>=1.0",
+    "pyogrio>=0.9",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "scikit-learn>=1.4",
+    "duckdb>=1.0",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "pyyaml>=6.0",
+    "typer>=0.12",
+    "rich>=13.0",
+    "openpyxl>=3.1",
+    "plotly>=5.20",
+    "streamlit>=1.35",
+    "pydeck>=0.9",
+    "lxml>=5.1",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "pytest-xdist>=3.5",
+    "ruff>=0.5",
+    "mypy>=1.10",
+    "pre-commit>=3.7",
+    "ipykernel>=6.29",
+    "jupyter>=1.0",
+]
+
+[project.scripts]
+murb-geometry = "murb_geometry.cli:app"
+
+[project.urls]
+Repository = "https://github.com/MaxPr1me/opendatabaseofbuildings-viz-for-murbs"
+Documentation = "https://github.com/MaxPr1me/opendatabaseofbuildings-viz-for-murbs/tree/main/docs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/murb_geometry"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "A",    # flake8-builtins
+    "SIM",  # flake8-simplify
+    "TCH",  # flake8-type-checking
+    "RUF",  # Ruff-specific rules
+]
+ignore = [
+    "E501",  # line length handled by formatter
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["murb_geometry"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+    "geopandas.*",
+    "pyogrio.*",
+    "shapely.*",
+    "duckdb.*",
+    "streamlit.*",
+    "pydeck.*",
+    "plotly.*",
+    "scipy.*",
+    "sklearn.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks integration tests requiring data fixtures",
+]
+
+[tool.coverage.run]
+source = ["src/murb_geometry"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true

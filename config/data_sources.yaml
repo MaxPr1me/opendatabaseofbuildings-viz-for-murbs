@@ -1,0 +1,109 @@
+# ============================================================================
+# Data Sources Configuration
+# ============================================================================
+# Metadata about the Statistics Canada Open Database of Buildings and
+# potential enrichment sources.
+# ============================================================================
+
+primary_source:
+  name: "Statistics Canada Open Database of Buildings"
+  short_name: "ODB"
+  version: "v3"
+  publisher: "Statistics Canada"
+  url: "https://www.statcan.gc.ca/en/lode/databases/odb"
+  licence: "Open Government Licence - Canada"
+  licence_url: "https://open.canada.ca/en/open-government-licence-canada"
+  crs: "EPSG:3347"
+  geometry_type: "POLYGON"
+  format: "GeoPackage"
+  coverage: "National (varies by province)"
+  update_frequency: "Periodic"
+  download_date: null  # Set per file in processing manifest
+  notes: >
+    Heterogeneous compilation of municipal, provincial, and federal building
+    footprint datasets. Coverage, attribute completeness, and classification
+    systems vary significantly by source organization.
+
+# Schema of the ODB v3 GeoPackage files
+schema:
+  fields:
+    - name: "fid"
+      type: "INTEGER"
+      description: "Auto-increment row identifier"
+    - name: "geom"
+      type: "POLYGON"
+      description: "Building footprint geometry"
+    - name: "id"
+      type: "TEXT"
+      description: "Unique building hash identifier"
+    - name: "source_id"
+      type: "TEXT"
+      description: "UUID linking to source record"
+    - name: "source"
+      type: "TEXT"
+      description: "Source organization name"
+    - name: "dataset"
+      type: "TEXT"
+      description: "Source dataset name"
+    - name: "csduid"
+      type: "TEXT"
+      description: "Census Subdivision Unique Identifier"
+    - name: "csdname"
+      type: "TEXT"
+      description: "Census Subdivision name"
+    - name: "prov_terr"
+      type: "TEXT"
+      description: "Province or territory code"
+    - name: "name"
+      type: "TEXT"
+      description: "Building name (sparse)"
+    - name: "type"
+      type: "TEXT"
+      description: "Building type classification (source-specific)"
+    - name: "address"
+      type: "TEXT"
+      description: "Street address"
+    - name: "year_built"
+      type: "TEXT"
+      description: "Year of construction"
+    - name: "units"
+      type: "TEXT"
+      description: "Number of dwelling units"
+    - name: "floors"
+      type: "TEXT"
+      description: "Number of storeys"
+    - name: "sq_ft"
+      type: "TEXT"
+      description: "Building area in square feet (source-reported)"
+    - name: "height"
+      type: "TEXT"
+      description: "Building height"
+  missing_value_marker: ".."
+  note: "All attribute fields are stored as TEXT; numeric values require parsing"
+
+# Potential enrichment sources (future phases)
+enrichment_sources:
+  - name: "CMHC Housing Information Portal"
+    status: "planned"
+    provides: ["unit_counts", "building_age", "rental_universe"]
+    access: "public"
+
+  - name: "Census of Population — Structural Type"
+    status: "planned"
+    provides: ["dwelling_type_counts_by_csd"]
+    access: "public"
+
+  - name: "Provincial Assessment Authorities"
+    status: "planned"
+    provides: ["property_class", "year_built", "floor_area"]
+    access: "varies"
+
+  - name: "Municipal Building Permits"
+    status: "planned"
+    provides: ["storeys", "units", "construction_type"]
+    access: "varies"
+
+  - name: "NRCan Building Height Data"
+    status: "planned"
+    provides: ["building_height_lidar"]
+    access: "public"

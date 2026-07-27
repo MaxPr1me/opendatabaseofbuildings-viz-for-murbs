@@ -1,0 +1,67 @@
+# ============================================================================
+# Archetype Configuration
+# ============================================================================
+# Defines methods, parameters, and outputs for representative MURB archetypes.
+# ============================================================================
+
+version: "0.1.0"
+
+# Methods available for archetype generation
+methods:
+  quantile_based:
+    description: "Select buildings at key percentiles of the distribution"
+    percentiles: [10, 25, 50, 75, 90]
+    stratify_by: ["storey_band", "shape_class", "province"]
+
+  medoid_based:
+    description: "Select the most representative actual building from a cluster"
+    distance_metric: "euclidean"
+    features: ["footprint_area_m2", "aspect_ratio", "floors_numeric", "compactness"]
+    normalize: true
+
+  clustering:
+    description: "Group buildings by similarity and select representatives"
+    algorithm: "kmeans"
+    n_clusters: 8
+    random_seed: 42
+    features: ["footprint_area_m2", "aspect_ratio", "floors_numeric", "compactness", "shape_class_encoded"]
+
+  synthetic:
+    description: "Construct geometry from averaged parameters (not averaged coordinates)"
+    parameters:
+      - "target_floor_plate_area_m2"
+      - "target_aspect_ratio"
+      - "target_shape_class"
+      - "target_storeys"
+      - "target_orientation_deg"
+      - "target_courtyard_fraction"
+    note: "Geometry is constructed parametrically, never by averaging polygon vertices"
+
+# Output requirements for each archetype
+archetype_output:
+  required_fields:
+    - "archetype_id"
+    - "description"
+    - "method"
+    - "source_population_count"
+    - "source_filters"
+    - "source_exclusions"
+    - "weighting_method"
+    - "representative_building_id"  # null for synthetic
+    - "footprint_area_m2"
+    - "floor_plate_area_m2"
+    - "gross_floor_area_m2"
+    - "aspect_ratio"
+    - "storeys"
+    - "height_m"
+    - "shape_class"
+    - "orientation_deg"
+    - "compactness"
+    - "wwr_north"
+    - "wwr_east"
+    - "wwr_south"
+    - "wwr_west"
+    - "uncertainty_range"
+    - "generation_date"
+    - "software_version"
+    - "configuration_version"

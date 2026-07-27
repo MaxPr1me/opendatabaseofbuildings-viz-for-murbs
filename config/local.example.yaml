@@ -1,0 +1,20 @@
+# ============================================================================
+# Local Configuration Override — Example
+# ============================================================================
+# Copy this file to config/local.yaml and customize.
+# config/local.yaml is excluded from version control.
+# ============================================================================
+
+# Override data directory if needed
+# paths:
+#   data_dir: "D:/data/odb_v3"
+
+# Restrict processing to specific provinces for development
+# input:
+#   province_filter:
+#     - "NS"
+#     - "PE"
+
+# Adjust logging for development
+# logging:
+#   level: "DEBUG"

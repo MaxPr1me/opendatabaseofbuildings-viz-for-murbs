@@ -1,0 +1,31 @@
+# ============================================================================
+# .gitattributes — Canadian MURB Geometry Analysis
+# ============================================================================
+
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Force LF for source files
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.cfg text eol=lf
+*.ini text eol=lf
+*.json text eol=lf
+
+# Binary files
+*.gpkg binary
+*.parquet binary
+*.geoparquet binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.xlsx binary
+*.xls binary
+*.pdf binary
+*.whl binary

@@ -1,0 +1,101 @@
+# ============================================================================
+# MURB Classification Rules
+# ============================================================================
+# Defines the evidence-based rules for classifying buildings as MURBs.
+# Each rule specifies conditions, resulting confidence, and evidence fields.
+# Rules are evaluated in priority order; first match wins.
+# ============================================================================
+
+version: "0.1.0"
+
+# Classification confidence levels
+confidence_levels:
+  confirmed_murb:
+    score: 1.0
+    description: "Explicitly identified as multi-unit residential by authoritative source"
+  high_confidence_murb:
+    score: 0.85
+    description: "Strong evidence from multiple indicators"
+  probable_murb:
+    score: 0.70
+    description: "Likely MURB based on available evidence"
+  possible_murb:
+    score: 0.50
+    description: "Some indicators suggest MURB but insufficient certainty"
+  non_murb:
+    score: 0.0
+    description: "Evidence indicates non-residential or single-family"
+  insufficient_information:
+    score: null
+    description: "Cannot classify with available data"
+
+# Rule definitions (evaluated in order)
+rules:
+  - id: "R001"
+    name: "explicit_apartment_type"
+    description: "Source 'type' field explicitly identifies as apartment/multi-residential"
+    conditions:
+      field: "type_normalized"
+      operator: "in"
+      values:
+        - "apartment"
+        - "multi-residential"
+        - "residential_multi"
+        - "high_rise_apartment"
+        - "low_rise_apartment"
+        - "condominium"
+        - "condo"
+    result: "confirmed_murb"
+    evidence: ["type"]
+
+  - id: "R002"
+    name: "high_unit_count"
+    description: "Building with ≥4 dwelling units"
+    conditions:
+      field: "units_numeric"
+      operator: ">="
+      value: 4
+    result: "high_confidence_murb"
+    evidence: ["units"]
+
+  - id: "R003"
+    name: "multi_floor_large_footprint"
+    description: "Multi-storey building with large footprint suggesting multi-unit"
+    conditions:
+      all:
+        - field: "floors_numeric"
+          operator: ">="
+          value: 4
+        - field: "footprint_area_m2"
+          operator: ">="
+          value: 400
+    result: "probable_murb"
+    evidence: ["floors", "footprint_area_m2"]
+
+  - id: "R004"
+    name: "large_footprint_residential_context"
+    description: "Large residential footprint suggesting possible MURB"
+    conditions:
+      all:
+        - field: "footprint_area_m2"
+          operator: ">="
+          value: 600
+        - field: "type_normalized"
+          operator: "in"
+          values:
+            - "residential"
+            - "mixed_use"
+    result: "possible_murb"
+    evidence: ["footprint_area_m2", "type"]
+
+# Type normalization mapping (source values → normalized categories)
+type_normalization:
+  # These are examples; actual mappings require source-by-source audit
+  apartment: "apartment"
+  "Apartment Building": "apartment"
+  "Multi-Residential": "multi-residential"
+  "Residential - Multi": "multi-residential"
+  "Residential": "residential"
+  "Commercial": "commercial"
+  "Industrial": "industrial"
+  # ... to be expanded during Phase 3
