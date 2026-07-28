@@ -51,6 +51,18 @@ make format
 4. Update documentation
 5. Add CLI command if user-facing
 
+## Governance and Methodological Safeguards
+
+All analytical work is governed by:
+
+- [`AGENTS.md`](../AGENTS.md) — Controlling instruction document for coding agents
+- [`docs/AGENTIC_REBUILD_PROMPT.md`](AGENTIC_REBUILD_PROMPT.md) — Detailed methodological
+  safeguards and rebuild rationale
+- [Agentic rebuild epic (issue #1)](https://github.com/MaxPr1me/opendatabaseofbuildings-viz-for-murbs/issues/1) — Master tracking issue
+
+Key rules: no arbitrary row caps on research outputs, decision gates for material assumptions,
+push-and-update protocol after every major task. See `AGENTS.md` §16 for the full list.
+
 ## Key Conventions
 
 - Type-annotate all public functions

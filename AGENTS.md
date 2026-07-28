@@ -397,7 +397,61 @@ Override locally by copying `config/local.example.yaml` to `config/local.yaml`.
 
 ---
 
-## 16. Quick Reference Commands
+## 16. Full-Dataset, Decision-Gate, and Major-Task Rules
+
+These rules implement methodological safeguards from `docs/AGENTIC_REBUILD_PROMPT.md` and the
+[agentic rebuild epic](https://github.com/MaxPr1me/opendatabaseofbuildings-viz-for-murbs/issues/1).
+
+### Full-Dataset Processing
+
+- **Production research outputs must use the complete declared eligible population.**
+- Arbitrary row caps (`nrows=`, `LIMIT`, `head()`, first-N subsets) are **prohibited** for any
+  output that supports research claims or statistics.
+- Sampling is permitted **only** when explicitly labelled as one of:
+  - Testing / unit tests
+  - Performance profiling
+  - Preview / exploratory analysis
+  - Manual validation samples
+- If complete processing fails (memory, time, errors), **stop and fix** the underlying issue
+  (chunking, streaming, resumability) rather than silently falling back to a subset.
+
+### Decision Gates
+
+- **Material assumptions require documented options and an owner decision.**
+  - Present alternatives with trade-offs in the relevant GitHub issue.
+  - Do not proceed with an assumption that materially affects results without explicit approval.
+  - Blocked work must remain blocked — do not invent workarounds that silently change scope.
+- **Documentation is updated before or with implementation**, never deferred to a later task.
+
+### Major-Task Push Protocol
+
+Every major task (issue-level unit of work) must, before moving to the next task:
+
+1. Regenerate and inspect all affected complete outputs.
+2. Commit changes with a clear message referencing the issue.
+3. Push to the working branch.
+4. Update the corresponding GitHub issue with results and status.
+
+### Pipeline Architecture
+
+- Maintain **modular Python stages** — each stage reads validated inputs and writes validated outputs.
+- Maintain **one complete runner** that orchestrates all stages end-to-end.
+- Maintain a separate **interpretation/report runner** that consumes only validated persisted data
+  (never re-derives intermediate results).
+- Align compatible schema concepts with `hobsonbw/murb-osm-geom` while keeping source-specific
+  logic in separate modules.
+
+### Final Completion
+
+- A task or milestone is **not complete** merely because unit tests pass.
+- Final completion requires:
+  - Direct, validated answers to the relevant research questions (RQ1–RQ10).
+  - Validated complete outputs (not sample-based approximations).
+  - Updated documentation reflecting actual results.
+
+---
+
+## 17. Quick Reference Commands
 
 ```bash
 # Development setup
