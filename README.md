@@ -415,6 +415,15 @@ opendatabaseofbuildings-viz-for-murbs/
 
 ---
 
+## Governance
+
+Analytical work follows the methodological safeguards in
+[`docs/AGENTIC_REBUILD_PROMPT.md`](docs/AGENTIC_REBUILD_PROMPT.md) and is tracked under the
+[agentic rebuild epic (issue #1)](https://github.com/MaxPr1me/opendatabaseofbuildings-viz-for-murbs/issues/1).
+Agent instructions are in [`AGENTS.md`](AGENTS.md).
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and guidelines.
