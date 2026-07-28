@@ -1,19 +1,17 @@
 """Tests for the full-population multi-pathway pipeline."""
-import numpy as np
-import pytest
-from shapely.geometry import box
-
 import geopandas as gpd
 import pandas as pd
+import pytest
+from shapely.geometry import box
 
 from murb_geometry.pipeline import (
     PRECISION_LEVELS,
     TIERED_LEVELS,
+    _parse_int,
+    _parse_numeric,
     classify_dataframe,
     compute_metrics_vectorized,
     filter_pathway,
-    _parse_numeric,
-    _parse_int,
 )
 
 
