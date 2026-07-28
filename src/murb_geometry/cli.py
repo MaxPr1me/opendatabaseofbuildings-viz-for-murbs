@@ -85,6 +85,26 @@ def inventory(
 
 
 @app.command()
+def audit_schema(
+    config: str = typer.Option("config/default.yaml", help="Configuration file path"),
+    data_dir: str | None = typer.Option(None, help="Override data directory"),
+) -> None:
+    """Audit every GeoPackage: field frequencies, numeric parsing, source completeness, geometry quality."""
+    from murb_geometry.ingestion.schema_audit import run_schema_audit
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    root = Path(data_dir) if data_dir else cfg.paths.data_dir
+
+    console.print(f"[bold]Schema audit:[/bold] {root} (full population, no row caps)")
+    manifest = run_schema_audit(data_dir=root)
+
+    console.print(f"\n[green]Audit complete:[/green] {manifest['files_audited']} files")
+    console.print(f"  Time: {manifest['total_audit_seconds']:.1f}s")
+    for f in manifest.get("output_files", []):
+        console.print(f"  outputs/reports/{f}")
+
+
+@app.command()
 def inspect(
     file: str = typer.Argument(..., help="Path to a GeoPackage file"),
     layer: str | None = typer.Option(None, help="Layer name (auto-detected if omitted)"),
