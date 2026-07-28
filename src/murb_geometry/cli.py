@@ -357,6 +357,85 @@ def visualize() -> None:
 
 
 @app.command()
+def run_all(
+    config: str = typer.Option("config/default.yaml", help="Configuration file path"),
+    provinces: str | None = typer.Option(None, help="Comma-separated province codes (default: all)"),
+    output_dir: str | None = typer.Option(None, help="Output directory override"),
+) -> None:
+    """Execute the complete multi-pathway pipeline on all provinces.
+
+    Processes the full eligible population without arbitrary row caps.
+    Implements Option C — Multi-pathway reporting:
+      1. Precision pathway (confirmed + high-confidence only)
+      2. Tiered pathway (confirmed + high + probable + possible)
+
+    Produces: GeoParquet, classification reports, sensitivity analysis,
+    statistics, and run manifest.
+    """
+    from murb_geometry.pipeline import run_full_pipeline
+
+    province_list = [p.strip().upper() for p in provinces.split(",")] if provinces else None
+    out = Path(output_dir) if output_dir else None
+
+    console.print("[bold]Starting full multi-pathway pipeline...[/bold]")
+    if province_list:
+        console.print(f"  Provinces: {', '.join(province_list)}")
+    else:
+        console.print("  Provinces: ALL (12 provinces/territories, 15 files)")
+    console.print("  Pathway: Option C — Multi-pathway reporting")
+    console.print("  Row limits: NONE (full population)")
+    console.print()
+
+    manifest = run_full_pipeline(
+        config_path=config,
+        provinces=province_list,
+        output_dir=out,
+    )
+
+    # Display results
+    totals = manifest.get("stages", {}).get("national_totals", {})
+    console.print("\n[bold green]Pipeline complete![/bold green]")
+    console.print(f"  Precision pathway: {totals.get('precision_buildings', 0):,} buildings")
+    console.print(f"  Tiered pathway:    {totals.get('tiered_buildings', 0):,} buildings")
+    console.print("  Manifest: outputs/reports/run_manifest.json")
+
+
+@app.command()
+def preprocess(
+    config: str = typer.Option("config/default.yaml", help="Configuration file path"),
+    province: str | None = typer.Option(None, help="Province filter"),
+    pathway: str = typer.Option("tiered", help="Classification pathway: 'precision' or 'tiered'"),
+) -> None:
+    """Preprocess, classify, and compute metrics for a single province.
+
+    Full population — no row caps. Results saved to data/processed/.
+    """
+    from murb_geometry.pipeline import PROVINCE_FILES, process_province
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+
+    if province:
+        prov = province.upper()
+        if prov not in PROVINCE_FILES:
+            console.print(f"[red]Unknown province: {prov}[/red]")
+            console.print(f"  Available: {', '.join(sorted(PROVINCE_FILES.keys()))}")
+            raise typer.Exit(code=1)
+        provinces_to_run = {prov: PROVINCE_FILES[prov]}
+    else:
+        provinces_to_run = PROVINCE_FILES
+
+    for prov, files in provinces_to_run.items():
+        console.print(f"[bold]Processing {prov}[/bold] ({len(files)} file(s), full population)...")
+        result = process_province(prov, files, cfg)
+        console.print(
+            f"  Total: {result.get('total_records', 0):,}, "
+            f"Precision: {result.get('precision_count', 0):,}, "
+            f"Tiered: {result.get('tiered_count', 0):,} "
+            f"({result.get('timing_seconds', 0):.1f}s)"
+        )
+
+
+@app.command()
 def gbxml(
     config: str = typer.Option("config/default.yaml", help="Configuration file path"),
     building_id: str | None = typer.Option(None, help="Specific building ID to export"),

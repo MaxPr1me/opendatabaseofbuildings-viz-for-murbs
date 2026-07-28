@@ -29,9 +29,20 @@ input:
 
 # --- MURB Classification ---
 classification:
+  # Classification pathway: "option_c" (multi-pathway), "precision", or "tiered"
+  pathway: "option_c"
   # Minimum dwelling units to consider as multi-unit
   minimum_murb_units: 4
-  # Confidence levels (ordered)
+  # Confidence levels included in each pathway
+  precision_levels:
+    - "confirmed_murb"
+    - "high_confidence_murb"
+  tiered_levels:
+    - "confirmed_murb"
+    - "high_confidence_murb"
+    - "probable_murb"
+    - "possible_murb"
+  # All confidence levels (ordered)
   confidence_levels:
     - "confirmed_murb"
     - "high_confidence_murb"

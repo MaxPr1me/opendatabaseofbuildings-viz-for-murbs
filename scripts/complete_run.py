@@ -1,49 +1,27 @@
-"""Complete national MURB analysis — per-province clustering with merged provinces.
+"""DEPRECATED — Complete national MURB analysis — per-province clustering with merged provinces.
 
-Treats split provinces (ON_1/ON_2/ON_3 → ON, QC_1/QC_2 → QC) as single
-provinces. Produces per-province archetypes, gbXML, figures, and Excel.
+⚠️ THIS SCRIPT IS DEPRECATED. Use the production pipeline instead:
+
+    murb-geometry run-all
+
+Or directly:
+
+    python scripts/national_full_run.py
+
+This script uses MAX_PER_FILE=2000 (an arbitrary row cap that violates the
+full-population analytical rule) and fixed k=5/k=8 cluster counts without
+empirical justification.
+
+The replacement (src/murb_geometry/pipeline.py) processes complete populations
+with Option C multi-pathway classification.
 """
 
-import json
-import math
-from datetime import datetime, UTC
-from pathlib import Path
-
-import geopandas as gpd
-import numpy as np
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-
-from murb_geometry.archetypes.clustering import cluster_buildings
-from murb_geometry.archetypes.synthetic import generate_courtyard, generate_l_shape, generate_rectangle
-from murb_geometry.excel.workbook import create_summary_workbook
-from murb_geometry.gbxml.exporter import export_gbxml
-from murb_geometry.gbxml.model import (
-    Adjacency, BuildingGeometryModel, Space, Storey, Surface, SurfaceType, Vertex,
+raise SystemExit(
+    "DEPRECATED: This script uses arbitrary row caps (MAX_PER_FILE=2000) and "
+    "fixed cluster counts.\n"
+    "Use 'murb-geometry run-all' or 'python scripts/national_full_run.py' instead.\n"
+    "See docs/methodology.md for the current pipeline methodology."
 )
-from murb_geometry.gbxml.validator import validate_gbxml_structure
-from murb_geometry.geometry.metrics import compute_geometry_metrics
-from murb_geometry.statistics.descriptive import compute_descriptive_stats
-
-OUTPUT = Path("outputs")
-for d in ["reports", "archetypes", "gbxml", "excel", "figures"]:
-    (OUTPUT / d).mkdir(parents=True, exist_ok=True)
-
-# Province definitions — merge split files into single provinces
-PROVINCE_FILES: dict[str, list[tuple[str, str]]] = {
-    "NS": [("data/ODB_v3_NS/ODB_v3_NS.gpkg", "units != '..' AND CAST(units AS INTEGER) >= 4")],
-    "NB": [("data/ODB_v3_NB/ODB_v3_NB.gpkg", "units != '..' AND CAST(units AS INTEGER) >= 4")],
-    "ON": [
-        ("data/ODB_v3_ON_1/ODB_v3_ON_1.gpkg", "units != '..' AND CAST(units AS INTEGER) >= 4"),
-        ("data/ODB_v3_ON_2/ODB_v3_ON_2.gpkg", "units != '..' AND CAST(units AS INTEGER) >= 4"),
-        ("data/ODB_v3_ON_3/ODB_v3_ON_3.gpkg", "units != '..' AND CAST(units AS INTEGER) >= 4"),
-    ],
-    "BC": [("data/ODB_v3_BC/ODB_v3_BC.gpkg", "floors != '..' AND CAST(floors AS INTEGER) >= 4")],
-    "AB": [("data/ODB_v3_AB/ODB_v3_AB.gpkg",
-            "type LIKE '%partment%' OR type LIKE '%ulti%' OR type LIKE '%ondo%'")],
-}
-
-MAX_PER_FILE = 2000
 
 
 def build_gbxml_box(name: str, area: float, ar: float, storeys: int = 4, fth: float = 3.0) -> str:
