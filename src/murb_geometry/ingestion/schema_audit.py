@@ -226,7 +226,7 @@ def audit_source_completeness(
 
     rows: list[dict[str, Any]] = []
     for qrow in query_rows:
-        row_dict = dict(zip(columns, qrow))
+        row_dict = dict(zip(columns, qrow, strict=False))
         src_total = row_dict["total"]
         result: dict[str, Any] = {
             "source": row_dict["source"],

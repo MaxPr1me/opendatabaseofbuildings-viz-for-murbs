@@ -1,0 +1,2845 @@
+file,province,field,value,count,pct
+ODB_v3_AB,AB,source,City of Calgary,488028,36.5727
+ODB_v3_AB,AB,source,City of Edmonton,365567,27.3955
+ODB_v3_AB,AB,source,Government of Canada,208576,15.6306
+ODB_v3_AB,AB,source,City of Lethbridge,68011,5.0967
+ODB_v3_AB,AB,source,Parkland County,56886,4.263
+ODB_v3_AB,AB,source,Strathcona County,54651,4.0955
+ODB_v3_AB,AB,source,City of Grande Prairie,35843,2.6861
+ODB_v3_AB,AB,source,City of Airdrie,23281,1.7447
+ODB_v3_AB,AB,source,Town of Okotoks,14513,1.0876
+ODB_v3_AB,AB,source,Town of Cochrane,10638,0.7972
+ODB_v3_AB,AB,source,Town of Canmore,6365,0.477
+ODB_v3_AB,AB,source,Town of Banff,2045,0.1533
+ODB_v3_AB,AB,dataset,Buildings; Parcel Address,290338,21.7579
+ODB_v3_AB,AB,dataset,Building Footprint,224098,16.7939
+ODB_v3_AB,AB,dataset,Automatically Extracted Buildings,207115,15.5212
+ODB_v3_AB,AB,dataset,Buildings,199373,14.941
+ODB_v3_AB,AB,dataset,Building Footprints,160294,12.0124
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses,156202,11.7058
+ODB_v3_AB,AB,dataset,Building Footprints; Civic Address,24079,1.8045
+ODB_v3_AB,AB,dataset,Building Footprint; Address Points,20634,1.5463
+ODB_v3_AB,AB,dataset,Airdrie 2018 Building Footprints; Airdrie Address Points,17412,1.3049
+ODB_v3_AB,AB,dataset,Building Footprints; Address Points,9053,0.6784
+ODB_v3_AB,AB,dataset,Buildings; Address Points,8259,0.6189
+ODB_v3_AB,AB,dataset,Airdrie 2018 Building Footprints,5868,0.4397
+ODB_v3_AB,AB,dataset,Canmore Building Footprints; Canmore Addresses,4427,0.3318
+ODB_v3_AB,AB,dataset,Canmore Building Footprints,1934,0.1449
+ODB_v3_AB,AB,dataset,Building Footprints; Municipal Address Points,1733,0.1299
+ODB_v3_AB,AB,dataset,Banff Open Data - Shapefiles (Building Footprints); Banff Open Data - Shapefiles (Address Points),1140,0.0854
+ODB_v3_AB,AB,dataset,Banff Open Data - Shapefiles (Building Footprints),905,0.0678
+ODB_v3_AB,AB,dataset,Buildings; Schools,444,0.0333
+ODB_v3_AB,AB,dataset,Edmonton Public School Board (EPSB): School Locations,191,0.0143
+ODB_v3_AB,AB,dataset,Buildings; Community Services,112,0.0084
+ODB_v3_AB,AB,dataset,Building Footprints; Points Of Interest,70,0.0052
+ODB_v3_AB,AB,dataset,Building Footprint; Edmonton Catholic Schools (Current),69,0.0052
+ODB_v3_AB,AB,dataset,Building Footprints; County Named Buildings,49,0.0037
+ODB_v3_AB,AB,dataset,Building Footprints; Education,41,0.0031
+ODB_v3_AB,AB,dataset,Buildings; Recreation Facilities,36,0.0027
+ODB_v3_AB,AB,dataset,Buildings; Fire Stations,31,0.0023
+ODB_v3_AB,AB,dataset,Building Footprints; Historic Places,29,0.0022
+ODB_v3_AB,AB,dataset,Edmonton Public School Board (EPSB): School Locations; Parcel Addresses,26,0.0019
+ODB_v3_AB,AB,dataset,Buildings; Schools; Parcel Address,26,0.0019
+ODB_v3_AB,AB,dataset,Building Footprint; Seniors Centres,25,0.0019
+ODB_v3_AB,AB,dataset,Building Footprint; Edmonton Public School Board (EPSB): School Locations,25,0.0019
+ODB_v3_AB,AB,dataset,Building Footprint; Recreation Facilities,21,0.0016
+ODB_v3_AB,AB,dataset,Building Footprints; Youth Services,18,0.0013
+ODB_v3_AB,AB,dataset,Building Footprint; Fire Stations,18,0.0013
+ODB_v3_AB,AB,dataset,Building Footprint; Schools; Address Points,17,0.0013
+ODB_v3_AB,AB,dataset,Buildings; EMS Stations,15,0.0011
+ODB_v3_AB,AB,dataset,Building Footprints; County Named Buildings; Civic Address,15,0.0011
+ODB_v3_AB,AB,dataset,Building Footprints; Civic Address; County Named Buildings,15,0.0011
+ODB_v3_AB,AB,dataset,Building Footprints; Community Services,14,0.001
+ODB_v3_AB,AB,dataset,Building Footprints; Government,13,0.001
+ODB_v3_AB,AB,dataset,Building Footprint; Address Points; Schools,13,0.001
+ODB_v3_AB,AB,dataset,Building Footprints; Culture and Heritage Locations; Address Points,11,0.0008
+ODB_v3_AB,AB,dataset,Buildings; Community Services; Parcel Address,10,0.0007
+ODB_v3_AB,AB,dataset,Building Footprints; Schools; Address Points,10,0.0007
+ODB_v3_AB,AB,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,10,0.0007
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Seniors Centres,9,0.0007
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Edmonton Catholic Schools (Current),9,0.0007
+ODB_v3_AB,AB,dataset,Building Footprints; Facilities - Point,8,0.0006
+ODB_v3_AB,AB,dataset,Buildings; Parcel Address; Schools,7,0.0005
+ODB_v3_AB,AB,dataset,Building Footprints; Tourism,7,0.0005
+ODB_v3_AB,AB,dataset,Automatically Extracted Buildings; Interest Points,7,0.0005
+ODB_v3_AB,AB,dataset,Building Footprint; Police Stations,6,0.0004
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Fire Stations,6,0.0004
+ODB_v3_AB,AB,dataset,Building Footprints; Aquatic Centers,5,0.0004
+ODB_v3_AB,AB,dataset,Building Footprints; Address Points; Schools,5,0.0004
+ODB_v3_AB,AB,dataset,Building Footprint; Edmonton Catholic Schools (Current); Parcel Addresses,5,0.0004
+ODB_v3_AB,AB,dataset,Building Footprint; Arts Locations; Address Points,5,0.0004
+ODB_v3_AB,AB,dataset,Canmore Municipal Buildings; Canmore Addresses,4,0.0003
+ODB_v3_AB,AB,dataset,Building Footprints; Schools,4,0.0003
+ODB_v3_AB,AB,dataset,Building Footprints; Emergency Services,4,0.0003
+ODB_v3_AB,AB,dataset,Building Footprints; Address Points; Culture and Heritage Locations,4,0.0003
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Recreation Facilities,4,0.0003
+ODB_v3_AB,AB,dataset,Building Footprint; Address Points; Emergency Locations,3,0.0002
+ODB_v3_AB,AB,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,3,0.0002
+ODB_v3_AB,AB,dataset,Recreation Centres; Recreation Facilities,2,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Recreation Facilities; Schools,2,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Recreation Facilities; Community Services,2,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Parcel Address; Community Services,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Youth Services; Historic Places,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Youth Services; Education,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Points Of Interest; Municipal Address Points,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Municipal Address Points; Points Of Interest,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Health Care Facilities,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Recreation Facilities; Parcel Addresses,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Police Stations,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Edmonton Public School Board (EPSB): School Locations,2,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Emergency Locations; Address Points,2,0.0001
+ODB_v3_AB,AB,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",2,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Schools; Recreation Facilities,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Schools; Community Services,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Recreation Facilities; Parcel Address,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Police Service,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Parcel Address; Fire Stations,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Parcel Address; Community Services; Recreation Facilities,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; EMS Stations; Fire Stations,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Community Services; Schools,1,0.0001
+ODB_v3_AB,AB,dataset,Buildings; Community Services; Fire Stations,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Youth Services; Health Care Facilities,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Youth Services; Government,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Interest Points,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Historic Places; Youth Services,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Historic Places; Government,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Historic Places; Community Services,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Government; Youth Services,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprints; Community Services; Youth Services,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Seniors Centres; Parcel Addresses,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Schools,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Recreation Facilities; Edmonton Catholic Schools (Current),1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Public Libraries; Recreation Facilities,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Public Libraries; Parcel Addresses,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Public Libraries,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Parcel Addresses; Public Libraries,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Fire Stations; Parcel Addresses,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Emergency Locations,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Edmonton Catholic Schools (Current); Recreation Facilities,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Edmonton Catholic Schools (Current); Edmonton Public School Board (EPSB): School Locations,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Arts Locations; Schools; Address Points,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Arts Locations,1,0.0001
+ODB_v3_AB,AB,dataset,Building Footprint; Address Points; Arts Locations,1,0.0001
+ODB_v3_AB,AB,dataset,Automatically Extracted Buildings; Facilities - Point,1,0.0001
+ODB_v3_AB,AB,dataset,Airdrie School Buildings; Airdrie Address Points,1,0.0001
+ODB_v3_AB,AB,type,..,820955,61.5222
+ODB_v3_AB,AB,type,Residential,342697,25.6817
+ODB_v3_AB,AB,type,Residential Garage,119061,8.9224
+ODB_v3_AB,AB,type,Single Family Dwelling,16963,1.2712
+ODB_v3_AB,AB,type,Unclassified,11736,0.8795
+ODB_v3_AB,AB,type,Commercial,11167,0.8369
+ODB_v3_AB,AB,type,Single-Family Detached Home,2970,0.2226
+ODB_v3_AB,AB,type,Building Under Construction,1445,0.1083
+ODB_v3_AB,AB,type,Accessory,1076,0.0806
+ODB_v3_AB,AB,type,Multi-Family Dwelling,758,0.0568
+ODB_v3_AB,AB,type,Miscellaneous (Park Buildings/Structures),663,0.0497
+ODB_v3_AB,AB,type,General,611,0.0458
+ODB_v3_AB,AB,type,School Colleges,554,0.0415
+ODB_v3_AB,AB,type,Duplex,535,0.0401
+ODB_v3_AB,AB,type,Townhouse/Apartment/Walk Up - R3,498,0.0373
+ODB_v3_AB,AB,type,School,473,0.0354
+ODB_v3_AB,AB,type,Religious,287,0.0215
+ODB_v3_AB,AB,type,Townhouse/Fourplex - R4,209,0.0157
+ODB_v3_AB,AB,type,Mobile Home Residential - MHR,190,0.0142
+ODB_v3_AB,AB,type,Parking Garage,187,0.014
+ODB_v3_AB,AB,type,Commercial - Service/Retail/Office,162,0.0121
+ODB_v3_AB,AB,type,Mobile Home Park - MHP,158,0.0118
+ODB_v3_AB,AB,type,Hotel/Visitor Accommodation,134,0.01
+ODB_v3_AB,AB,type,LRT Stations and Shelters,127,0.0095
+ODB_v3_AB,AB,type,Shopping Centre,92,0.0069
+ODB_v3_AB,AB,type,Livestock Shelter,83,0.0062
+ODB_v3_AB,AB,type,Industrial/General,62,0.0046
+ODB_v3_AB,AB,type,Mixed Industrial/Commercial,46,0.0034
+ODB_v3_AB,AB,type,Mixed Use - Residential with Service/Retail/Office,42,0.0031
+ODB_v3_AB,AB,type,Community Hall,35,0.0026
+ODB_v3_AB,AB,type,Public Utilities,34,0.0025
+ODB_v3_AB,AB,type,Fire Station,32,0.0024
+ODB_v3_AB,AB,type,Municipal Facility,24,0.0018
+ODB_v3_AB,AB,type,Church,24,0.0018
+ODB_v3_AB,AB,type,Other Institutional,22,0.0016
+ODB_v3_AB,AB,type,Mixed Use - Residential with Visitor Accommodation,16,0.0012
+ODB_v3_AB,AB,type,Recreation Centre,15,0.0011
+ODB_v3_AB,AB,type,Heritage Building,15,0.0011
+ODB_v3_AB,AB,type,Library,13,0.001
+ODB_v3_AB,AB,type,Arena,13,0.001
+ODB_v3_AB,AB,type,Stadium,12,0.0009
+ODB_v3_AB,AB,type,Private Franchise Utilities,12,0.0009
+ODB_v3_AB,AB,type,Apartments-Elevators - R5,12,0.0009
+ODB_v3_AB,AB,type,Police Station,10,0.0007
+ODB_v3_AB,AB,type,Grain Elevator,10,0.0007
+ODB_v3_AB,AB,type,Administrative,9,0.0007
+ODB_v3_AB,AB,type,Recreation Complex,8,0.0006
+ODB_v3_AB,AB,type,Outdoor Storage Yard,8,0.0006
+ODB_v3_AB,AB,type,Theatre,7,0.0005
+ODB_v3_AB,AB,type,Recreational Other,7,0.0005
+ODB_v3_AB,AB,type,Nursing Home,7,0.0005
+ODB_v3_AB,AB,type,Fire Hall,7,0.0005
+ODB_v3_AB,AB,type,Accommodation//Hébergement,7,0.0005
+ODB_v3_AB,AB,type,Cafe / Restaurant,6,0.0004
+ODB_v3_AB,AB,type,Railway,5,0.0004
+ODB_v3_AB,AB,type,County Building,5,0.0004
+ODB_v3_AB,AB,type,Washroom facility//Toilettes,4,0.0003
+ODB_v3_AB,AB,type,Unique Store,4,0.0003
+ODB_v3_AB,AB,type,Trailhead Pit Toilet,4,0.0003
+ODB_v3_AB,AB,type,Public Operations,4,0.0003
+ODB_v3_AB,AB,type,Heliport,4,0.0003
+ODB_v3_AB,AB,type,Fire,4,0.0003
+ODB_v3_AB,AB,type,County Department Office,4,0.0003
+ODB_v3_AB,AB,type,Seniors Centre,3,0.0002
+ODB_v3_AB,AB,type,Public Washroom,3,0.0002
+ODB_v3_AB,AB,type,Museum,3,0.0002
+ODB_v3_AB,AB,type,Local Commercial,3,0.0002
+ODB_v3_AB,AB,type,Hospital,3,0.0002
+ODB_v3_AB,AB,type,Garden Centre Greenhouse,3,0.0002
+ODB_v3_AB,AB,type,Water Tower,2,0.0001
+ODB_v3_AB,AB,type,Retreat/Spa,2,0.0001
+ODB_v3_AB,AB,type,Parks Canada offices//Bureaux de Parcs Canada,2,0.0001
+ODB_v3_AB,AB,type,Hotel / Motel,2,0.0001
+ODB_v3_AB,AB,type,Daycare,2,0.0001
+ODB_v3_AB,AB,type,Community,2,0.0001
+ODB_v3_AB,AB,type,Arts Centre,2,0.0001
+ODB_v3_AB,AB,type,Arts,2,0.0001
+ODB_v3_AB,AB,type,Waste Transfer Station,1,0.0001
+ODB_v3_AB,AB,type,Visitor centre//Centre des visiteurs,1,0.0001
+ODB_v3_AB,AB,type,Transit Centre (Park & Ride),1,0.0001
+ODB_v3_AB,AB,type,Tourist Centre,1,0.0001
+ODB_v3_AB,AB,type,Recycling Station,1,0.0001
+ODB_v3_AB,AB,type,Recreation Centre/Ice Arena,1,0.0001
+ODB_v3_AB,AB,type,Private Irrigation Utilities,1,0.0001
+ODB_v3_AB,AB,type,Post Office,1,0.0001
+ODB_v3_AB,AB,type,Police,1,0.0001
+ODB_v3_AB,AB,type,Observatory,1,0.0001
+ODB_v3_AB,AB,type,Museum Antique Gallery,1,0.0001
+ODB_v3_AB,AB,type,Multi Recreation Facility,1,0.0001
+ODB_v3_AB,AB,type,Information,1,0.0001
+ODB_v3_AB,AB,type,Hospital//Hôpital,1,0.0001
+ODB_v3_AB,AB,type,Horse facility//Installation pour cheval,1,0.0001
+ODB_v3_AB,AB,type,Court,1,0.0001
+ODB_v3_AB,AB,type,County Office,1,0.0001
+ODB_v3_AB,AB,type,Coffee shop//Casse-croûte,1,0.0001
+ODB_v3_AB,AB,type,Clinic,1,0.0001
+ODB_v3_AB,AB,type,Cemetery,1,0.0001
+ODB_v3_AB,AB,type,Care Facility,1,0.0001
+ODB_v3_AB,AB,type,Bed and Breakfast,1,0.0001
+ODB_v3_AB,AB,type,Arts Program Facility,1,0.0001
+ODB_v3_AB,AB,type,Arts Booking Facility,1,0.0001
+ODB_v3_AB,AB,type,Animal Shelter,1,0.0001
+ODB_v3_AB,AB,type,Ambulance,1,0.0001
+ODB_v3_AB,AB,prov_terr,AB,1334404,100.0
+ODB_v3_BC,BC,source,Government of Canada,444887,34.1275
+ODB_v3_BC,BC,source,City of Vancouver,153988,11.8125
+ODB_v3_BC,BC,source,City of Surrey,137180,10.5231
+ODB_v3_BC,BC,source,District of Saanich,61267,4.6998
+ODB_v3_BC,BC,source,City of Burnaby,54008,4.143
+ODB_v3_BC,BC,source,City of Chilliwack,46652,3.5787
+ODB_v3_BC,BC,source,City of Kelowna,45353,3.479
+ODB_v3_BC,BC,source,City of Kamloops,39872,3.0586
+ODB_v3_BC,BC,source,City of Coquitlam,33639,2.5805
+ODB_v3_BC,BC,source,City of Prince George,31882,2.4457
+ODB_v3_BC,BC,source,City of Nanaimo,31604,2.4244
+ODB_v3_BC,BC,source,Municipality of North Cowichan,29309,2.2483
+ODB_v3_BC,BC,source,Regional District of Nanaimo,28575,2.192
+ODB_v3_BC,BC,source,District of North Vancouver,23280,1.7858
+ODB_v3_BC,BC,source,City of Victoria,21812,1.6732
+ODB_v3_BC,BC,source,City of Penticton,16773,1.2867
+ODB_v3_BC,BC,source,District of West Vancouver,14984,1.1494
+ODB_v3_BC,BC,source,City of Courtenay,12627,0.9686
+ODB_v3_BC,BC,source,City of Port Coquitlam,11994,0.9201
+ODB_v3_BC,BC,source,District of Lake Country,10724,0.8226
+ODB_v3_BC,BC,source,City of New Westminster,9273,0.7113
+ODB_v3_BC,BC,source,Regional District of Central Okanagan,9248,0.7094
+ODB_v3_BC,BC,source,District of Summerland,8899,0.6826
+ODB_v3_BC,BC,source,District of Squamish,7031,0.5394
+ODB_v3_BC,BC,source,Resort Municipality of Whistler,6500,0.4986
+ODB_v3_BC,BC,source,City of White Rock,5347,0.4102
+ODB_v3_BC,BC,source,City of Grand Forks,3000,0.2301
+ODB_v3_BC,BC,source,Town of Gibsons,2581,0.198
+ODB_v3_BC,BC,source,City of Port Moody,1304,0.1
+ODB_v3_BC,BC,source,City of Maple Ridge,10,0.0008
+ODB_v3_BC,BC,dataset,Automatically Extracted Buildings,444729,34.1154
+ODB_v3_BC,BC,dataset,Buildings; Addresses,90836,6.9681
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses,88897,6.8193
+ODB_v3_BC,BC,dataset,Buildings,78951,6.0564
+ODB_v3_BC,BC,dataset,Building,70559,5.4126
+ODB_v3_BC,BC,dataset,Building Outlines,69737,5.3496
+ODB_v3_BC,BC,dataset,Building Footprints 2015,62735,4.8124
+ODB_v3_BC,BC,dataset,Building Footprints (2021).,46648,3.5784
+ODB_v3_BC,BC,dataset,Building Outlines 2021; Address Points,37201,2.8537
+ODB_v3_BC,BC,dataset,Building Footprint,34366,2.6362
+ODB_v3_BC,BC,dataset,Buildings layer (part of cadastral dataset),33615,2.5786
+ODB_v3_BC,BC,dataset,North Cowichan Rooflines,29309,2.2483
+ODB_v3_BC,BC,dataset,Building Footprints,28886,2.2159
+ODB_v3_BC,BC,dataset,Building; Address,28779,2.2077
+ODB_v3_BC,BC,dataset,Building Footprints; Address Points,28362,2.1757
+ODB_v3_BC,BC,dataset,Buildings and Addresses,23280,1.7858
+ODB_v3_BC,BC,dataset,Building Outlines; Civic Address Points,18561,1.4238
+ODB_v3_BC,BC,dataset,Building Rooflines; Address Points,13054,1.0014
+ODB_v3_BC,BC,dataset,Building Rooflines,8702,0.6675
+ODB_v3_BC,BC,dataset,Building Outlines 2021,8152,0.6253
+ODB_v3_BC,BC,dataset,Buildings - Inventory; Address Points,7936,0.6088
+ODB_v3_BC,BC,dataset,RDCO Buildings,7536,0.5781
+ODB_v3_BC,BC,dataset,District of Lake Country Building Footprints,7282,0.5586
+ODB_v3_BC,BC,dataset,BuildingFootprints; AddressPoints,6882,0.5279
+ODB_v3_BC,BC,dataset,BuildingFootprints,5745,0.4407
+ODB_v3_BC,BC,dataset,Building Footprint; Addressing,4236,0.3249
+ODB_v3_BC,BC,dataset,Building Outlines; Parcel Addresses,3967,0.3043
+ODB_v3_BC,BC,dataset,District of Lake Country Building Footprints; District of Lake Country Address Points,3442,0.264
+ODB_v3_BC,BC,dataset,Town of Gibsons Building Footprints,1910,0.1465
+ODB_v3_BC,BC,dataset,RDCO Buildings; RDCO Address Points,1712,0.1313
+ODB_v3_BC,BC,dataset,Buildings - Inventory,1311,0.1006
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Heritage sites,1219,0.0935
+ODB_v3_BC,BC,dataset,Building; Address Point,1133,0.0869
+ODB_v3_BC,BC,dataset,Town of Gibsons Building Footprints; Town of Gibsons Addresses,671,0.0515
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Property addresses,570,0.0437
+ODB_v3_BC,BC,dataset,Buildings; Places of Interest,278,0.0213
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites,215,0.0165
+ODB_v3_BC,BC,dataset,Buildings; Restaurants,208,0.016
+ODB_v3_BC,BC,dataset,Building; Housing,208,0.016
+ODB_v3_BC,BC,dataset,City Building,157,0.012
+ODB_v3_BC,BC,dataset,Building Outlines; Heritage Buildings,142,0.0109
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Restaurants,138,0.0106
+ODB_v3_BC,BC,dataset,Buildings; Heritage Sites,120,0.0092
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Cultural Spaces,113,0.0087
+ODB_v3_BC,BC,dataset,Building; Arts Culture Education,111,0.0085
+ODB_v3_BC,BC,dataset,Building Outlines; Civic Places,99,0.0076
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Schools,59,0.0045
+ODB_v3_BC,BC,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,58,0.0044
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Cultural Spaces,56,0.0043
+ODB_v3_BC,BC,dataset,Buildings; Restaurants; Addresses,51,0.0039
+ODB_v3_BC,BC,dataset,Building; Public Services,51,0.0039
+ODB_v3_BC,BC,dataset,Building Footprints; Cultural Assets,37,0.0028
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Cultural Spaces; Property addresses,32,0.0025
+ODB_v3_BC,BC,dataset,Building Footprints; Heritage List,30,0.0023
+ODB_v3_BC,BC,dataset,Building; Facility,25,0.0019
+ODB_v3_BC,BC,dataset,Building; Address; Facility,25,0.0019
+ODB_v3_BC,BC,dataset,City Building; Address Point,21,0.0016
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Schools,17,0.0013
+ODB_v3_BC,BC,dataset,Rental Buildings,16,0.0012
+ODB_v3_BC,BC,dataset,Buildings; Places of Interest; Addresses,16,0.0012
+ODB_v3_BC,BC,dataset,Building; Facility; Address,16,0.0012
+ODB_v3_BC,BC,dataset,City Facilities,15,0.0012
+ODB_v3_BC,BC,dataset,"Buildings layer (part of cadastral dataset); Civic Points of Interest (Part of Parks, Recreation and Culture)",15,0.0012
+ODB_v3_BC,BC,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,15,0.0012
+ODB_v3_BC,BC,dataset,Building; Address Point; Public Services,14,0.0011
+ODB_v3_BC,BC,dataset,Building Outlines; SkyTrain Station,11,0.0008
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Heritage Sites,10,0.0008
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Places of Interest,9,0.0007
+ODB_v3_BC,BC,dataset,Building; Address Point; Arts Culture Education,9,0.0007
+ODB_v3_BC,BC,dataset,Building Rooflines; Address Points; Arts and Culture Facilities (OCP),9,0.0007
+ODB_v3_BC,BC,dataset,Building; Arts Culture Education; Public Services,8,0.0006
+ODB_v3_BC,BC,dataset,Building; Address Point; Housing,8,0.0006
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Libraries,8,0.0006
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Heritage sites; Cultural Spaces,8,0.0006
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Homeless shelter locations; Property addresses,8,0.0006
+ODB_v3_BC,BC,dataset,Park Structures,7,0.0005
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Points Of Interest,7,0.0005
+ODB_v3_BC,BC,dataset,"Buildings layer (part of cadastral dataset); Facility Locations (Part of Parks, Recreation and Culture)",7,0.0005
+ODB_v3_BC,BC,dataset,Building Rooflines; City and Neighbourhood Facilities,7,0.0005
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Fire halls,7,0.0005
+ODB_v3_BC,BC,dataset,2022 Voting Location Building Footprint,7,0.0005
+ODB_v3_BC,BC,dataset,Schools,6,0.0005
+ODB_v3_BC,BC,dataset,Buildings; Heritage Sites; Addresses,6,0.0005
+ODB_v3_BC,BC,dataset,Building Rooflines; Address Points; Schools,6,0.0005
+ODB_v3_BC,BC,dataset,Building Rooflines; Address Points; City and Neighbourhood Facilities,6,0.0005
+ODB_v3_BC,BC,dataset,Prominent Heritage Buildings (OCP); Address Points,5,0.0004
+ODB_v3_BC,BC,dataset,Buildings; Points Of Interest; Addresses,5,0.0004
+ODB_v3_BC,BC,dataset,Building Outlines; Civic Places; Heritage Buildings,5,0.0004
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Schools; Property addresses,5,0.0004
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Property addresses; Cultural Spaces,5,0.0004
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Fire halls,5,0.0004
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest,5,0.0004
+ODB_v3_BC,BC,dataset,Rental Buildings; Address Points,4,0.0003
+ODB_v3_BC,BC,dataset,Prominent Heritage Buildings (OCP),4,0.0003
+ODB_v3_BC,BC,dataset,Hospital,4,0.0003
+ODB_v3_BC,BC,dataset,Buildings; Points Of Interest,4,0.0003
+ODB_v3_BC,BC,dataset,Building; Housing; Address Point,4,0.0003
+ODB_v3_BC,BC,dataset,Building Rooflines; Arts and Culture Facilities (OCP); Address Points,4,0.0003
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Community centres; Cultural Spaces,4,0.0003
+ODB_v3_BC,BC,dataset,Building Footprints (2021).; Firehalls,4,0.0003
+ODB_v3_BC,BC,dataset,Building Footprint; Addressing; Building Points,4,0.0003
+ODB_v3_BC,BC,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",4,0.0003
+ODB_v3_BC,BC,dataset,Building; Public Services; Arts Culture Education,3,0.0002
+ODB_v3_BC,BC,dataset,Building Outlines; Heritage Buildings; Civic Places,3,0.0002
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Schools; Heritage sites,3,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Schools; Addressing,3,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest; Schools,3,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Addressing; Health Facility,3,0.0002
+ODB_v3_BC,BC,dataset,Buildings; Restaurants; Places of Interest,2,0.0002
+ODB_v3_BC,BC,dataset,Buildings; Recreation Locations; Addresses,2,0.0002
+ODB_v3_BC,BC,dataset,"Buildings layer (part of cadastral dataset); Civic Points of Interest (Part of Parks, Recreation and Culture); Facility Locations (Part of Parks, Recreation and Culture)",2,0.0002
+ODB_v3_BC,BC,dataset,Building; Public Services; Address Point,2,0.0002
+ODB_v3_BC,BC,dataset,Building; Arts Culture Education; Address Point,2,0.0002
+ODB_v3_BC,BC,dataset,Building; Address Point; Arts Culture Education; Public Services,2,0.0002
+ODB_v3_BC,BC,dataset,Building Rooflines; Schools,2,0.0002
+ODB_v3_BC,BC,dataset,Building Rooflines; Critical Infrastructure Facilities (OCP); Address Points,2,0.0002
+ODB_v3_BC,BC,dataset,Building Rooflines; City and Neighbourhood Facilities; Address Points,2,0.0002
+ODB_v3_BC,BC,dataset,Building Rooflines; Arts and Culture Facilities (OCP),2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Homeless shelter locations,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Community centres,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Libraries,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Schools,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Cultural Spaces,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest; Building Points,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest; Addressing,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Health Facility,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Building Points,2,0.0002
+ODB_v3_BC,BC,dataset,Building Footprint; Addressing; Schools,2,0.0002
+ODB_v3_BC,BC,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,2,0.0002
+ODB_v3_BC,BC,dataset,2022 Voting Location Building Footprint; Community Halls,2,0.0002
+ODB_v3_BC,BC,dataset,Schools; Places of Interest,1,0.0001
+ODB_v3_BC,BC,dataset,Prominent Heritage Buildings (OCP); Critical Infrastructure Facilities (OCP); Address Points,1,0.0001
+ODB_v3_BC,BC,dataset,Prominent Heritage Buildings (OCP); Critical Infrastructure Facilities (OCP),1,0.0001
+ODB_v3_BC,BC,dataset,Prominent Heritage Buildings (OCP); Arts and Culture Facilities (OCP),1,0.0001
+ODB_v3_BC,BC,dataset,Major Shopping,1,0.0001
+ODB_v3_BC,BC,dataset,City Owned Buildings; Parcel Addresses,1,0.0001
+ODB_v3_BC,BC,dataset,City Operational Buildings,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Restaurants; Places of Interest; Addresses,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Restaurants; Heritage Sites,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Places of Interest; Restaurants; Addresses,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Places of Interest; Restaurants,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Places of Interest; Heritage Sites,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Restaurants; Places of Interest,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Recreation Locations,1,0.0001
+ODB_v3_BC,BC,dataset,Buildings; Addresses; Heritage Sites; Restaurants,1,0.0001
+ODB_v3_BC,BC,dataset,Building; Arts Culture Education; Address Point; Housing,1,0.0001
+ODB_v3_BC,BC,dataset,Building; Address Point; Housing; Public Services,1,0.0001
+ODB_v3_BC,BC,dataset,Building Rooflines; Schools; Address Points,1,0.0001
+ODB_v3_BC,BC,dataset,Building Rooflines; Critical Infrastructure Facilities (OCP),1,0.0001
+ODB_v3_BC,BC,dataset,Building Rooflines; Arts and Culture Facilities (OCP); City and Neighbourhood Facilities,1,0.0001
+ODB_v3_BC,BC,dataset,Building Rooflines; Address Points; Critical Infrastructure Facilities (OCP),1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints; Heritage List; Cultural Assets,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints; Fire Station,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints; Facilities - Point,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Libraries; Fire halls,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Heritage sites; Schools,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Fire halls; Heritage sites,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Property addresses; Cultural Spaces; Libraries; Community centres,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Libraries; Property addresses; Cultural Spaces,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Libraries; Property addresses,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Homeless shelter locations; Property addresses; Heritage sites,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Schools; Property addresses,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Cultural Spaces; Property addresses,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Heritage sites; Community centres; Cultural Spaces,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Fire halls; Property addresses,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprints 2015; Community centres; Libraries,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprint; Schools,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest; Schools; Addressing,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest; Addressing; Schools,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprint; Point of Interest; Addressing; Building Points,1,0.0001
+ODB_v3_BC,BC,dataset,Building Footprint; Building Points; Addressing,1,0.0001
+ODB_v3_BC,BC,dataset,Automatically Extracted Buildings; Facilities - Point,1,0.0001
+ODB_v3_BC,BC,dataset,2022 Voting Location Building Footprint; Facilities and Attractions,1,0.0001
+ODB_v3_BC,BC,type,..,1154721,88.5792
+ODB_v3_BC,BC,type,Residential,61685,4.7319
+ODB_v3_BC,BC,type,Single Family Dwelling,20893,1.6027
+ODB_v3_BC,BC,type,Single-Family Home,20148,1.5456
+ODB_v3_BC,BC,type,Detached Garage,4967,0.381
+ODB_v3_BC,BC,type,Outbuilding,4784,0.367
+ODB_v3_BC,BC,type,MultiFamily,4391,0.3368
+ODB_v3_BC,BC,type,Commercial,3826,0.2935
+ODB_v3_BC,BC,type,Structure,3616,0.2774
+ODB_v3_BC,BC,type,Mobile Home,3440,0.2639
+ODB_v3_BC,BC,type,Residential-Duplex,2215,0.1699
+ODB_v3_BC,BC,type,Heritage Building,2207,0.1693
+ODB_v3_BC,BC,type,Industrial,2172,0.1666
+ODB_v3_BC,BC,type,Miscellaneous,2154,0.1652
+ODB_v3_BC,BC,type,Residential-Low Rise,1549,0.1188
+ODB_v3_BC,BC,type,Comprehensive Development,1184,0.0908
+ODB_v3_BC,BC,type,Shed,837,0.0642
+ODB_v3_BC,BC,type,Unknown,728,0.0558
+ODB_v3_BC,BC,type,School,658,0.0505
+ODB_v3_BC,BC,type,Multi-Family Residential,611,0.0469
+ODB_v3_BC,BC,type,Barn,592,0.0454
+ODB_v3_BC,BC,type,out,534,0.041
+ODB_v3_BC,BC,type,Restaurant,384,0.0295
+ODB_v3_BC,BC,type,Rural Residential,366,0.0281
+ODB_v3_BC,BC,type,Institutional,289,0.0222
+ODB_v3_BC,BC,type,Carport,265,0.0203
+ODB_v3_BC,BC,type,Apartment,234,0.018
+ODB_v3_BC,BC,type,Storage,199,0.0153
+ODB_v3_BC,BC,type,Office,167,0.0128
+ODB_v3_BC,BC,type,Storage Tank,165,0.0127
+ODB_v3_BC,BC,type,Multiple Use,162,0.0124
+ODB_v3_BC,BC,type,Tank,157,0.012
+ODB_v3_BC,BC,type,Public Areas,154,0.0118
+ODB_v3_BC,BC,type,Park,154,0.0118
+ODB_v3_BC,BC,type,Washroom,152,0.0117
+ODB_v3_BC,BC,type,Heritage Site,136,0.0104
+ODB_v3_BC,BC,type,Community Facility,128,0.0098
+ODB_v3_BC,BC,type,Apartment Block,113,0.0087
+ODB_v3_BC,BC,type,General,111,0.0085
+ODB_v3_BC,BC,type,comm,107,0.0082
+ODB_v3_BC,BC,type,Utility,104,0.008
+ODB_v3_BC,BC,type,Mixed Use,101,0.0077
+ODB_v3_BC,BC,type,Ski,100,0.0077
+ODB_v3_BC,BC,type,Residential-High Rise,97,0.0074
+ODB_v3_BC,BC,type,Lift Station,93,0.0071
+ODB_v3_BC,BC,type,Church,74,0.0057
+ODB_v3_BC,BC,type,Shelter,63,0.0048
+ODB_v3_BC,BC,type,Museum / Gallery,63,0.0048
+ODB_v3_BC,BC,type,Amenity,58,0.0044
+ODB_v3_BC,BC,type,Studio/Rehearsal,55,0.0042
+ODB_v3_BC,BC,type,Public School,55,0.0042
+ODB_v3_BC,BC,type,Multi-Family Dwelling,53,0.0041
+ODB_v3_BC,BC,type,Addition,50,0.0038
+ODB_v3_BC,BC,type,Place of Worship,47,0.0036
+ODB_v3_BC,BC,type,Shopping Centre,45,0.0035
+ODB_v3_BC,BC,type,Land Use Contract,42,0.0032
+ODB_v3_BC,BC,type,Fire Hall,42,0.0032
+ODB_v3_BC,BC,type,Senior,40,0.0031
+ODB_v3_BC,BC,type,Fire,38,0.0029
+ODB_v3_BC,BC,type,Hotel,37,0.0028
+ODB_v3_BC,BC,type,Agricultural,37,0.0028
+ODB_v3_BC,BC,type,Independent School,34,0.0026
+ODB_v3_BC,BC,type,Other,33,0.0025
+ODB_v3_BC,BC,type,Dup / 4plex,31,0.0024
+ODB_v3_BC,BC,type,Library,30,0.0023
+ODB_v3_BC,BC,type,Garbage and Recycling,29,0.0022
+ODB_v3_BC,BC,type,Community Centre,29,0.0022
+ODB_v3_BC,BC,type,Community Space,28,0.0021
+ODB_v3_BC,BC,type,Farm,26,0.002
+ODB_v3_BC,BC,type,Other Recreation,25,0.0019
+ODB_v3_BC,BC,type,Community,25,0.0019
+ODB_v3_BC,BC,type,Golf,24,0.0018
+ODB_v3_BC,BC,type,Education,24,0.0018
+ODB_v3_BC,BC,type,Transport,22,0.0017
+ODB_v3_BC,BC,type,Theatre / Performance,22,0.0017
+ODB_v3_BC,BC,type,Multi-Use,22,0.0017
+ODB_v3_BC,BC,type,Grandstand / Stadium,20,0.0015
+ODB_v3_BC,BC,type,Cabin,20,0.0015
+ODB_v3_BC,BC,type,Medical,19,0.0015
+ODB_v3_BC,BC,type,Greenhouse,15,0.0012
+ODB_v3_BC,BC,type,Attraction,15,0.0012
+ODB_v3_BC,BC,type,Recreation Facility,14,0.0011
+ODB_v3_BC,BC,type,Recreation Centre,14,0.0011
+ODB_v3_BC,BC,type,Hospital,13,0.001
+ODB_v3_BC,BC,type,Community Hall/Centre,13,0.001
+ODB_v3_BC,BC,type,Cafe / Restaurant / Bar,13,0.001
+ODB_v3_BC,BC,type,Arena,13,0.001
+ODB_v3_BC,BC,type,Shop,12,0.0009
+ODB_v3_BC,BC,type,Gallery,12,0.0009
+ODB_v3_BC,BC,type,Train Station,11,0.0008
+ODB_v3_BC,BC,type,Multi-Use (Commercial / Low Rise Residential),11,0.0008
+ODB_v3_BC,BC,type,Administrative,11,0.0008
+ODB_v3_BC,BC,type,Municipal,10,0.0008
+ODB_v3_BC,BC,type,Low Rise Residential,10,0.0008
+ODB_v3_BC,BC,type,Swimming Pool,9,0.0007
+ODB_v3_BC,BC,type,Recreation,9,0.0007
+ODB_v3_BC,BC,type,RCMP,9,0.0007
+ODB_v3_BC,BC,type,Fire Station,9,0.0007
+ODB_v3_BC,BC,type,Booster Station,9,0.0007
+ODB_v3_BC,BC,type,Apartment (Low Rise),9,0.0007
+ODB_v3_BC,BC,type,Studio,8,0.0006
+ODB_v3_BC,BC,type,Low Rise Apartment,8,0.0006
+ODB_v3_BC,BC,type,Storage Shed,7,0.0005
+ODB_v3_BC,BC,type,Recreation and Community Centre,7,0.0005
+ODB_v3_BC,BC,type,Operations,7,0.0005
+ODB_v3_BC,BC,type,Elementary School,7,0.0005
+ODB_v3_BC,BC,type,Duplex,7,0.0005
+ODB_v3_BC,BC,type,Accessory,7,0.0005
+ODB_v3_BC,BC,type,Parkade,6,0.0005
+ODB_v3_BC,BC,type,Operations Centre,6,0.0005
+ODB_v3_BC,BC,type,High Rise Residential,6,0.0005
+ODB_v3_BC,BC,type,MusicDance,5,0.0004
+ODB_v3_BC,BC,type,Municipal Hall,5,0.0004
+ODB_v3_BC,BC,type,INTAKE,5,0.0004
+ODB_v3_BC,BC,type,Golf Course,5,0.0004
+ODB_v3_BC,BC,type,Facility,5,0.0004
+ODB_v3_BC,BC,type,StrongStart BC,4,0.0003
+ODB_v3_BC,BC,type,Single-Family Detached Home,4,0.0003
+ODB_v3_BC,BC,type,Shopping,4,0.0003
+ODB_v3_BC,BC,type,Police Station,4,0.0003
+ODB_v3_BC,BC,type,Performance Space - Indoor Venue,4,0.0003
+ODB_v3_BC,BC,type,Organization,4,0.0003
+ODB_v3_BC,BC,type,Museum,4,0.0003
+ODB_v3_BC,BC,type,Multi-Use (Commercial / Multi-Family),4,0.0003
+ODB_v3_BC,BC,type,High Rise Apartment,4,0.0003
+ODB_v3_BC,BC,type,Civic,4,0.0003
+ODB_v3_BC,BC,type,Water Reservoir,3,0.0002
+ODB_v3_BC,BC,type,Services,3,0.0002
+ODB_v3_BC,BC,type,Seniors Centre,3,0.0002
+ODB_v3_BC,BC,type,RAMP,3,0.0002
+ODB_v3_BC,BC,type,Pump House,3,0.0002
+ODB_v3_BC,BC,type,Police,3,0.0002
+ODB_v3_BC,BC,type,Movie Theatre,3,0.0002
+ODB_v3_BC,BC,type,Library / Museum / Theatre,3,0.0002
+ODB_v3_BC,BC,type,Floating Dock,3,0.0002
+ODB_v3_BC,BC,type,Fire Department,3,0.0002
+ODB_v3_BC,BC,type,Doctors Office,3,0.0002
+ODB_v3_BC,BC,type,Concession,3,0.0002
+ODB_v3_BC,BC,type,Arts,3,0.0002
+ODB_v3_BC,BC,type,Art Centre,3,0.0002
+ODB_v3_BC,BC,type,Youth Centre,2,0.0002
+ODB_v3_BC,BC,type,Workshop,2,0.0002
+ODB_v3_BC,BC,type,Stables,2,0.0002
+ODB_v3_BC,BC,type,Secondary School,2,0.0002
+ODB_v3_BC,BC,type,Recycling,2,0.0002
+ODB_v3_BC,BC,type,Pool,2,0.0002
+ODB_v3_BC,BC,type,Pier,2,0.0002
+ODB_v3_BC,BC,type,Multi-Use (Commercial / High Rise Residential),2,0.0002
+ODB_v3_BC,BC,type,Mid Rise Apartment,2,0.0002
+ODB_v3_BC,BC,type,Justice,2,0.0002
+ODB_v3_BC,BC,type,Information Centre,2,0.0002
+ODB_v3_BC,BC,type,Independent,2,0.0002
+ODB_v3_BC,BC,type,Grain Elevator,2,0.0002
+ODB_v3_BC,BC,type,Dock Ramp,2,0.0002
+ODB_v3_BC,BC,type,CulturalIndustries,2,0.0002
+ODB_v3_BC,BC,type,Community Hall,2,0.0002
+ODB_v3_BC,BC,type,Community Access Station,2,0.0002
+ODB_v3_BC,BC,type,Childcare,2,0.0002
+ODB_v3_BC,BC,type,Change Room,2,0.0002
+ODB_v3_BC,BC,type,Cemetery,2,0.0002
+ODB_v3_BC,BC,type,Apartment (High Rise),2,0.0002
+ODB_v3_BC,BC,type,Walk-In Clinic,1,0.0001
+ODB_v3_BC,BC,type,Synagogue,1,0.0001
+ODB_v3_BC,BC,type,Stadium,1,0.0001
+ODB_v3_BC,BC,type,Religious,1,0.0001
+ODB_v3_BC,BC,type,Recycling Depot,1,0.0001
+ODB_v3_BC,BC,type,Post Office,1,0.0001
+ODB_v3_BC,BC,type,Performance Space - Outdoor Venue,1,0.0001
+ODB_v3_BC,BC,type,Parks Canada offices//Bureaux de Parcs Canada,1,0.0001
+ODB_v3_BC,BC,type,Multi-Use (Commercial / Townhouse Residential),1,0.0001
+ODB_v3_BC,BC,type,Multi-Use (Commercial / Mid Rise Residential),1,0.0001
+ODB_v3_BC,BC,type,Mosque,1,0.0001
+ODB_v3_BC,BC,type,Medical Testing / ISenses / Immunization,1,0.0001
+ODB_v3_BC,BC,type,Major Shopping,1,0.0001
+ODB_v3_BC,BC,type,Lighthouse property//Propriété du phare,1,0.0001
+ODB_v3_BC,BC,type,Legislative,1,0.0001
+ODB_v3_BC,BC,type,LEASE,1,0.0001
+ODB_v3_BC,BC,type,Hatchery,1,0.0001
+ODB_v3_BC,BC,type,Hanger,1,0.0001
+ODB_v3_BC,BC,type,Hall,1,0.0001
+ODB_v3_BC,BC,type,Government Heritage Building,1,0.0001
+ODB_v3_BC,BC,type,Detached Suite,1,0.0001
+ODB_v3_BC,BC,type,Correctional Facility,1,0.0001
+ODB_v3_BC,BC,type,Commercial - Mid Rise,1,0.0001
+ODB_v3_BC,BC,type,City Hall,1,0.0001
+ODB_v3_BC,BC,type,Animal Shelter,1,0.0001
+ODB_v3_BC,BC,prov_terr,BC,1303603,100.0
+ODB_v3_MB,MB,source,Government of Canada,656775,100.0
+ODB_v3_MB,MB,dataset,Automatically Extracted Buildings,656725,99.9924
+ODB_v3_MB,MB,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,32,0.0049
+ODB_v3_MB,MB,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,13,0.002
+ODB_v3_MB,MB,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",3,0.0005
+ODB_v3_MB,MB,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,2,0.0003
+ODB_v3_MB,MB,type,..,656743,99.9951
+ODB_v3_MB,MB,type,Grain Elevator,32,0.0049
+ODB_v3_MB,MB,prov_terr,MB,656775,100.0
+ODB_v3_NB,NB,source,Government of New Brunswick,567624,85.7662
+ODB_v3_NB,NB,source,City of Moncton,40487,6.1175
+ODB_v3_NB,NB,source,City of Fredericton,24799,3.7471
+ODB_v3_NB,NB,source,City of Saint John,15119,2.2844
+ODB_v3_NB,NB,source,Edmundston,11658,1.7615
+ODB_v3_NB,NB,source,Government of Canada,2136,0.3227
+ODB_v3_NB,NB,source,Government of Nova Scotia,3,0.0005
+ODB_v3_NB,NB,source,Government of Québec,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings,489996,74.0369
+ODB_v3_NB,NB,dataset,Buildings; Address New Brunswick: Civic Address Database,79100,11.9518
+ODB_v3_NB,NB,dataset,Buildings; Address,38660,5.8414
+ODB_v3_NB,NB,dataset,Buildings Footprints,15406,2.3278
+ODB_v3_NB,NB,dataset,Cadre bati / Building footprints,11658,1.7615
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses,10057,1.5196
+ODB_v3_NB,NB,dataset,Buildings Footprints; Civic Address,9379,1.4171
+ODB_v3_NB,NB,dataset,Building Footprints,4851,0.733
+ODB_v3_NB,NB,dataset,Automatically Extracted Buildings,2114,0.3194
+ODB_v3_NB,NB,dataset,Buildings; Public Schools,170,0.0257
+ODB_v3_NB,NB,dataset,Building Footprints; Places of Worship,30,0.0045
+ODB_v3_NB,NB,dataset,Buildings; Senior Care Facilities; Address,29,0.0044
+ODB_v3_NB,NB,dataset,Buildings; Address; Senior Care Facilities,26,0.0039
+ODB_v3_NB,NB,dataset,Buildings; Address; Grocery Stores,21,0.0032
+ODB_v3_NB,NB,dataset,Buildings; Public Schools; Address New Brunswick: Civic Address Database,20,0.003
+ODB_v3_NB,NB,dataset,Buildings; Address New Brunswick: Civic Address Database; Public Schools,18,0.0027
+ODB_v3_NB,NB,dataset,Building Footprints; Places of Worship; Civic Addresses,17,0.0026
+ODB_v3_NB,NB,dataset,Buildings; Address; Pharmacies,14,0.0021
+ODB_v3_NB,NB,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,14,0.0021
+ODB_v3_NB,NB,dataset,Building Footprints; Schools,12,0.0018
+ODB_v3_NB,NB,dataset,Building Footprints; Adult Residential Facilities; Civic Addresses,12,0.0018
+ODB_v3_NB,NB,dataset,Buildings; Pharmacies; Address,10,0.0015
+ODB_v3_NB,NB,dataset,Buildings; Schools,9,0.0014
+ODB_v3_NB,NB,dataset,Buildings; Address; Schools,9,0.0014
+ODB_v3_NB,NB,dataset,Buildings Footprints; GymsFieldHouse,9,0.0014
+ODB_v3_NB,NB,dataset,Buildings; Pharmacies,8,0.0012
+ODB_v3_NB,NB,dataset,Building Footprints; Schools; Civic Addresses,7,0.0011
+ODB_v3_NB,NB,dataset,Building Footprints; Community Centres; Civic Addresses,7,0.0011
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Places of Worship,7,0.0011
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Adult Residential Facilities,7,0.0011
+ODB_v3_NB,NB,dataset,Buildings; Schools; Address,6,0.0009
+ODB_v3_NB,NB,dataset,Building Footprints; Nursing Homes; Civic Addresses,6,0.0009
+ODB_v3_NB,NB,dataset,Building Footprints; Financial Institutions; Civic Addresses,6,0.0009
+ODB_v3_NB,NB,dataset,Building Footprints; Adult Residential Facilities,6,0.0009
+ODB_v3_NB,NB,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",6,0.0009
+ODB_v3_NB,NB,dataset,Buildings; Grocery Stores; Address,5,0.0008
+ODB_v3_NB,NB,dataset,Building Footprints; Grocery Stores; Civic Addresses,5,0.0008
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Grocery Stores,5,0.0008
+ODB_v3_NB,NB,dataset,Building Footprints; Community Centres,4,0.0006
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Theatres,4,0.0006
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Financial Institutions,4,0.0006
+ODB_v3_NB,NB,dataset,Building Footprints; City Facilities,4,0.0006
+ODB_v3_NB,NB,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer),3,0.0005
+ODB_v3_NB,NB,dataset,Buildings; Grocery Stores,3,0.0005
+ODB_v3_NB,NB,dataset,Buildings Footprints; FrederictonFireStations,3,0.0005
+ODB_v3_NB,NB,dataset,Building Footprints; Nursing Homes,3,0.0005
+ODB_v3_NB,NB,dataset,Building Footprints; Museums,3,0.0005
+ODB_v3_NB,NB,dataset,Building Footprints; Grocery Stores,3,0.0005
+ODB_v3_NB,NB,dataset,Building Footprints; Fire Stations; Civic Addresses,3,0.0005
+ODB_v3_NB,NB,dataset,Building Footprints; Financial Institutions,3,0.0005
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Nursing Homes,3,0.0005
+ODB_v3_NB,NB,dataset,Buildings; Address; Grocery Stores; Pharmacies,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Theatres; Civic Addresses,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Shopping Centres; Civic Addresses,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Shopping Centres,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Lighthouses,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Fire Stations,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Museums,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Grocery Stores; Shopping Centres,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Community Centres,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Arenas; Civic Addresses,2,0.0003
+ODB_v3_NB,NB,dataset,Building Footprints; Arenas,2,0.0003
+ODB_v3_NB,NB,dataset,Référentiel québécois sur les bâtiments,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings; Senior Care Facilities,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings; Pharmacies; Schools,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings; Pharmacies; Grocery Stores,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings; Grocery Stores; Pharmacies; Address,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings; Grocery Stores; Pharmacies,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings Footprints; Police Offices / Postes de police; Civic Address,1,0.0002
+ODB_v3_NB,NB,dataset,Buildings Footprints; FrederictonFireStations; Civic Address,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Shopping Centres; Financial Institutions,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Psychiatric Treatment Facilities,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Police Stations; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Places of Worship; Nursing Homes; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Places of Worship; Community Centres,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Museums; Places of Worship; Civic Addresses; Adult Residential Facilities,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Museums; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Medical Clinics,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Libraries; Schools; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Libraries,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Hospice Care Facilities; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Courthouse; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Convents,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Community Centres; Schools; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Community Centres; Schools,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Community Centres; Civic Addresses; Schools,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Theatres; Grocery Stores,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Schools,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Police Stations,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Museums; Financial Institutions,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Medical Clinics,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Lighthouses,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Libraries; Convention Centre,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Hospitals; Financial Institutions,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Hospitals,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Grocery Stores; Places of Worship,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Fire Stations,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Financial Institutions; Grocery Stores,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; City Facilities,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; Civic Addresses; Arenas,1,0.0002
+ODB_v3_NB,NB,dataset,Building Footprints; City Facilities; Civic Addresses,1,0.0002
+ODB_v3_NB,NB,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,1,0.0002
+ODB_v3_NB,NB,type,..,543939,82.1875
+ODB_v3_NB,NB,type,Residence,75498,11.4075
+ODB_v3_NB,NB,type,Single Family Dwelling,30234,4.5683
+ODB_v3_NB,NB,type,Two Unit Dwelling,4894,0.7395
+ODB_v3_NB,NB,type,Cottage / Camp,2395,0.3619
+ODB_v3_NB,NB,type,Multi-Unit Dwelling,1616,0.2442
+ODB_v3_NB,NB,type,Commercial / Business,1245,0.1881
+ODB_v3_NB,NB,type,Three Unit Dwelling,331,0.05
+ODB_v3_NB,NB,type,Garage,313,0.0473
+ODB_v3_NB,NB,type,Education Facility,174,0.0263
+ODB_v3_NB,NB,type,Commercial or Retail Facility,151,0.0228
+ODB_v3_NB,NB,type,Religious Structure,81,0.0122
+ODB_v3_NB,NB,type,Seniors Home,77,0.0116
+ODB_v3_NB,NB,type,Hospital,57,0.0086
+ODB_v3_NB,NB,type,Place of Worship,56,0.0085
+ODB_v3_NB,NB,type,Grocery Store,43,0.0065
+ODB_v3_NB,NB,type,Religious,40,0.006
+ODB_v3_NB,NB,type,Industrial Facility,39,0.0059
+ODB_v3_NB,NB,type,Airport Facility,38,0.0057
+ODB_v3_NB,NB,type,Hotel,35,0.0053
+ODB_v3_NB,NB,type,Daycare,35,0.0053
+ODB_v3_NB,NB,type,Shopping Mall / Complex,30,0.0045
+ODB_v3_NB,NB,type,Health / Medical Facility,25,0.0038
+ODB_v3_NB,NB,type,Adult Residential Facility,25,0.0038
+ODB_v3_NB,NB,type,Barn,22,0.0033
+ODB_v3_NB,NB,type,School,20,0.003
+ODB_v3_NB,NB,type,Community Centre,20,0.003
+ODB_v3_NB,NB,type,Restaurant / Eating Establishment,19,0.0029
+ODB_v3_NB,NB,type,Community Pharmacy,18,0.0027
+ODB_v3_NB,NB,type,Quarry,16,0.0024
+ODB_v3_NB,NB,type,Federal Government,16,0.0024
+ODB_v3_NB,NB,type,Financial Institution,14,0.0021
+ODB_v3_NB,NB,type,Gas Station,13,0.002
+ODB_v3_NB,NB,type,Water Supply and Treatment,12,0.0018
+ODB_v3_NB,NB,type,Special Care Home,12,0.0018
+ODB_v3_NB,NB,type,Railyard,12,0.0018
+ODB_v3_NB,NB,type,Nursing Home,12,0.0018
+ODB_v3_NB,NB,type,Municipal Facility,11,0.0017
+ODB_v3_NB,NB,type,Health or Medical Facility,11,0.0017
+ODB_v3_NB,NB,type,Auto Dealership,11,0.0017
+ODB_v3_NB,NB,type,Fire Station / EMS Station,10,0.0015
+ODB_v3_NB,NB,type,Fire Station,10,0.0015
+ODB_v3_NB,NB,type,Cabin,10,0.0015
+ODB_v3_NB,NB,type,Museum,9,0.0014
+ODB_v3_NB,NB,type,Theatre,7,0.0011
+ODB_v3_NB,NB,type,Information or Communication Facility,7,0.0011
+ODB_v3_NB,NB,type,Group Home,7,0.0011
+ODB_v3_NB,NB,type,General Recreation Facility,7,0.0011
+ODB_v3_NB,NB,type,Provincial Facility,6,0.0009
+ODB_v3_NB,NB,type,Pool,6,0.0009
+ODB_v3_NB,NB,type,Police,6,0.0009
+ODB_v3_NB,NB,type,Park,6,0.0009
+ODB_v3_NB,NB,type,Cultural or Heritage,6,0.0009
+ODB_v3_NB,NB,type,Waste Management,5,0.0008
+ODB_v3_NB,NB,type,Social Services,5,0.0008
+ODB_v3_NB,NB,type,Shopping Centre,5,0.0008
+ODB_v3_NB,NB,type,Parking Garage,5,0.0008
+ODB_v3_NB,NB,type,Government,5,0.0008
+ODB_v3_NB,NB,type,Education,5,0.0008
+ODB_v3_NB,NB,type,Arena,5,0.0008
+ODB_v3_NB,NB,type,Water Supply or Treatment Facility,4,0.0006
+ODB_v3_NB,NB,type,Post Secondary School,4,0.0006
+ODB_v3_NB,NB,type,Library,4,0.0006
+ODB_v3_NB,NB,type,Pharmacy,3,0.0005
+ODB_v3_NB,NB,type,Medical Facility,3,0.0005
+ODB_v3_NB,NB,type,Lighthouse,3,0.0005
+ODB_v3_NB,NB,type,College,3,0.0005
+ODB_v3_NB,NB,type,Bank,3,0.0005
+ODB_v3_NB,NB,type,Residential/Commercial,2,0.0003
+ODB_v3_NB,NB,type,Recreation Centre,2,0.0003
+ODB_v3_NB,NB,type,Radio / TV Broadcast Facility,2,0.0003
+ODB_v3_NB,NB,type,Police Station,2,0.0003
+ODB_v3_NB,NB,type,Military Facility,2,0.0003
+ODB_v3_NB,NB,type,Liquor Store,2,0.0003
+ODB_v3_NB,NB,type,Lift Station,2,0.0003
+ODB_v3_NB,NB,type,Information and Communication,2,0.0003
+ODB_v3_NB,NB,type,Grocery Store / Big Box Store,2,0.0003
+ODB_v3_NB,NB,type,Greenhouse,2,0.0003
+ODB_v3_NB,NB,type,Energy,2,0.0003
+ODB_v3_NB,NB,type,Employment Services,2,0.0003
+ODB_v3_NB,NB,type,Cultural,2,0.0003
+ODB_v3_NB,NB,type,Courthouse,2,0.0003
+ODB_v3_NB,NB,type,Aerospace,2,0.0003
+ODB_v3_NB,NB,type,Zoo,1,0.0002
+ODB_v3_NB,NB,type,Youth Services,1,0.0002
+ODB_v3_NB,NB,type,Transportation Facility,1,0.0002
+ODB_v3_NB,NB,type,Train/Bus Station,1,0.0002
+ODB_v3_NB,NB,type,Sports Arena / Stadium,1,0.0002
+ODB_v3_NB,NB,type,Special Purpose Home,1,0.0002
+ODB_v3_NB,NB,type,Service Station,1,0.0002
+ODB_v3_NB,NB,type,School District,1,0.0002
+ODB_v3_NB,NB,type,Rehabilitation Centre,1,0.0002
+ODB_v3_NB,NB,type,Pump Building,1,0.0002
+ODB_v3_NB,NB,type,Psychiatric Treatment Facility,1,0.0002
+ODB_v3_NB,NB,type,Police Office,1,0.0002
+ODB_v3_NB,NB,type,Office Space,1,0.0002
+ODB_v3_NB,NB,type,Mail Service,1,0.0002
+ODB_v3_NB,NB,type,Lodge,1,0.0002
+ODB_v3_NB,NB,type,Institutional Pharmacy,1,0.0002
+ODB_v3_NB,NB,type,Hospice Care Facility,1,0.0002
+ODB_v3_NB,NB,type,Grocery Store / Complex,1,0.0002
+ODB_v3_NB,NB,type,Government or Military Facility,1,0.0002
+ODB_v3_NB,NB,type,Gatehouse,1,0.0002
+ODB_v3_NB,NB,type,Funeral Home,1,0.0002
+ODB_v3_NB,NB,type,Former Elementary School,1,0.0002
+ODB_v3_NB,NB,type,Energy Facility,1,0.0002
+ODB_v3_NB,NB,type,Convent,1,0.0002
+ODB_v3_NB,NB,type,Casino,1,0.0002
+ODB_v3_NB,NB,type,Cannabis Store,1,0.0002
+ODB_v3_NB,NB,type,Arts Centre,1,0.0002
+ODB_v3_NB,NB,type,Agricultural,1,0.0002
+ODB_v3_NB,NB,prov_terr,NB,661827,100.0
+ODB_v3_NL,NL,source,Government of Canada,187694,100.0
+ODB_v3_NL,NL,dataset,Automatically Extracted Buildings,187692,99.9989
+ODB_v3_NL,NL,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",1,0.0005
+ODB_v3_NL,NL,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,1,0.0005
+ODB_v3_NL,NL,type,..,187694,100.0
+ODB_v3_NL,NL,prov_terr,NL,187694,100.0
+ODB_v3_NS,NS,source,Government of Canada,265563,50.2668
+ODB_v3_NS,NS,source,Halifax Regional Municipality,163638,30.974
+ODB_v3_NS,NS,source,Cape Breton Regional Municipality (CBRM),78876,14.93
+ODB_v3_NS,NS,source,Government of Nova Scotia,13703,2.5938
+ODB_v3_NS,NS,source,Town of Truro,5893,1.1154
+ODB_v3_NS,NS,source,Government of New Brunswick,634,0.12
+ODB_v3_NS,NS,dataset,Automatically Extracted Buildings,265549,50.2641
+ODB_v3_NS,NS,dataset,Building Polygons joined with Building Details,163638,30.974
+ODB_v3_NS,NS,dataset,CBRM Buildings,78876,14.93
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer),7028,1.3303
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Civic Address File - Civic Points,6426,1.2163
+ODB_v3_NS,NS,dataset,Truro Buildings,5893,1.1154
+ODB_v3_NS,NS,dataset,Buildings,634,0.12
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Public School Contact Information,88,0.0167
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Civic Address File - Civic Points; Nova Scotia Public School Contact Information,88,0.0167
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Public School Contact Information; Nova Scotia Civic Address File - Civic Points,19,0.0036
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Civic Address File - Civic Points; Hospitals,19,0.0036
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Department of Community Services Offices,14,0.0026
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Hospitals,13,0.0025
+ODB_v3_NS,NS,dataset,Automatically Extracted Buildings; Facilities - Point,9,0.0017
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Museum - Locations,3,0.0006
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Civic Address File - Civic Points; Nova Scotia Museum - Locations,2,0.0004
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Nova Scotia Civic Address File - Civic Points; Department of Community Services Offices,2,0.0004
+ODB_v3_NS,NS,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",2,0.0004
+ODB_v3_NS,NS,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,2,0.0004
+ODB_v3_NS,NS,dataset,Nova Scotia Topographic DataBase - Buildings (Poly Layer); Department of Community Services Offices; Nova Scotia Civic Address File - Civic Points,1,0.0002
+ODB_v3_NS,NS,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,1,0.0002
+ODB_v3_NS,NS,type,..,395991,74.9547
+ODB_v3_NS,NS,type,Residential,117264,22.1962
+ODB_v3_NS,NS,type,Single Unit Dwelling,2695,0.5101
+ODB_v3_NS,NS,type,Accessory,2176,0.4119
+ODB_v3_NS,NS,type,Camp,785,0.1486
+ODB_v3_NS,NS,type,Office,747,0.1414
+ODB_v3_NS,NS,type,Bar / Restaurant,681,0.1289
+ODB_v3_NS,NS,type,Warehouse,635,0.1202
+ODB_v3_NS,NS,type,Other Retail,603,0.1141
+ODB_v3_NS,NS,type,Duplex,503,0.0952
+ODB_v3_NS,NS,type,Other Service,437,0.0827
+ODB_v3_NS,NS,type,Unknown,404,0.0765
+ODB_v3_NS,NS,type,Place of Worship,303,0.0574
+ODB_v3_NS,NS,type,Secondary Suite,261,0.0494
+ODB_v3_NS,NS,type,Repair Garage,258,0.0488
+ODB_v3_NS,NS,type,Utility Facility,195,0.0369
+ODB_v3_NS,NS,type,School,195,0.0369
+ODB_v3_NS,NS,type,Apartment,190,0.036
+ODB_v3_NS,NS,type,Social Club,180,0.0341
+ODB_v3_NS,NS,type,Park Facility,162,0.0307
+ODB_v3_NS,NS,type,Factor/Plant,154,0.0291
+ODB_v3_NS,NS,type,Public School,153,0.029
+ODB_v3_NS,NS,type,Daycare,147,0.0278
+ODB_v3_NS,NS,type,Post Secondary School,141,0.0267
+ODB_v3_NS,NS,type,Group Home,133,0.0252
+ODB_v3_NS,NS,type,Triplex,124,0.0235
+ODB_v3_NS,NS,type,Hotel / Motel,122,0.0231
+ODB_v3_NS,NS,type,Fish Shed,121,0.0229
+ODB_v3_NS,NS,type,Personal Service,118,0.0223
+ODB_v3_NS,NS,type,Medical Office,117,0.0221
+ODB_v3_NS,NS,type,Vacant,110,0.0208
+ODB_v3_NS,NS,type,Fourplex,104,0.0197
+ODB_v3_NS,NS,type,Hospital,101,0.0191
+ODB_v3_NS,NS,type,Auto Dealership,100,0.0189
+ODB_v3_NS,NS,type,Recreation Facility,95,0.018
+ODB_v3_NS,NS,type,Gas Station,93,0.0176
+ODB_v3_NS,NS,type,Mixed Use,83,0.0157
+ODB_v3_NS,NS,type,Seniors Residential Complex,81,0.0153
+ODB_v3_NS,NS,type,Industrial,80,0.0151
+ODB_v3_NS,NS,type,Commercial,72,0.0136
+ODB_v3_NS,NS,type,Pump Station,71,0.0134
+ODB_v3_NS,NS,type,Commercial Storage,71,0.0134
+ODB_v3_NS,NS,type,Agriculture Facility,69,0.0131
+ODB_v3_NS,NS,type,Dormitory,67,0.0127
+ODB_v3_NS,NS,type,Museum,54,0.0102
+ODB_v3_NS,NS,type,Bank,51,0.0097
+ODB_v3_NS,NS,type,Community Centre,48,0.0091
+ODB_v3_NS,NS,type,Derelict / Abandoned,45,0.0085
+ODB_v3_NS,NS,type,Fire Station,40,0.0076
+ODB_v3_NS,NS,type,Treatment Plant,38,0.0072
+ODB_v3_NS,NS,type,Fish Plant,36,0.0068
+ODB_v3_NS,NS,type,Nursing Home,35,0.0066
+ODB_v3_NS,NS,type,Laboratory/Research,34,0.0064
+ODB_v3_NS,NS,type,Boarding House,30,0.0057
+ODB_v3_NS,NS,type,Supermarket,27,0.0051
+ODB_v3_NS,NS,type,Strip Mall,27,0.0051
+ODB_v3_NS,NS,type,Residential Care Facility,26,0.0049
+ODB_v3_NS,NS,type,Recycling Facility,26,0.0049
+ODB_v3_NS,NS,type,Veterinary Clinic,25,0.0047
+ODB_v3_NS,NS,type,Library,24,0.0045
+ODB_v3_NS,NS,type,Bed & Breakfast,24,0.0045
+ODB_v3_NS,NS,type,Public Works Depot,23,0.0044
+ODB_v3_NS,NS,type,Parking Structure,23,0.0044
+ODB_v3_NS,NS,type,Funeral Home,22,0.0042
+ODB_v3_NS,NS,type,Church,21,0.004
+ODB_v3_NS,NS,type,Airport Support,20,0.0038
+ODB_v3_NS,NS,type,Private School,17,0.0032
+ODB_v3_NS,NS,type,Department of Community Services Office,17,0.0032
+ODB_v3_NS,NS,type,Shopping Centre,15,0.0028
+ODB_v3_NS,NS,type,RCMP STATION,15,0.0028
+ODB_v3_NS,NS,type,Post Office,15,0.0028
+ODB_v3_NS,NS,type,Art Gallery,15,0.0028
+ODB_v3_NS,NS,type,Mining Facility,14,0.0026
+ODB_v3_NS,NS,type,Power Plant,13,0.0025
+ODB_v3_NS,NS,type,Greenhouse,13,0.0025
+ODB_v3_NS,NS,type,Brewery,13,0.0025
+ODB_v3_NS,NS,type,Restaurant,12,0.0023
+ODB_v3_NS,NS,type,Paramedic Base,12,0.0023
+ODB_v3_NS,NS,type,Event Centre,12,0.0023
+ODB_v3_NS,NS,type,Womens Prison,11,0.0021
+ODB_v3_NS,NS,type,Ferry Terminal,11,0.0021
+ODB_v3_NS,NS,type,Car Dealership,10,0.0019
+ODB_v3_NS,NS,type,Lumber Mill / Saw Mill,9,0.0017
+ODB_v3_NS,NS,type,Supervised,8,0.0015
+ODB_v3_NS,NS,type,Lighthouse,8,0.0015
+ODB_v3_NS,NS,type,Medical Clinic,7,0.0013
+ODB_v3_NS,NS,type,Spray Paint Operation,6,0.0011
+ODB_v3_NS,NS,type,Salt Dome,6,0.0011
+ODB_v3_NS,NS,type,RAIL TERMINAL,6,0.0011
+ODB_v3_NS,NS,type,Adult Service Centre,6,0.0011
+ODB_v3_NS,NS,type,Accomodation,6,0.0011
+ODB_v3_NS,NS,type,Theatre,5,0.0009
+ODB_v3_NS,NS,type,Refuse Facility,5,0.0009
+ODB_v3_NS,NS,type,Parks Canada offices//Bureaux de Parcs Canada,5,0.0009
+ODB_v3_NS,NS,type,NSCC,5,0.0009
+ODB_v3_NS,NS,type,Motel Units,5,0.0009
+ODB_v3_NS,NS,type,Courthouse,5,0.0009
+ODB_v3_NS,NS,type,Composting Facility,5,0.0009
+ODB_v3_NS,NS,type,Bus Terminal,5,0.0009
+ODB_v3_NS,NS,type,Broadcast Studio,5,0.0009
+ODB_v3_NS,NS,type,Archive,5,0.0009
+ODB_v3_NS,NS,type,Washroom facility//Toilettes,4,0.0008
+ODB_v3_NS,NS,type,Transit Depot,4,0.0008
+ODB_v3_NS,NS,type,Armoury,4,0.0008
+ODB_v3_NS,NS,type,Aquaculture Facility,4,0.0008
+ODB_v3_NS,NS,type,Water Tower,3,0.0006
+ODB_v3_NS,NS,type,Multi-Unit Dwelling,3,0.0006
+ODB_v3_NS,NS,type,Movie Theatre,3,0.0006
+ODB_v3_NS,NS,type,HRP SATELLITE,3,0.0006
+ODB_v3_NS,NS,type,Dry Cleaning,3,0.0006
+ODB_v3_NS,NS,type,Regional Rehabilitation Centre,2,0.0004
+ODB_v3_NS,NS,type,Pharmacy,2,0.0004
+ODB_v3_NS,NS,type,Multi Commercial,2,0.0004
+ODB_v3_NS,NS,type,Legislative,2,0.0004
+ODB_v3_NS,NS,type,Legion,2,0.0004
+ODB_v3_NS,NS,type,Laundromat,2,0.0004
+ODB_v3_NS,NS,type,HRP COMMUNITY,2,0.0004
+ODB_v3_NS,NS,type,EHS,2,0.0004
+ODB_v3_NS,NS,type,Crematorium,2,0.0004
+ODB_v3_NS,NS,type,Correctional Facility,2,0.0004
+ODB_v3_NS,NS,type,Church Hall,2,0.0004
+ODB_v3_NS,NS,type,Water Treatment Plant,1,0.0002
+ODB_v3_NS,NS,type,Town Hall,1,0.0002
+ODB_v3_NS,NS,type,Tennis Club,1,0.0002
+ODB_v3_NS,NS,type,Shopping,1,0.0002
+ODB_v3_NS,NS,type,Service Canada,1,0.0002
+ODB_v3_NS,NS,type,Rugby Clubhouse,1,0.0002
+ODB_v3_NS,NS,type,Refinery,1,0.0002
+ODB_v3_NS,NS,type,Recreation Centre,1,0.0002
+ODB_v3_NS,NS,type,RECC,1,0.0002
+ODB_v3_NS,NS,type,Public Washroom,1,0.0002
+ODB_v3_NS,NS,type,Professional Centre,1,0.0002
+ODB_v3_NS,NS,type,Pool,1,0.0002
+ODB_v3_NS,NS,type,Police Station,1,0.0002
+ODB_v3_NS,NS,type,Parks and Rec Maintenance Shed,1,0.0002
+ODB_v3_NS,NS,type,Park Shelter,1,0.0002
+ODB_v3_NS,NS,type,Mall,1,0.0002
+ODB_v3_NS,NS,type,Information Centre,1,0.0002
+ODB_v3_NS,NS,type,Homeless Shelter,1,0.0002
+ODB_v3_NS,NS,type,HRP HEADQUARTERS,1,0.0002
+ODB_v3_NS,NS,type,Golf Club,1,0.0002
+ODB_v3_NS,NS,type,Food Bank,1,0.0002
+ODB_v3_NS,NS,type,Fire Hall,1,0.0002
+ODB_v3_NS,NS,type,Farmers Market,1,0.0002
+ODB_v3_NS,NS,type,ECOLE ACADIENNE,1,0.0002
+ODB_v3_NS,NS,type,Distillery,1,0.0002
+ODB_v3_NS,NS,type,Curling Club,1,0.0002
+ODB_v3_NS,NS,type,Community Group,1,0.0002
+ODB_v3_NS,NS,type,Commercial and Office,1,0.0002
+ODB_v3_NS,NS,type,Car Wash,1,0.0002
+ODB_v3_NS,NS,type,Canteen,1,0.0002
+ODB_v3_NS,NS,type,COMMONWORKS OFFICE BUILDING,1,0.0002
+ODB_v3_NS,NS,type,CMHA AND BANK,1,0.0002
+ODB_v3_NS,NS,type,Bowling Alley,1,0.0002
+ODB_v3_NS,NS,type,Bank and Offices,1,0.0002
+ODB_v3_NS,NS,type,Backyard Suite,1,0.0002
+ODB_v3_NS,NS,type,Air Force Club,1,0.0002
+ODB_v3_NS,NS,prov_terr,NS,528307,100.0
+ODB_v3_NT,NT,source,City of Yellowknife,11553,97.8156
+ODB_v3_NT,NT,source,Government of Canada,258,2.1844
+ODB_v3_NT,NT,dataset,City Of Yellowknife Buildings,11553,97.8156
+ODB_v3_NT,NT,dataset,Automatically Extracted Buildings,254,2.1505
+ODB_v3_NT,NT,dataset,Building Footprints,3,0.0254
+ODB_v3_NT,NT,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,1,0.0085
+ODB_v3_NT,NT,type,Ancillary,6030,51.0541
+ODB_v3_NT,NT,type,Residential,4432,37.5243
+ODB_v3_NT,NT,type,..,601,5.0885
+ODB_v3_NT,NT,type,Commercial,387,3.2766
+ODB_v3_NT,NT,type,Industrial,202,1.7103
+ODB_v3_NT,NT,type,Airport,34,0.2879
+ODB_v3_NT,NT,type,Government,33,0.2794
+ODB_v3_NT,NT,type,City,27,0.2286
+ODB_v3_NT,NT,type,Hotel,25,0.2117
+ODB_v3_NT,NT,type,SCHL,20,0.1693
+ODB_v3_NT,NT,type,CHRC,9,0.0762
+ODB_v3_NT,NT,type,Recreation,8,0.0677
+ODB_v3_NT,NT,type,HOSP,2,0.0169
+ODB_v3_NT,NT,type,POLC,1,0.0085
+ODB_v3_NT,NT,prov_terr,NT,11811,100.0
+ODB_v3_ON_1,ON,source,Government of Canada,482408,24.1204
+ODB_v3_ON_1,ON,source,City of Ottawa,385131,19.2566
+ODB_v3_ON_1,ON,source,Regional Municipality of York,320663,16.0331
+ODB_v3_ON_1,ON,source,City of Toronto,271829,13.5915
+ODB_v3_ON_1,ON,source,Regional Municipality of Durham,263487,13.1744
+ODB_v3_ON_1,ON,source,City of Kingston,58689,2.9345
+ODB_v3_ON_1,ON,source,County of Lennox & Addington,41670,2.0835
+ODB_v3_ON_1,ON,source,County of Frontenac,36186,1.8093
+ODB_v3_ON_1,ON,source,Government of Ontario,36045,1.8022
+ODB_v3_ON_1,ON,source,City of Cornwall,33498,1.6749
+ODB_v3_ON_1,ON,source,City of Quinte West,30327,1.5164
+ODB_v3_ON_1,ON,source,Town of Newmarket,29852,1.4926
+ODB_v3_ON_1,ON,source,City of Oshawa,7722,0.3861
+ODB_v3_ON_1,ON,source,City of Pickering,1416,0.0708
+ODB_v3_ON_1,ON,source,Government of Québec,896,0.0448
+ODB_v3_ON_1,ON,source,City of Brampton,87,0.0043
+ODB_v3_ON_1,ON,source,City of Markham,81,0.004
+ODB_v3_ON_1,ON,source,District of Muskoka,5,0.0003
+ODB_v3_ON_1,ON,source,Regional Municipality of Peel,4,0.0002
+ODB_v3_ON_1,ON,source,County of Simcoe,3,0.0001
+ODB_v3_ON_1,ON,source,City of Mississauga,1,0.0001
+ODB_v3_ON_1,ON,dataset,Automatically Extracted Buildings,482396,24.1198
+ODB_v3_ON_1,ON,dataset,Building Footprint; Address Point,265772,13.2886
+ODB_v3_ON_1,ON,dataset,Building Footprints,243821,12.1911
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points,240386,12.0193
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository,196589,9.8294
+ODB_v3_ON_1,ON,dataset,Building Footprints; Civic Addresses,163960,8.198
+ODB_v3_ON_1,ON,dataset,Building Outlines,72586,3.6293
+ODB_v3_ON_1,ON,dataset,Buildings,71034,3.5517
+ODB_v3_ON_1,ON,dataset,Building Footprint,54871,2.7435
+ODB_v3_ON_1,ON,dataset,Building to Scale,35206,1.7603
+ODB_v3_ON_1,ON,dataset,Building Footprints in the City of Quinte West,30319,1.5159
+ODB_v3_ON_1,ON,dataset,OPENNewmarket Buildings; OPENNewmarket Address,25274,1.2637
+ODB_v3_ON_1,ON,dataset,Building Footprint (Public View),22160,1.108
+ODB_v3_ON_1,ON,dataset,Building Footprint (Public View); Civic Addresses (Public View),19349,0.9675
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View),18177,0.9089
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View),17946,0.8973
+ODB_v3_ON_1,ON,dataset,Buildings; Address Points,14391,0.7196
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points,6446,0.3223
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses,6273,0.3136
+ODB_v3_ON_1,ON,dataset,OPENNewmarket Buildings,4467,0.2233
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints,1300,0.065
+ODB_v3_ON_1,ON,dataset,Référentiel québécois sur les bâtiments,896,0.0448
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints; Pickering Address Points,862,0.0431
+ODB_v3_ON_1,ON,dataset,Building to Scale; Ministry of Health service provider locations,839,0.042
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Worship,495,0.0248
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints,480,0.024
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types,361,0.0181
+ODB_v3_ON_1,ON,dataset,Building Outlines; School Locations - All Types,349,0.0175
+ODB_v3_ON_1,ON,dataset,Building Outlines; Places of Worship,323,0.0162
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types,238,0.0119
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Licensed Child Care Centres,200,0.01
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres,131,0.0066
+ODB_v3_ON_1,ON,dataset,City Owned Facilities,81,0.004
+ODB_v3_ON_1,ON,dataset,Building Footprint (Public View); Civic Addresses (Public View); Facility Sites Point (Public View),80,0.004
+ODB_v3_ON_1,ON,dataset,OPENNewmarket Buildings; OPENNewmarket Landmarks,77,0.0039
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Food,76,0.0038
+ODB_v3_ON_1,ON,dataset,Building Outlines; Parks and Recreation Facilities,74,0.0037
+ODB_v3_ON_1,ON,dataset,Buildings; Place of Worship,73,0.0037
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Municipal Address Points,65,0.0032
+ODB_v3_ON_1,ON,dataset,Building Footprint (Public View); Facility Sites Point (Public View),46,0.0023
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints; Pickering Points of Interest,45,0.0022
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food,44,0.0022
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Community,41,0.0021
+ODB_v3_ON_1,ON,dataset,Building Outlines; Places of Worship; About Address Points (Municipal) - Toronto One Address Repository,38,0.0019
+ODB_v3_ON_1,ON,dataset,Buildings; Education Facility,37,0.0019
+ODB_v3_ON_1,ON,dataset,Buildings; Childcare,35,0.0018
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Parks and Recreation Facilities,35,0.0018
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres,34,0.0017
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Educational Facilities,33,0.0016
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Community,32,0.0016
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Places of Worship,31,0.0015
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Learning,31,0.0015
+ODB_v3_ON_1,ON,dataset,OPENNewmarket Buildings; OPENNewmarket Address; OPENNewmarket Landmarks,30,0.0015
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Interest and Toronto Attractions,30,0.0015
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Learning,29,0.0014
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Fire Facility Locations,28,0.0014
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses; Oshawa Places of Worship,27,0.0014
+ODB_v3_ON_1,ON,dataset,Building Outlines; Retirement Homes,26,0.0013
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Community; Municipal Address Points,25,0.0013
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; City Facilities - Protective Services,23,0.0011
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Licensed Child Care Centres; School Locations - All Types,21,0.001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Heritage,21,0.001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Retirement Homes,20,0.001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Heritage,20,0.001
+ODB_v3_ON_1,ON,dataset,Building Footprints; City Facilities - Protective Services,19,0.0009
+ODB_v3_ON_1,ON,dataset,Buildings; Public Health Facility,18,0.0009
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Police Facility Locations,18,0.0009
+ODB_v3_ON_1,ON,dataset,Building Footprints; City Facilities - Protective Services; Municipal Address Points,18,0.0009
+ODB_v3_ON_1,ON,dataset,"Building Footprint (Public View); Civic Addresses (Public View); Dining, Lodging, POI (Public View)",18,0.0009
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres,16,0.0008
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Store,15,0.0008
+ODB_v3_ON_1,ON,dataset,Buildings; Address Points; Heritage Cornwall DesignatedSites,14,0.0007
+ODB_v3_ON_1,ON,dataset,Building Outlines; Fire Facility Locations,14,0.0007
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Licensed Child Care Centres; School Locations - All Types,14,0.0007
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View); Community Hall,14,0.0007
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Senior's Residences,13,0.0006
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses; Oshawa Educational Facilities,13,0.0006
+ODB_v3_ON_1,ON,dataset,Buildings; Museums,13,0.0006
+ODB_v3_ON_1,ON,dataset,Buildings; Government Centre,13,0.0006
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; About Address Points (Municipal) - Toronto One Address Repository,13,0.0006
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Learning; Municipal Address Points,13,0.0006
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints; Pickering Address Points; Pickering Points of Interest,12,0.0006
+ODB_v3_ON_1,ON,dataset,Building Footprint; Address Point; Post-Secondary Institution,12,0.0006
+ODB_v3_ON_1,ON,dataset,Building Footprint (Public View); Facility Sites Point (Public View); Civic Addresses (Public View),12,0.0006
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints; Pickering Facilities,11,0.0006
+ODB_v3_ON_1,ON,dataset,Building Outlines; School Locations - All Types; About Address Points (Municipal) - Toronto One Address Repository,11,0.0006
+ODB_v3_ON_1,ON,dataset,Building Outlines; Parks and Recreation Facilities; School Locations - All Types,11,0.0006
+ODB_v3_ON_1,ON,dataset,Building Outlines; Ambulance Station Locations,11,0.0006
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Store,11,0.0006
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Emergency Services,11,0.0006
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Community Centres,10,0.0005
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; School Locations - All Types,10,0.0005
+ODB_v3_ON_1,ON,dataset,Buildings; Address Points; Cornwall Schools,9,0.0004
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; About Address Points (Municipal) - Toronto One Address Repository,9,0.0004
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Worship; School Locations - All Types,9,0.0004
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Ambulance Station Locations,9,0.0004
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View); Emergency Services,9,0.0004
+ODB_v3_ON_1,ON,dataset,Building Footprints; Ottawa Craft Breweries 2023; Municipal Address Points,8,0.0004
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Heritage; Municipal Address Points,8,0.0004
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses; Oshawa Senior's Residences,7,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Fire Stations,7,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Cornwall Schools; Address Points,7,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Education Facility,7,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; Places of Worship; School Locations - All Types,7,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; Parks and Recreation Facilities; About Address Points (Municipal) - Toronto One Address Repository,7,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Public Health Facility,6,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Arenas,6,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Licensed Child Care Centres,6,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types; EarlyON Child and Family Centres,6,0.0003
+ODB_v3_ON_1,ON,dataset,Building Footprints in the City of Quinte West; Quinte West Schools,6,0.0003
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View); School,6,0.0003
+ODB_v3_ON_1,ON,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,6,0.0003
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints; Pickering Address Points; Pickering Facilities,5,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Shopping Centre,5,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Retirement Residence,5,0.0003
+ODB_v3_ON_1,ON,dataset,Buildings; Libraries,5,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; Places of Interest and Toronto Attractions; About Address Points (Municipal) - Toronto One Address Repository,5,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types; Licensed Child Care Centres,5,0.0003
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Ambulance Station Locations; Fire Facility Locations,5,0.0003
+ODB_v3_ON_1,ON,dataset,Building Footprints; Ottawa Craft Breweries 2023,5,0.0003
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Store; Municipal Address Points,5,0.0003
+ODB_v3_ON_1,ON,dataset,"Building Footprint (Public View); Dining, Lodging, POI (Public View)",5,0.0003
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses; Oshawa Community Centres,4,0.0002
+ODB_v3_ON_1,ON,dataset,OPENNewmarket Buildings; OPENNewmarket Landmarks; OPENNewmarket Address,4,0.0002
+ODB_v3_ON_1,ON,dataset,Buildings; Theatres,4,0.0002
+ODB_v3_ON_1,ON,dataset,Buildings; Penitentiary,4,0.0002
+ODB_v3_ON_1,ON,dataset,Buildings; Long Term Care,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Outlines; Places of Interest and Toronto Attractions,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; Parks and Recreation Facilities,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Outlines; Fire Facility Locations; Ambulance Station Locations,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Outlines; Ambulance Station Locations; Fire Facility Locations,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); School,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Library,4,0.0002
+ODB_v3_ON_1,ON,dataset,Building Footprint; Address Point; Municipal Office,4,0.0002
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses; Oshawa Fire Station Locations,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Place of Worship; Civic Address Points,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Government Centre; Civic Address Points,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Shopping Centre,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Place of Worship,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Government Centre,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Fire Stations,3,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Ambulance Stations,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; School Locations - All Types; Licensed Child Care Centres,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; School Locations - All Types; EarlyON Child and Family Centres,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; Places of Worship,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Places of Worship,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Parks and Recreation Facilities; School Locations - All Types,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Licensed Child Care Centres,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Ottawa Craft Breweries 2023,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints Caledon,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); School; Civic Address Points (Open Data View),3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View); Municipal Office,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View); Library,3,0.0001
+ODB_v3_ON_1,ON,dataset,Building,3,0.0001
+ODB_v3_ON_1,ON,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",3,0.0001
+ODB_v3_ON_1,ON,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,3,0.0001
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Places of Worship; Oshawa Addresses,2,0.0001
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Fire Station Locations; Oshawa Addresses,2,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Museums; Civic Address Points,2,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Hospitals,2,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Courthouses,2,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Museums,2,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Childcare,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Retirement Homes; About Address Points (Municipal) - Toronto One Address Repository,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Parks and Recreation Facilities; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Parks and Recreation Facilities,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Parks and Recreation Facilities; Licensed Child Care Centres; School Locations - All Types,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Fire Facility Locations; Licensed Child Care Centres,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Fire Facility Locations; Ambulance Station Locations,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Licensed Child Care Centres; School Locations - All Types,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Store; Cultural Spaces Inventory - Learning,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Store; Cultural Spaces Inventory - Food,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Heritage; Cultural Spaces Inventory - Food,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Learning; Cultural Spaces Inventory - Heritage,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Municipal Office,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Community Hall,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprint; Municipal Office,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprint; Addressing - Civic Addresses,2,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprint; Address Point; Hospital; Post-Secondary Institution,2,0.0001
+ODB_v3_ON_1,ON,dataset,Pickering Building Footprints; Pickering Points of Interest; Pickering Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Places of Worship; Oshawa Senior's Residences,1,0.0001
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Educational Facilities; Oshawa Places of Worship,1,0.0001
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Educational Facilities; Oshawa Addresses,1,0.0001
+ODB_v3_ON_1,ON,dataset,Oshawa Building Footprints; Oshawa Addresses; Oshawa Community Centres; Oshawa Educational Facilities,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Train Station,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; RCMP,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Post-Secondary Education Facilities,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Police Stations,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Education Facility; Civic Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Cornwall Schools,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Civic Address Points; Retirement Residence,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Childcare; Place of Worship,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Childcare; Civic Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Bus Station,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Ambulance Stations; Hospitals,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Ambulance Stations; Fire Stations,1,0.0001
+ODB_v3_ON_1,ON,dataset,Buildings; Address Points; Heritage Cornwall DesignatedSites; Cornwall Schools,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; School Locations - All Types; Places of Worship,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Police Facility Locations,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Places of Worship; Licensed Child Care Centres,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; Places of Worship,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; Retirement Homes; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Licensed Child Care Centres; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; School Locations - All Types; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Parks and Recreation Facilities; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Licensed Child Care Centres; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; Ambulance Station Locations; Police Facility Locations,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Worship; Licensed Child Care Centres,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; School Locations - All Types; Parks and Recreation Facilities,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Places of Worship,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Parks and Recreation Facilities,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Ottawa Craft Breweries 2023; Municipal Address Points; Cultural Spaces Inventory - Food,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Food; Cultural Spaces Inventory - Store,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Municipal Address Points; Cultural Spaces Inventory - Community; Cultural Spaces Inventory - Learning,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Store; Ottawa Craft Breweries 2023; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Store; Cultural Spaces Inventory - Learning; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Store; Cultural Spaces Inventory - Learning,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Learning; Cultural Spaces Inventory - Food,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Learning; Cultural Spaces Inventory - Community; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Heritage; Cultural Spaces Inventory - Learning; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Heritage; Cultural Spaces Inventory - Food; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Ottawa Craft Breweries 2023; Municipal Address Points; Cultural Spaces Inventory - Learning,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Ottawa Craft Breweries 2023; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Municipal Address Points; Ottawa Craft Breweries 2023,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Municipal Address Points; Cultural Spaces Inventory - Heritage,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Cultural Spaces Inventory - Store; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Cultural Spaces Inventory - Store,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Food; Cultural Spaces Inventory - Learning; Cultural Spaces Inventory - Heritage; Municipal Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Community; Municipal Address Points; Cultural Spaces Inventory - Heritage,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints; Cultural Spaces Inventory - Community; Cultural Spaces Inventory - Learning,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints in the City of Quinte West; Trenton Memorial Hospital,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints in the City of Quinte West; Quinte West OPP Station,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints Caledon; Address Points,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Municipal Office; Library,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View); Community Hall; Library,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprint; Post-Secondary Institution; Address Point,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprint; Post-Secondary Institution,1,0.0001
+ODB_v3_ON_1,ON,dataset,Building Footprint; Address Point; Municipal Office; Post-Secondary Institution,1,0.0001
+ODB_v3_ON_1,ON,type,..,1892893,94.6446
+ODB_v3_ON_1,ON,type,Residential,51728,2.5864
+ODB_v3_ON_1,ON,type,Detached,17847,0.8923
+ODB_v3_ON_1,ON,type,Shed,13806,0.6903
+ODB_v3_ON_1,ON,type,Emerging Residential,4442,0.2221
+ODB_v3_ON_1,ON,type,Detatched Garage,3777,0.1888
+ODB_v3_ON_1,ON,type,Barn,2031,0.1016
+ODB_v3_ON_1,ON,type,Commercial,1801,0.0901
+ODB_v3_ON_1,ON,type,ORM_Boundary,1654,0.0827
+ODB_v3_ON_1,ON,type,Place of Worship,1124,0.0562
+ODB_v3_ON_1,ON,type,Urban_Centre,858,0.0429
+ODB_v3_ON_1,ON,type,School,782,0.0391
+ODB_v3_ON_1,ON,type,Detached Garage,585,0.0293
+ODB_v3_ON_1,ON,type,Rowhouse,574,0.0287
+ODB_v3_ON_1,ON,type,General,508,0.0254
+ODB_v3_ON_1,ON,type,Manufacturing,499,0.0249
+ODB_v3_ON_1,ON,type,Trailer,463,0.0232
+ODB_v3_ON_1,ON,type,Open Space,328,0.0164
+ODB_v3_ON_1,ON,type,Agricultural,278,0.0139
+ODB_v3_ON_1,ON,type,Special Uses,275,0.0138
+ODB_v3_ON_1,ON,type,Institutional,264,0.0132
+ODB_v3_ON_1,ON,type,Community Centre,248,0.0124
+ODB_v3_ON_1,ON,type,Plex,222,0.0111
+ODB_v3_ON_1,ON,type,Apartment,203,0.0101
+ODB_v3_ON_1,ON,type,Condominium,195,0.0097
+ODB_v3_ON_1,ON,type,Public Elementary School,181,0.0091
+ODB_v3_ON_1,ON,type,General_Employment,163,0.0081
+ODB_v3_ON_1,ON,type,Other,160,0.008
+ODB_v3_ON_1,ON,type,NHS,152,0.0076
+ODB_v3_ON_1,ON,type,Fire Station,122,0.0061
+ODB_v3_ON_1,ON,type,Unknown,108,0.0054
+ODB_v3_ON_1,ON,type,Storage,101,0.005
+ODB_v3_ON_1,ON,type,Mixed Office / Light Employment,96,0.0048
+ODB_v3_ON_1,ON,type,Catholic Elementary School,82,0.0041
+ODB_v3_ON_1,ON,type,Museum,77,0.0039
+ODB_v3_ON_1,ON,type,Mobile Home,75,0.0037
+ODB_v3_ON_1,ON,type,Church,65,0.0032
+ODB_v3_ON_1,ON,type,High Rise Apartment,51,0.0026
+ODB_v3_ON_1,ON,type,Education,49,0.0024
+ODB_v3_ON_1,ON,type,Retirement Home,48,0.0024
+ODB_v3_ON_1,ON,type,Community,48,0.0024
+ODB_v3_ON_1,ON,type,Education Facility,44,0.0022
+ODB_v3_ON_1,ON,type,Retail,43,0.0022
+ODB_v3_ON_1,ON,type,Bar / Restaurant,43,0.0022
+ODB_v3_ON_1,ON,type,Restaurant,42,0.0021
+ODB_v3_ON_1,ON,type,Library,41,0.0021
+ODB_v3_ON_1,ON,type,Childcare,39,0.0019
+ODB_v3_ON_1,ON,type,Office,36,0.0018
+ODB_v3_ON_1,ON,type,Purpose Built,34,0.0017
+ODB_v3_ON_1,ON,type,Major Institutional,34,0.0017
+ODB_v3_ON_1,ON,type,Community/Recreation Centre,29,0.0014
+ODB_v3_ON_1,ON,type,Municipal,27,0.0014
+ODB_v3_ON_1,ON,type,Health Centre,23,0.0011
+ODB_v3_ON_1,ON,type,Emergency,22,0.0011
+ODB_v3_ON_1,ON,type,Cafe,22,0.0011
+ODB_v3_ON_1,ON,type,Police Facility,20,0.001
+ODB_v3_ON_1,ON,type,House,19,0.0009
+ODB_v3_ON_1,ON,type,Historic Sites,19,0.0009
+ODB_v3_ON_1,ON,type,Brewery,17,0.0008
+ODB_v3_ON_1,ON,type,Police Station,16,0.0008
+ODB_v3_ON_1,ON,type,Dining,16,0.0008
+ODB_v3_ON_1,ON,type,Bar / Restaurant / Performance,14,0.0007
+ODB_v3_ON_1,ON,type,Garage,13,0.0006
+ODB_v3_ON_1,ON,type,Seniors Residence,12,0.0006
+ODB_v3_ON_1,ON,type,Public High School,12,0.0006
+ODB_v3_ON_1,ON,type,"Fitness/Recreation, Community Centres",12,0.0006
+ODB_v3_ON_1,ON,type,Community Hall,12,0.0006
+ODB_v3_ON_1,ON,type,Historic Sites / Government,11,0.0006
+ODB_v3_ON_1,ON,type,Ambulance Facility,10,0.0005
+ODB_v3_ON_1,ON,type,Post Secondary Institution,9,0.0004
+ODB_v3_ON_1,ON,type,Nursing Home,8,0.0004
+ODB_v3_ON_1,ON,type,Government Centre,8,0.0004
+ODB_v3_ON_1,ON,type,Cafe / Restaurant,8,0.0004
+ODB_v3_ON_1,ON,type,Place of Worship / Performance,7,0.0003
+ODB_v3_ON_1,ON,type,Place of Worship / Historic Sites,7,0.0003
+ODB_v3_ON_1,ON,type,Municipal Office,7,0.0003
+ODB_v3_ON_1,ON,type,Municipal Administration,7,0.0003
+ODB_v3_ON_1,ON,type,Education / Performance,7,0.0003
+ODB_v3_ON_1,ON,type,Retirement Residence,6,0.0003
+ODB_v3_ON_1,ON,type,Public Elementary (French),6,0.0003
+ODB_v3_ON_1,ON,type,Plaza,6,0.0003
+ODB_v3_ON_1,ON,type,Low Rise Apartment,6,0.0003
+ODB_v3_ON_1,ON,type,Hospital,6,0.0003
+ODB_v3_ON_1,ON,type,Health,6,0.0003
+ODB_v3_ON_1,ON,type,Arena,6,0.0003
+ODB_v3_ON_1,ON,type,Theatre,5,0.0003
+ODB_v3_ON_1,ON,type,Supporting Institution,5,0.0003
+ODB_v3_ON_1,ON,type,Penitentiary,5,0.0003
+ODB_v3_ON_1,ON,type,Museum / Historic Sites,5,0.0003
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Retail",5,0.0003
+ODB_v3_ON_1,ON,type,Cafe / Retail,5,0.0003
+ODB_v3_ON_1,ON,type,Bar / Retail,5,0.0003
+ODB_v3_ON_1,ON,type,Ambulance Station,5,0.0003
+ODB_v3_ON_1,ON,type,Airport Facility,5,0.0003
+ODB_v3_ON_1,ON,type,Private Elementary School,4,0.0002
+ODB_v3_ON_1,ON,type,Long Term Care,4,0.0002
+ODB_v3_ON_1,ON,type,Education / Retail,4,0.0002
+ODB_v3_ON_1,ON,type,EMS Station,4,0.0002
+ODB_v3_ON_1,ON,type,Cafe / Bakery,4,0.0002
+ODB_v3_ON_1,ON,type,Bar / Restaurant / Performance / Gallery / Exhibition,4,0.0002
+ODB_v3_ON_1,ON,type,Bar / Performance,4,0.0002
+ODB_v3_ON_1,ON,type,Synagogue,3,0.0001
+ODB_v3_ON_1,ON,type,Retail / Education / Event,3,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Bar, Historic Sites",3,0.0001
+ODB_v3_ON_1,ON,type,Recycling Depot,3,0.0001
+ODB_v3_ON_1,ON,type,Public Works Garage,3,0.0001
+ODB_v3_ON_1,ON,type,Public (school closed),3,0.0001
+ODB_v3_ON_1,ON,type,Ontario Works/Social Housing/Child Services,3,0.0001
+ODB_v3_ON_1,ON,type,Long Term Care Facility,3,0.0001
+ODB_v3_ON_1,ON,type,Library / Government,3,0.0001
+ODB_v3_ON_1,ON,type,Industrial,3,0.0001
+ODB_v3_ON_1,ON,type,Hockey Arena,3,0.0001
+ODB_v3_ON_1,ON,type,Historic Sites / Park,3,0.0001
+ODB_v3_ON_1,ON,type,Historic Sites / Education,3,0.0001
+ODB_v3_ON_1,ON,type,Government / Historic Sites,3,0.0001
+ODB_v3_ON_1,ON,type,Community College/University,3,0.0001
+ODB_v3_ON_1,ON,type,Community Centre / Fitness / Recreation,3,0.0001
+ODB_v3_ON_1,ON,type,City Facility,3,0.0001
+ODB_v3_ON_1,ON,type,Child Care Centre/Preschool,3,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Restaurant / Retail,3,0.0001
+ODB_v3_ON_1,ON,type,Bar,3,0.0001
+ODB_v3_ON_1,ON,type,Train Station,2,0.0001
+ODB_v3_ON_1,ON,type,Social,2,0.0001
+ODB_v3_ON_1,ON,type,Shopping Centre,2,0.0001
+ODB_v3_ON_1,ON,type,Retail / Education,2,0.0001
+ODB_v3_ON_1,ON,type,Prison / Correctional Facility,2,0.0001
+ODB_v3_ON_1,ON,type,Performance / Retail,2,0.0001
+ODB_v3_ON_1,ON,type,Paramedic,2,0.0001
+ODB_v3_ON_1,ON,type,Ops Training,2,0.0001
+ODB_v3_ON_1,ON,type,OPP,2,0.0001
+ODB_v3_ON_1,ON,type,Museum & Archives,2,0.0001
+ODB_v3_ON_1,ON,type,Gymnasium,2,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Education",2,0.0001
+ODB_v3_ON_1,ON,type,Fitness/Recreation,2,0.0001
+ODB_v3_ON_1,ON,type,Emergency Services,2,0.0001
+ODB_v3_ON_1,ON,type,Courthouse,2,0.0001
+ODB_v3_ON_1,ON,type,Continuing / Community Education,2,0.0001
+ODB_v3_ON_1,ON,type,Community/Rec Centre - City,2,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Bar / Performance / Retail,2,0.0001
+ODB_v3_ON_1,ON,type,Bar / Restaurant / Retail,2,0.0001
+ODB_v3_ON_1,ON,type,Art Gallery,2,0.0001
+ODB_v3_ON_1,ON,type,Water Purification Plant,1,0.0001
+ODB_v3_ON_1,ON,type,WPP,1,0.0001
+ODB_v3_ON_1,ON,type,Veterinary Facility,1,0.0001
+ODB_v3_ON_1,ON,type,Secondary School,1,0.0001
+ODB_v3_ON_1,ON,type,Retail / Performance / Park,1,0.0001
+ODB_v3_ON_1,ON,type,Retail / Cafe,1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Retail",1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Performance",1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Education",1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Cafe, Performance",1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Cafe, Bar, Performance",1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Bar, Performance",1,0.0001
+ODB_v3_ON_1,ON,type,"Restaurant, Bar, Gallery/Exhibition",1,0.0001
+ODB_v3_ON_1,ON,type,Public Secondary School,1,0.0001
+ODB_v3_ON_1,ON,type,Post-Secondary Education,1,0.0001
+ODB_v3_ON_1,ON,type,"Performance, Gallery/Exhibition, Museum",1,0.0001
+ODB_v3_ON_1,ON,type,Performance / Education,1,0.0001
+ODB_v3_ON_1,ON,type,Performance / Community Centre,1,0.0001
+ODB_v3_ON_1,ON,type,Park,1,0.0001
+ODB_v3_ON_1,ON,type,Museum / Historic Sites / Places of Worship / Performance,1,0.0001
+ODB_v3_ON_1,ON,type,Museum / Education / Event / Performance,1,0.0001
+ODB_v3_ON_1,ON,type,Municipal Wastewater Treatment Plant,1,0.0001
+ODB_v3_ON_1,ON,type,Multi Human Services Facility,1,0.0001
+ODB_v3_ON_1,ON,type,Lodging,1,0.0001
+ODB_v3_ON_1,ON,type,Library / Education,1,0.0001
+ODB_v3_ON_1,ON,type,Hospital/Health Centre,1,0.0001
+ODB_v3_ON_1,ON,type,Historical Sites,1,0.0001
+ODB_v3_ON_1,ON,type,Historic Sites / Museum,1,0.0001
+ODB_v3_ON_1,ON,type,Historic Sites / Library,1,0.0001
+ODB_v3_ON_1,ON,type,Health Services,1,0.0001
+ODB_v3_ON_1,ON,type,Health Clinic,1,0.0001
+ODB_v3_ON_1,ON,type,Headquarters,1,0.0001
+ODB_v3_ON_1,ON,type,Grocery,1,0.0001
+ODB_v3_ON_1,ON,type,Government / Community Centre / Education / Event / Historic Sites,1,0.0001
+ODB_v3_ON_1,ON,type,Government,1,0.0001
+ODB_v3_ON_1,ON,type,Gas,1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Retail, Creation, Education",1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Retail, Creation",1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Performance, Retail, Rehearsal, Creation",1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Museum, Retail, Education",1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Event, Education",1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Creation, Retail, Education",1,0.0001
+ODB_v3_ON_1,ON,type,"Gallery/Exhibition, Creation, Education",1,0.0001
+ODB_v3_ON_1,ON,type,Fire,1,0.0001
+ODB_v3_ON_1,ON,type,Event / Education,1,0.0001
+ODB_v3_ON_1,ON,type,Employment Services,1,0.0001
+ODB_v3_ON_1,ON,type,Education / Museum / Historic Sites,1,0.0001
+ODB_v3_ON_1,ON,type,Education / Government / Historic Sites / Library,1,0.0001
+ODB_v3_ON_1,ON,type,Education / Gallery / Exhibition,1,0.0001
+ODB_v3_ON_1,ON,type,Education / Fitness / Recreation,1,0.0001
+ODB_v3_ON_1,ON,type,Creation / Historic Sites / Education / Event,1,0.0001
+ODB_v3_ON_1,ON,type,Creation / Education / Gallery / Exhibition,1,0.0001
+ODB_v3_ON_1,ON,type,Community Rec/Centre - Board Run,1,0.0001
+ODB_v3_ON_1,ON,type,Community Health Centre,1,0.0001
+ODB_v3_ON_1,ON,type,Community Facility,1,0.0001
+ODB_v3_ON_1,ON,type,Community Centres / Performance / Education,1,0.0001
+ODB_v3_ON_1,ON,type,Community Centres / Education,1,0.0001
+ODB_v3_ON_1,ON,type,Community Centres / Creation / Education,1,0.0001
+ODB_v3_ON_1,ON,type,Community Centre / Education / Historic Sites,1,0.0001
+ODB_v3_ON_1,ON,type,Community Centre / Education / Event / Historic Sites / Fitness / Recreation,1,0.0001
+ODB_v3_ON_1,ON,type,Catholic High School,1,0.0001
+ODB_v3_ON_1,ON,type,Catholic Elementary (French),1,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Visual Art / Retail,1,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Performance,1,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Creation,1,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Bar / Performance,1,0.0001
+ODB_v3_ON_1,ON,type,Cafe / Bakery / Restaurant,1,0.0001
+ODB_v3_ON_1,ON,type,Bus Station,1,0.0001
+ODB_v3_ON_1,ON,type,Bar / Restaurant / Retail / Performance,1,0.0001
+ODB_v3_ON_1,ON,type,Bar / Cafe / Restaurant / Performance,1,0.0001
+ODB_v3_ON_1,ON,type,Bar / Cafe,1,0.0001
+ODB_v3_ON_1,ON,type,Administrative,1,0.0001
+ODB_v3_ON_1,ON,prov_terr,ON,2000000,100.0
+ODB_v3_ON_2,ON,source,Government of Canada,274020,13.701
+ODB_v3_ON_2,ON,source,City of Toronto,259742,12.9871
+ODB_v3_ON_2,ON,source,City of Mississauga,225261,11.263
+ODB_v3_ON_2,ON,source,City of Brampton,215872,10.7936
+ODB_v3_ON_2,ON,source,City of Hamilton,200234,10.0117
+ODB_v3_ON_2,ON,source,Niagara Region,168182,8.4091
+ODB_v3_ON_2,ON,source,City of Kitchener,110936,5.5468
+ODB_v3_ON_2,ON,source,Region of Waterloo,75046,3.7523
+ODB_v3_ON_2,ON,source,Norfolk County,67561,3.378
+ODB_v3_ON_2,ON,source,Town of Oakville,62816,3.1408
+ODB_v3_ON_2,ON,source,City of Cambridge,51871,2.5936
+ODB_v3_ON_2,ON,source,City of Burlington,49833,2.4916
+ODB_v3_ON_2,ON,source,Regional Municipality of Peel,39435,1.9717
+ODB_v3_ON_2,ON,source,City of Guelph,38549,1.9275
+ODB_v3_ON_2,ON,source,City of Niagara Falls,37571,1.8785
+ODB_v3_ON_2,ON,source,City of Brantford,36785,1.8393
+ODB_v3_ON_2,ON,source,Town of Milton,35336,1.7668
+ODB_v3_ON_2,ON,source,Government of Ontario,21096,1.0548
+ODB_v3_ON_2,ON,source,City of St. Catharines,12670,0.6335
+ODB_v3_ON_2,ON,source,Town of Orangeville,8528,0.4264
+ODB_v3_ON_2,ON,source,City of Welland,8273,0.4137
+ODB_v3_ON_2,ON,source,County of Elgin,369,0.0185
+ODB_v3_ON_2,ON,source,City of Waterloo,9,0.0004
+ODB_v3_ON_2,ON,source,County of Simcoe,4,0.0002
+ODB_v3_ON_2,ON,source,Regional Municipality of York,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints,324652,16.2326
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points,285226,14.2613
+ODB_v3_ON_2,ON,dataset,Automatically Extracted Buildings,274009,13.7005
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository,201193,10.0596
+ODB_v3_ON_2,ON,dataset,Building Outlines,165940,8.297
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses,165556,8.2778
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address,142122,7.1061
+ODB_v3_ON_2,ON,dataset,Building Footprints; Addresses,105186,5.2593
+ODB_v3_ON_2,ON,dataset,Buildings,89968,4.4984
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points,67570,3.3785
+ODB_v3_ON_2,ON,dataset,City of Brantford Building Footprints; City of Brantford Site Addresses 2,29861,1.493
+ODB_v3_ON_2,ON,dataset,Niagara Falls Building Footprints 2018; Niagara Falls Address Points,23522,1.1761
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Address Points,21019,1.051
+ODB_v3_ON_2,ON,dataset,Building to Scale,20474,1.0237
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon,18338,0.9169
+ODB_v3_ON_2,ON,dataset,Niagara Falls Building Footprints 2018,14036,0.7018
+ODB_v3_ON_2,ON,dataset,St. Catharines Building Polygons,12670,0.6335
+ODB_v3_ON_2,ON,dataset,Building Footprints; Civic Addresses,8821,0.441
+ODB_v3_ON_2,ON,dataset,Welland Building Footprints,8220,0.411
+ODB_v3_ON_2,ON,dataset,Building Footprints; Site Address,7001,0.35
+ODB_v3_ON_2,ON,dataset,City of Brantford Building Footprints,6924,0.3462
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses,1376,0.0688
+ODB_v3_ON_2,ON,dataset,Building to Scale; Ministry of Health service provider locations,622,0.0311
+ODB_v3_ON_2,ON,dataset,Heritage Buildings; Site Address,463,0.0232
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Heritage Points,403,0.0202
+ODB_v3_ON_2,ON,dataset,Building Outlines; Heritage Properties,390,0.0195
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Worship,314,0.0157
+ODB_v3_ON_2,ON,dataset,Building Footprints; Addresses; Food Inspection Facilities,313,0.0157
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Worship,269,0.0135
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types,206,0.0103
+ODB_v3_ON_2,ON,dataset,Buildings; Places of Worship,182,0.0091
+ODB_v3_ON_2,ON,dataset,Building Outlines; School Locations - All Types,146,0.0073
+ODB_v3_ON_2,ON,dataset,Buildings; Educational Institutions,142,0.0071
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Places of Worship,136,0.0068
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Licensed Child Care Centres,129,0.0065
+ODB_v3_ON_2,ON,dataset,City Owned Buildings,114,0.0057
+ODB_v3_ON_2,ON,dataset,Building Footprints; Places of Worship,112,0.0056
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Schools,111,0.0056
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types,89,0.0044
+ODB_v3_ON_2,ON,dataset,Building Footprints; Schools,84,0.0042
+ODB_v3_ON_2,ON,dataset,Building Outlines; Education Facility,83,0.0042
+ODB_v3_ON_2,ON,dataset,Buildings; Facilities,77,0.0039
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Places of Worship,73,0.0037
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres,68,0.0034
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; All Schools,59,0.0029
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Region of Peel Places of Worship,55,0.0027
+ODB_v3_ON_2,ON,dataset,Building Footprints; Town Facilities,54,0.0027
+ODB_v3_ON_2,ON,dataset,Welland Building Footprints; Welland Municipal Facilities,53,0.0027
+ODB_v3_ON_2,ON,dataset,Buildings; Schools,47,0.0024
+ODB_v3_ON_2,ON,dataset,Building Outlines; Parks and Recreation Facilities,45,0.0022
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Heritage Properties,44,0.0022
+ODB_v3_ON_2,ON,dataset,Buildings; Places of Worship; Addresses,42,0.0021
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Supermarkets,41,0.0021
+ODB_v3_ON_2,ON,dataset,Building Footprints; Addresses; Places of Worship,38,0.0019
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Educational Institutions,36,0.0018
+ODB_v3_ON_2,ON,dataset,Building Footprints; Facility Site Point,32,0.0016
+ODB_v3_ON_2,ON,dataset,Building Footprints; Region of Peel Places of Worship; Address Points,30,0.0015
+ODB_v3_ON_2,ON,dataset,Building Footprints; Seniors Homes,29,0.0014
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Worship; About Address Points (Municipal) - Toronto One Address Repository,28,0.0014
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points; Facilities,27,0.0014
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Seniors Homes,27,0.0014
+ODB_v3_ON_2,ON,dataset,Building Footprints; Heritage Points; Address Points,23,0.0011
+ODB_v3_ON_2,ON,dataset,Heritage Buildings,22,0.0011
+ODB_v3_ON_2,ON,dataset,Building Outlines; Fire Facility Locations,22,0.0011
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Fire Facility Locations,22,0.0011
+ODB_v3_ON_2,ON,dataset,Building Footprints; Site Address; Point of Interest,22,0.0011
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Address Points; Points of Interest,22,0.0011
+ODB_v3_ON_2,ON,dataset,Building Outlines; Government Service,21,0.001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Health Services,19,0.0009
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Parks and Recreation Facilities,19,0.0009
+ODB_v3_ON_2,ON,dataset,Building Footprints; Site Address; Facility Site Point,19,0.0009
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Address Points; Places of Worship,19,0.0009
+ODB_v3_ON_2,ON,dataset,Buildings; Arenas,18,0.0009
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres,18,0.0009
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Points of Interest,18,0.0009
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Schools,17,0.0008
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Interest and Toronto Attractions,17,0.0008
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Recreation Centres,16,0.0008
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; About Address Points (Municipal) - Toronto One Address Repository,15,0.0008
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Retirement Homes,15,0.0008
+ODB_v3_ON_2,ON,dataset,Building Footprints; Point of Interest,15,0.0008
+ODB_v3_ON_2,ON,dataset,Buildings; Fire Stations,14,0.0007
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Child Care,14,0.0007
+ODB_v3_ON_2,ON,dataset,Building Outlines; Heritage Properties; Addresses,14,0.0007
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Licensed Child Care Centres; School Locations - All Types,14,0.0007
+ODB_v3_ON_2,ON,dataset,Building Outlines; School Locations - All Types; About Address Points (Municipal) - Toronto One Address Repository,13,0.0006
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Police Facility Locations,12,0.0006
+ODB_v3_ON_2,ON,dataset,Building Footprints; Food Inspection Facilities,12,0.0006
+ODB_v3_ON_2,ON,dataset,Building Footprints; Community Centres,12,0.0006
+ODB_v3_ON_2,ON,dataset,Buildings; Libraries,11,0.0006
+ODB_v3_ON_2,ON,dataset,Buildings; Educational Institutions; Addresses,11,0.0006
+ODB_v3_ON_2,ON,dataset,Building Outlines; Community Centres,11,0.0006
+ODB_v3_ON_2,ON,dataset,Building Footprints; Places of Worship; Address Points,11,0.0006
+ODB_v3_ON_2,ON,dataset,Building Footprints; Heritage Points,11,0.0006
+ODB_v3_ON_2,ON,dataset,Building Footprints; City Fire Stations; Address,11,0.0006
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Supplementary City Facilities,11,0.0006
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points; Schools,10,0.0005
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; City Libraries,10,0.0005
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; City Fire Stations,10,0.0005
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Places of Worship,10,0.0005
+ODB_v3_ON_2,ON,dataset,Buildings; Museums and Galleries,9,0.0004
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres,9,0.0004
+ODB_v3_ON_2,ON,dataset,Building Outlines; Ambulance Station Locations,9,0.0004
+ODB_v3_ON_2,ON,dataset,Buildings; City Facilities,8,0.0004
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Child Care; Schools,8,0.0004
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Interest and Toronto Attractions; About Address Points (Municipal) - Toronto One Address Repository,8,0.0004
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Ambulance Station Locations,8,0.0004
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Homeless Shelters,8,0.0004
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Fire Stations,7,0.0003
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; City Facilities,7,0.0003
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points; Town Facilities,7,0.0003
+ODB_v3_ON_2,ON,dataset,Building Outlines; Museums,7,0.0003
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; School Locations - All Types,7,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Fire Halls,7,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Arenas,7,0.0003
+ODB_v3_ON_2,ON,dataset,Niagara Falls Building Footprints 2018; Niagara Falls Medical Services,6,0.0003
+ODB_v3_ON_2,ON,dataset,Heritage Buildings; Site Address; Point of Interest,6,0.0003
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Arenas,6,0.0003
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; About Address Points (Municipal) - Toronto One Address Repository,6,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; All Schools,6,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; GO Transit Stations,6,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Town Facilities,6,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Literacy and Adult Education,6,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Points of Interest; Address Points,6,0.0003
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Arenas,5,0.0003
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types; Licensed Child Care Centres,5,0.0003
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Licensed Child Care Centres; School Locations - All Types,5,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Addresses; Emergency Services,5,0.0003
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Heritage Points; Region of Peel Places of Worship,5,0.0003
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Libraries,4,0.0002
+ODB_v3_ON_2,ON,dataset,Buildings; Town Facilities,4,0.0002
+ODB_v3_ON_2,ON,dataset,Buildings; Schools; Address Points,4,0.0002
+ODB_v3_ON_2,ON,dataset,Buildings; Facilities; Address Points,4,0.0002
+ODB_v3_ON_2,ON,dataset,Buildings; EMS Stations; Fire Stations,4,0.0002
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Libraries,4,0.0002
+ODB_v3_ON_2,ON,dataset,Buildings City Owned,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Outlines; Retirement Homes,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Worship; School Locations - All Types,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Interest and Toronto Attractions,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; Supplementary City Facilities; Address Points,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; Supermarkets,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; Schools; Address Points,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; Region of Peel Places of Worship; Address Points; Heritage Points,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; Museums,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; EarlyON Child and Family Centres,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; EMS Stations,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; EarlyON Child and Family Centres,4,0.0002
+ODB_v3_ON_2,ON,dataset,Building,4,0.0002
+ODB_v3_ON_2,ON,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,4,0.0002
+ODB_v3_ON_2,ON,dataset,Niagara Falls Building Footprints 2018; Niagara Falls Medical Services; Niagara Falls Address Points,3,0.0001
+ODB_v3_ON_2,ON,dataset,Niagara Falls Building Footprints 2018; Niagara Falls Address Points; Niagara Falls Medical Services,3,0.0001
+ODB_v3_ON_2,ON,dataset,Heritage Buildings; Site Address; Facility Site Point,3,0.0001
+ODB_v3_ON_2,ON,dataset,Heritage Buildings; Facility Site Point,3,0.0001
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Emergency Services,3,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Hospitals,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Parks and Recreation Facilities; School Locations - All Types,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Libraries,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Heritage Properties; Places of Worship,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Licensed Child Care Centres,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; About Address Points (Municipal) - Toronto One Address Repository,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Worship; School Locations - All Types,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Region of Peel Places of Worship,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Public Parking Garages; Address Points,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Point of Interest; Site Address,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Libraries; Address Points,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Libraries,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; City Libraries; Address,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; City Heritage Buildings,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; City Museums,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; City Heritage Buildings,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Libraries,3,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints Caledon; Places of Worship; Address Points,3,0.0001
+ODB_v3_ON_2,ON,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",3,0.0001
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Museums,2,0.0001
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Addresses,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Town Facilities; Address Points,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Police Stations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Libraries; Addresses,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Libraries; Address Points,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Health Services,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Fire Stations; Addresses,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Educational Institutions; Places of Worship,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Child Care,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Police Stations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Educational Institutions; Places of Worship,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; EMS Stations; Fire Stations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; EMS Locations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Worship; Heritage Properties,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Worship; Addresses; Heritage Properties,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; Places of Worship,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Hospitals,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Fire Facility Locations; Ambulance Station Locations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Places of Worship,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Places of Worship,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Education Facility,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Worship; Licensed Child Care Centres,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Ambulance Station Locations; Fire Facility Locations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Town Facilities; Address Points,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Seniors Homes; Address Points,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Region of Peel Places of Worship; Address Points; Schools,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Food Inspection Facilities; Addresses,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; City Community Centres,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; City Community Centres,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Region of Peel Places of Worship; Heritage Points,2,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Fire Stations,2,0.0001
+ODB_v3_ON_2,ON,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,2,0.0001
+ODB_v3_ON_2,ON,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,2,0.0001
+ODB_v3_ON_2,ON,dataset,Niagara Falls Building Footprints 2018; Niagara Falls Police Services,1,0.0001
+ODB_v3_ON_2,ON,dataset,Heritage Buildings; Point of Interest; Site Address,1,0.0001
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Pools,1,0.0001
+ODB_v3_ON_2,ON,dataset,City Owned Buildings; Emergency Services; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Schools; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Places of Worship; Educational Institutions,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Museums and Galleries; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Hospitals; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Fire Stations; Facilities; Address Points,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Fire Stations; EMS Stations; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Fire Stations; EMS Stations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Fire Stations; EMS Locations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; EMS Stations; Fire Stations; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; City Facilities; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Arenas; Libraries,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Police Station,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Libraries; Fire Stations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Hospitals,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Health Services; City Facilities,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; Educational Institutions; Libraries,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Addresses; EMS Stations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points; Libraries,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points; Fire Stations; Facilities,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings; Address Points; Fire Stations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Buildings City Owned; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; School Locations - All Types; Licensed Child Care Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; School Locations - All Types; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Police Facility Locations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Places of Worship; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Parks and Recreation Facilities; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; Places of Interest and Toronto Attractions; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Licensed Child Care Centres; School Locations - All Types; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Libraries; Heritage Properties,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Libraries; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Heritage Properties; Places of Worship; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Heritage Properties; Education Facility,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Heritage Properties; Addresses; Places of Worship,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Government Service; Places of Worship,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Government Service; Heritage Properties,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Fire Facility Locations; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Education Facility; Heritage Properties,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; School Locations - All Types; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; Parks and Recreation Facilities; About Address Points (Municipal) - Toronto One Address Repository,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; EarlyON Child and Family Centres; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Ambulance Station Locations; Fire Facility Locations,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Places of Worship; Heritage Properties,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Hospitals,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Government Service; Heritage Properties,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; Addresses; Government Service,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; School Locations - All Types; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Police Facility Locations; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Places of Interest and Toronto Attractions; School Locations - All Types,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; Fire Facility Locations; Places of Interest and Toronto Attractions,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; School Locations - All Types,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Places of Worship,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Parks and Recreation Facilities,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Outlines; About Address Points (Municipal) - Toronto One Address Repository; EarlyON Child and Family Centres; Licensed Child Care Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Site Address; Point of Interest; Facility Site Point,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Recreation Centres; Address Points,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Recreation Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Literacy and Adult Education; EarlyON Child and Family Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Literacy and Adult Education; All Schools,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Literacy and Adult Education,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Libraries; Addresses,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Hospitals,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Heritage Points; Region of Peel Places of Worship; Address Points,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Fire Stations; Address Points,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Facility Site Point; Site Address,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Civic Addresses; Libraries,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Civic Addresses; Community Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; City Theatres; Address,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; City Theatres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Arenas; Address Points,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Addresses; Libraries,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; City Theatres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address; Art Galleries,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Schools; Recreation Centres,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Region of Peel Places of Worship; Schools,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Public Parking Garages; Schools,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Literacy and Adult Education; All Schools,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Hospitals,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Heritage Points; Schools,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Go Stations; Heritage Points,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprints; Address Points; Arenas,1,0.0001
+ODB_v3_ON_2,ON,dataset,Building Footprint,1,0.0001
+ODB_v3_ON_2,ON,type,..,1755168,87.7584
+ODB_v3_ON_2,ON,type,Single / Semi / Duplex,55740,2.787
+ODB_v3_ON_2,ON,type,Shed,50952,2.5476
+ODB_v3_ON_2,ON,type,Single Family Dwelling,30222,1.5111
+ODB_v3_ON_2,ON,type,Single-Family Home,22513,1.1257
+ODB_v3_ON_2,ON,type,Detached,18510,0.9255
+ODB_v3_ON_2,ON,type,Garage,12175,0.6088
+ODB_v3_ON_2,ON,type,Barn,8130,0.4065
+ODB_v3_ON_2,ON,type,General,7620,0.381
+ODB_v3_ON_2,ON,type,Townhouse,7432,0.3716
+ODB_v3_ON_2,ON,type,Kiln,5942,0.2971
+ODB_v3_ON_2,ON,type,Low Density Residential,2591,0.1295
+ODB_v3_ON_2,ON,type,Commercial,2357,0.1178
+ODB_v3_ON_2,ON,type,Multi Family Dwelling,2245,0.1123
+ODB_v3_ON_2,ON,type,Resort Dwelling,2128,0.1064
+ODB_v3_ON_2,ON,type,Multiple,2011,0.1006
+ODB_v3_ON_2,ON,type,Unknown,1460,0.073
+ODB_v3_ON_2,ON,type,Industrial,1363,0.0682
+ODB_v3_ON_2,ON,type,Place of Worship,1337,0.0669
+ODB_v3_ON_2,ON,type,Greenhouse,1133,0.0566
+ODB_v3_ON_2,ON,type,Silo,892,0.0446
+ODB_v3_ON_2,ON,type,Other,739,0.0369
+ODB_v3_ON_2,ON,type,Semi-Detached,618,0.0309
+ODB_v3_ON_2,ON,type,School,585,0.0293
+ODB_v3_ON_2,ON,type,Boathouse,451,0.0226
+ODB_v3_ON_2,ON,type,Education Facility,443,0.0221
+ODB_v3_ON_2,ON,type,Recreation,436,0.0218
+ODB_v3_ON_2,ON,type,Residential,418,0.0209
+ODB_v3_ON_2,ON,type,Institutional,384,0.0192
+ODB_v3_ON_2,ON,type,Commercial Residential,295,0.0147
+ODB_v3_ON_2,ON,type,Restaurant,283,0.0141
+ODB_v3_ON_2,ON,type,QUONSET,235,0.0118
+ODB_v3_ON_2,ON,type,Elementary School,215,0.0107
+ODB_v3_ON_2,ON,type,Utility,189,0.0095
+ODB_v3_ON_2,ON,type,Mobile Home,187,0.0094
+ODB_v3_ON_2,ON,type,Commercial or Retail Facility,177,0.0089
+ODB_v3_ON_2,ON,type,Worship Centre,135,0.0067
+ODB_v3_ON_2,ON,type,Low Rise Residential,126,0.0063
+ODB_v3_ON_2,ON,type,Apartment,121,0.006
+ODB_v3_ON_2,ON,type,Point of Interest,103,0.0052
+ODB_v3_ON_2,ON,type,Fire Station,102,0.0051
+ODB_v3_ON_2,ON,type,High-rise Residential,98,0.0049
+ODB_v3_ON_2,ON,type,Community Centre,96,0.0048
+ODB_v3_ON_2,ON,type,Shop,89,0.0044
+ODB_v3_ON_2,ON,type,Industrial Facility,78,0.0039
+ODB_v3_ON_2,ON,type,Education,78,0.0039
+ODB_v3_ON_2,ON,type,Public Elementary School,74,0.0037
+ODB_v3_ON_2,ON,type,Supermarket,71,0.0036
+ODB_v3_ON_2,ON,type,Seniors Home,58,0.0029
+ODB_v3_ON_2,ON,type,Library,56,0.0028
+ODB_v3_ON_2,ON,type,Government Service,47,0.0024
+ODB_v3_ON_2,ON,type,Bunkhouse,45,0.0022
+ODB_v3_ON_2,ON,type,Secondary School,43,0.0022
+ODB_v3_ON_2,ON,type,Arena,41,0.0021
+ODB_v3_ON_2,ON,type,Shelter,38,0.0019
+ODB_v3_ON_2,ON,type,Nursing and Retirement Home,38,0.0019
+ODB_v3_ON_2,ON,type,Community Resource,35,0.0018
+ODB_v3_ON_2,ON,type,Retirement Home,31,0.0015
+ODB_v3_ON_2,ON,type,Accessory,30,0.0015
+ODB_v3_ON_2,ON,type,Water Supply or Treatment Facility,25,0.0013
+ODB_v3_ON_2,ON,type,High Rise Apartment,24,0.0012
+ODB_v3_ON_2,ON,type,Government,24,0.0012
+ODB_v3_ON_2,ON,type,Alternative Education,22,0.0011
+ODB_v3_ON_2,ON,type,Park Pavilion,21,0.001
+ODB_v3_ON_2,ON,type,Purpose Built,19,0.0009
+ODB_v3_ON_2,ON,type,Adu,19,0.0009
+ODB_v3_ON_2,ON,type,Broiler,18,0.0009
+ODB_v3_ON_2,ON,type,Catholic Elementary School,17,0.0008
+ODB_v3_ON_2,ON,type,Public School,15,0.0008
+ODB_v3_ON_2,ON,type,Office,15,0.0008
+ODB_v3_ON_2,ON,type,House,15,0.0008
+ODB_v3_ON_2,ON,type,Emergency Services,15,0.0008
+ODB_v3_ON_2,ON,type,Coverall,15,0.0008
+ODB_v3_ON_2,ON,type,Recreation Centre,14,0.0007
+ODB_v3_ON_2,ON,type,Police Facility,14,0.0007
+ODB_v3_ON_2,ON,type,Fire,14,0.0007
+ODB_v3_ON_2,ON,type,Administrative,12,0.0006
+ODB_v3_ON_2,ON,type,Carport,11,0.0006
+ODB_v3_ON_2,ON,type,Section 23 Program,10,0.0005
+ODB_v3_ON_2,ON,type,Public Water Supply Well,10,0.0005
+ODB_v3_ON_2,ON,type,Museum / Gallery,10,0.0005
+ODB_v3_ON_2,ON,type,Hospital,10,0.0005
+ODB_v3_ON_2,ON,type,EMS Station,10,0.0005
+ODB_v3_ON_2,ON,type,Community/Recreation Centre,10,0.0005
+ODB_v3_ON_2,ON,type,Catholic School,10,0.0005
+ODB_v3_ON_2,ON,type,Museum,9,0.0004
+ODB_v3_ON_2,ON,type,Garden Suite,9,0.0004
+ODB_v3_ON_2,ON,type,Family Health Teams,9,0.0004
+ODB_v3_ON_2,ON,type,Walk-In Clinic,8,0.0004
+ODB_v3_ON_2,ON,type,Public High School,8,0.0004
+ODB_v3_ON_2,ON,type,Post Secondary School,8,0.0004
+ODB_v3_ON_2,ON,type,Park,8,0.0004
+ODB_v3_ON_2,ON,type,Homeless Shelter,8,0.0004
+ODB_v3_ON_2,ON,type,Adult Learning,8,0.0004
+ODB_v3_ON_2,ON,type,Pavilion,7,0.0003
+ODB_v3_ON_2,ON,type,Church,7,0.0003
+ODB_v3_ON_2,ON,type,Sports Facility,6,0.0003
+ODB_v3_ON_2,ON,type,Religious Facility,6,0.0003
+ODB_v3_ON_2,ON,type,Public Elementary (French),6,0.0003
+ODB_v3_ON_2,ON,type,Park: Municipal,6,0.0003
+ODB_v3_ON_2,ON,type,Municipal Facility,6,0.0003
+ODB_v3_ON_2,ON,type,Long Term Care,6,0.0003
+ODB_v3_ON_2,ON,type,Heritage properties,6,0.0003
+ODB_v3_ON_2,ON,type,GO Station,6,0.0003
+ODB_v3_ON_2,ON,type,Comfort Station,6,0.0003
+ODB_v3_ON_2,ON,type,Cemetery,6,0.0003
+ODB_v3_ON_2,ON,type,Trailer,5,0.0003
+ODB_v3_ON_2,ON,type,Sports Complex,5,0.0003
+ODB_v3_ON_2,ON,type,Public (school closed),5,0.0003
+ODB_v3_ON_2,ON,type,Private Elementary School,5,0.0003
+ODB_v3_ON_2,ON,type,Post Office,5,0.0003
+ODB_v3_ON_2,ON,type,Pool,5,0.0003
+ODB_v3_ON_2,ON,type,Peel Living,5,0.0003
+ODB_v3_ON_2,ON,type,Operations,5,0.0003
+ODB_v3_ON_2,ON,type,Catholic Elementary (French),5,0.0003
+ODB_v3_ON_2,ON,type,Arts,5,0.0003
+ODB_v3_ON_2,ON,type,Adult Learning Centre,5,0.0003
+ODB_v3_ON_2,ON,type,Pump House,4,0.0002
+ODB_v3_ON_2,ON,type,Police Station,4,0.0002
+ODB_v3_ON_2,ON,type,Parking Garage,4,0.0002
+ODB_v3_ON_2,ON,type,Middle School,4,0.0002
+ODB_v3_ON_2,ON,type,Health or Medical Facility,4,0.0002
+ODB_v3_ON_2,ON,type,General Administration,4,0.0002
+ODB_v3_ON_2,ON,type,Family Resource Centre,4,0.0002
+ODB_v3_ON_2,ON,type,Clubhouse,4,0.0002
+ODB_v3_ON_2,ON,type,Service-Transportation,3,0.0001
+ODB_v3_ON_2,ON,type,Public Washroom,3,0.0001
+ODB_v3_ON_2,ON,type,Post Secondary Institution,3,0.0001
+ODB_v3_ON_2,ON,type,Police,3,0.0001
+ODB_v3_ON_2,ON,type,Mental Health,3,0.0001
+ODB_v3_ON_2,ON,type,Medical Centre,3,0.0001
+ODB_v3_ON_2,ON,type,Hotel / Motel,3,0.0001
+ODB_v3_ON_2,ON,type,General/Residential,3,0.0001
+ODB_v3_ON_2,ON,type,Funeral Home,3,0.0001
+ODB_v3_ON_2,ON,type,Elementary and Secondary School,3,0.0001
+ODB_v3_ON_2,ON,type,EarlyON,3,0.0001
+ODB_v3_ON_2,ON,type,Cottage,3,0.0001
+ODB_v3_ON_2,ON,type,Community Services Agency,3,0.0001
+ODB_v3_ON_2,ON,type,Community College/University,3,0.0001
+ODB_v3_ON_2,ON,type,Care and Treatment Occupancy,3,0.0001
+ODB_v3_ON_2,ON,type,Care Occupancy,3,0.0001
+ODB_v3_ON_2,ON,type,Cabin,3,0.0001
+ODB_v3_ON_2,ON,type,Water Tower,2,0.0001
+ODB_v3_ON_2,ON,type,Warehouse,2,0.0001
+ODB_v3_ON_2,ON,type,Service-Other,2,0.0001
+ODB_v3_ON_2,ON,type,Seniors Centre,2,0.0001
+ODB_v3_ON_2,ON,type,Resort Residential Accessory,2,0.0001
+ODB_v3_ON_2,ON,type,Public Washroom: Year-round,2,0.0001
+ODB_v3_ON_2,ON,type,Provincial Facility,2,0.0001
+ODB_v3_ON_2,ON,type,Performing Arts / Theatres,2,0.0001
+ODB_v3_ON_2,ON,type,Municipal Operations,2,0.0001
+ODB_v3_ON_2,ON,type,Montessori School,2,0.0001
+ODB_v3_ON_2,ON,type,Market,2,0.0001
+ODB_v3_ON_2,ON,type,Grain Elevator,2,0.0001
+ODB_v3_ON_2,ON,type,Fire Station / EMS Station,2,0.0001
+ODB_v3_ON_2,ON,type,Family and Children Services,2,0.0001
+ODB_v3_ON_2,ON,type,Emergency Medical Services,2,0.0001
+ODB_v3_ON_2,ON,type,Cultural Centre,2,0.0001
+ODB_v3_ON_2,ON,type,Chicken Coop,2,0.0001
+ODB_v3_ON_2,ON,type,Catholic High School,2,0.0001
+ODB_v3_ON_2,ON,type,COOP,2,0.0001
+ODB_v3_ON_2,ON,type,Accessory Dwelling Unit,2,0.0001
+ODB_v3_ON_2,ON,type,Workshop,1,0.0001
+ODB_v3_ON_2,ON,type,Winery,1,0.0001
+ODB_v3_ON_2,ON,type,Wilderness Centre,1,0.0001
+ODB_v3_ON_2,ON,type,Waterworks,1,0.0001
+ODB_v3_ON_2,ON,type,Water Pumping Station,1,0.0001
+ODB_v3_ON_2,ON,type,Waldorf School,1,0.0001
+ODB_v3_ON_2,ON,type,WELL HOUSE,1,0.0001
+ODB_v3_ON_2,ON,type,Urgent Care,1,0.0001
+ODB_v3_ON_2,ON,type,Transit,1,0.0001
+ODB_v3_ON_2,ON,type,Train Station,1,0.0001
+ODB_v3_ON_2,ON,type,Theatre,1,0.0001
+ODB_v3_ON_2,ON,type,Tennis Courts,1,0.0001
+ODB_v3_ON_2,ON,type,Synagogue,1,0.0001
+ODB_v3_ON_2,ON,type,Stage,1,0.0001
+ODB_v3_ON_2,ON,type,Sports Arena / Stadium,1,0.0001
+ODB_v3_ON_2,ON,type,SG,1,0.0001
+ODB_v3_ON_2,ON,type,Retail,1,0.0001
+ODB_v3_ON_2,ON,type,Resort Residential Dwelling,1,0.0001
+ODB_v3_ON_2,ON,type,Recycling Centre,1,0.0001
+ODB_v3_ON_2,ON,type,Railroad Station,1,0.0001
+ODB_v3_ON_2,ON,type,QUINSET,1,0.0001
+ODB_v3_ON_2,ON,type,Public Transportation Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Public Health,1,0.0001
+ODB_v3_ON_2,ON,type,Processing Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Peel Builds,1,0.0001
+ODB_v3_ON_2,ON,type,Parking,1,0.0001
+ODB_v3_ON_2,ON,type,Park Operations Centre,1,0.0001
+ODB_v3_ON_2,ON,type,Park Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Paramedic Facilities - Satellite Station,1,0.0001
+ODB_v3_ON_2,ON,type,Ontario Provincial Police,1,0.0001
+ODB_v3_ON_2,ON,type,NPP,1,0.0001
+ODB_v3_ON_2,ON,type,Motel,1,0.0001
+ODB_v3_ON_2,ON,type,Medium Hazard Industrial,1,0.0001
+ODB_v3_ON_2,ON,type,Maintenance,1,0.0001
+ODB_v3_ON_2,ON,type,Low Rise Apartment,1,0.0001
+ODB_v3_ON_2,ON,type,Long Term Care Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Indoor Swimming Pool,1,0.0001
+ODB_v3_ON_2,ON,type,Historical Building,1,0.0001
+ODB_v3_ON_2,ON,type,Heritage House,1,0.0001
+ODB_v3_ON_2,ON,type,General Hotel,1,0.0001
+ODB_v3_ON_2,ON,type,Gas Station,1,0.0001
+ODB_v3_ON_2,ON,type,Food Bank,1,0.0001
+ODB_v3_ON_2,ON,type,Fire / Life Safety Education,1,0.0001
+ODB_v3_ON_2,ON,type,Enforcement and Bylaw,1,0.0001
+ODB_v3_ON_2,ON,type,Daycare,1,0.0001
+ODB_v3_ON_2,ON,type,Curling Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Curling Club,1,0.0001
+ODB_v3_ON_2,ON,type,Cultural Services,1,0.0001
+ODB_v3_ON_2,ON,type,Courthouse,1,0.0001
+ODB_v3_ON_2,ON,type,Court,1,0.0001
+ODB_v3_ON_2,ON,type,Corporate Training Centre,1,0.0001
+ODB_v3_ON_2,ON,type,Community/Rec Centre AOCC,1,0.0001
+ODB_v3_ON_2,ON,type,Community/Rec Centre - Private,1,0.0001
+ODB_v3_ON_2,ON,type,Community/Rec Centre - City,1,0.0001
+ODB_v3_ON_2,ON,type,Community Health Centre,1,0.0001
+ODB_v3_ON_2,ON,type,Church: Chapel,1,0.0001
+ODB_v3_ON_2,ON,type,Children and Youth Mental Health,1,0.0001
+ODB_v3_ON_2,ON,type,Childcare / Daycare Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Business and Personal Services,1,0.0001
+ODB_v3_ON_2,ON,type,Banking or Finance Facility,1,0.0001
+ODB_v3_ON_2,ON,type,Arts Centre,1,0.0001
+ODB_v3_ON_2,ON,type,Art Gallery,1,0.0001
+ODB_v3_ON_2,ON,type,Animal Shelter,1,0.0001
+ODB_v3_ON_2,ON,type,Ambulance Service,1,0.0001
+ODB_v3_ON_2,ON,type,Agricultural,1,0.0001
+ODB_v3_ON_2,ON,prov_terr,ON,2000000,100.0
+ODB_v3_ON_3,ON,source,Government of Canada,585425,34.5285
+ODB_v3_ON_3,ON,source,City of London,191992,11.3237
+ODB_v3_ON_3,ON,source,County of Simcoe,191116,11.2721
+ODB_v3_ON_3,ON,source,City of Windsor,120657,7.1164
+ODB_v3_ON_3,ON,source,District of Muskoka,109818,6.4771
+ODB_v3_ON_3,ON,source,City of Thunder Bay,106151,6.2608
+ODB_v3_ON_3,ON,source,City of Greater Sudbury,63902,3.769
+ODB_v3_ON_3,ON,source,City of Barrie,63054,3.7189
+ODB_v3_ON_3,ON,source,Government of Ontario,58054,3.424
+ODB_v3_ON_3,ON,source,County of Huron,50785,2.9953
+ODB_v3_ON_3,ON,source,County of Elgin,44554,2.6278
+ODB_v3_ON_3,ON,source,Region of Waterloo,42840,2.5267
+ODB_v3_ON_3,ON,source,City of Sarnia,40308,2.3774
+ODB_v3_ON_3,ON,source,County of Essex,17701,1.044
+ODB_v3_ON_3,ON,source,City of Waterloo,9008,0.5313
+ODB_v3_ON_3,ON,source,Ville de Rouyn-Noranda,53,0.0031
+ODB_v3_ON_3,ON,source,County of Lennox & Addington,32,0.0019
+ODB_v3_ON_3,ON,source,City of Kitchener,18,0.0011
+ODB_v3_ON_3,ON,source,Norfolk County,10,0.0006
+ODB_v3_ON_3,ON,source,County of Frontenac,7,0.0004
+ODB_v3_ON_3,ON,dataset,Automatically Extracted Buildings,585356,34.5244
+ODB_v3_ON_3,ON,dataset,Building Footprints,180833,10.6656
+ODB_v3_ON_3,ON,dataset,Building; Address Number,139910,8.2519
+ODB_v3_ON_3,ON,dataset,Buildings,114798,6.7708
+ODB_v3_ON_3,ON,dataset,Buildings; Addresses,100670,5.9375
+ODB_v3_ON_3,ON,dataset,Building Footprint,80120,4.7255
+ODB_v3_ON_3,ON,dataset,Building Feature Layer,65101,3.8397
+ODB_v3_ON_3,ON,dataset,Address and Building Roofline,63902,3.769
+ODB_v3_ON_3,ON,dataset,Building to Scale,57146,3.3705
+ODB_v3_ON_3,ON,dataset,Building,50843,2.9987
+ODB_v3_ON_3,ON,dataset,Building Feature Layer; Municipal Address Feature Layer,41050,2.4211
+ODB_v3_ON_3,ON,dataset,BuildingFootprints,40427,2.3844
+ODB_v3_ON_3,ON,dataset,Buildings; Address VW,36820,2.1716
+ODB_v3_ON_3,ON,dataset,Building Footprints; Addresses,32903,1.9406
+ODB_v3_ON_3,ON,dataset,Building Footprint; Addressing - Civic Addresses,29698,1.7516
+ODB_v3_ON_3,ON,dataset,Buildings Open Data; Addresses Open Data,24749,1.4597
+ODB_v3_ON_3,ON,dataset,Buildings Open Data,15559,0.9177
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Municipal 911 Address,10228,0.6032
+ODB_v3_ON_3,ON,dataset,Building Outlines,8831,0.5209
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points,8828,0.5207
+ODB_v3_ON_3,ON,dataset,Buildings; Registered Two Unit Houses,2120,0.125
+ODB_v3_ON_3,ON,dataset,Building Footprints; Elgin Address Points 2025,2074,0.1223
+ODB_v3_ON_3,ON,dataset,Building to Scale; Ministry of Health service provider locations,894,0.0527
+ODB_v3_ON_3,ON,dataset,Building Footprints; Heritage Sites,752,0.0444
+ODB_v3_ON_3,ON,dataset,Building Footprints; Addresses; Food Inspection Facilities,216,0.0127
+ODB_v3_ON_3,ON,dataset,Building Outlines; Addresses,142,0.0084
+ODB_v3_ON_3,ON,dataset,Buildings; Address VW; Registered Two Unit Houses,128,0.0075
+ODB_v3_ON_3,ON,dataset,Buildings; Facility Site Point,106,0.0063
+ODB_v3_ON_3,ON,dataset,Buildings; Registered Two Unit Houses; Address VW,103,0.0061
+ODB_v3_ON_3,ON,dataset,Buildings; Addresses; Schools,75,0.0044
+ODB_v3_ON_3,ON,dataset,Buildings; Address VW; Facility Site Point,74,0.0044
+ODB_v3_ON_3,ON,dataset,Building; Community Facilities,71,0.0042
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Places of Worship,70,0.0041
+ODB_v3_ON_3,ON,dataset,Building; Childcare Facility,67,0.004
+ODB_v3_ON_3,ON,dataset,Buildings; Schools,66,0.0039
+ODB_v3_ON_3,ON,dataset,Building Footprints; Schools,66,0.0039
+ODB_v3_ON_3,ON,dataset,Empreintes de bâtiments,53,0.0031
+ODB_v3_ON_3,ON,dataset,Town Facilities,38,0.0022
+ODB_v3_ON_3,ON,dataset,Building Footprint (Public View),30,0.0018
+ODB_v3_ON_3,ON,dataset,Building; Fire Hall,27,0.0016
+ODB_v3_ON_3,ON,dataset,Heritage Buildings,25,0.0015
+ODB_v3_ON_3,ON,dataset,Park Structure,22,0.0013
+ODB_v3_ON_3,ON,dataset,Building; Long Term Care Facility,20,0.0012
+ODB_v3_ON_3,ON,dataset,Building; Community Facilities; Address Number,17,0.001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Childcare Facility,17,0.001
+ODB_v3_ON_3,ON,dataset,Buildings; Addresses; Emergency Services,16,0.0009
+ODB_v3_ON_3,ON,dataset,Building; Library,16,0.0009
+ODB_v3_ON_3,ON,dataset,Building; Municipal Administration Centre,14,0.0008
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Emergency Services,13,0.0008
+ODB_v3_ON_3,ON,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,13,0.0008
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Recreation,12,0.0007
+ODB_v3_ON_3,ON,dataset,Building; Fire Hall; Address Number,12,0.0007
+ODB_v3_ON_3,ON,dataset,Buildings; Addresses; Libraries,11,0.0006
+ODB_v3_ON_3,ON,dataset,Automatically Extracted Buildings; Facilities - Point,11,0.0006
+ODB_v3_ON_3,ON,dataset,Building Footprints; Libraries,10,0.0006
+ODB_v3_ON_3,ON,dataset,Buildings; Emergency Services,9,0.0005
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Library,9,0.0005
+ODB_v3_ON_3,ON,dataset,"Building to Scale; Fire, Aviation and Emergency Facility Point",9,0.0005
+ODB_v3_ON_3,ON,dataset,Building Outlines; Schools,9,0.0005
+ODB_v3_ON_3,ON,dataset,Building Footprints; Elgin Library,9,0.0005
+ODB_v3_ON_3,ON,dataset,Water Facility,8,0.0005
+ODB_v3_ON_3,ON,dataset,Building; Childcare Facility; Address Number,8,0.0005
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Community Facilities,8,0.0005
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Fire Hall,7,0.0004
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Municipal 911 Address; Places of Worship,6,0.0004
+ODB_v3_ON_3,ON,dataset,Building; Paramedic Station; Address Number,6,0.0004
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Long Term Care Facility,6,0.0004
+ODB_v3_ON_3,ON,dataset,Building Footprints; Fire Stations,6,0.0004
+ODB_v3_ON_3,ON,dataset,Building Footprints; Addresses; Libraries,6,0.0004
+ODB_v3_ON_3,ON,dataset,Heritage Buildings; Addresses,5,0.0003
+ODB_v3_ON_3,ON,dataset,Buildings; Libraries,5,0.0003
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Schools,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building; Police Station,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building; Ontario Employment Services Centre,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building to Scale; Forest Processing Facility,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Schools,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building Footprints; Heritage Sites; Schools,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building Footprints; Food Inspection Facilities,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building Footprints; Community Centres,5,0.0003
+ODB_v3_ON_3,ON,dataset,Building Footprints (Open Data View),5,0.0003
+ODB_v3_ON_3,ON,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",5,0.0003
+ODB_v3_ON_3,ON,dataset,Water Facility; Address VW,4,0.0002
+ODB_v3_ON_3,ON,dataset,Buildings; Facility Site Point; Address VW,4,0.0002
+ODB_v3_ON_3,ON,dataset,Buildings; Addresses; Hospitals,4,0.0002
+ODB_v3_ON_3,ON,dataset,Building; Education Facility; Address Number,4,0.0002
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Police Station,4,0.0002
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Paramedic Station,4,0.0002
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Education Facility,4,0.0002
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Places of Worship,4,0.0002
+ODB_v3_ON_3,ON,dataset,Building Footprints; Police Stations,4,0.0002
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Municipal 911 Address; Entertainment,3,0.0002
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Library; Municipal 911 Address,3,0.0002
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Entertainment; Municipal 911 Address,3,0.0002
+ODB_v3_ON_3,ON,dataset,Building; Service Ontario Centre; Address Number,3,0.0002
+ODB_v3_ON_3,ON,dataset,Building; Museum And Archives,3,0.0002
+ODB_v3_ON_3,ON,dataset,Building Outlines; Addresses; Schools,3,0.0002
+ODB_v3_ON_3,ON,dataset,Building Outlines; Addresses; Points of Interest,3,0.0002
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Places of Worship; Municipal 911 Address,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Service Ontario Centre,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Police Station; Address Number,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Paramedic Station; Fire Hall,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Paramedic Station,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Education Facility; Childcare Facility,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Education Facility,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Ontario Employment Services Centre,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Museum And Archives,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Place of Worship,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Fire Stations,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Schools; Town of Tecumseh Address Points,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Schools; Heritage Sites,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Places of Worship; Town of Tecumseh Address Points,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Place of Worship,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Food Inspection Facilities; Addresses,2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints (Open Data View); Civic Address Points (Open Data View),2,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprint (Public View); Civic Addresses (Public View),2,0.0001
+ODB_v3_ON_3,ON,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,2,0.0001
+ODB_v3_ON_3,ON,dataset,Town Facilities; Town of Tecumseh Address Points,1,0.0001
+ODB_v3_ON_3,ON,dataset,Heritage Buildings; Schools,1,0.0001
+ODB_v3_ON_3,ON,dataset,Heritage Buildings; Points of Interest,1,0.0001
+ODB_v3_ON_3,ON,dataset,Buildings; Schools; Addresses,1,0.0001
+ODB_v3_ON_3,ON,dataset,Buildings; Registered Two Unit Houses; Facility Site Point,1,0.0001
+ODB_v3_ON_3,ON,dataset,Buildings; Addresses; Historic Sites,1,0.0001
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Schools; Municipal 911 Address,1,0.0001
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Municipal 911 Address; Recreation,1,0.0001
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Municipal 911 Address; Library,1,0.0001
+ODB_v3_ON_3,ON,dataset,BuildingFootprints; Entertainment,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Train Station,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Ontario Works Office; Address Number; Ontario Employment Services Centre,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Ontario Works Office; Address Number,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Ontario Works Office,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Municipal Administration Centre; Address Number,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Long Term Care Facility; Library,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Library; Address Number,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Innovation Centres; Address Number,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Hospital; Address Number,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Community Facilities; Address Number; Casino,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Casino; Address Number,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Train Station,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Service Canada Centre,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Municipal Administration Centre; Police Station,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Library,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Hospital,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Fire Hall; Community Facilities,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Education Facility; Childcare Facility,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building; Address Number; Casino,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Outlines; Recreation Points; Points of Interest,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Outlines; Points of Interest,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Outlines; Places of Worship; Addresses,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Outlines; Places of Worship,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Outlines; Addresses; Places of Worship,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Outlines; Addresses; Older Adult Housing Directory,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Police Stations,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Places of Worship; Place of Worship,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Town of Tecumseh Address Points; Ambulance Stations,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Libraries; Schools,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Libraries; Heritage Sites,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Libraries; Community Centres,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Hospitals,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Heritage Sites; Libraries,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Heritage Sites; Hospitals,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Facilities - Point,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Elgin Library; Elgin Address Points 2025,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; County Libraries; Town of Tecumseh Address Points,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Community Centres; Heritage Sites,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Arenas,1,0.0001
+ODB_v3_ON_3,ON,dataset,Building Footprints; Addresses; Food Inspection Facilities; Libraries,1,0.0001
+ODB_v3_ON_3,ON,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,1,0.0001
+ODB_v3_ON_3,ON,type,..,1262195,74.4445
+ODB_v3_ON_3,ON,type,General,209393,12.35
+ODB_v3_ON_3,ON,type,Detached House,45730,2.6972
+ODB_v3_ON_3,ON,type,Residential,38720,2.2837
+ODB_v3_ON_3,ON,type,Single Family Dwelling,36021,2.1245
+ODB_v3_ON_3,ON,type,General/Residential,15755,0.9292
+ODB_v3_ON_3,ON,type,Farm,13712,0.8087
+ODB_v3_ON_3,ON,type,Accessory,12163,0.7174
+ODB_v3_ON_3,ON,type,Shed,9970,0.588
+ODB_v3_ON_3,ON,type,Commercial,6970,0.4111
+ODB_v3_ON_3,ON,type,Garage,3960,0.2336
+ODB_v3_ON_3,ON,type,Industrial,3535,0.2085
+ODB_v3_ON_3,ON,type,Semi-Detached,3440,0.2029
+ODB_v3_ON_3,ON,type,Townhouse,2852,0.1682
+ODB_v3_ON_3,ON,type,Multi-Family Dwelling,2409,0.1421
+ODB_v3_ON_3,ON,type,Recreation,2392,0.1411
+ODB_v3_ON_3,ON,type,Two Unit House,2352,0.1387
+ODB_v3_ON_3,ON,type,LR,2186,0.1289
+ODB_v3_ON_3,ON,type,Industrial Facility,1758,0.1037
+ODB_v3_ON_3,ON,type,Duplex,1722,0.1016
+ODB_v3_ON_3,ON,type,Seasonal Dwelling,1625,0.0958
+ODB_v3_ON_3,ON,type,Government / Military,1122,0.0662
+ODB_v3_ON_3,ON,type,Mobile Home,1075,0.0634
+ODB_v3_ON_3,ON,type,Commercial or Retail Facility,954,0.0563
+ODB_v3_ON_3,ON,type,Trailer,784,0.0462
+ODB_v3_ON_3,ON,type,Apartment,666,0.0393
+ODB_v3_ON_3,ON,type,Education,580,0.0342
+ODB_v3_ON_3,ON,type,Accomodation,527,0.0311
+ODB_v3_ON_3,ON,type,Fourplex,455,0.0268
+ODB_v3_ON_3,ON,type,Triplex,446,0.0263
+ODB_v3_ON_3,ON,type,ComB,434,0.0256
+ODB_v3_ON_3,ON,type,Silo,431,0.0254
+ODB_v3_ON_3,ON,type,Government,392,0.0231
+ODB_v3_ON_3,ON,type,Cultural,381,0.0225
+ODB_v3_ON_3,ON,type,Condominium,367,0.0216
+ODB_v3_ON_3,ON,type,Detached House + SU,352,0.0208
+ODB_v3_ON_3,ON,type,Other,342,0.0202
+ODB_v3_ON_3,ON,type,Agricultural/Rural,331,0.0195
+ODB_v3_ON_3,ON,type,Vacant,324,0.0191
+ODB_v3_ON_3,ON,type,Institutional,287,0.0169
+ODB_v3_ON_3,ON,type,Retail and Residence,276,0.0163
+ODB_v3_ON_3,ON,type,Community Centre,268,0.0158
+ODB_v3_ON_3,ON,type,Community Facility,263,0.0155
+ODB_v3_ON_3,ON,type,Ba,246,0.0145
+ODB_v3_ON_3,ON,type,School,223,0.0132
+ODB_v3_ON_3,ON,type,Restaurant,202,0.0119
+ODB_v3_ON_3,ON,type,Agricultural,175,0.0103
+ODB_v3_ON_3,ON,type,Warehouse,167,0.0098
+ODB_v3_ON_3,ON,type,Cabin,167,0.0098
+ODB_v3_ON_3,ON,type,IndBuild,162,0.0096
+ODB_v3_ON_3,ON,type,Barn,137,0.0081
+ODB_v3_ON_3,ON,type,Infrastructure,133,0.0078
+ODB_v3_ON_3,ON,type,ComFac,128,0.0075
+ODB_v3_ON_3,ON,type,Religious,121,0.0071
+ODB_v3_ON_3,ON,type,Restaurant / Eating Establishment,120,0.0071
+ODB_v3_ON_3,ON,type,Cemetery,117,0.0069
+ODB_v3_ON_3,ON,type,Greenhouse / Nursery,105,0.0062
+ODB_v3_ON_3,ON,type,Utility,103,0.0061
+ODB_v3_ON_3,ON,type,Sixplex,100,0.0059
+ODB_v3_ON_3,ON,type,Golf Course,100,0.0059
+ODB_v3_ON_3,ON,type,Airport,98,0.0058
+ODB_v3_ON_3,ON,type,Church,89,0.0052
+ODB_v3_ON_3,ON,type,Addition,89,0.0052
+ODB_v3_ON_3,ON,type,Marina,84,0.005
+ODB_v3_ON_3,ON,type,Baseball Facility,82,0.0048
+ODB_v3_ON_3,ON,type,Elementary School,81,0.0048
+ODB_v3_ON_3,ON,type,Medical,78,0.0046
+ODB_v3_ON_3,ON,type,Recreational,76,0.0045
+ODB_v3_ON_3,ON,type,Lakeshore Residential Building,76,0.0045
+ODB_v3_ON_3,ON,type,Fiveplex,73,0.0043
+ODB_v3_ON_3,ON,type,Greenhouse,71,0.0042
+ODB_v3_ON_3,ON,type,Railroad Facility,68,0.004
+ODB_v3_ON_3,ON,type,Pit/Quarry,67,0.004
+ODB_v3_ON_3,ON,type,Dormitory,65,0.0038
+ODB_v3_ON_3,ON,type,Résidentiel,53,0.0031
+ODB_v3_ON_3,ON,type,Religious Facility,53,0.0031
+ODB_v3_ON_3,ON,type,Single-Family Detached Home,50,0.0029
+ODB_v3_ON_3,ON,type,General Recreation or Landmark Facility,49,0.0029
+ODB_v3_ON_3,ON,type,Carport,47,0.0028
+ODB_v3_ON_3,ON,type,Library,45,0.0027
+ODB_v3_ON_3,ON,type,Fort,45,0.0027
+ODB_v3_ON_3,ON,type,Energy Facility,43,0.0025
+ODB_v3_ON_3,ON,type,Institutional Residence / Dorm / Barracks,42,0.0025
+ODB_v3_ON_3,ON,type,Detached Garage,41,0.0024
+ODB_v3_ON_3,ON,type,Granny Flat,38,0.0022
+ODB_v3_ON_3,ON,type,Solar Facility,37,0.0022
+ODB_v3_ON_3,ON,type,Municipal,37,0.0022
+ODB_v3_ON_3,ON,type,Airport Facility,37,0.0022
+ODB_v3_ON_3,ON,type,Gas Station,34,0.002
+ODB_v3_ON_3,ON,type,Ski Hill,33,0.0019
+ODB_v3_ON_3,ON,type,Shopping Mall / Complex,33,0.0019
+ODB_v3_ON_3,ON,type,Nursing Home,33,0.0019
+ODB_v3_ON_3,ON,type,OS,32,0.0019
+ODB_v3_ON_3,ON,type,Model Home,30,0.0018
+ODB_v3_ON_3,ON,type,Provincial Facility,28,0.0017
+ODB_v3_ON_3,ON,type,UB,26,0.0015
+ODB_v3_ON_3,ON,type,Motel,26,0.0015
+ODB_v3_ON_3,ON,type,Health or Medical Facility,26,0.0015
+ODB_v3_ON_3,ON,type,Detached Garage + SU,26,0.0015
+ODB_v3_ON_3,ON,type,Place of Worship,24,0.0014
+ODB_v3_ON_3,ON,type,Detached garage,23,0.0014
+ODB_v3_ON_3,ON,type,D,23,0.0014
+ODB_v3_ON_3,ON,type,Transportation Facility,22,0.0013
+ODB_v3_ON_3,ON,type,Prefabricated,21,0.0012
+ODB_v3_ON_3,ON,type,Grocery Store,21,0.0012
+ODB_v3_ON_3,ON,type,FD,21,0.0012
+ODB_v3_ON_3,ON,type,Semi-Detached + SU,20,0.0012
+ODB_v3_ON_3,ON,type,University,19,0.0011
+ODB_v3_ON_3,ON,type,Information or Communication Facility,19,0.0011
+ODB_v3_ON_3,ON,type,High School,19,0.0011
+ODB_v3_ON_3,ON,type,G,19,0.0011
+ODB_v3_ON_3,ON,type,Bank,16,0.0009
+ODB_v3_ON_3,ON,type,Fire Hall,15,0.0009
+ODB_v3_ON_3,ON,type,Public Washroom: Seasonal,14,0.0008
+ODB_v3_ON_3,ON,type,Education Facility,14,0.0008
+ODB_v3_ON_3,ON,type,Warehourse (Retail / Wholesale),13,0.0008
+ODB_v3_ON_3,ON,type,Supermarket,13,0.0008
+ODB_v3_ON_3,ON,type,Nursing Home / Long Term Care,13,0.0008
+ODB_v3_ON_3,ON,type,Maintenance Yard,13,0.0008
+ODB_v3_ON_3,ON,type,General Hotel,13,0.0008
+ODB_v3_ON_3,ON,type,Fire Services,13,0.0008
+ODB_v3_ON_3,ON,type,Attached Garage,13,0.0008
+ODB_v3_ON_3,ON,type,Well Pump House,12,0.0007
+ODB_v3_ON_3,ON,type,Storage,12,0.0007
+ODB_v3_ON_3,ON,type,Park: Municipal,12,0.0007
+ODB_v3_ON_3,ON,type,Fire Station / EMS Station,12,0.0007
+ODB_v3_ON_3,ON,type,Water Supply or Treatment Facility,11,0.0006
+ODB_v3_ON_3,ON,type,Open Space,11,0.0006
+ODB_v3_ON_3,ON,type,Lumber Mill / Saw Mill,11,0.0006
+ODB_v3_ON_3,ON,type,Inn,11,0.0006
+ODB_v3_ON_3,ON,type,House,11,0.0006
+ODB_v3_ON_3,ON,type,Golf Course Facility,11,0.0006
+ODB_v3_ON_3,ON,type,Emergency Response / Law Enforcement,11,0.0006
+ODB_v3_ON_3,ON,type,Zoo,10,0.0006
+ODB_v3_ON_3,ON,type,Picnic Area,10,0.0006
+ODB_v3_ON_3,ON,type,Municipal Facility,10,0.0006
+ODB_v3_ON_3,ON,type,Communication Tower,10,0.0006
+ODB_v3_ON_3,ON,type,Childcare / Daycare Facility,10,0.0006
+ODB_v3_ON_3,ON,type,Water Pumping Station,9,0.0005
+ODB_v3_ON_3,ON,type,Washroom facility//Toilettes,9,0.0005
+ODB_v3_ON_3,ON,type,Public Elementary School,9,0.0005
+ODB_v3_ON_3,ON,type,Prison / Correctional Facility,9,0.0005
+ODB_v3_ON_3,ON,type,Funeral Home,9,0.0005
+ODB_v3_ON_3,ON,type,Federal Facility,9,0.0005
+ODB_v3_ON_3,ON,type,Detached,9,0.0005
+ODB_v3_ON_3,ON,type,Correctional Facility,9,0.0005
+ODB_v3_ON_3,ON,type,Recycling Facility,8,0.0005
+ODB_v3_ON_3,ON,type,Police Station,8,0.0005
+ODB_v3_ON_3,ON,type,Petroleum / Oil / Lubricants Storage Tank,8,0.0005
+ODB_v3_ON_3,ON,type,Historic Site / Point of Interest,8,0.0005
+ODB_v3_ON_3,ON,type,College,8,0.0005
+ODB_v3_ON_3,ON,type,Theatre / Opera,7,0.0004
+ODB_v3_ON_3,ON,type,Private Elementary School,7,0.0004
+ODB_v3_ON_3,ON,type,Pavilion,7,0.0004
+ODB_v3_ON_3,ON,type,Hospital,7,0.0004
+ODB_v3_ON_3,ON,type,Grain Elevator,7,0.0004
+ODB_v3_ON_3,ON,type,Emergency Medical Services,7,0.0004
+ODB_v3_ON_3,ON,type,Credit Union,7,0.0004
+ODB_v3_ON_3,ON,type,Amusement / Water Park,7,0.0004
+ODB_v3_ON_3,ON,type,Transit,6,0.0004
+ODB_v3_ON_3,ON,type,Single-family semi-detached,6,0.0004
+ODB_v3_ON_3,ON,type,Public Pool,6,0.0004
+ODB_v3_ON_3,ON,type,arm,5,0.0003
+ODB_v3_ON_3,ON,type,Veterinary Hospital / Clinic,5,0.0003
+ODB_v3_ON_3,ON,type,Police Services,5,0.0003
+ODB_v3_ON_3,ON,type,Pharmacy,5,0.0003
+ODB_v3_ON_3,ON,type,Long Term Care,5,0.0003
+ODB_v3_ON_3,ON,type,Developmental Building,5,0.0003
+ODB_v3_ON_3,ON,type,Trucking Firm,4,0.0002
+ODB_v3_ON_3,ON,type,Telephone Facility,4,0.0002
+ODB_v3_ON_3,ON,type,Seniors Home,4,0.0002
+ODB_v3_ON_3,ON,type,Retirement Home,4,0.0002
+ODB_v3_ON_3,ON,type,Recreation Facility,4,0.0002
+ODB_v3_ON_3,ON,type,Parking Lot Structure / Garage,4,0.0002
+ODB_v3_ON_3,ON,type,Outpatient Clinic,4,0.0002
+ODB_v3_ON_3,ON,type,Mining Operations,4,0.0002
+ODB_v3_ON_3,ON,type,Ice Arena,4,0.0002
+ODB_v3_ON_3,ON,type,Hotel,4,0.0002
+ODB_v3_ON_3,ON,type,Hospital / Medical Centre,4,0.0002
+ODB_v3_ON_3,ON,type,Fire Management Headquarters,4,0.0002
+ODB_v3_ON_3,ON,type,Chemical Facility,4,0.0002
+ODB_v3_ON_3,ON,type,Sports Arena / Stadium,3,0.0002
+ODB_v3_ON_3,ON,type,Single Family Semi-Detached Home,3,0.0002
+ODB_v3_ON_3,ON,type,Seaplane Anchorage / Aerodrome,3,0.0002
+ODB_v3_ON_3,ON,type,Paper / Pulp Mill,3,0.0002
+ODB_v3_ON_3,ON,type,Museum,3,0.0002
+ODB_v3_ON_3,ON,type,Manufacturing Facility,3,0.0002
+ODB_v3_ON_3,ON,type,Hotel / Motel,3,0.0002
+ODB_v3_ON_3,ON,type,General Residential,3,0.0002
+ODB_v3_ON_3,ON,type,Genearl,3,0.0002
+ODB_v3_ON_3,ON,type,Future Development Building,3,0.0002
+ODB_v3_ON_3,ON,type,Frm,3,0.0002
+ODB_v3_ON_3,ON,type,Detatched Garage,3,0.0002
+ODB_v3_ON_3,ON,type,Bus Station / Dispatch Facility,3,0.0002
+ODB_v3_ON_3,ON,type,Bank of Canada,3,0.0002
+ODB_v3_ON_3,ON,type,Transportation,2,0.0001
+ODB_v3_ON_3,ON,type,Single-Family Home,2,0.0001
+ODB_v3_ON_3,ON,type,Single / Semi / Duplex,2,0.0001
+ODB_v3_ON_3,ON,type,Sawmill - Medium,2,0.0001
+ODB_v3_ON_3,ON,type,S,2,0.0001
+ODB_v3_ON_3,ON,type,Repair Garage,2,0.0001
+ODB_v3_ON_3,ON,type,Railroad Station,2,0.0001
+ODB_v3_ON_3,ON,type,Public Health Office,2,0.0001
+ODB_v3_ON_3,ON,type,Post Secondary School,2,0.0001
+ODB_v3_ON_3,ON,type,Post Office,2,0.0001
+ODB_v3_ON_3,ON,type,Pool,2,0.0001
+ODB_v3_ON_3,ON,type,Parks Canada offices//Bureaux de Parcs Canada,2,0.0001
+ODB_v3_ON_3,ON,type,Natural Gas Facility,2,0.0001
+ODB_v3_ON_3,ON,type,Law Enforcement,2,0.0001
+ODB_v3_ON_3,ON,type,Homeless Shelter,2,0.0001
+ODB_v3_ON_3,ON,type,Hazard Land Building,2,0.0001
+ODB_v3_ON_3,ON,type,General / Residential,2,0.0001
+ODB_v3_ON_3,ON,type,Food Industry Facility,2,0.0001
+ODB_v3_ON_3,ON,type,Fire Station,2,0.0001
+ODB_v3_ON_3,ON,type,Financial Services Company,2,0.0001
+ODB_v3_ON_3,ON,type,Enloquéceme,2,0.0001
+ODB_v3_ON_3,ON,type,Duplex + SU,2,0.0001
+ODB_v3_ON_3,ON,type,Dental Facility,2,0.0001
+ODB_v3_ON_3,ON,type,Automotive Manufacturing Facility,2,0.0001
+ODB_v3_ON_3,ON,type,Armoury,2,0.0001
+ODB_v3_ON_3,ON,type,Arena,2,0.0001
+ODB_v3_ON_3,ON,type,Ambulance Station,2,0.0001
+ODB_v3_ON_3,ON,type,Aircraft Maintenance Facility,2,0.0001
+ODB_v3_ON_3,ON,type,Academic Institution,2,0.0001
+ODB_v3_ON_3,ON,type,v,1,0.0001
+ODB_v3_ON_3,ON,type,armGeneral/Residential,1,0.0001
+ODB_v3_ON_3,ON,type,YMCA,1,0.0001
+ODB_v3_ON_3,ON,type,Weigh Station / Inspection Station,1,0.0001
+ODB_v3_ON_3,ON,type,Water Treatment Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Water Tank,1,0.0001
+ODB_v3_ON_3,ON,type,Warehouse (Retail / Wholesale),1,0.0001
+ODB_v3_ON_3,ON,type,Veneer,1,0.0001
+ODB_v3_ON_3,ON,type,Tunnel,1,0.0001
+ODB_v3_ON_3,ON,type,Training Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Tower,1,0.0001
+ODB_v3_ON_3,ON,type,Tourist Information,1,0.0001
+ODB_v3_ON_3,ON,type,Toll Booth / Plaza,1,0.0001
+ODB_v3_ON_3,ON,type,Tertiary Tanker Base,1,0.0001
+ODB_v3_ON_3,ON,type,Temple,1,0.0001
+ODB_v3_ON_3,ON,type,Synagogue,1,0.0001
+ODB_v3_ON_3,ON,type,Storage Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Storage / Warehouse,1,0.0001
+ODB_v3_ON_3,ON,type,Steel Plant,1,0.0001
+ODB_v3_ON_3,ON,type,Stables,1,0.0001
+ODB_v3_ON_3,ON,type,Sports Complex,1,0.0001
+ODB_v3_ON_3,ON,type,Ski Area / Ski Resort,1,0.0001
+ODB_v3_ON_3,ON,type,Single-family detached home and attached garage,1,0.0001
+ODB_v3_ON_3,ON,type,Single Unit Dwelling,1,0.0001
+ODB_v3_ON_3,ON,type,Sawmill - Large,1,0.0001
+ODB_v3_ON_3,ON,type,Retail,1,0.0001
+ODB_v3_ON_3,ON,type,Rehabilitation Centre,1,0.0001
+ODB_v3_ON_3,ON,type,Regional Fire Management Centre,1,0.0001
+ODB_v3_ON_3,ON,type,Radio / TV Broadcast Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Pulp / Paper / Paperboard,1,0.0001
+ODB_v3_ON_3,ON,type,Provincial Logistics Centre,1,0.0001
+ODB_v3_ON_3,ON,type,Provincial Government Offices,1,0.0001
+ODB_v3_ON_3,ON,type,Private and Express Shipping Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Private School,1,0.0001
+ODB_v3_ON_3,ON,type,Private High School,1,0.0001
+ODB_v3_ON_3,ON,type,Port Facility: Passenger Terminal,1,0.0001
+ODB_v3_ON_3,ON,type,Port Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Parking Shelter,1,0.0001
+ODB_v3_ON_3,ON,type,Pagoda,1,0.0001
+ODB_v3_ON_3,ON,type,Outdoor Theatre / Amphitheatre,1,0.0001
+ODB_v3_ON_3,ON,type,Mosque,1,0.0001
+ODB_v3_ON_3,ON,type,Mini storage warehouse,1,0.0001
+ODB_v3_ON_3,ON,type,Medical Facility/Offices,1,0.0001
+ODB_v3_ON_3,ON,type,Manufacturing Warehouse,1,0.0001
+ODB_v3_ON_3,ON,type,Long Term Care Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Interim Long Term Care Centre,1,0.0001
+ODB_v3_ON_3,ON,type,Hand digitized,1,0.0001
+ODB_v3_ON_3,ON,type,General/residential,1,0.0001
+ODB_v3_ON_3,ON,type,General/Reidential,1,0.0001
+ODB_v3_ON_3,ON,type,Genera/Residential,1,0.0001
+ODB_v3_ON_3,ON,type,Fire Department,1,0.0001
+ODB_v3_ON_3,ON,type,Faarm,1,0.0001
+ODB_v3_ON_3,ON,type,FRENCH SEPARATE ELEMENTARY,1,0.0001
+ODB_v3_ON_3,ON,type,Electric Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Educationsl,1,0.0001
+ODB_v3_ON_3,ON,type,Educatioinal,1,0.0001
+ODB_v3_ON_3,ON,type,Drinking water processing plant//Usine de traitement des eaux,1,0.0001
+ODB_v3_ON_3,ON,type,Detachd garage,1,0.0001
+ODB_v3_ON_3,ON,type,DND / Military Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Curling Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Cultural Spaces and Facilities,1,0.0001
+ODB_v3_ON_3,ON,type,Courthouse,1,0.0001
+ODB_v3_ON_3,ON,type,Commerciall,1,0.0001
+ODB_v3_ON_3,ON,type,Church: Chapel,1,0.0001
+ODB_v3_ON_3,ON,type,Church: Cathedral,1,0.0001
+ODB_v3_ON_3,ON,type,Catholic Elementary School,1,0.0001
+ODB_v3_ON_3,ON,type,Casino,1,0.0001
+ODB_v3_ON_3,ON,type,Canadian Redcross,1,0.0001
+ODB_v3_ON_3,ON,type,C,1,0.0001
+ODB_v3_ON_3,ON,type,Bus Services - Operations Garages,1,0.0001
+ODB_v3_ON_3,ON,type,Banking and Finance Facility,1,0.0001
+ODB_v3_ON_3,ON,type,Auditorium / Concert Hall,1,0.0001
+ODB_v3_ON_3,ON,type,Art Museum,1,0.0001
+ODB_v3_ON_3,ON,type,Arboretum / Botanical Garden,1,0.0001
+ODB_v3_ON_3,ON,type,Airport Terminal,1,0.0001
+ODB_v3_ON_3,ON,type,Air Traffic Control Centre,1,0.0001
+ODB_v3_ON_3,ON,type,117,1,0.0001
+ODB_v3_ON_3,ON,prov_terr,ON,1695485,100.0
+ODB_v3_PE,PE,source,Government of Canada,85856,100.0
+ODB_v3_PE,PE,dataset,Automatically Extracted Buildings,85853,99.9965
+ODB_v3_PE,PE,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,2,0.0023
+ODB_v3_PE,PE,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",1,0.0012
+ODB_v3_PE,PE,type,..,85856,100.0
+ODB_v3_PE,PE,prov_terr,PE,85856,100.0
+ODB_v3_QC_1,QC,source,Government of Québec,1374193,68.7096
+ODB_v3_QC_1,QC,source,Ville de Québec,279793,13.9896
+ODB_v3_QC_1,QC,source,Government of Canada,243329,12.1664
+ODB_v3_QC_1,QC,source,Ville de Longueuil,38605,1.9303
+ODB_v3_QC_1,QC,source,Ville de Rimouski,34947,1.7473
+ODB_v3_QC_1,QC,source,Ville de Repentigny,24344,1.2172
+ODB_v3_QC_1,QC,source,Government of New Brunswick,3775,0.1888
+ODB_v3_QC_1,QC,source,Ville de Sherbrooke,590,0.0295
+ODB_v3_QC_1,QC,source,Ville de Shawinigan,424,0.0212
+ODB_v3_QC_1,QC,dataset,Référentiel québécois sur les bâtiments,1373805,68.6903
+ODB_v3_QC_1,QC,dataset,Automatically Extracted Buildings,243233,12.1616
+ODB_v3_QC_1,QC,dataset,Empreintes des bâtiments,160045,8.0023
+ODB_v3_QC_1,QC,dataset,Empreintes des bâtiments; Adresses de la Ville de Québec,119346,5.9673
+ODB_v3_QC_1,QC,dataset,Bâtiments,56651,2.8325
+ODB_v3_QC_1,QC,dataset,Bâtiments; Adresses,41770,2.0885
+ODB_v3_QC_1,QC,dataset,Buildings,3775,0.1888
+ODB_v3_QC_1,QC,dataset,Bâtiments patrimoniaux - Ville de Shawinigan,423,0.0211
+ODB_v3_QC_1,QC,dataset,Référentiel québécois sur les bâtiments; Casernes de pompiers,341,0.017
+ODB_v3_QC_1,QC,dataset,Empreintes des bâtiments; Lieux publics,178,0.0089
+ODB_v3_QC_1,QC,dataset,Empreintes des bâtiments; Adresses de la Ville de Québec; Lieux publics,111,0.0056
+ODB_v3_QC_1,QC,dataset,Building Footprints,56,0.0028
+ODB_v3_QC_1,QC,dataset,Lieux de culte; Adresses de la Ville de Québec,50,0.0025
+ODB_v3_QC_1,QC,dataset,Référentiel québécois sur les bâtiments; Institutions muséales reconnues ou soutenues au fonctionnement,47,0.0024
+ODB_v3_QC_1,QC,dataset,Empreintes des bâtiments; Lieux publics; Adresses de la Ville de Québec,35,0.0018
+ODB_v3_QC_1,QC,dataset,Bâtiments; Lieux Publics,31,0.0015
+ODB_v3_QC_1,QC,dataset,Lieux de culte,28,0.0014
+ODB_v3_QC_1,QC,dataset,Bâtiments; Adresses; Bâtiments et services municipaux,14,0.0007
+ODB_v3_QC_1,QC,dataset,Automatically Extracted Buildings; Facilities - Point,14,0.0007
+ODB_v3_QC_1,QC,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,10,0.0005
+ODB_v3_QC_1,QC,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,6,0.0003
+ODB_v3_QC_1,QC,dataset,Bâtiments; Places d'intérêt,5,0.0003
+ODB_v3_QC_1,QC,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",5,0.0003
+ODB_v3_QC_1,QC,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,4,0.0002
+ODB_v3_QC_1,QC,dataset,Édifices municipaux; Lieux Publics,3,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments; Casernes d’incendie; Adresses,3,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments; Lieux Publics; Adresses,2,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments; Adresses; Postes de police,2,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments; Adresses; Casernes d’incendie,2,0.0001
+ODB_v3_QC_1,QC,dataset,Édifices municipaux,1,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments; Postes de police; Adresses,1,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments; Adresses; Bibliothèques,1,0.0001
+ODB_v3_QC_1,QC,dataset,Bâtiments patrimoniaux - Ville de Shawinigan; Bibliothèques - Ville de Shawinigan,1,0.0001
+ODB_v3_QC_1,QC,dataset,Building Footprints; Facilities - Point,1,0.0001
+ODB_v3_QC_1,QC,type,..,1665642,83.2821
+ODB_v3_QC_1,QC,type,Résidence,142671,7.1335
+ODB_v3_QC_1,QC,type,Garage - Annexe - Remise,127242,6.3621
+ODB_v3_QC_1,QC,type,Résidentielle,26695,1.3348
+ODB_v3_QC_1,QC,type,Résidentiel et commercial,24128,1.2064
+ODB_v3_QC_1,QC,type,Bâtiment commercial,3222,0.1611
+ODB_v3_QC_1,QC,type,Piscine privée,3189,0.1595
+ODB_v3_QC_1,QC,type,Bâtiment industriel,1393,0.0697
+ODB_v3_QC_1,QC,type,Production et extraction de richesses naturelles,716,0.0358
+ODB_v3_QC_1,QC,type,Services,590,0.0295
+ODB_v3_QC_1,QC,type,École,541,0.0271
+ODB_v3_QC_1,QC,type,Bâtiment municipal,520,0.026
+ODB_v3_QC_1,QC,type,Commerciale,435,0.0217
+ODB_v3_QC_1,QC,type,Réservoir,370,0.0185
+ODB_v3_QC_1,QC,type,Casernes de pompiers,341,0.017
+ODB_v3_QC_1,QC,type,Immeubles non exploités et étendues d'eau,312,0.0156
+ODB_v3_QC_1,QC,type,Bâtiment agricole,275,0.0138
+ODB_v3_QC_1,QC,type,"Culturelle, récréative et de loisirs",217,0.0109
+ODB_v3_QC_1,QC,type,Bâtiment public,213,0.0106
+ODB_v3_QC_1,QC,type,Édifice municipal,159,0.008
+ODB_v3_QC_1,QC,type,"Transports, communications et services publics",144,0.0072
+ODB_v3_QC_1,QC,type,Silo,122,0.0061
+ODB_v3_QC_1,QC,type,Commerce,103,0.0052
+ODB_v3_QC_1,QC,type,Hôpital,101,0.005
+ODB_v3_QC_1,QC,type,Église,98,0.0049
+ODB_v3_QC_1,QC,type,Industries manufacturières,98,0.0049
+ODB_v3_QC_1,QC,type,Serre,92,0.0046
+ODB_v3_QC_1,QC,type,Industriel,71,0.0036
+ODB_v3_QC_1,QC,type,Piscine publique,61,0.0031
+ODB_v3_QC_1,QC,type,Institutionnel,51,0.0026
+ODB_v3_QC_1,QC,type,Parcs,46,0.0023
+ODB_v3_QC_1,QC,type,Municipal,42,0.0021
+ODB_v3_QC_1,QC,type,Lieu d'interprétation,25,0.0013
+ODB_v3_QC_1,QC,type,Musée,18,0.0009
+ODB_v3_QC_1,QC,type,Washroom facility//Toilettes,12,0.0006
+ODB_v3_QC_1,QC,type,Chapelle,7,0.0003
+ODB_v3_QC_1,QC,type,Grain Elevator,6,0.0003
+ODB_v3_QC_1,QC,type,Caserne de Pompier,5,0.0003
+ODB_v3_QC_1,QC,type,Service / Édifice municipal,4,0.0002
+ODB_v3_QC_1,QC,type,Commercial,4,0.0002
+ODB_v3_QC_1,QC,type,Centre d'exposition,4,0.0002
+ODB_v3_QC_1,QC,type,Poste de police,3,0.0001
+ODB_v3_QC_1,QC,type,Winter warming hut//Abri hivernal,2,0.0001
+ODB_v3_QC_1,QC,type,Services publics et sociaux,2,0.0001
+ODB_v3_QC_1,QC,type,Indéfini,2,0.0001
+ODB_v3_QC_1,QC,type,Synagogue,1,0.0001
+ODB_v3_QC_1,QC,type,Poste de distribution utilités publiques,1,0.0001
+ODB_v3_QC_1,QC,type,Parks Canada offices//Bureaux de Parcs Canada,1,0.0001
+ODB_v3_QC_1,QC,type,Centre communautaire,1,0.0001
+ODB_v3_QC_1,QC,type,Autre,1,0.0001
+ODB_v3_QC_1,QC,type,Agricole,1,0.0001
+ODB_v3_QC_1,QC,prov_terr,QC,2000000,100.0
+ODB_v3_QC_2,QC,source,Government of Québec,1073626,63.9169
+ODB_v3_QC_2,QC,source,Ville de Montréal,220311,13.1159
+ODB_v3_QC_2,QC,source,Government of Canada,188694,11.2337
+ODB_v3_QC_2,QC,source,Ville de Laval,111730,6.6517
+ODB_v3_QC_2,QC,source,Ville de Saguenay,51325,3.0556
+ODB_v3_QC_2,QC,source,Ville de Rouyn-Noranda,33978,2.0228
+ODB_v3_QC_2,QC,source,City of Ottawa,53,0.0032
+ODB_v3_QC_2,QC,source,Ville de Repentigny,2,0.0001
+ODB_v3_QC_2,QC,source,Government of Ontario,2,0.0001
+ODB_v3_QC_2,QC,dataset,Référentiel québécois sur les bâtiments,1073341,63.9
+ODB_v3_QC_2,QC,dataset,Automatically Extracted Buildings,188634,11.2301
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle,138420,8.2407
+ODB_v3_QC_2,QC,dataset,Référentiel de bâtiment – Ville de Laval; Géolocalisation des adresses,103174,6.1423
+ODB_v3_QC_2,QC,dataset,Bâtiments,80563,4.7962
+ODB_v3_QC_2,QC,dataset,Bâtiment,40004,2.3816
+ODB_v3_QC_2,QC,dataset,Empreintes de bâtiments,18667,1.1113
+ODB_v3_QC_2,QC,dataset,Empreintes de bâtiments; Adresses ponctuelles,15311,0.9115
+ODB_v3_QC_2,QC,dataset,Bâtiment; Adresse ponctuelle,10998,0.6548
+ODB_v3_QC_2,QC,dataset,Référentiel de bâtiment – Ville de Laval,8422,0.5014
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Lieux d'intérêt,597,0.0355
+ODB_v3_QC_2,QC,dataset,Bâtiments municipaux,284,0.0169
+ODB_v3_QC_2,QC,dataset,Référentiel québécois sur les bâtiments; Casernes de pompiers,236,0.014
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt; Adresse ponctuelle,228,0.0136
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt,190,0.0113
+ODB_v3_QC_2,QC,dataset,Building Footprints,84,0.005
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Lieux et bâtiments à vocation publique,78,0.0046
+ODB_v3_QC_2,QC,dataset,Référentiel de bâtiment – Ville de Laval; Géolocalisation des adresses; Lieux et édifices municipaux,70,0.0042
+ODB_v3_QC_2,QC,dataset,Référentiel québécois sur les bâtiments; Institutions muséales reconnues ou soutenues au fonctionnement,47,0.0028
+ODB_v3_QC_2,QC,dataset,Bâtiments municipaux; Adresse ponctuelle,39,0.0023
+ODB_v3_QC_2,QC,dataset,Référentiel de bâtiment – Ville de Laval; Lieux et édifices municipaux; Géolocalisation des adresses,38,0.0023
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux et bâtiments à vocation publique; Adresse ponctuelle,32,0.0019
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Lieux d'intérêt; Lieux et bâtiments à vocation publique,32,0.0019
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux et bâtiments à vocation publique,27,0.0016
+ODB_v3_QC_2,QC,dataset,Bâtiment d'intérêt patrimonial du CDU,25,0.0015
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Lieux et bâtiments à vocation publique; Lieux d'intérêt,22,0.0013
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt; Lieux et bâtiments à vocation publique,21,0.0013
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt; Lieux et bâtiments à vocation publique; Adresse ponctuelle,19,0.0011
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt; Adresse ponctuelle; Lieux et bâtiments à vocation publique,19,0.0011
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux et bâtiments à vocation publique; Lieux d'intérêt; Adresse ponctuelle,14,0.0008
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux et bâtiments à vocation publique; Adresse ponctuelle; Lieux d'intérêt,14,0.0008
+ODB_v3_QC_2,QC,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",12,0.0007
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal; Adresse ponctuelle,8,0.0005
+ODB_v3_QC_2,QC,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,8,0.0005
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal,7,0.0004
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Lieux d'intérêt; Casernes de pompiers sur l’île de Montréal,5,0.0003
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Casernes de pompiers sur l’île de Montréal,4,0.0002
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux et bâtiments à vocation publique; Lieux d'intérêt,3,0.0002
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal; Lieux d'intérêt; Adresse ponctuelle,3,0.0002
+ODB_v3_QC_2,QC,dataset,Automatically Extracted Buildings; Interest Points,3,0.0002
+ODB_v3_QC_2,QC,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,3,0.0002
+ODB_v3_QC_2,QC,dataset,Référentiel québécois sur les bâtiments; Casernes de pompiers; Institutions muséales reconnues ou soutenues au fonctionnement,2,0.0001
+ODB_v3_QC_2,QC,dataset,Building to Scale,2,0.0001
+ODB_v3_QC_2,QC,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,2,0.0001
+ODB_v3_QC_2,QC,dataset,Référentiel de bâtiment – Ville de Laval; Lieux et édifices municipaux,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt; Casernes de pompiers sur l’île de Montréal; Lieux et bâtiments à vocation publique; Adresse ponctuelle,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Lieux d'intérêt; Casernes de pompiers sur l’île de Montréal; Adresse ponctuelle,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal; Lieux d'intérêt; Adresse ponctuelle; Lieux et bâtiments à vocation publique,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal; Adresse ponctuelle; Lieux et bâtiments à vocation publique; Lieux d'intérêt,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal; Adresse ponctuelle; Lieux et bâtiments à vocation publique,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Casernes de pompiers sur l’île de Montréal; Adresse ponctuelle; Lieux d'intérêt,1,0.0001
+ODB_v3_QC_2,QC,dataset,Bâtiments; Adresse ponctuelle; Lieux et bâtiments à vocation publique; Casernes de pompiers sur l’île de Montréal,1,0.0001
+ODB_v3_QC_2,QC,dataset,Automatically Extracted Buildings; Facilities - Point,1,0.0001
+ODB_v3_QC_2,QC,type,..,1592690,94.8187
+ODB_v3_QC_2,QC,type,Résidentielle,48252,2.8726
+ODB_v3_QC_2,QC,type,Résidentiel,31089,1.8508
+ODB_v3_QC_2,QC,type,Services,1055,0.0628
+ODB_v3_QC_2,QC,type,Commercial,1001,0.0596
+ODB_v3_QC_2,QC,type,Commerciale,926,0.0551
+ODB_v3_QC_2,QC,type,Production et extraction de richesses naturelles,761,0.0453
+ODB_v3_QC_2,QC,type,Industries manufacturières,726,0.0432
+ODB_v3_QC_2,QC,type,"Culturel, récréatif et de loisirs",584,0.0348
+ODB_v3_QC_2,QC,type,"Transports, communications et services publics",469,0.0279
+ODB_v3_QC_2,QC,type,Casernes de pompiers,264,0.0157
+ODB_v3_QC_2,QC,type,"Transport, communication et services",262,0.0156
+ODB_v3_QC_2,QC,type,École primaire,249,0.0148
+ODB_v3_QC_2,QC,type,Organisme communautaire et centre de loisirs,186,0.0111
+ODB_v3_QC_2,QC,type,École secondaire et professionnelle,132,0.0079
+ODB_v3_QC_2,QC,type,Immeubles non exploités et étendues d'eau,111,0.0066
+ODB_v3_QC_2,QC,type,Hôtel,88,0.0052
+ODB_v3_QC_2,QC,type,Chalet,78,0.0046
+ODB_v3_QC_2,QC,type,Station de métro,63,0.0038
+ODB_v3_QC_2,QC,type,"Culturelle, récréative et de loisirs",63,0.0038
+ODB_v3_QC_2,QC,type,Bâtiment historique / patrimonial,61,0.0036
+ODB_v3_QC_2,QC,type,Théâtre / salle de spectacle / petit lieu de diffusion,57,0.0034
+ODB_v3_QC_2,QC,type,Centre communautaire,57,0.0034
+ODB_v3_QC_2,QC,type,Cégep et université,36,0.0021
+ODB_v3_QC_2,QC,type,Centre sportif intérieur,30,0.0018
+ODB_v3_QC_2,QC,type,Centre de service gouvernemental,27,0.0016
+ODB_v3_QC_2,QC,type,Caserne de pompiers,26,0.0015
+ODB_v3_QC_2,QC,type,Police de quartier,25,0.0015
+ODB_v3_QC_2,QC,type,Hôpital,25,0.0015
+ODB_v3_QC_2,QC,type,Musée,22,0.0013
+ODB_v3_QC_2,QC,type,Bibliothèque,22,0.0013
+ODB_v3_QC_2,QC,type,Centre commercial,21,0.0013
+ODB_v3_QC_2,QC,type,Aréna,21,0.0013
+ODB_v3_QC_2,QC,type,Piscine intérieure,20,0.0012
+ODB_v3_QC_2,QC,type,Bibliothèque publique,20,0.0012
+ODB_v3_QC_2,QC,type,Service consulaire,19,0.0011
+ODB_v3_QC_2,QC,type,Salle de spectacle,17,0.001
+ODB_v3_QC_2,QC,type,Lieu d'interprétation,16,0.001
+ODB_v3_QC_2,QC,type,Édifice administratif,11,0.0007
+ODB_v3_QC_2,QC,type,Centre d'exposition,11,0.0007
+ODB_v3_QC_2,QC,type,Clinique,10,0.0006
+ODB_v3_QC_2,QC,type,Berge,10,0.0006
+ODB_v3_QC_2,QC,type,Auberge de jeunesse,9,0.0005
+ODB_v3_QC_2,QC,type,Cinéma,8,0.0005
+ODB_v3_QC_2,QC,type,Bureau Accès Montréal et bureaux municipaux,8,0.0005
+ODB_v3_QC_2,QC,type,Édifice municipal,7,0.0004
+ODB_v3_QC_2,QC,type,Centre sportif,7,0.0004
+ODB_v3_QC_2,QC,type,Bureau Accès Montréal,7,0.0004
+ODB_v3_QC_2,QC,type,Service communautaire,6,0.0004
+ODB_v3_QC_2,QC,type,Hôtel de ville / mairie,6,0.0004
+ODB_v3_QC_2,QC,type,Gymnase,6,0.0004
+ODB_v3_QC_2,QC,type,Centre culturel,6,0.0004
+ODB_v3_QC_2,QC,type,Bureau municipal lavallois,6,0.0004
+ODB_v3_QC_2,QC,type,Poste de police de quartier,4,0.0002
+ODB_v3_QC_2,QC,type,Gare de train,4,0.0002
+ODB_v3_QC_2,QC,type,Palais de justice / cour,3,0.0002
+ODB_v3_QC_2,QC,type,Gare,3,0.0002
+ODB_v3_QC_2,QC,type,Cour municipale,3,0.0002
+ODB_v3_QC_2,QC,type,Coffee shop//Casse-croûte,3,0.0002
+ODB_v3_QC_2,QC,type,Centre de récupération et de tri,3,0.0002
+ODB_v3_QC_2,QC,type,Résidentiel et commercial,2,0.0001
+ODB_v3_QC_2,QC,type,Grain Elevator,2,0.0001
+ODB_v3_QC_2,QC,type,Centres et galeries d'art,2,0.0001
+ODB_v3_QC_2,QC,type,Parks Canada offices//Bureaux de Parcs Canada,1,0.0001
+ODB_v3_QC_2,QC,type,Musée municipal,1,0.0001
+ODB_v3_QC_2,QC,type,Agence internationale,1,0.0001
+ODB_v3_QC_2,QC,prov_terr,QC,1679721,100.0
+ODB_v3_SK,SK,source,Government of Canada,159067,61.3067
+ODB_v3_SK,SK,source,City of Regina,100394,38.6933
+ODB_v3_SK,SK,dataset,Automatically Extracted Buildings,159035,61.2944
+ODB_v3_SK,SK,dataset,Building Outlines; Address Points Geospatial Shapefile,66449,25.6104
+ODB_v3_SK,SK,dataset,Building Outlines,33805,13.0289
+ODB_v3_SK,SK,dataset,Building Outlines; School Locations - City of Regina,64,0.0247
+ODB_v3_SK,SK,dataset,Building Outlines; Park Amenities Geospatial Shapefile,29,0.0112
+ODB_v3_SK,SK,dataset,Automatically Extracted Buildings; Grain Elevators in Canada - 2024,20,0.0077
+ODB_v3_SK,SK,dataset,Building Outlines; Address Points Geospatial Shapefile; School Locations - City of Regina,16,0.0062
+ODB_v3_SK,SK,dataset,Building Outlines; Emergency Services Locations,11,0.0042
+ODB_v3_SK,SK,dataset,Automatically Extracted Buildings; Indigenous Community Infrastructure,9,0.0035
+ODB_v3_SK,SK,dataset,Building Outlines; School Locations - City of Regina; Address Points Geospatial Shapefile,7,0.0027
+ODB_v3_SK,SK,dataset,Building Outlines; Emergency Services Locations; Address Points Geospatial Shapefile,3,0.0012
+ODB_v3_SK,SK,dataset,Building Outlines; Address Points Geospatial Shapefile; Emergency Services Locations,3,0.0012
+ODB_v3_SK,SK,dataset,Building Outlines; School Locations - City of Regina; Address Points Geospatial Shapefile; Park Amenities Geospatial Shapefile,2,0.0008
+ODB_v3_SK,SK,dataset,Building Outlines; Address Points Geospatial Shapefile; Park Amenities Geospatial Shapefile,2,0.0008
+ODB_v3_SK,SK,dataset,"Automatically Extracted Buildings; Power Plants, 100 MW or more - North American Cooperation on Energy Information",2,0.0008
+ODB_v3_SK,SK,dataset,Building Outlines; School Locations - City of Regina; Park Amenities Geospatial Shapefile; Emergency Services Locations,1,0.0004
+ODB_v3_SK,SK,dataset,Building Outlines; School Locations - City of Regina; Park Amenities Geospatial Shapefile,1,0.0004
+ODB_v3_SK,SK,dataset,Building Outlines; Park Amenities Geospatial Shapefile; School Locations - City of Regina; Address Points Geospatial Shapefile,1,0.0004
+ODB_v3_SK,SK,dataset,Automatically Extracted Buildings; National Railway Network - NRWN - GeoBase Series,1,0.0004
+ODB_v3_SK,SK,type,..,259301,99.9383
+ODB_v3_SK,SK,type,Public Elementary School,41,0.0158
+ODB_v3_SK,SK,type,Separate Elementary School,25,0.0096
+ODB_v3_SK,SK,type,Grain Elevator,20,0.0077
+ODB_v3_SK,SK,type,Seasonal Washroom,14,0.0054
+ODB_v3_SK,SK,type,Other School,11,0.0042
+ODB_v3_SK,SK,type,Public High School,10,0.0039
+ODB_v3_SK,SK,type,Recreation Facility,9,0.0035
+ODB_v3_SK,SK,type,Fire Station,8,0.0031
+ODB_v3_SK,SK,type,Arena,7,0.0027
+ODB_v3_SK,SK,type,Ambulance,5,0.0019
+ODB_v3_SK,SK,type,Separate High School,4,0.0015
+ODB_v3_SK,SK,type,Hospital,3,0.0012
+ODB_v3_SK,SK,type,Curling Club,2,0.0008
+ODB_v3_SK,SK,type,Police Station,1,0.0004
+ODB_v3_SK,SK,prov_terr,SK,259461,100.0
+ODB_v3_YT,YT,source,Government of Canada,12485,100.0
+ODB_v3_YT,YT,dataset,Automatically Extracted Buildings,12471,99.8879
+ODB_v3_YT,YT,dataset,Building Footprints,12,0.0961
+ODB_v3_YT,YT,dataset,Building Footprints; Facilities - Point,2,0.016
+ODB_v3_YT,YT,type,..,12483,99.984
+ODB_v3_YT,YT,type,Washroom facility//Toilettes,2,0.016
+ODB_v3_YT,YT,prov_terr,YT,12485,100.0

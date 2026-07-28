@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-07-28T17:05:55.992861+00:00",
+  "data_dir": "data",
+  "files_audited": 15,
+  "files": {
+    "ODB_v3_AB": {
+      "province": "AB",
+      "layer": "ODB_v3_AB",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 12,
+      "audit_seconds": 199.3
+    },
+    "ODB_v3_BC": {
+      "province": "BC",
+      "layer": "ODB_v3_BC",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 30,
+      "audit_seconds": 224.2
+    },
+    "ODB_v3_MB": {
+      "province": "MB",
+      "layer": "ODB_v3_MB",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 1,
+      "audit_seconds": 105.1
+    },
+    "ODB_v3_NB": {
+      "province": "NB",
+      "layer": "ODB_v3_NB",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 8,
+      "audit_seconds": 86.2
+    },
+    "ODB_v3_NL": {
+      "province": "NL",
+      "layer": "ODB_v3_NL",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 1,
+      "audit_seconds": 18.5
+    },
+    "ODB_v3_NS": {
+      "province": "NS",
+      "layer": "ODB_v3_NS",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 6,
+      "audit_seconds": 73.6
+    },
+    "ODB_v3_NT": {
+      "province": "NT",
+      "layer": "ODB_v3_NT",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 2,
+      "audit_seconds": 0.6
+    },
+    "ODB_v3_ON_1": {
+      "province": "ON",
+      "layer": "ODB_v3_ON_1",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 21,
+      "audit_seconds": 377.3
+    },
+    "ODB_v3_ON_2": {
+      "province": "ON",
+      "layer": "ODB_v3_ON_2",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 25,
+      "audit_seconds": 301.9
+    },
+    "ODB_v3_ON_3": {
+      "province": "ON",
+      "layer": "ODB_v3_ON_3",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 20,
+      "audit_seconds": 264.8
+    },
+    "ODB_v3_PE": {
+      "province": "PE",
+      "layer": "ODB_v3_PE",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 1,
+      "audit_seconds": 7.3
+    },
+    "ODB_v3_QC_1": {
+      "province": "QC",
+      "layer": "ODB_v3_QC_1",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 9,
+      "audit_seconds": 325.2
+    },
+    "ODB_v3_QC_2": {
+      "province": "QC",
+      "layer": "ODB_v3_QC_2",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 9,
+      "audit_seconds": 238.8
+    },
+    "ODB_v3_SK": {
+      "province": "SK",
+      "layer": "ODB_v3_SK",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 2,
+      "audit_seconds": 29.0
+    },
+    "ODB_v3_YT": {
+      "province": "YT",
+      "layer": "ODB_v3_YT",
+      "categorical_fields": 4,
+      "numeric_fields": 5,
+      "sources": 1,
+      "audit_seconds": 0.9
+    }
+  },
+  "total_audit_seconds": 2252.8,
+  "output_files": [
+    "schema_audit_frequencies.csv",
+    "schema_audit_numeric.csv",
+    "schema_audit_source_completeness.csv",
+    "schema_audit_geometry_quality.csv",
+    "schema_audit_duplicates.csv",
+    "schema_audit_csd_coverage.csv"
+  ]
+}

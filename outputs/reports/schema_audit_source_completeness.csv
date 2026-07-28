@@ -1,0 +1,149 @@
+source,total_records,type_count,type_pct,units_count,units_pct,floors_count,floors_pct,height_count,height_pct,sq_ft_count,sq_ft_pct,year_built_count,year_built_pct,file,province
+City of Calgary,488028,488028,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+City of Edmonton,365567,396,0.11,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+Government of Canada,208576,27,0.01,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+City of Lethbridge,68011,73,0.11,0,0.0,0,0.0,68011,100.0,0,0.0,0,0.0,ODB_v3_AB,AB
+Parkland County,56886,74,0.13,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+Strathcona County,54651,79,0.14,0,0.0,0,0.0,50049,91.58,0,0.0,0,0.0,ODB_v3_AB,AB
+City of Grande Prairie,35843,45,0.13,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+City of Airdrie,23281,18333,78.75,0,0.0,0,0.0,23277,99.98,0,0.0,0,0.0,ODB_v3_AB,AB
+Town of Okotoks,14513,34,0.23,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+Town of Cochrane,10638,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+Town of Canmore,6365,6360,99.92,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_AB,AB
+Town of Banff,2045,0,0.0,0,0.0,2041,99.8,0,0.0,0,0.0,39,1.91,ODB_v3_AB,AB
+Government of Canada,444887,4,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Vancouver,153988,2346,1.52,0,0.0,0,0.0,0,0.0,126,0.08,0,0.0,ODB_v3_BC,BC
+City of Surrey,137180,1324,0.97,0,0.0,8,0.01,135270,98.61,128,0.09,0,0.0,ODB_v3_BC,BC
+District of Saanich,61267,66,0.11,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Burnaby,54008,161,0.3,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Chilliwack,46652,4,0.01,0,0.0,0,0.0,46514,99.7,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Kelowna,45353,0,0.0,0,0.0,0,0.0,44662,98.48,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Kamloops,39872,39872,100.0,0,0.0,0,0.0,39223,98.37,0,0.0,36662,91.95,ODB_v3_BC,BC
+City of Coquitlam,33639,24,0.07,0,0.0,0,0.0,30748,91.41,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Prince George,31882,0,0.0,0,0.0,13,0.04,31060,97.42,0,0.0,31882,100.0,ODB_v3_BC,BC
+City of Nanaimo,31604,31604,100.0,0,0.0,6927,21.92,1757,5.56,0,0.0,0,0.0,ODB_v3_BC,BC
+Municipality of North Cowichan,29309,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+Regional District of Nanaimo,28575,28575,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+District of North Vancouver,23280,23277,99.99,0,0.0,22552,96.87,0,0.0,0,0.0,21345,91.69,ODB_v3_BC,BC
+City of Victoria,21812,47,0.22,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Penticton,16773,8,0.05,0,0.0,16,0.1,0,0.0,0,0.0,33,0.2,ODB_v3_BC,BC
+District of West Vancouver,14984,107,0.71,364,2.43,11869,79.21,0,0.0,0,0.0,316,2.11,ODB_v3_BC,BC
+City of Courtenay,12627,8839,70.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Port Coquitlam,11994,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+District of Lake Country,10724,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of New Westminster,9273,25,0.27,0,0.0,0,0.0,4361,47.03,0,0.0,9247,99.72,ODB_v3_BC,BC
+Regional District of Central Okanagan,9248,9248,100.0,0,0.0,0,0.0,9246,99.98,0,0.0,0,0.0,ODB_v3_BC,BC
+District of Summerland,8899,68,0.76,0,0.0,0,0.0,0,0.0,0,0.0,31,0.35,ODB_v3_BC,BC
+District of Squamish,7031,26,0.37,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+Resort Municipality of Whistler,6500,15,0.23,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of White Rock,5347,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Grand Forks,3000,1950,65.0,0,0.0,0,0.0,2794,93.13,0,0.0,0,0.0,ODB_v3_BC,BC
+Town of Gibsons,2581,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Port Moody,1304,1289,98.85,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+City of Maple Ridge,10,3,30.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_BC,BC
+Government of Canada,656775,32,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_MB,MB
+Government of New Brunswick,567624,79138,13.94,0,0.0,0,0.0,0,0.0,0,0.0,208,0.04,ODB_v3_NB,NB
+City of Moncton,40487,38541,95.19,39237,96.91,1540,3.8,21934,54.18,0,0.0,24435,60.35,ODB_v3_NB,NB
+City of Fredericton,24799,5,0.02,13551,54.64,0,0.0,0,0.0,0,0.0,15149,61.09,ODB_v3_NB,NB
+City of Saint John,15119,204,1.35,0,0.0,0,0.0,0,0.0,0,0.0,24,0.16,ODB_v3_NB,NB
+Edmundston,11658,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NB,NB
+Government of Canada,2136,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NB,NB
+Government of Nova Scotia,3,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NB,NB
+Government of Québec,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NB,NB
+Government of Canada,187694,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NL,NL
+Government of Canada,265563,9,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NS,NS
+Halifax Regional Municipality,163638,126204,77.12,117894,72.05,0,0.0,0,0.0,0,0.0,14657,8.96,ODB_v3_NS,NS
+Cape Breton Regional Municipality (CBRM),78876,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NS,NS
+Government of Nova Scotia,13703,249,1.82,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NS,NS
+Town of Truro,5893,5854,99.34,3698,62.75,4020,68.22,0,0.0,0,0.0,0,0.0,ODB_v3_NS,NS
+Government of New Brunswick,634,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NS,NS
+City of Yellowknife,11553,11210,97.03,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NT,NT
+Government of Canada,258,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_NT,NT
+Government of Canada,482408,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Ottawa,385131,539,0.14,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+Regional Municipality of York,320663,23,0.01,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Toronto,271829,2545,0.94,0,0.0,0,0.0,268428,98.75,0,0.0,59,0.02,ODB_v3_ON_1,ON
+Regional Municipality of Durham,263487,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Kingston,58689,284,0.48,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+County of Lennox & Addington,41670,40635,97.52,223,0.54,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+County of Frontenac,36186,360,0.99,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+Government of Ontario,36045,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Cornwall,33498,32602,97.33,0,0.0,31736,94.74,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Quinte West,30327,8,0.03,0,0.0,0,0.0,30327,100.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+Town of Newmarket,29852,29850,99.99,0,0.0,29821,99.9,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Oshawa,7722,102,1.32,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Pickering,1416,74,5.23,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+Government of Québec,896,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Brampton,87,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Markham,81,81,100.0,0,0.0,0,0.0,0,0.0,0,0.0,81,100.0,ODB_v3_ON_1,ON
+District of Muskoka,5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+Regional Municipality of Peel,4,1,25.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+County of Simcoe,3,3,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+City of Mississauga,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_1,ON
+Government of Canada,274020,2,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Toronto,259742,1386,0.53,0,0.0,0,0.0,259107,99.76,0,0.0,51,0.02,ODB_v3_ON_2,ON
+City of Mississauga,225261,57,0.03,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Brampton,215872,353,0.16,0,0.0,0,0.0,0,0.0,0,0.0,42,0.02,ODB_v3_ON_2,ON
+City of Hamilton,200234,582,0.29,0,0.0,0,0.0,0,0.0,19,0.01,0,0.0,ODB_v3_ON_2,ON
+Niagara Region,168182,443,0.26,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Kitchener,110936,110928,99.99,12056,10.87,110596,99.69,0,0.0,0,0.0,73660,66.4,ODB_v3_ON_2,ON
+Region of Waterloo,75046,327,0.44,0,0.0,66786,88.99,0,0.0,66756,88.95,0,0.0,ODB_v3_ON_2,ON
+Norfolk County,67561,67556,99.99,22178,32.83,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+Town of Oakville,62816,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Cambridge,51871,58,0.11,0,0.0,78,0.15,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Burlington,49833,34800,69.83,0,0.0,106,0.21,0,0.0,0,0.0,104,0.21,ODB_v3_ON_2,ON
+Regional Municipality of Peel,39435,19600,49.7,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Guelph,38549,102,0.26,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Niagara Falls,37571,13,0.03,0,0.0,0,0.0,37570,100.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of Brantford,36785,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+Town of Milton,35336,44,0.12,0,0.0,0,0.0,28949,81.92,0,0.0,0,0.0,ODB_v3_ON_2,ON
+Government of Ontario,21096,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+City of St. Catharines,12670,0,0.0,0,0.0,0,0.0,12670,100.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+Town of Orangeville,8528,8525,99.96,0,0.0,0,0.0,0,0.0,0,0.0,497,5.83,ODB_v3_ON_2,ON
+City of Welland,8273,53,0.64,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+County of Elgin,369,0,0.0,0,0.0,0,0.0,0,0.0,369,100.0,0,0.0,ODB_v3_ON_2,ON
+City of Waterloo,9,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,11.11,ODB_v3_ON_2,ON
+County of Simcoe,4,3,75.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+Regional Municipality of York,1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_2,ON
+Government of Canada,585425,13,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+City of London,191992,188,0.1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+County of Simcoe,191116,189697,99.26,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+City of Windsor,120657,100,0.08,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+District of Muskoka,109818,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+City of Thunder Bay,106151,102177,96.26,3043,2.87,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+City of Greater Sudbury,63902,63535,99.43,0,0.0,63889,99.98,3739,5.85,0,0.0,2848,4.46,ODB_v3_ON_3,ON
+City of Barrie,63054,2548,4.04,0,0.0,0,0.0,63020,99.95,0,0.0,0,0.0,ODB_v3_ON_3,ON
+Government of Ontario,58054,14,0.02,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+County of Huron,50785,34319,67.58,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+County of Elgin,44554,10,0.02,0,0.0,0,0.0,0,0.0,38193,85.72,0,0.0,ODB_v3_ON_3,ON
+Region of Waterloo,42840,224,0.52,0,0.0,30812,71.92,0,0.0,30810,71.92,0,0.0,ODB_v3_ON_3,ON
+City of Sarnia,40308,40308,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+County of Essex,17701,25,0.14,16122,91.08,0,0.0,0,0.0,0,0.0,3,0.02,ODB_v3_ON_3,ON
+City of Waterloo,9008,19,0.21,1,0.01,0,0.0,0,0.0,0,0.0,31,0.34,ODB_v3_ON_3,ON
+Ville de Rouyn-Noranda,53,53,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+County of Lennox & Addington,32,32,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+City of Kitchener,18,18,100.0,0,0.0,18,100.0,0,0.0,0,0.0,6,33.33,ODB_v3_ON_3,ON
+Norfolk County,10,10,100.0,2,20.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+County of Frontenac,7,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_ON_3,ON
+Government of Canada,85856,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_PE,PE
+Government of Québec,1374193,388,0.03,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Ville de Québec,279793,279793,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Government of Canada,243329,21,0.01,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Ville de Longueuil,38605,8,0.02,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Ville de Rimouski,34947,29214,83.6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Ville de Repentigny,24344,24344,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Government of New Brunswick,3775,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Ville de Sherbrooke,590,590,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Ville de Shawinigan,424,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_1,QC
+Government of Québec,1073626,285,0.03,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Ville de Montréal,220311,1330,0.6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Government of Canada,188694,6,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Ville de Laval,111730,109,0.1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Ville de Saguenay,51325,51321,99.99,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Ville de Rouyn-Noranda,33978,33978,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+City of Ottawa,53,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Ville de Repentigny,2,2,100.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Government of Ontario,2,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_QC_2,QC
+Government of Canada,159067,20,0.01,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_SK,SK
+City of Regina,100394,140,0.14,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_SK,SK
+Government of Canada,12485,2,0.02,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,ODB_v3_YT,YT
