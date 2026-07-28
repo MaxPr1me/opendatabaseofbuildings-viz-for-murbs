@@ -184,6 +184,7 @@ def audit_source_completeness(
 ) -> list[dict[str, Any]]:
     """Report field completeness by source organization (not only province).
 
+    Uses a single aggregation query for efficiency on large files.
     Returns list of {source, total, field_name: completeness_pct} dicts.
     """
     conn = sqlite3.connect(gpkg_path)
@@ -199,35 +200,43 @@ def audit_source_completeness(
         if f in existing_fields
     ]
 
-    if "source" not in existing_fields:
+    if "source" not in existing_fields or not check_fields:
         conn.close()
         return []
 
-    # Get sources
-    cur.execute(
-        f"SELECT DISTINCT source FROM [{layer_name}] "
-        f"WHERE source IS NOT NULL AND source != '..' ORDER BY source"
+    # Build a single aggregation query for all fields at once
+    count_exprs = ["COUNT(*) as total"]
+    for field in check_fields:
+        # Count non-missing: NOT (NULL or markers)
+        conditions = [f"[{field}] IS NOT NULL"]
+        for marker in MISSING_MARKERS:
+            conditions.append(f"[{field}] != '{marker}'")
+        expr = " AND ".join(conditions)
+        count_exprs.append(f"SUM(CASE WHEN {expr} THEN 1 ELSE 0 END) as [{field}_count]")
+
+    sql = (
+        f"SELECT [source], {', '.join(count_exprs)} "
+        f"FROM [{layer_name}] "
+        f"WHERE source IS NOT NULL AND source != '..' "
+        f"GROUP BY [source] ORDER BY COUNT(*) DESC"
     )
-    sources = [r[0] for r in cur.fetchall()]
+    cur.execute(sql)
+    columns = [desc[0] for desc in cur.description]
+    query_rows = cur.fetchall()
 
     rows: list[dict[str, Any]] = []
-    for src in sources:
-        cur.execute(f"SELECT COUNT(*) FROM [{layer_name}] WHERE source = ?", (src,))
-        src_total = cur.fetchone()[0]
-
-        row: dict[str, Any] = {"source": src, "total_records": src_total}
-
+    for qrow in query_rows:
+        row_dict = dict(zip(columns, qrow))
+        src_total = row_dict["total"]
+        result: dict[str, Any] = {
+            "source": row_dict["source"],
+            "total_records": src_total,
+        }
         for field in check_fields:
-            missing_cond = _sql_missing_condition(field)
-            cur.execute(
-                f"SELECT COUNT(*) FROM [{layer_name}] WHERE source = ? AND NOT ({missing_cond})",
-                (src,),
-            )
-            non_missing = cur.fetchone()[0]
-            row[f"{field}_count"] = non_missing
-            row[f"{field}_pct"] = round(100.0 * non_missing / max(src_total, 1), 2)
-
-        rows.append(row)
+            count = row_dict.get(f"{field}_count", 0) or 0
+            result[f"{field}_count"] = count
+            result[f"{field}_pct"] = round(100.0 * count / max(src_total, 1), 2)
+        rows.append(result)
 
     conn.close()
     return rows
