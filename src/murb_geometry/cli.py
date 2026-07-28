@@ -357,6 +357,33 @@ def visualize() -> None:
 
 
 @app.command()
+def report() -> None:
+    """Generate the direct RQ1-RQ10 research report from persisted pipeline outputs."""
+    from pathlib import Path
+
+    manifest_path = Path("outputs/reports/run_manifest.json")
+    if not manifest_path.exists():
+        console.print("[red]No pipeline outputs found.[/red] Run 'murb-geometry run-all' first.")
+        raise typer.Exit(code=1)
+
+    import subprocess
+    import sys
+
+    result = subprocess.run(
+        [sys.executable, "scripts/generate_research_report.py"],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode == 0:
+        console.print(
+            "[green]Research report generated:[/green] outputs/reports/research_report.md"
+        )
+    else:
+        console.print(f"[red]Report generation failed:[/red] {result.stderr}")
+        raise typer.Exit(code=1)
+
+
+@app.command()
 def run_all(
     config: str = typer.Option("config/default.yaml", help="Configuration file path"),
     provinces: str | None = typer.Option(
