@@ -1,0 +1,142 @@
+# ============================================================================
+# Output Specification — Machine-readable output requirements
+# ============================================================================
+# Maps research questions to required outputs with completion status.
+# Used by the pipeline runner to validate output generation.
+# ============================================================================
+
+version: "1.0.0"
+classification_pathway: "option_c"
+
+research_questions:
+  RQ1:
+    title: "Building Population and Classification"
+    required_outputs:
+      - "outputs/reports/classification_summary.csv"
+      - "outputs/reports/pathway_sensitivity.csv"
+      - "data/processed/murbs_precision.parquet"
+      - "data/processed/murbs_tiered.parquet"
+    required_figures:
+      - "classification_sankey"
+      - "confidence_distribution"
+    method: "Multi-pathway evidence-based classification"
+    status: "implemented"
+
+  RQ2:
+    title: "Typical MURB Size"
+    required_outputs:
+      - "outputs/reports/size_distributions.csv"
+    required_figures:
+      - "size_violin_plots"
+      - "area_histogram"
+    method: "Descriptive statistics on full population by pathway"
+    status: "implemented"
+
+  RQ3:
+    title: "Building Form and Aspect Ratio"
+    required_outputs:
+      - "outputs/reports/form_metrics.csv"
+    required_figures:
+      - "form_scatter"
+      - "aspect_ratio_distribution"
+    method: "Geometry metrics from MRR"
+    status: "implemented"
+
+  RQ4:
+    title: "Shape Classification"
+    required_outputs:
+      - "outputs/reports/shape_classes.csv"
+    required_figures:
+      - "shape_examples"
+    method: "Rule-based shape family assignment from metrics"
+    status: "partial"
+
+  RQ5:
+    title: "Mid-Rise and High-Rise Definitions"
+    required_outputs:
+      - "outputs/reports/storey_bands.csv"
+    required_figures:
+      - "storey_histogram"
+    method: "Storey band analysis where floors/height available"
+    status: "partial"
+
+  RQ6:
+    title: "Window-to-Wall Ratio"
+    required_outputs:
+      - "outputs/reports/wwr_assumptions.csv"
+    required_figures:
+      - "wwr_by_facade"
+    method: "External sources and literature assumptions only"
+    status: "documented_limitation"
+    notes: "ODB footprints cannot provide WWR. Requires external data."
+
+  RQ7:
+    title: "Representative Archetypes"
+    required_outputs:
+      - "outputs/archetypes/precision_archetypes.json"
+      - "outputs/archetypes/tiered_archetypes.json"
+      - "outputs/archetypes/cluster_diagnostics.json"
+    required_figures:
+      - "archetype_scatter"
+      - "cluster_diagnostics"
+    method: "Evidence-based clustering with diagnostic k selection"
+    status: "implemented"
+
+  RQ8:
+    title: "Geographic Variation"
+    required_outputs:
+      - "outputs/reports/geographic_variation.csv"
+    required_figures:
+      - "province_comparison"
+    method: "Stratified statistics by province and pathway"
+    status: "implemented"
+
+  RQ9:
+    title: "Data Quality and Representativeness"
+    required_outputs:
+      - "outputs/reports/inventory.json"
+      - "outputs/reports/data_quality_matrix.csv"
+    required_figures:
+      - "completeness_heatmap"
+    method: "Source-level completeness analysis"
+    status: "implemented"
+
+  RQ10:
+    title: "Simulation Suitability"
+    required_outputs:
+      - "outputs/gbxml/validation/"
+    method: "gbXML XSD validation + structural checks"
+    status: "partial"
+    notes: "gbXML generation works. OpenStudio import testing not yet done."
+
+# Claim metadata requirements — every output must include these
+claim_metadata:
+  required_fields:
+    - population_definition
+    - geography
+    - source_dataset_version
+    - classification_pathway
+    - confidence_classes_included
+    - record_count_before_exclusions
+    - record_count_after_exclusions
+    - observed_estimated_assumed_status
+    - missingness_percentage
+    - uncertainty_description
+
+# Full-population rule enforcement
+full_population_rule:
+  enforced: true
+  sampling_allowed_for:
+    - automated_tests
+    - developer_smoke_tests
+    - performance_profiling
+    - visualization_previews
+    - manual_validation_samples
+    - documented_exploratory_analysis
+  sampling_labels_required:
+    - word_sample_in_output
+    - sampling_method
+    - seed
+    - sample_size
+    - source_population_size
+    - not_production_research_result

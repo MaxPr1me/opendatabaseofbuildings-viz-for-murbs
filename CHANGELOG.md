@@ -7,7 +7,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
+### Added — Full-Population Rebuild (Option C Multi-pathway)
+
+- **Full-population pipeline** (`src/murb_geometry/pipeline.py`) — processes all
+  12 provinces/territories without arbitrary row caps
+- **Option C multi-pathway classification** — parallel precision and tiered pathways
+  with sensitivity analysis between them
+- **`run-all` CLI command** — one-command full national execution
+- **`preprocess` CLI command** — single-province processing
+- **Evidence-based archetype module** (`archetypes/evidence_based.py`) —
+  diagnostic-driven cluster count selection with silhouette, inertia, and stability
+- **Output specification** (`docs/output_specification.md`) — complete research
+  question → output matrix
+- **Pathway sensitivity report** — quantifies how results differ between pathways
+- **Classification summary CSV** — per-province breakdown by confidence level
+- **GeoParquet persistence** — full processed datasets at `data/processed/`
+- **Run manifest** — timings, counts, hashes, config, software versions
+- **National full-run script** (`scripts/national_full_run.py`) — production runner
+
+### Changed
+
+- `pyproject.toml`: Python requirement relaxed to >=3.11 (was >=3.12)
+- `config/default.yaml`: Added pathway, precision_levels, tiered_levels
+- `src/murb_geometry/config.py`: ClassificationConfig expanded with pathway fields
+- `docs/methodology.md`: Complete rewrite for Option C multi-pathway approach
+
+### Deprecated
+
+- `scripts/complete_run.py` — uses MAX_PER_FILE=2000 and fixed k=5/8.
+  Use `murb-geometry run-all` instead.
+
+### Fixed
+
+- Pipeline handles pandas NaN values in classification (not just None/"..")
+
+---
+
+### Added (Previous)
 
 - Complete national MURB analysis pipeline (Phases 0–8)
 - Repository scaffold and project structure (Phase 0)

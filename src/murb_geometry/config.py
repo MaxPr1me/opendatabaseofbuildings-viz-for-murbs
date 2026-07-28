@@ -54,7 +54,19 @@ class StoreyBandsConfig(BaseModel):
 class ClassificationConfig(BaseModel):
     """MURB classification parameters."""
 
+    pathway: str = "option_c"  # "option_c", "precision", or "tiered"
     minimum_murb_units: int = 4
+    precision_levels: list[str] = Field(
+        default_factory=lambda: ["confirmed_murb", "high_confidence_murb"]
+    )
+    tiered_levels: list[str] = Field(
+        default_factory=lambda: [
+            "confirmed_murb",
+            "high_confidence_murb",
+            "probable_murb",
+            "possible_murb",
+        ]
+    )
     confidence_levels: list[str] = Field(
         default_factory=lambda: [
             "confirmed_murb",

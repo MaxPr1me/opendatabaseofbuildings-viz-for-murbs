@@ -1,0 +1,7 @@
+province,confidence_level,count,total_records,percentage
+NS,non_murb,472840,528307,89.5
+NS,insufficient_information,52472,528307,9.93
+NS,high_confidence_murb,2578,528307,0.49
+NS,possible_murb,209,528307,0.04
+NS,confirmed_murb,190,528307,0.04
+NS,probable_murb,18,528307,0.0
