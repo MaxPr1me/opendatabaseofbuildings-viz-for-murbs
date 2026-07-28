@@ -463,7 +463,7 @@ def run_full_pipeline(
     # Stage 1: Process all provinces
     all_precision: list[gpd.GeoDataFrame] = []
     all_tiered: list[gpd.GeoDataFrame] = []
-    province_results: dict[str, dict] = {}
+    province_results: dict[str, dict[str, Any]] = {}
 
     for prov in target_provinces:
         if prov not in PROVINCE_FILES:
@@ -549,7 +549,7 @@ def run_full_pipeline(
 def _compute_pathway_statistics(
     precision: gpd.GeoDataFrame,
     tiered: gpd.GeoDataFrame,
-    province_results: dict[str, dict],
+    province_results: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
     """Compute descriptive statistics for each pathway."""
     stats: dict[str, Any] = {}
@@ -590,11 +590,11 @@ def _compute_pathway_statistics(
 
 
 def _generate_classification_report(
-    province_results: dict[str, dict],
+    province_results: dict[str, dict[str, Any]],
     output_dir: Path,
 ) -> Path:
     """Generate classification summary CSV."""
-    rows: list[dict] = []
+    rows: list[dict[str, Any]] = []
     for prov, result in province_results.items():
         summary = result.get("classification_summary", {})
         for level, count in summary.items():
@@ -623,7 +623,7 @@ def _generate_sensitivity_report(
     output_dir: Path,
 ) -> Path:
     """Generate pathway sensitivity comparison."""
-    rows: list[dict] = []
+    rows: list[dict[str, Any]] = []
 
     for metric in ["footprint_area_m2", "aspect_ratio", "compactness", "rectangularity"]:
         for pathway_name, gdf in [("precision", precision), ("tiered", tiered)]:

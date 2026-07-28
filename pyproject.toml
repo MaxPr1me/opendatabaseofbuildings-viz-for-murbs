@@ -118,6 +118,7 @@ module = [
     "pyogrio.*",
     "shapely.*",
     "geopandas.*",
+    "pandas.*",
     "sklearn.*",
 ]
 ignore_missing_imports = true
