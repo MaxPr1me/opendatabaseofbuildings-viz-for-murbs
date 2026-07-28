@@ -139,3 +139,113 @@ class TestVerticalDataModes:
         result = compute_vertical_data(sample_vertical_gdf, VerticalDataMode.OBSERVED_ONLY)
         # Third row: no floors, no height → no GFA
         assert np.isnan(result.iloc[2]["gfa_est_m2"])
+
+
+class TestPreprocessGeometryEdgeCases:
+    """Additional edge-case tests for geometry preprocessing."""
+
+    def test_empty_geometry_flagged(self):
+        from shapely.geometry import Polygon as ShapelyPolygon
+
+        empty = ShapelyPolygon()
+        gdf = gpd.GeoDataFrame({"id": ["empty"]}, geometry=[empty], crs="EPSG:3347")
+        result = preprocess_geometry(gdf)
+        assert result.iloc[0]["geom_is_empty"] == True  # noqa: E712
+        assert len(result) == 1  # Not deleted
+
+    def test_large_implausible_flagged(self):
+        huge = box(0, 0, 1000, 200)  # 200,000 m² — too large
+        gdf = gpd.GeoDataFrame({"id": ["huge"]}, geometry=[huge], crs="EPSG:3347")
+        result = preprocess_geometry(gdf)
+        assert result.iloc[0]["geom_is_implausible"] == True  # noqa: E712
+        assert "area_too_large" in str(result.iloc[0]["geom_implausible_reason"])
+
+    def test_area_delta_after_repair(self):
+        # Bowtie polygon — self-intersecting, original area is 0
+        bowtie = Polygon([(0, 0), (10, 10), (10, 0), (0, 10), (0, 0)])
+        gdf = gpd.GeoDataFrame({"id": ["bt"]}, geometry=[bowtie], crs="EPSG:3347")
+        result = preprocess_geometry(gdf)
+        assert result.iloc[0]["geom_was_repaired"] == True  # noqa: E712
+        # Repaired geometry has positive area (two triangles)
+        assert result.iloc[0]["geom_repaired_area_m2"] > 0
+
+    def test_normal_polygon_not_implausible(self):
+        normal = box(0, 0, 20, 30)  # 600 m² — normal size
+        gdf = gpd.GeoDataFrame({"id": ["norm"]}, geometry=[normal], crs="EPSG:3347")
+        result = preprocess_geometry(gdf)
+        assert result.iloc[0]["geom_is_implausible"] == False  # noqa: E712
+        assert result.iloc[0]["geom_is_valid"] == True  # noqa: E712
+
+    def test_row_count_reconciliation(self):
+        """Input and output always have same row count."""
+        geoms = [box(0, 0, 10, 10)] * 50 + [None] * 5
+        gdf = gpd.GeoDataFrame({"id": list(range(55))}, geometry=geoms, crs="EPSG:3347")
+        result = preprocess_geometry(gdf)
+        assert len(result) == 55
+
+    def test_multipolygon_hole_count(self):
+        """MultiPolygon holes summed across components."""
+        outer1 = box(0, 0, 20, 20)
+        hole1 = box(5, 5, 15, 15)
+        p1 = Polygon(outer1.exterior.coords, [hole1.exterior.coords])
+        outer2 = box(30, 0, 50, 20)
+        hole2 = box(35, 5, 45, 15)
+        p2 = Polygon(outer2.exterior.coords, [hole2.exterior.coords])
+        multi = MultiPolygon([p1, p2])
+        gdf = gpd.GeoDataFrame({"id": ["mh"]}, geometry=[multi], crs="EPSG:3347")
+        result = preprocess_geometry(gdf)
+        assert result.iloc[0]["geom_hole_count"] == 2
+        assert result.iloc[0]["geom_is_multipart"] == True  # noqa: E712
+
+
+class TestVerticalDataEdgeCases:
+    """Additional vertical-data mode tests."""
+
+    def test_both_floors_and_height_observed(self):
+        """When both are available, both are used as observed."""
+        gdf = gpd.GeoDataFrame(
+            {
+                "floors_numeric": [8],
+                "height_numeric": [24.0],
+                "footprint_area_m2": [1000.0],
+                "geometry": [box(0, 0, 40, 25)],
+            },
+            crs="EPSG:3347",
+        )
+        result = compute_vertical_data(gdf, VerticalDataMode.OBSERVED_ONLY)
+        assert result.iloc[0]["storeys_final"] == 8
+        assert result.iloc[0]["height_final_m"] == 24.0
+        assert result.iloc[0]["storeys_source"] == HeightSource.OBSERVED_FLOORS.value
+        assert result.iloc[0]["height_source"] == HeightSource.OBSERVED_HEIGHT.value
+
+    def test_derived_storeys_from_tall_building(self):
+        """Tall building height → correct derived storeys."""
+        gdf = gpd.GeoDataFrame(
+            {
+                "floors_numeric": [None],
+                "height_numeric": [45.0],
+                "footprint_area_m2": [800.0],
+                "geometry": [box(0, 0, 40, 20)],
+            },
+            crs="EPSG:3347",
+        )
+        result = compute_vertical_data(gdf, VerticalDataMode.OBSERVED_PLUS_DERIVED)
+        # 45 / 3.0 = 15 storeys
+        assert result.iloc[0]["storeys_final"] == 15
+        assert result.iloc[0]["storeys_source"] == HeightSource.DERIVED_FROM_HEIGHT.value
+
+    def test_gfa_uses_correct_storeys_source(self):
+        """GFA method field references the correct source."""
+        gdf = gpd.GeoDataFrame(
+            {
+                "floors_numeric": [None],
+                "height_numeric": [12.0],
+                "footprint_area_m2": [500.0],
+                "geometry": [box(0, 0, 25, 20)],
+            },
+            crs="EPSG:3347",
+        )
+        result = compute_vertical_data(gdf, VerticalDataMode.OBSERVED_PLUS_DERIVED)
+        # 12/3.0 = 4 storeys, GFA = 500*4 = 2000
+        assert result.iloc[0]["gfa_est_m2"] == pytest.approx(2000.0)
+        assert "derived_from_height" in result.iloc[0]["gfa_method"]
