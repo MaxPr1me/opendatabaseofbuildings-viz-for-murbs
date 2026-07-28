@@ -1,4 +1,5 @@
 """Tests for the full-population multi-pathway pipeline."""
+
 import geopandas as gpd
 import pandas as pd
 import pytest
@@ -32,13 +33,13 @@ def sample_gdf():
         "floors": ["4", "2", "3", "6", "..", "1", "15"],
         "height": ["..", "..", "..", "18.0", "..", "..", "45.0"],
         "geometry": [
-            box(0, 0, 30, 20),   # 600 m² apartment
-            box(0, 0, 10, 10),   # 100 m² residential
-            box(0, 0, 50, 30),   # 1500 m² commercial
-            box(0, 0, 25, 25),   # 625 m² multi-residential
-            box(0, 0, 5, 5),     # 25 m² (too small)
-            box(0, 0, 8, 8),     # 64 m² house
-            box(0, 0, 40, 25),   # 1000 m² large apartment
+            box(0, 0, 30, 20),  # 600 m² apartment
+            box(0, 0, 10, 10),  # 100 m² residential
+            box(0, 0, 50, 30),  # 1500 m² commercial
+            box(0, 0, 25, 25),  # 625 m² multi-residential
+            box(0, 0, 5, 5),  # 25 m² (too small)
+            box(0, 0, 8, 8),  # 64 m² house
+            box(0, 0, 40, 25),  # 1000 m² large apartment
         ],
     }
     return gpd.GeoDataFrame(data, geometry="geometry", crs="EPSG:3347")
@@ -115,19 +116,13 @@ class TestFilterPathway:
         classified = classify_dataframe(sample_gdf)
         precision = filter_pathway(classified, "precision")
         # Only confirmed_murb and high_confidence_murb
-        assert all(
-            level in PRECISION_LEVELS
-            for level in precision["confidence_level"].unique()
-        )
+        assert all(level in PRECISION_LEVELS for level in precision["confidence_level"].unique())
 
     def test_tiered_pathway(self, sample_gdf):
         classified = classify_dataframe(sample_gdf)
         tiered = filter_pathway(classified, "tiered")
         # All tiered levels
-        assert all(
-            level in TIERED_LEVELS
-            for level in tiered["confidence_level"].unique()
-        )
+        assert all(level in TIERED_LEVELS for level in tiered["confidence_level"].unique())
 
     def test_tiered_superset_of_precision(self, sample_gdf):
         classified = classify_dataframe(sample_gdf)

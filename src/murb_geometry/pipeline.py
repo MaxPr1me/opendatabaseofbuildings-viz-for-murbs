@@ -192,16 +192,24 @@ def classify_dataframe(
             return None
         return normalize_type_value(v)
 
-    gdf["type_normalized"] = gdf["type"].apply(_safe_normalize_type) if "type" in gdf.columns else None
-    gdf["units_numeric"] = gdf["units"].apply(
-        lambda v: _parse_int(v, missing_markers)
-    ) if "units" in gdf.columns else None
-    gdf["floors_numeric"] = gdf["floors"].apply(
-        lambda v: _parse_int(v, missing_markers)
-    ) if "floors" in gdf.columns else None
-    gdf["height_numeric"] = gdf["height"].apply(
-        lambda v: _parse_numeric(v, missing_markers)
-    ) if "height" in gdf.columns else None
+    gdf["type_normalized"] = (
+        gdf["type"].apply(_safe_normalize_type) if "type" in gdf.columns else None
+    )
+    gdf["units_numeric"] = (
+        gdf["units"].apply(lambda v: _parse_int(v, missing_markers))
+        if "units" in gdf.columns
+        else None
+    )
+    gdf["floors_numeric"] = (
+        gdf["floors"].apply(lambda v: _parse_int(v, missing_markers))
+        if "floors" in gdf.columns
+        else None
+    )
+    gdf["height_numeric"] = (
+        gdf["height"].apply(lambda v: _parse_numeric(v, missing_markers))
+        if "height" in gdf.columns
+        else None
+    )
 
     # Compute footprint area for classification (geometry must be in projected CRS)
     gdf["footprint_area_m2"] = gdf.geometry.area
@@ -336,7 +344,10 @@ def filter_pathway(
     filtered = gdf[gdf["confidence_level"].isin(levels)].copy()
     logger.info(
         "Pathway '%s': %d/%d buildings (%.1f%%)",
-        pathway, len(filtered), len(gdf), 100 * len(filtered) / max(len(gdf), 1),
+        pathway,
+        len(filtered),
+        len(gdf),
+        100 * len(filtered) / max(len(gdf), 1),
     )
     return filtered
 
@@ -387,7 +398,11 @@ def process_province(
     elapsed = time.time() - t0
     logger.info(
         "%s complete: %d total, %d precision, %d tiered (%.1fs)",
-        province, total, len(precision_gdf), len(tiered_gdf), elapsed,
+        province,
+        total,
+        len(precision_gdf),
+        len(tiered_gdf),
+        elapsed,
     )
 
     return {
@@ -545,9 +560,15 @@ def _compute_pathway_statistics(
             continue
 
         metric_fields = [
-            "footprint_area_m2", "aspect_ratio", "compactness",
-            "rectangularity", "convexity", "mrr_length_m", "mrr_width_m",
-            "perimeter_m", "orientation_deg",
+            "footprint_area_m2",
+            "aspect_ratio",
+            "compactness",
+            "rectangularity",
+            "convexity",
+            "mrr_length_m",
+            "mrr_width_m",
+            "perimeter_m",
+            "orientation_deg",
         ]
         pathway_stats: dict[str, Any] = {"n": len(gdf)}
         for field in metric_fields:
@@ -577,13 +598,15 @@ def _generate_classification_report(
     for prov, result in province_results.items():
         summary = result.get("classification_summary", {})
         for level, count in summary.items():
-            rows.append({
-                "province": prov,
-                "confidence_level": level,
-                "count": count,
-                "total_records": result.get("total_records", 0),
-                "percentage": round(100 * count / max(result.get("total_records", 1), 1), 2),
-            })
+            rows.append(
+                {
+                    "province": prov,
+                    "confidence_level": level,
+                    "count": count,
+                    "total_records": result.get("total_records", 0),
+                    "percentage": round(100 * count / max(result.get("total_records", 1), 1), 2),
+                }
+            )
 
     if rows:
         df = pd.DataFrame(rows)
@@ -610,17 +633,19 @@ def _generate_sensitivity_report(
             if not values:
                 continue
             stats = compute_descriptive_stats(values, metric)
-            rows.append({
-                "metric": metric,
-                "pathway": pathway_name,
-                "n": stats["valid_count"],
-                "median": stats["median"],
-                "mean": stats["mean"],
-                "p25": stats["p25"],
-                "p75": stats["p75"],
-                "p5": stats["p5"],
-                "p95": stats["p95"],
-            })
+            rows.append(
+                {
+                    "metric": metric,
+                    "pathway": pathway_name,
+                    "n": stats["valid_count"],
+                    "median": stats["median"],
+                    "mean": stats["mean"],
+                    "p25": stats["p25"],
+                    "p75": stats["p75"],
+                    "p5": stats["p5"],
+                    "p95": stats["p95"],
+                }
+            )
 
     if rows:
         df = pd.DataFrame(rows)

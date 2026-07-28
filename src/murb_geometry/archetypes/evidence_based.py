@@ -94,7 +94,10 @@ def evaluate_cluster_range(
 
         logger.info(
             "  k=%d: silhouette=%.4f, inertia=%.0f, sizes=%s",
-            k, sil, inertia, sizes,
+            k,
+            sil,
+            inertia,
+            sizes,
         )
 
     return {
@@ -168,6 +171,7 @@ def generate_archetypes(
         alt_labels = alt_kmeans.fit_predict(scaled)
         # Measure agreement via adjusted Rand index
         from sklearn.metrics import adjusted_rand_score
+
         ari = float(adjusted_rand_score(labels, alt_labels))
         stability_scores.append(round(ari, 4))
 
@@ -175,7 +179,10 @@ def generate_archetypes(
 
     logger.info(
         "Archetypes: k=%d, silhouette=%.4f, stability=%.4f, sizes=%s",
-        actual_k, sil, mean_stability, sizes,
+        actual_k,
+        sil,
+        mean_stability,
+        sizes,
     )
 
     return {

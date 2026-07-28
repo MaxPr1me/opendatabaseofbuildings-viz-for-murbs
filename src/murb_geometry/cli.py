@@ -359,7 +359,9 @@ def visualize() -> None:
 @app.command()
 def run_all(
     config: str = typer.Option("config/default.yaml", help="Configuration file path"),
-    provinces: str | None = typer.Option(None, help="Comma-separated province codes (default: all)"),
+    provinces: str | None = typer.Option(
+        None, help="Comma-separated province codes (default: all)"
+    ),
     output_dir: str | None = typer.Option(None, help="Output directory override"),
 ) -> None:
     """Execute the complete multi-pathway pipeline on all provinces.
