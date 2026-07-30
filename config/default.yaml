@@ -33,6 +33,14 @@ classification:
   pathway: "option_c"
   # Minimum dwelling units to consider as multi-unit
   minimum_murb_units: 4
+  # Minimum storeys for a Part 3 MURB (owner decision 2026-07-30)
+  minimum_murb_storeys: 4
+  # Height (m) treated as a proxy for Part 3 storey count (~4 storeys)
+  murb_height_threshold_m: 12.0
+  # Footprint (m2) treated as a weak MURB signal for residential context only
+  large_footprint_m2: 600.0
+  # Data-derived type normalization mapping (generated from the schema audit)
+  type_normalization_path: "config/type_normalization.yaml"
   # Confidence levels included in each pathway
   precision_levels:
     - "confirmed_murb"

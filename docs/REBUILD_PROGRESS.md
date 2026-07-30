@@ -69,8 +69,8 @@ Report both and quantify sensitivity of distributions and archetypes to pathway.
 ## Phase 4 — Review geometry preprocessing ✅ COMPLETE
 
 **Deliverables produced:**
-- Full-population geometry metrics computation (vectorized + row-by-row)
-- CRS enforcement (EPSG:3347 projected)
+- Full-population geometry metrics computation (currently row-by-row, not yet vectorized)
+- CRS enforcement (EPSG:3347 projected) via `ensure_projected_crs` guard at the load boundary
 - Geometry repair via shapely make_valid
 - GeoParquet persistence (`data/processed/murbs_precision.parquet`, `data/processed/murbs_tiered.parquet`)
 - Row counts recorded through every stage
@@ -101,15 +101,18 @@ Report both and quantify sensitivity of distributions and archetypes to pathway.
 
 ## Phase 7 — Define simulation geometry (PARTIAL)
 
-**Status:** gbXML model and exporter exist. Medoid-based and synthetic pathways need
-full integration with new pipeline outputs.
+**Status:** gbXML model, exporter, and validation implemented — structural checks plus
+optional XSD schema validation (`validate_gbxml_against_xsd`, lxml). Medoid-based and
+synthetic geometry pathways still need full integration with the new pipeline outputs;
+OpenStudio import validation remains outstanding.
 
 ---
 
-## Phase 8 — Repair outputs and interfaces (PARTIAL)
+## Phase 8 — Repair outputs and interfaces ✅ COMPLETE
 
-**Status:** Excel workbook, Streamlit app exist from prototype. Need update to
-consume new GeoParquet outputs from multi-pathway pipeline.
+**Status:** Downstream outputs consume the persisted MURB subsets via the datastore:
+Excel summary + building-audit workbooks, publication figures (visualization module),
+the RQ1–RQ10 research report, the per-province coverage report, and the Streamlit app.
 
 ---
 
@@ -124,7 +127,10 @@ consume new GeoParquet outputs from multi-pathway pipeline.
 - `murb-geometry summarize` — descriptive statistics
 - `murb-geometry preprocess` — full-population single-province processing
 - `murb-geometry run-all` — **complete national multi-pathway pipeline**
-- `murb-geometry excel` — Excel workbook generation
+- `murb-geometry excel` / `excel-audit` — summary and building-level workbooks
+- `murb-geometry figures` — publication figures from persisted outputs
+- `murb-geometry report` — RQ1–RQ10 research report
+- `murb-geometry data-status` — MURB-subset availability and validity
 - `murb-geometry visualize` — Streamlit launcher
 
 **Production runner:** `scripts/national_full_run.py`
@@ -132,13 +138,39 @@ consume new GeoParquet outputs from multi-pathway pipeline.
 
 ---
 
-## Phase 10 — Direct research report (PENDING)
+## Phase 10 — Direct research report ✅ COMPLETE
 
-**Status:** Requires complete national run to finish, then generate report answering
-RQ1–RQ10 with direct evidence from the multi-pathway results.
+**Status:** The national run is complete (7,623 precision / 59,543 tiered). The RQ1–RQ10
+research report (`outputs/reports/research_report.md`) and per-province coverage report are
+generated from the persisted manifest and MURB subsets.
 
 ---
 
 ## Phase 11 — Agentic task backlog and issue discipline (ONGOING)
 
 **This document serves as the task tracker.**
+
+---
+
+## Next To-Dos (backlog — issue-ready)
+
+Each item is written as a GitHub-issue draft (title + scope). None are blocking; the national
+pipeline and downstream outputs are complete and validated.
+
+1. **External data enrichment connectors** — Integrate authoritative height/storey/unit sources
+   (NRCan LiDAR, CMHC, provincial assessment) to raise MURB confidence beyond sparse ODB
+   attributes, especially for QC/MB/NL/PE/SK/YT. Preserve provenance. (Phase 5)
+2. **OpenStudio/EnergyPlus import validation** — Actually import exported gbXML; verify area and
+   volume within tolerance before claiming compatibility (RQ10). Store validation reports.
+3. **National representativeness & weighting** — Compare the classified population to external
+   estimates (Census dwellings, CMHC starts); document and optionally weight the coverage bias. (RQ9)
+4. **Medoid & synthetic simulation-geometry pathways** — Wire archetype medoids and parametric
+   shapes into the gbXML exporter, consuming the new MURB subsets. (Phase 7)
+5. **Shape classification** — Assign footprints to shape families (rectangle/L/T/U/courtyard) from
+   existing metrics; persist `shape_class` on the subsets. (RQ4)
+6. **Official gbXML 7.03 XSD in CI** — Obtain the gbXML 7.03 schema and wire `validate_gbxml`
+   into an export test so schema validation runs in CI.
+7. **Static figure export (kaleido)** — Add the `kaleido` dependency so figures export as PNG/SVG
+   (committable), not just interactive HTML.
+8. **Periodic type-mapping re-audit** — Re-run `audit-schema` + `propose_type_normalization.py`
+   when the ODB updates; spot-check long-tail (<100-record) categorizations before adopting.

@@ -20,13 +20,18 @@ import geopandas as gpd
 import numpy as np
 import pandas as pd
 
+from murb_geometry import datastore, reporting
 from murb_geometry.classification.classifier import (
     ClassificationResult,
     classify_building,
     normalize_type_value,
 )
 from murb_geometry.config import load_config
-from murb_geometry.geometry.metrics import compute_geometry_metrics
+from murb_geometry.geometry.metrics import (
+    hole_metrics,
+    minimum_rotated_rectangle_metrics,
+    vertex_count,
+)
 from murb_geometry.statistics.descriptive import compute_descriptive_stats
 
 logger = logging.getLogger(__name__)
@@ -94,6 +99,78 @@ def _file_hash(path: Path) -> str:
     return h.hexdigest()
 
 
+def _target_epsg(target_crs: str) -> int | None:
+    """Parse an EPSG integer from a CRS string like 'EPSG:3347'."""
+    try:
+        return int(str(target_crs).split(":")[-1])
+    except (ValueError, AttributeError):
+        return None
+
+
+def ensure_projected_crs(
+    gdf: gpd.GeoDataFrame,
+    target_crs: str,
+    province: str = "",
+) -> gpd.GeoDataFrame:
+    """Guarantee a projected CRS before any area/length calculation.
+
+    Footprint area and perimeter are only meaningful in a projected CRS. This
+    guard runs at the data-loading boundary so metrics are never computed
+    silently in degrees. A missing CRS is rejected (units cannot be trusted);
+    a geographic CRS is reprojected to the configured target; a projected CRS
+    that differs from the target is reprojected for consistency.
+
+    Parameters
+    ----------
+    gdf
+        Loaded province GeoDataFrame.
+    target_crs
+        Configured projected CRS (e.g., "EPSG:3347").
+    province
+        Province code for logging context.
+
+    Returns
+    -------
+    gpd.GeoDataFrame
+        Data guaranteed to be in a projected CRS (reprojected if required).
+
+    Raises
+    ------
+    ValueError
+        If the source geometry has no CRS defined.
+    """
+    if gdf.empty:
+        return gdf
+
+    if gdf.crs is None:
+        msg = (
+            f"{province}: source geometry has no CRS defined; cannot compute metric "
+            f"areas/lengths safely (expected projected CRS {target_crs})."
+        )
+        raise ValueError(msg)
+
+    if gdf.crs.is_geographic:
+        logger.warning(
+            "%s: source CRS %s is geographic; reprojecting to %s before metrics",
+            province,
+            gdf.crs.to_string(),
+            target_crs,
+        )
+        return gdf.to_crs(target_crs)
+
+    target_epsg = _target_epsg(target_crs)
+    if target_epsg is not None and gdf.crs.to_epsg() != target_epsg:
+        logger.info(
+            "%s: reprojecting from %s to configured target %s",
+            province,
+            gdf.crs.to_string(),
+            target_crs,
+        )
+        return gdf.to_crs(target_crs)
+
+    return gdf
+
+
 def load_province_data(
     province: str,
     file_paths: list[str],
@@ -152,6 +229,9 @@ def load_province_data(
 def classify_dataframe(
     gdf: gpd.GeoDataFrame,
     min_murb_units: int = 4,
+    min_murb_storeys: int = 4,
+    murb_height_threshold_m: float = 12.0,
+    large_footprint_m2: float = 600.0,
     min_candidate_area_m2: float = 200.0,
     missing_markers: list[str] | None = None,
 ) -> gpd.GeoDataFrame:
@@ -224,6 +304,9 @@ def classify_dataframe(
             footprint_area_m2=row.get("footprint_area_m2"),
             height_numeric=row.get("height_numeric"),
             min_murb_units=min_murb_units,
+            min_murb_storeys=min_murb_storeys,
+            murb_height_threshold_m=murb_height_threshold_m,
+            large_footprint_m2=large_footprint_m2,
             min_candidate_area_m2=min_candidate_area_m2,
         )
         results.append(result)
@@ -246,8 +329,11 @@ def classify_dataframe(
 def compute_metrics_vectorized(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     """Compute geometry metrics for classified buildings.
 
-    Uses vectorized shapely operations where possible, falls back to
-    row-by-row for complex metrics.
+    Area, perimeter, compactness, and convexity are computed with vectorized
+    GeoSeries operations over all geometries at once. Minimum-rotated-rectangle
+    axes (length/width/aspect/orientation), hole metrics, and vertex counts
+    require coordinate-level access and are computed per geometry (each MRR is
+    computed exactly once). Rectangularity is derived from the MRR area.
 
     Parameters
     ----------
@@ -263,55 +349,51 @@ def compute_metrics_vectorized(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     logger.info("Computing geometry metrics for %d buildings...", n)
     gdf = gdf.copy()
 
-    # Vectorized basic metrics
+    # Vectorized metrics (GeoSeries operations over all geometries at once).
+    footprint = gdf["footprint_area_m2"].to_numpy()
     gdf["perimeter_m"] = gdf.geometry.length
     gdf["compactness"] = (4.0 * np.pi * gdf["footprint_area_m2"]) / (gdf["perimeter_m"] ** 2)
+    hull_area = gdf.geometry.convex_hull.area.to_numpy()
+    gdf["convexity"] = np.where(hull_area > 0, footprint / hull_area, 0.0)
 
-    # Row-by-row for complex metrics (MRR, convexity, holes)
-    mrr_lengths = []
-    mrr_widths = []
-    mrr_areas = []
-    aspect_ratios = []
-    orientations = []
-    convexities = []
-    rectangularities = []
-    hole_counts = []
-    hole_areas = []
-    vertex_counts = []
+    # Per-row metrics needing coordinate-level access (MRR axes, holes, vertices).
+    mrr_lengths: list[float] = []
+    mrr_widths: list[float] = []
+    mrr_areas: list[float] = []
+    aspect_ratios: list[float] = []
+    orientations: list[float] = []
+    hole_counts: list[int] = []
+    hole_areas: list[float] = []
+    vertex_counts: list[int] = []
 
     t0 = time.time()
-    for i, (_, row) in enumerate(gdf.iterrows()):
+    for i, geom in enumerate(gdf.geometry):
         if i > 0 and i % 10000 == 0:
             elapsed = time.time() - t0
-            rate = i / elapsed
-            logger.info("  Metrics: %d/%d (%.0f/sec)", i, n, rate)
-
-        geom = row.geometry
-        metrics = compute_geometry_metrics(geom)
-        mrr_lengths.append(metrics["mrr_length_m"])
-        mrr_widths.append(metrics["mrr_width_m"])
-        mrr_areas.append(metrics["mrr_area_m2"])
-        aspect_ratios.append(metrics["aspect_ratio"])
-        orientations.append(metrics["orientation_deg"])
-        convexities.append(metrics["convexity"])
-        rectangularities.append(metrics["rectangularity"])
-        hole_counts.append(metrics["hole_count"])
-        hole_areas.append(metrics["hole_area_m2"])
-        vertex_counts.append(metrics["vertex_count"])
+            logger.info("  Metrics: %d/%d (%.0f/sec)", i, n, i / elapsed)
+        mrr = minimum_rotated_rectangle_metrics(geom)
+        holes = hole_metrics(geom)
+        mrr_lengths.append(mrr["mrr_length_m"])
+        mrr_widths.append(mrr["mrr_width_m"])
+        mrr_areas.append(mrr["mrr_area_m2"])
+        aspect_ratios.append(mrr["aspect_ratio"])
+        orientations.append(mrr["orientation_deg"])
+        hole_counts.append(int(holes["hole_count"]))
+        hole_areas.append(float(holes["hole_area_m2"]))
+        vertex_counts.append(vertex_count(geom))
 
     gdf["mrr_length_m"] = mrr_lengths
     gdf["mrr_width_m"] = mrr_widths
     gdf["mrr_area_m2"] = mrr_areas
     gdf["aspect_ratio"] = aspect_ratios
     gdf["orientation_deg"] = orientations
-    gdf["convexity"] = convexities
-    gdf["rectangularity"] = rectangularities
+    mrr_area_arr = np.asarray(mrr_areas, dtype=float)
+    gdf["rectangularity"] = np.where(mrr_area_arr > 0, footprint / mrr_area_arr, 0.0)
     gdf["hole_count"] = hole_counts
     gdf["hole_area_m2"] = hole_areas
     gdf["vertex_count"] = vertex_counts
 
-    elapsed = time.time() - t0
-    logger.info("  Metrics complete: %d buildings in %.1fs", n, elapsed)
+    logger.info("  Metrics complete: %d buildings in %.1fs", n, time.time() - t0)
     return gdf
 
 
@@ -372,12 +454,18 @@ def process_province(
     if gdf.empty:
         return {"province": province, "total_records": 0, "error": "no data loaded"}
 
+    # Enforce projected CRS before any area/length metric (AGENTS.md section 5).
+    gdf = ensure_projected_crs(gdf, config.input.target_projected_crs, province)
+
     total = len(gdf)
 
     # Classify all buildings
     gdf = classify_dataframe(
         gdf,
         min_murb_units=config.classification.minimum_murb_units,
+        min_murb_storeys=config.classification.minimum_murb_storeys,
+        murb_height_threshold_m=config.classification.murb_height_threshold_m,
+        large_footprint_m2=config.classification.large_footprint_m2,
         min_candidate_area_m2=config.classification.footprint_area["minimum_candidate_m2"],
         missing_markers=config.input.missing_value_markers,
     )
@@ -497,16 +585,16 @@ def run_full_pipeline(
         national_tiered = gpd.GeoDataFrame(national_tiered, geometry="geometry")
         logger.info("National tiered population: %d buildings", len(national_tiered))
 
-    # Stage 3: Persist processed data as GeoParquet
-    if not national_precision.empty:
-        precision_path = Path("data/processed/murbs_precision.parquet")
-        national_precision.to_parquet(precision_path, index=False)
-        logger.info("Saved precision pathway: %s", precision_path)
-
-    if not national_tiered.empty:
-        tiered_path = Path("data/processed/murbs_tiered.parquet")
-        national_tiered.to_parquet(tiered_path, index=False)
-        logger.info("Saved tiered pathway: %s", tiered_path)
+    # Stage 3: Persist MURB subsets as GeoParquet (+ provenance manifest) via the datastore.
+    # These small subsets are what downstream work loads for fast processing.
+    processed_base = Path(config.paths.data_dir) / config.paths.processed_subdir
+    subset_provenance = datastore.build_classification_provenance(config)
+    datastore.write_murb_subset(
+        national_precision, "precision", base=processed_base, provenance=subset_provenance
+    )
+    datastore.write_murb_subset(
+        national_tiered, "tiered", base=processed_base, provenance=subset_provenance
+    )
 
     # Stage 4: Compute summary statistics per pathway
     stats = _compute_pathway_statistics(national_precision, national_tiered, province_results)
@@ -542,6 +630,9 @@ def run_full_pipeline(
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=2, default=str)
     logger.info("Run manifest: %s", manifest_path)
+
+    # Stage 7: Per-province coverage / data-quality report (makes coverage bias explicit).
+    reporting.write_coverage_report(manifest, out / "reports")
 
     return manifest
 

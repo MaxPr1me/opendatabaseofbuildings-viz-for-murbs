@@ -66,6 +66,8 @@ def _rq1(manifest: dict[str, Any]) -> str:
     provinces = manifest["stages"]["province_processing"]
     totals = manifest["stages"]["national_totals"]
     total_records = sum(p["total_records"] for p in provinces.values())
+    precision_provs = sorted(p for p, d in provinces.items() if d["precision_count"] > 0)
+    zero_provs = sorted(p for p, d in provinces.items() if d["tiered_count"] == 0)
 
     # Build province breakdown table
     rows = []
@@ -84,16 +86,22 @@ def _rq1(manifest: dict[str, Any]) -> str:
 
 ### Direct Answer
 
-MURBs are identified through an 11-rule evidence-based classifier applied to the
-complete ODB v3 population ({total_records:,} buildings across {len(provinces)}
-provinces). Two pathways are run in parallel (Option C):
+MURBs are identified through an evidence-based classifier applied to the complete ODB v3
+population ({total_records:,} buildings across {len(provinces)} provinces), aligned to the
+NBC **Part 3** definition (multi-unit residential of 4+ storeys, or > 600 m² building area).
+Building `type` is normalized from observed source values via a data-derived mapping
+(`config/type_normalization.yaml`, covering English and French/Québec vocabulary). Two
+pathways run in parallel (Option C):
 
-- **Precision pathway** ({totals["precision_buildings"]:,} buildings): Only
-  buildings with direct authoritative evidence — explicit apartment/multi-residential
-  type (R001) or observed unit count ≥ 4 (R002).
-- **Tiered pathway** ({totals["tiered_buildings"]:,} buildings): Precision plus
-  probable (floors ≥ 4 + area ≥ 400 m², R003) and possible (large residential
-  footprint R004, tall building R005) candidates.
+- **Precision pathway** ({totals["precision_buildings"]:,} buildings): storey/unit-verified
+  MURBs — an explicit apartment/multi-residential/condominium type corroborated by
+  floors ≥ 4 or units ≥ 4 (R001 → confirmed), or floors ≥ 4 (R002) or units ≥ 4 (R003)
+  in a residential/unknown context (→ high confidence).
+- **Tiered pathway** ({totals["tiered_buildings"]:,} buildings): precision plus probable
+  (height ≥ 12 m as a Part 3 storey proxy, R004) and possible candidates (a MURB-intent
+  type without storey/unit corroboration, R005; or a large residential footprint
+  ≥ 600 m², R006). Explicit low-rise (duplex, semi, townhouse, single-family) and
+  non-residential types are excluded up front (R010).
 
 ### Population and Method
 
@@ -110,12 +118,15 @@ provinces). Two pathways are run in parallel (Option C):
 
 ### Limitations
 
-- Provinces without type or unit data (MB, NL, PE, SK, YT) yield zero precision
-  MURBs and rely entirely on geometric/height indicators for tiered classification.
-- Alberta has type data but no unit counts, producing 0 precision but 72,226 tiered
-  (mostly from R005 tall-building rule using height data).
-- The precision pathway provides highest confidence but lowest geographic coverage.
-- Classification consistency depends on source-specific type normalization quality.
+- Provinces with no classified MURBs in this run: {", ".join(zero_provs) or "none"} — they
+  lack populated `type`, `floors`, and `units` fields.
+- Quebec has type data (French vocabulary, now recognized) but no storey/unit fields and no
+  explicit apartment types, so it contributes only weak `possible` candidates via
+  large-footprint residential (R006); most QC records resolve to `insufficient_information`
+  rather than being dropped.
+- Under the Part 3 definition, generic 'Residential' does not confirm a MURB without
+  storey/unit evidence — the precision pathway therefore has high confidence but low
+  geographic coverage ({", ".join(precision_provs)}).
 
 ---
 
@@ -126,6 +137,9 @@ def _rq2(manifest: dict[str, Any]) -> str:
     stats = manifest["stages"]["statistics"]
     prec = stats.get("precision", {})
     tier = stats.get("tiered", {})
+    precision_provs = sorted(
+        p for p, d in manifest["stages"]["province_processing"].items() if d["precision_count"] > 0
+    )
 
     area_p = prec.get("footprint_area_m2", {})
     area_t = tier.get("footprint_area_m2", {})
@@ -139,8 +153,8 @@ storeys, height, unit count, and dimensions?**
 
 ### Direct Answer
 
-Based on the precision pathway ({prec.get("n", 0):,} buildings from NS and NB
-with direct multi-unit evidence):
+Based on the precision pathway ({prec.get("n", 0):,} buildings from {", ".join(precision_provs)}
+with storey/unit-verified multi-unit evidence):
 
 | Metric | N | Min | P25 | Median | P75 | Max | Mean | Std | Missing |
 |--------|--:|----:|----:|-------:|----:|----:|-----:|----:|--------:|
@@ -170,7 +184,8 @@ with direct multi-unit evidence):
 
 ### Limitations
 
-- Floor/unit counts are only available for a subset of provinces (NS, NB, ON, BC).
+- Floor/unit counts are available only for the provinces with precision MURBs
+  ({", ".join(precision_provs)}).
 - Height data is sparse and not available from all sources.
 - Footprint ≠ floor plate — podiums, setbacks, and additions are not captured.
 - GFA cannot be reliably computed without confirmed storey counts.
@@ -383,9 +398,11 @@ Geographic coverage is highly uneven due to source data availability:
 
 ### Key Finding
 
-National statistics are dominated by provinces with the richest attribute data (NS, NB
-for precision; AB for tiered via height data). Provinces without type, unit, or height
-fields contribute no classified MURBs and cannot be represented in current outputs.
+National statistics are dominated by provinces with the richest attribute data — those with
+observed storey or unit counts drive the precision pathway, while provinces with height data
+(e.g., AB and ON) add probable candidates to the tiered pathway via the height proxy. Provinces
+without type, unit, or height fields contribute no classified MURBs and cannot be represented
+in current outputs.
 
 ### Limitations
 

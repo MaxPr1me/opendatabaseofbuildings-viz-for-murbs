@@ -120,6 +120,8 @@ module = [
     "geopandas.*",
     "pandas.*",
     "sklearn.*",
+    "plotly.*",
+    "lxml.*",
 ]
 ignore_missing_imports = true
 

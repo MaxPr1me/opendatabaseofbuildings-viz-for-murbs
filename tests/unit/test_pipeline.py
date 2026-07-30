@@ -21,24 +21,24 @@ def sample_gdf():
     """Create a small GeoDataFrame mimicking ODB structure."""
     data = {
         "type": [
-            "Apartment Building",
-            "Residential",
-            "Commercial",
-            "Residential - Multi",
-            None,
-            "house",
-            "Apartment Building",
+            "Apartment",  # apartment + storeys/units -> confirmed
+            "Residential",  # residential context + large footprint -> possible
+            "Commercial",  # non_murb
+            "MultiFamily",  # multi_residential + storeys/units -> confirmed
+            None,  # no type, tiny footprint -> non_murb
+            "Single Family Dwelling",  # residential_single -> non_murb
+            "Apartment",  # apartment + storeys/units -> confirmed
         ],
         "units": ["12", "1", "..", "8", "..", "1", "50"],
         "floors": ["4", "2", "3", "6", "..", "1", "15"],
         "height": ["..", "..", "..", "18.0", "..", "..", "45.0"],
         "geometry": [
             box(0, 0, 30, 20),  # 600 m² apartment
-            box(0, 0, 10, 10),  # 100 m² residential
+            box(0, 0, 30, 25),  # 750 m² residential (large footprint)
             box(0, 0, 50, 30),  # 1500 m² commercial
             box(0, 0, 25, 25),  # 625 m² multi-residential
             box(0, 0, 5, 5),  # 25 m² (too small)
-            box(0, 0, 8, 8),  # 64 m² house
+            box(0, 0, 8, 8),  # 64 m² single-family
             box(0, 0, 40, 25),  # 1000 m² large apartment
         ],
     }
@@ -89,12 +89,12 @@ class TestClassifyDataframe:
 
     def test_apartment_classified_confirmed(self, sample_gdf):
         result = classify_dataframe(sample_gdf)
-        # First row: "Apartment Building" → confirmed_murb
+        # First row: "Apartment" + floors=4/units=12 -> confirmed_murb (storey/unit verified)
         assert result.iloc[0]["confidence_level"] == "confirmed_murb"
 
     def test_multi_residential_classified(self, sample_gdf):
         result = classify_dataframe(sample_gdf)
-        # Fourth row: "Residential - Multi" → confirmed_murb (R001 type match)
+        # Fourth row: "MultiFamily" + floors=6/units=8 -> confirmed_murb (storey/unit verified)
         assert result.iloc[3]["confidence_level"] == "confirmed_murb"
 
     def test_commercial_classified_non_murb(self, sample_gdf):
@@ -158,3 +158,31 @@ class TestComputeMetrics:
         assert (result["aspect_ratio"] >= 1.0).all()
         assert (result["compactness"] > 0).all()
         assert (result["compactness"] <= 1.0).all()
+
+    def test_metrics_match_per_row(self, sample_gdf):
+        """Vectorized frame metrics match the per-row reference implementation."""
+        from murb_geometry.geometry.metrics import compute_geometry_metrics
+
+        classified = classify_dataframe(sample_gdf)
+        tiered = filter_pathway(classified, "tiered")
+        if tiered.empty:
+            pytest.skip("No tiered buildings in sample")
+        result = compute_metrics_vectorized(tiered)
+        keys = [
+            "perimeter_m",
+            "compactness",
+            "convexity",
+            "rectangularity",
+            "mrr_length_m",
+            "mrr_width_m",
+            "mrr_area_m2",
+            "aspect_ratio",
+            "orientation_deg",
+            "hole_count",
+            "hole_area_m2",
+            "vertex_count",
+        ]
+        for _, row in result.iterrows():
+            expected = compute_geometry_metrics(row.geometry)
+            for key in keys:
+                assert row[key] == pytest.approx(expected[key], rel=1e-9, abs=1e-9)

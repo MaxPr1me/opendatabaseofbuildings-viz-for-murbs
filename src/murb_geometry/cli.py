@@ -366,6 +366,25 @@ def excel(
     console.print(f"[green]Excel report saved to:[/green] {output_path}")
 
 
+@app.command(name="excel-audit")
+def excel_audit(
+    output: str | None = typer.Option(None, help="Output workbook path"),
+) -> None:
+    """Generate the building-level audit Excel workbook from persisted MURB subsets."""
+    from murb_geometry import datastore
+    from murb_geometry.excel.building_audit import create_building_audit_workbook
+
+    if not (datastore.subset_available("tiered") or datastore.subset_available("precision")):
+        console.print(
+            "[red]No processed MURB subsets found.[/red] Run 'murb-geometry run-all' first."
+        )
+        raise typer.Exit(code=1)
+
+    output_path = Path(output) if output else Path("outputs/excel/murb_building_audit.xlsx")
+    create_building_audit_workbook(output_path)
+    console.print(f"[green]Building audit workbook saved to:[/green] {output_path}")
+
+
 @app.command()
 def visualize() -> None:
     """Launch the Streamlit visualization application."""
@@ -374,6 +393,22 @@ def visualize() -> None:
 
     console.print("[bold]Launching Streamlit...[/bold]")
     subprocess.run([sys.executable, "-m", "streamlit", "run", "app/streamlit_app.py"])
+
+
+@app.command()
+def figures(
+    output: str | None = typer.Option(None, help="Figures output directory"),
+) -> None:
+    """Regenerate publication figures from persisted run outputs (manifest + MURB subsets)."""
+    from murb_geometry.visualization.charts import build_all_figures
+
+    out = Path(output) if output else None
+    try:
+        written = build_all_figures(output_dir=out)
+    except FileNotFoundError as exc:
+        console.print(f"[red]{exc}[/red]")
+        raise typer.Exit(code=1) from exc
+    console.print(f"[green]Wrote {len(written)} figures[/green] to outputs/figures/")
 
 
 @app.command()
@@ -447,6 +482,40 @@ def run_all(
     console.print(f"  Precision pathway: {totals.get('precision_buildings', 0):,} buildings")
     console.print(f"  Tiered pathway:    {totals.get('tiered_buildings', 0):,} buildings")
     console.print("  Manifest: outputs/reports/run_manifest.json")
+
+
+@app.command(name="data-status")
+def data_status(
+    config: str = typer.Option("config/default.yaml", help="Configuration file path"),
+) -> None:
+    """Show availability and validity of the persisted MURB subsets.
+
+    Downstream work (excel, report, archetypes, visualize) loads these subsets for
+    fast processing. A subset is 'valid' when its provenance matches the current
+    classification configuration; otherwise re-run 'murb-geometry run-all'.
+    """
+    from murb_geometry import datastore
+
+    cfg = load_config(config_path=config, local_path="config/local.yaml")
+    expected = datastore.build_classification_provenance(cfg)
+    status = datastore.subset_status(expected_provenance=expected)
+
+    console.print("[bold]Processed MURB subsets[/bold] (data/processed/):")
+    for pathway, s in status.items():
+        if not s["available"]:
+            console.print(
+                f"  [yellow]{pathway}[/yellow]: not produced — run 'murb-geometry run-all'"
+            )
+            continue
+        rows = s["n_rows"]
+        rows_str = f"{rows:,}" if isinstance(rows, int) else "?"
+        tag = "[green]valid[/green]" if s["valid"] else "[red]STALE[/red]"
+        console.print(
+            f"  [bold]{pathway}[/bold]: {tag}  rows={rows_str}  "
+            f"provinces={len(s['provinces'] or [])}  created={s['created_at']}"
+        )
+        if not s["valid"]:
+            console.print(f"      reasons: {', '.join(s['invalid_reasons'])}")
 
 
 @app.command()

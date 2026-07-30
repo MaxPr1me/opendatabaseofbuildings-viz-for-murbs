@@ -5,7 +5,7 @@
 [![Status: National Run Complete](https://img.shields.io/badge/status-National%20Run%20Complete-brightgreen)]()
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)]()
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)]()
-[![Tests: 99 passing](https://img.shields.io/badge/tests-99%20passing-brightgreen)]()
+[![Tests: 185 passing](https://img.shields.io/badge/tests-185%20passing-brightgreen)]()
 
 ---
 
@@ -71,21 +71,21 @@ This project addresses these limitations through transparent classification, dat
 
 ## Scope
 
-### Current scope (Phase 0)
-- Repository structure and documentation
-- Software architecture and configuration schema
-- Phased implementation roadmap
-- Development environment
+### Implemented
+- National data inventory and full-population schema audit
+- Geometry validation, repair, and metric extraction (projected-CRS enforced)
+- Evidence-based MURB classification (NBC **Part 3**) with a data-derived type mapping
+- Full-population multi-pathway national run (precision + tiered), persisted as GeoParquet
+- MURB-subset datastore with provenance manifests for fast, valid downstream reuse
+- Descriptive statistics, coverage/quality report, and the RQ1–RQ10 research report
+- Publication figures, formatted Excel workbooks, and a Streamlit app
+- gbXML exporter with structural + optional XSD validation
+- Evidence-based archetype clustering (silhouette / stability diagnostics)
 
-### Future scope (Phases 1–8)
-- National data inventory and quality audit
-- Geometry metric extraction
-- MURB classification with confidence scores
-- Interactive visualization (Streamlit)
-- Formatted Excel reports
-- External data enrichment
-- Representative archetype derivation
-- gbXML export for OpenStudio/EnergyPlus
+### Remaining / future
+- External authoritative enrichment (height, storeys, units) — framework only
+- OpenStudio import validation and EnergyPlus simulation testing
+- National representativeness weighting
 
 ### Non-goals
 - Real-time web application deployment
@@ -174,48 +174,39 @@ pip install -e ".[dev]"
 pre-commit install
 ```
 
-### Commands (planned)
+### Commands
 
 ```bash
-# Inspect a data file
+# Inventory + full-population schema audit
+murb-geometry inventory
+murb-geometry audit-schema
+
+# Inspect a single data file (schema, CRS, completeness)
 murb-geometry inspect data/ODB_v3_NS/ODB_v3_NS.gpkg
 
-# Run data inventory
-murb-geometry inventory
-
-# Calculate geometry metrics
-murb-geometry metrics --province NS
-
-# Classify candidate MURBs
+# Sample previews (validate / classify / metrics / summarize)
+murb-geometry validate --province NS
 murb-geometry classify --province NS
+murb-geometry metrics --province NS
+murb-geometry summarize
 
-# Generate summary statistics
-murb-geometry summarize --province NS
+# Full-population national run (all provinces, no row caps) -> MURB subsets + reports
+murb-geometry run-all
 
-# Produce Excel report
-murb-geometry excel --output outputs/excel/murb_report.xlsx
+# Check the persisted MURB subsets and whether they match the current config
+murb-geometry data-status
 
-# Generate representative archetypes
-murb-geometry archetypes --method medoid
+# Regenerate downstream outputs from the persisted subsets
+murb-geometry excel          # summary workbook
+murb-geometry excel-audit    # building-level audit workbook
+murb-geometry figures        # publication figures
+murb-geometry report         # RQ1-RQ10 research report
+murb-geometry visualize      # launch the Streamlit app
 
-# Launch visualization tool
-murb-geometry visualize
-# (equivalent to: streamlit run app/streamlit_app.py)
-
-# Export gbXML (future)
-murb-geometry gbxml --archetype-id A001 --output outputs/gbxml/archetype_A001.xml
-
-# Run complete pipeline
-murb-geometry run --config config/default.yaml
-
-# Run tests
-make test
-
-# Run linting
-make lint
-
-# Run type checking
-make typecheck
+# Quality gate
+make test        # pytest
+make lint        # ruff
+make typecheck   # mypy
 ```
 
 ---
@@ -239,9 +230,9 @@ make typecheck
 ## Methodology Overview
 
 1. **Ingestion** — Discover and read GeoPackage files with pyogrio (column projection, spatial filtering)
-2. **Schema normalization** — Map source-specific values to common taxonomy, preserving originals
+2. **Type normalization** — Map observed source `type` values to canonical categories via a data-derived mapping (`config/type_normalization.yaml`, generated from the schema audit; English + French/Québec)
 3. **Geometry validation** — Check/repair geometry, flag quality issues
-4. **MURB classification** — Apply evidence-based rules with confidence scores
+4. **MURB classification** — Evidence-based rules (NBC Part 3) with confidence scores; storey/unit corroboration required to confirm
 5. **Metric extraction** — Calculate area, dimensions, aspect ratio, compactness, shape
 6. **Data-quality assessment** — Report completeness by province, source, field
 7. **Enrichment** — Integrate external authoritative data (height, units, age)
@@ -272,24 +263,24 @@ See [docs/methodology.md](docs/methodology.md) for complete details.
 
 | Component | Status |
 |-----------|--------|
-| Repository scaffold | ✅ Complete |
-| Configuration schema | ✅ Complete |
-| Documentation | ✅ Complete |
-| Data inventory — 14.4M records (Phase 1) | ✅ Complete |
-| Geometry metrics (Phase 2) | ✅ Complete |
-| Geometry validation (Phase 2) | ✅ Complete |
-| MURB classification (Phase 3) | ✅ Complete |
-| Descriptive statistics (Phase 4) | ✅ Complete |
-| Excel reports (Phase 4) | ✅ Complete |
-| Streamlit visualization (Phase 4) | ✅ Complete |
-| Enrichment framework (Phase 5) | ✅ Framework |
-| K-means clustering + medoids (Phase 6) | ✅ Complete |
-| gbXML exporter (Phase 7) | ✅ Complete |
-| National production run (Phase 8) | ✅ Complete |
-| NS MURB characterization (2,766 buildings) | ✅ Complete |
-| 6 representative archetypes | ✅ Complete |
-| External source connectors (Phase 5) | 📋 Future |
-| XSD validation + OpenStudio import | 📋 Future |
+| Repository scaffold, configuration, documentation | ✅ Complete |
+| Data inventory + full-population schema audit | ✅ Complete |
+| Geometry validation, repair, metric extraction | ✅ Complete |
+| Data-derived type normalization (English + French) | ✅ Complete |
+| MURB classification — NBC Part 3, confidence-scored | ✅ Complete |
+| Full national run — 7,623 precision / 59,543 tiered | ✅ Complete |
+| MURB-subset datastore + provenance manifests | ✅ Complete |
+| Descriptive statistics + coverage/quality report | ✅ Complete |
+| RQ1–RQ10 research report | ✅ Complete |
+| Publication figures (visualization module) | ✅ Complete |
+| Excel summary + building-audit workbooks | ✅ Complete |
+| Streamlit visualization app | ✅ Complete |
+| Evidence-based clustering + medoids | ✅ Complete |
+| gbXML exporter + structural validation | ✅ Complete |
+| gbXML XSD validation (optional, lxml) | ✅ Complete |
+| External enrichment connectors | 📋 Framework only |
+| OpenStudio import + EnergyPlus validation | 📋 Future |
+| National representativeness weighting | 📋 Future |
 
 ---
 

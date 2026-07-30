@@ -17,6 +17,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 from murb_geometry import __version__
+from murb_geometry.datastore import subset_path
 
 logger = logging.getLogger(__name__)
 
@@ -96,8 +97,8 @@ def create_building_audit_workbook(
     Path
         Path to created workbook.
     """
-    precision_path = precision_path or Path("data/processed/murbs_precision.parquet")
-    tiered_path = tiered_path or Path("data/processed/murbs_tiered.parquet")
+    precision_path = precision_path or subset_path("precision")
+    tiered_path = tiered_path or subset_path("tiered")
 
     wb = Workbook()
 

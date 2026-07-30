@@ -6,14 +6,18 @@ This document describes the analytical methodology for characterizing representa
 
 ## Classification Pathway: Option C — Multi-pathway Reporting
 
-The workflow implements Option C from the methodological decision gate:
+The workflow implements Option C from the methodological decision gate. The MURB target is
+the **NBC Part 3** class (multi-unit residential of 4+ storeys, or > 600 m² building area);
+Part 9 low-rise (duplex, semi-detached, townhouse, single-family) is excluded.
 
-1. **Precision pathway** — Only buildings with direct authoritative multi-unit evidence
-   (explicit apartment/multi-residential type OR observed unit count ≥ 4).
+1. **Precision pathway** — Storey/unit-verified MURBs: an explicit
+   apartment/multi-residential/condominium type corroborated by floors ≥ 4 or units ≥ 4
+   (R001), or floors ≥ 4 (R002) or units ≥ 4 (R003) in a residential/unknown context.
    Confidence levels: `confirmed_murb`, `high_confidence_murb`.
 
-2. **Tiered pathway** — Precision population plus probable/possible MURBs identified via
-   floors ≥ 4 + area ≥ 400 m², large residential footprints, or tall buildings.
+2. **Tiered pathway** — Precision plus probable (height ≥ 12 m as a storey proxy, R004)
+   and possible candidates (a MURB-intent type without storey/unit corroboration, R005;
+   or a large residential footprint ≥ 600 m², R006).
    Confidence levels: `confirmed_murb`, `high_confidence_murb`, `probable_murb`, `possible_murb`.
 
 Both pathways are processed in parallel. Sensitivity of geometry distributions and
@@ -29,10 +33,12 @@ archetypes to classification pathway choice is quantified explicitly.
 - Parse text fields to numeric where applicable
 - Normalize missing-value markers (`..`, empty, `NA`, `N/A`) to null
 
-### 2. Schema Normalization
-- Map 40+ source-specific type values to canonical categories
+### 2. Type Normalization
+- Map observed source `type` values to canonical categories via a **data-derived** mapping
+  (`config/type_normalization.yaml`), generated from the full-population schema audit and
+  covering English and French/Québec vocabulary — no hand-invented values
 - Preserve original values alongside normalized values
-- Document all normalization rules in `classification/classifier.py`
+- Regenerate the mapping with `scripts/propose_type_normalization.py` after re-auditing
 
 ### 3. Geometry Validation
 - Verify CRS is projected (EPSG:3347 — NAD83/Statistics Canada Lambert)
@@ -41,8 +47,12 @@ archetypes to classification pathway choice is quantified explicitly.
 - Flag empty, null, and degenerate geometries
 - Record geometry-quality metrics
 
-### 4. MURB Classification (Multi-pathway)
-- Apply 11 evidence-based rules (R001–R011 + R999 default)
+### 4. MURB Classification (Multi-pathway, NBC Part 3)
+- Explicit non-MURB types (single-family, low-rise multi, non-residential) are excluded first (R010)
+- Apply evidence-based rules in priority order (R001–R011 + R999 default): R001 MURB-type +
+  storeys/units → confirmed; R002 floors ≥ 4 / R003 units ≥ 4 → high confidence; R004 height ≥ 12 m
+  → probable; R005 MURB-type unverified / R006 large residential footprint → possible
+- Thresholds are configurable in `config/default.yaml` (storeys, height, footprint, units)
 - Assign confidence levels with scores (1.0 → 0.0)
 - Preserve all evidence fields, rule IDs, and reasoning text
 - Filter into precision and tiered populations
@@ -54,7 +64,8 @@ archetypes to classification pathway choice is quantified explicitly.
 - Derive aspect ratio, compactness (Polsby-Popper), rectangularity, convexity
 - Extract hole/courtyard metrics, component/vertex counts
 - Compute orientation (azimuth of major axis)
-- Vectorized where possible, row-by-row for complex metrics
+- Area, perimeter, compactness, and convexity are vectorized (GeoSeries); MRR axes, holes,
+  and vertex counts are computed per geometry
 
 ### 6. Shape Classification
 - Assign footprints to shape families based on metrics

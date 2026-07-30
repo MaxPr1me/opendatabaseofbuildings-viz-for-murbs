@@ -1,10 +1,10 @@
 # Research Report — Canadian MURB Geometry Analysis
 
-> Generated: 2026-07-28 19:08 UTC
+> Generated: 2026-07-30 19:52 UTC
 > Source: Statistics Canada Open Database of Buildings v3
 > Classification Pathway: Option C — Multi-pathway reporting
-> Precision population: 9,153 buildings
-> Tiered population: 121,415 buildings
+> Precision population: 7,623 buildings
+> Tiered population: 59,543 buildings
 > Provinces processed: 12
 > Pipeline manifest: `outputs/reports/run_manifest.json`
 
@@ -16,16 +16,22 @@
 
 ### Direct Answer
 
-MURBs are identified through an 11-rule evidence-based classifier applied to the
-complete ODB v3 population (14,417,429 buildings across 12
-provinces). Two pathways are run in parallel (Option C):
+MURBs are identified through an evidence-based classifier applied to the complete ODB v3
+population (14,417,429 buildings across 12 provinces), aligned to the
+NBC **Part 3** definition (multi-unit residential of 4+ storeys, or > 600 m² building area).
+Building `type` is normalized from observed source values via a data-derived mapping
+(`config/type_normalization.yaml`, covering English and French/Québec vocabulary). Two
+pathways run in parallel (Option C):
 
-- **Precision pathway** (9,153 buildings): Only
-  buildings with direct authoritative evidence — explicit apartment/multi-residential
-  type (R001) or observed unit count ≥ 4 (R002).
-- **Tiered pathway** (121,415 buildings): Precision plus
-  probable (floors ≥ 4 + area ≥ 400 m², R003) and possible (large residential
-  footprint R004, tall building R005) candidates.
+- **Precision pathway** (7,623 buildings): storey/unit-verified
+  MURBs — an explicit apartment/multi-residential/condominium type corroborated by
+  floors ≥ 4 or units ≥ 4 (R001 → confirmed), or floors ≥ 4 (R002) or units ≥ 4 (R003)
+  in a residential/unknown context (→ high confidence).
+- **Tiered pathway** (59,543 buildings): precision plus probable
+  (height ≥ 12 m as a Part 3 storey proxy, R004) and possible candidates (a MURB-intent
+  type without storey/unit corroboration, R005; or a large residential footprint
+  ≥ 600 m², R006). Explicit low-rise (duplex, semi, townhouse, single-family) and
+  non-residential types are excluded up front (R010).
 
 ### Population and Method
 
@@ -38,27 +44,30 @@ provinces). Two pathways are run in parallel (Option C):
 
 | Province | Total | Precision | Tiered | Confirmed | High-Conf | Probable | Possible |
 |----------|------:|----------:|-------:|----------:|----------:|---------:|---------:|
-| AB | 1,334,404 | 0 | 72,226 | 0 | 0 | 14 | 72,212 |
-| BC | 1,303,603 | 492 | 6,971 | 246 | 246 | 194 | 6,285 |
+| AB | 1,334,404 | 19 | 16,414 | 0 | 19 | 12,127 | 4,268 |
+| BC | 1,303,603 | 482 | 10,163 | 192 | 290 | 4,064 | 5,617 |
 | MB | 656,775 | 0 | 0 | 0 | 0 | 0 | 0 |
-| NB | 661,827 | 2,512 | 2,791 | 0 | 2,512 | 36 | 243 |
+| NB | 661,827 | 2,498 | 3,979 | 1,603 | 895 | 98 | 1,383 |
 | NL | 187,694 | 0 | 0 | 0 | 0 | 0 | 0 |
-| NS | 528,307 | 2,768 | 2,995 | 190 | 2,578 | 18 | 209 |
+| NS | 528,307 | 2,671 | 2,888 | 189 | 2,482 | 0 | 217 |
 | NT | 11,811 | 0 | 72 | 0 | 0 | 0 | 72 |
-| ON | 5,695,485 | 3,381 | 36,360 | 1,634 | 1,747 | 527 | 32,452 |
+| ON | 5,695,485 | 1,953 | 23,478 | 1,027 | 926 | 14,237 | 7,288 |
 | PE | 85,856 | 0 | 0 | 0 | 0 | 0 | 0 |
-| QC | 3,679,721 | 0 | 0 | 0 | 0 | 0 | 0 |
+| QC | 3,679,721 | 0 | 2,549 | 0 | 0 | 0 | 2,549 |
 | SK | 259,461 | 0 | 0 | 0 | 0 | 0 | 0 |
 | YT | 12,485 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Limitations
 
-- Provinces without type or unit data (MB, NL, PE, SK, YT) yield zero precision
-  MURBs and rely entirely on geometric/height indicators for tiered classification.
-- Alberta has type data but no unit counts, producing 0 precision but 72,226 tiered
-  (mostly from R005 tall-building rule using height data).
-- The precision pathway provides highest confidence but lowest geographic coverage.
-- Classification consistency depends on source-specific type normalization quality.
+- Provinces with no classified MURBs in this run: MB, NL, PE, SK, YT — they
+  lack populated `type`, `floors`, and `units` fields.
+- Quebec has type data (French vocabulary, now recognized) but no storey/unit fields and no
+  explicit apartment types, so it contributes only weak `possible` candidates via
+  large-footprint residential (R006); most QC records resolve to `insufficient_information`
+  rather than being dropped.
+- Under the Part 3 definition, generic 'Residential' does not confirm a MURB without
+  storey/unit evidence — the precision pathway therefore has high confidence but low
+  geographic coverage (AB, BC, NB, NS, ON).
 
 ---
 
@@ -69,38 +78,39 @@ storeys, height, unit count, and dimensions?**
 
 ### Direct Answer
 
-Based on the precision pathway (9,153 buildings from NS and NB
-with direct multi-unit evidence):
+Based on the precision pathway (7,623 buildings from AB, BC, NB, NS, ON
+with storey/unit-verified multi-unit evidence):
 
 | Metric | N | Min | P25 | Median | P75 | Max | Mean | Std | Missing |
 |--------|--:|----:|----:|-------:|----:|----:|-----:|----:|--------:|
-| Footprint area (m²) | 9,153 | 4.7 | 177.1 | 342.7 | 728.9 | 14,647.6 | 605.7 | 760.6 | 0.0% |
-| MRR length (m) | 9,153 | 3.7 | 17.5 | 25.7 | 44.5 | 233.4 | 34.5 | 24.7 | 0.0% |
-| MRR width (m) | 9,153 | 1.0 | 10.4 | 14.1 | 20.1 | 133.9 | 17.2 | 11.3 | 0.0% |
-| Storeys | 3,032 | 1.0 | 1.0 | 2.0 | 3.0 | 45.0 | 3.0 | 3.3 | 0.0% |
-| Dwelling units | 7,516 | 1.0 | 4.0 | 8.0 | 24.0 | 583.0 | 22.6 | 35.4 | 0.0% |
+| Footprint area (m²) | 7,623 | 4.7 | 213.8 | 419.5 | 915.5 | 14,803.4 | 727.2 | 889.6 | 0.0% |
+| MRR length (m) | 7,623 | 3.7 | 19.4 | 29.8 | 49.9 | 240.4 | 38.5 | 26.0 | 0.0% |
+| MRR width (m) | 7,623 | 1.0 | 11.6 | 15.9 | 22.3 | 150.6 | 19.3 | 12.2 | 0.0% |
+| Storeys | 2,180 | 1.0 | 3.0 | 4.0 | 6.0 | 45.0 | 5.1 | 4.3 | 0.0% |
+| Dwelling units | 6,862 | 1.0 | 5.0 | 9.0 | 25.0 | 583.0 | 23.7 | 35.9 | 0.0% |
 
-**Tiered pathway** (121,415 buildings — broader candidate population):
+**Tiered pathway** (59,543 buildings — broader candidate population):
 
 | Metric | N | Min | P25 | Median | P75 | Max | Mean | Std | Missing |
 |--------|--:|----:|----:|-------:|----:|----:|-----:|----:|--------:|
-| Footprint area (m²) | 121,415 | 1.0 | 36.2 | 134.2 | 295.6 | 162,819.8 | 450.2 | 1,810.3 | 0.0% |
-| MRR length (m) | 121,415 | 1.0 | 7.4 | 14.9 | 24.6 | 589.0 | 22.5 | 26.8 | 0.0% |
-| MRR width (m) | 121,415 | 0.2 | 4.9 | 9.7 | 14.8 | 437.2 | 12.9 | 14.3 | 0.0% |
-| Storeys | 4,063 | 1.0 | 1.0 | 3.0 | 4.0 | 45.0 | 3.7 | 3.8 | 0.0% |
-| Dwelling units | 7,961 | 1.0 | 4.0 | 8.0 | 23.0 | 583.0 | 21.4 | 34.8 | 0.0% |
+| Footprint area (m²) | 59,543 | 4.3 | 227.0 | 451.2 | 949.5 | 162,819.8 | 919.0 | 2,424.9 | 0.0% |
+| MRR length (m) | 59,543 | 2.5 | 20.0 | 31.4 | 51.2 | 589.0 | 40.4 | 31.2 | 0.0% |
+| MRR width (m) | 59,543 | 1.0 | 12.6 | 16.6 | 24.5 | 437.2 | 21.5 | 16.8 | 0.0% |
+| Storeys | 6,085 | 1.0 | 2.0 | 2.0 | 3.0 | 45.0 | 3.0 | 3.1 | 0.0% |
+| Dwelling units | 10,612 | 1.0 | 2.0 | 4.0 | 13.0 | 583.0 | 15.9 | 30.8 | 0.0% |
 
 ### Recommended Simulation Ranges (Precision Pathway)
 
 | Parameter | Minimum (P5) | Central (Median) | Maximum (P95) | Source |
 |-----------|-------------:|-----------------:|--------------:|--------|
-| Footprint area (m²) | 68.1 | 342.7 | 2,018.9 | Observed |
-| Storeys | 1 | 2 | 9 | Observed |
-| Units | 4 | 8 | 88 | Observed |
+| Footprint area (m²) | 117.2 | 419.5 | 2,235.6 | Observed |
+| Storeys | 1 | 4 | 14 | Observed |
+| Units | 4 | 9 | 92 | Observed |
 
 ### Limitations
 
-- Floor/unit counts are only available for a subset of provinces (NS, NB, ON, BC).
+- Floor/unit counts are available only for the provinces with precision MURBs
+  (AB, BC, NB, NS, ON).
 - Height data is sparse and not available from all sources.
 - Footprint ≠ floor plate — podiums, setbacks, and additions are not captured.
 - GFA cannot be reliably computed without confirmed storey counts.
@@ -115,18 +125,18 @@ with direct multi-unit evidence):
 
 | Metric | N | Min | P25 | Median | P75 | Max | Mean | Std | Missing |
 |--------|--:|----:|----:|-------:|----:|----:|-----:|----:|--------:|
-| Aspect ratio | 9,153 | 1.0 | 1.4 | 1.8 | 2.5 | 21.9 | 2.1 | 1.0 | 0.0% |
-| Compactness (Polsby-Popper) | 9,153 | 0.0 | 0.5 | 0.6 | 0.7 | 1.0 | 0.6 | 0.1 | 0.0% |
-| Rectangularity | 9,153 | 0.2 | 0.8 | 0.9 | 1.0 | 1.0 | 0.9 | 0.1 | 0.0% |
-| Convexity | 9,153 | 0.2 | 0.9 | 1.0 | 1.0 | 1.0 | 0.9 | 0.1 | 0.0% |
-| Orientation (deg from N) | 9,153 | 0.1 | 48.1 | 87.6 | 135.9 | 179.8 | 90.2 | 51.0 | 0.0% |
-| Perimeter (m) | 9,153 | 10.2 | 57.5 | 82.5 | 134.6 | 1,070.2 | 106.8 | 73.3 | 0.0% |
+| Aspect ratio | 7,623 | 1.0 | 1.4 | 1.8 | 2.5 | 21.9 | 2.1 | 1.0 | 0.0% |
+| Compactness (Polsby-Popper) | 7,623 | 0.0 | 0.5 | 0.6 | 0.7 | 1.0 | 0.6 | 0.1 | 0.0% |
+| Rectangularity | 7,623 | 0.2 | 0.8 | 0.9 | 1.0 | 1.0 | 0.9 | 0.1 | 0.0% |
+| Convexity | 7,623 | 0.2 | 0.9 | 1.0 | 1.0 | 1.0 | 0.9 | 0.1 | 0.0% |
+| Orientation (deg from N) | 7,623 | 0.1 | 46.4 | 87.7 | 134.5 | 179.9 | 87.8 | 50.2 | 0.0% |
+| Perimeter (m) | 7,623 | 10.2 | 63.8 | 94.0 | 151.3 | 1,138.5 | 119.8 | 79.0 | 0.0% |
 
 ### Key Findings
 
 - Median aspect ratio of ~1.8 indicates
   moderately elongated footprints (not square, not extreme slabs).
-- Rectangularity median ~0.93 suggests
+- Rectangularity median ~0.92 suggests
   most MURBs approximate rectangular forms.
 - Compactness values indicate moderate complexity beyond simple rectangles.
 
@@ -149,8 +159,8 @@ Shape classification uses three primary metrics:
 - **Aspect ratio** ≥ 3.0 → elongated slab/bar
 
 From the precision population:
-- Rectangularity: median = 0.929, P25 = 0.835
-- Convexity: median = 0.964, P25 = 0.907
+- Rectangularity: median = 0.920, P25 = 0.815
+- Convexity: median = 0.958, P25 = 0.895
 
 This indicates the majority of precision-pathway MURBs are moderately rectangular.
 Buildings with convexity < 0.85 are candidates for L/T/U/courtyard classification.
@@ -177,9 +187,9 @@ Using configured storey bands from `config/default.yaml`:
 - Tall high-rise: 26+ storeys
 
 From the precision population with observed floor counts:
-- N with floors data: 3,032
-- Median storeys: 2
-- P25-P75 range: 1-3
+- N with floors data: 2,180
+- Median storeys: 4
+- P25-P75 range: 3-6
 - Maximum observed: 45
 
 ### Limitations
@@ -236,8 +246,8 @@ The archetype methodology uses evidence-based clustering:
 4. Generate synthetic parametric variants for sensitivity analysis
 
 Available populations for archetype generation:
-- Precision pathway: 9,153 buildings
-- Tiered pathway: 121,415 buildings
+- Precision pathway: 7,623 buildings
+- Tiered pathway: 59,543 buildings
 
 Clustering features: footprint area, aspect ratio, compactness, rectangularity.
 
@@ -258,27 +268,31 @@ Clustering features: footprint area, aspect ratio, compactness, rectangularity.
 
 Geographic coverage is highly uneven due to source data availability:
 
-**Provinces with precision MURBs** (4):
-- ON: 3,381 buildings
-- NS: 2,768 buildings
-- NB: 2,512 buildings
-- BC: 492 buildings
+**Provinces with precision MURBs** (5):
+- NS: 2,671 buildings
+- NB: 2,498 buildings
+- ON: 1,953 buildings
+- BC: 482 buildings
+- AB: 19 buildings
 
-**Provinces with tiered MURBs** (6):
-- AB: 72,226 buildings
-- ON: 36,360 buildings
-- BC: 6,971 buildings
-- NS: 2,995 buildings
-- NB: 2,791 buildings
+**Provinces with tiered MURBs** (7):
+- ON: 23,478 buildings
+- AB: 16,414 buildings
+- BC: 10,163 buildings
+- NB: 3,979 buildings
+- NS: 2,888 buildings
+- QC: 2,549 buildings
 - NT: 72 buildings
 
-**Provinces with zero classified MURBs**: MB, NL, PE, QC, SK, YT
+**Provinces with zero classified MURBs**: MB, NL, PE, SK, YT
 
 ### Key Finding
 
-National statistics are dominated by provinces with the richest attribute data (NS, NB
-for precision; AB for tiered via height data). Provinces without type, unit, or height
-fields contribute no classified MURBs and cannot be represented in current outputs.
+National statistics are dominated by provinces with the richest attribute data — those with
+observed storey or unit counts drive the precision pathway, while provinces with height data
+(e.g., AB and ON) add probable candidates to the tiered pathway via the height proxy. Provinces
+without type, unit, or height fields contribute no classified MURBs and cannot be represented
+in current outputs.
 
 ### Limitations
 
@@ -297,8 +311,8 @@ fields contribute no classified MURBs and cannot be represented in current outpu
 **No.** The ODB v3 building population is not uniformly suitable for MURB identification:
 
 - Total buildings: 14,417,429
-- Classified as precision MURBs: 9,153 (0.06%)
-- Classified as tiered MURBs: 121,415 (0.84%)
+- Classified as precision MURBs: 7,623 (0.05%)
+- Classified as tiered MURBs: 59,543 (0.41%)
 
 The vast majority of records lack the attribute data needed for MURB classification.
 Only provinces with populated `type`, `units`, `floors`, or `height` fields can
@@ -361,4 +375,4 @@ Current status:
 - **Persisted data**: `data/processed/murbs_precision.parquet`, `data/processed/murbs_tiered.parquet`
 - **Configuration**: `config/default.yaml`
 - **Reproducibility seed**: 42
-- **Generated at**: 2026-07-28T19:08:14.223833+00:00
+- **Generated at**: 2026-07-30T19:52:20.456543+00:00

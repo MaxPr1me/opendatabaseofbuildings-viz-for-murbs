@@ -13,6 +13,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from murb_geometry.datastore import subset_path
+
 st.set_page_config(
     page_title="Canadian MURB Geometry Analysis",
     page_icon="🏢",
@@ -20,8 +22,8 @@ st.set_page_config(
 )
 
 # --- Data Loading ---
-PRECISION_PATH = Path("data/processed/murbs_precision.parquet")
-TIERED_PATH = Path("data/processed/murbs_tiered.parquet")
+PRECISION_PATH = subset_path("precision")
+TIERED_PATH = subset_path("tiered")
 MANIFEST_PATH = Path("outputs/reports/run_manifest.json")
 INVENTORY_PATH = Path("outputs/reports/inventory.json")
 SENSITIVITY_PATH = Path("outputs/reports/pathway_sensitivity.csv")

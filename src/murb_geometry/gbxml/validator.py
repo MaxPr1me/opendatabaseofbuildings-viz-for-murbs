@@ -1,10 +1,15 @@
 """gbXML schema validation utilities.
 
-Validates exported gbXML against structural rules without requiring
-an external XSD file download. Checks geometric validity, surface
-consistency, and required elements.
+Provides two levels of validation:
+
+1. Structural checks (no external files): required elements, surface geometry,
+   vertex counts — always available.
+2. XSD schema validation against a supplied gbXML ``.xsd`` file (e.g. version
+   7.03) using lxml — available when the schema file is provided. The XSD is not
+   bundled; download it from gbxml.org and pass its path.
 """
 
+from pathlib import Path
 from xml.etree.ElementTree import fromstring
 
 
@@ -121,3 +126,59 @@ def validate_gbxml_structure(xml_string: str) -> dict[str, object]:
         "warnings": warnings,
         "stats": stats,
     }
+
+
+def validate_gbxml_against_xsd(xml_string: str, xsd_path: str | Path) -> dict[str, object]:
+    """Validate gbXML against an XSD schema file using lxml.
+
+    The gbXML XSD (e.g. version 7.03) is NOT bundled — supply the schema file path
+    (download from gbxml.org).
+
+    Returns
+    -------
+    dict with keys:
+        xsd_available: bool — whether the schema file was found and parsed
+        valid: bool | None — pass/fail, or None if the schema was unavailable
+        errors: list[str] — schema violation messages
+    """
+    from lxml import etree
+
+    path = Path(xsd_path)
+    if not path.exists():
+        return {
+            "xsd_available": False,
+            "valid": None,
+            "errors": [
+                f"XSD schema not found: {path}. Provide the gbXML XSD to enable validation."
+            ],
+        }
+    try:
+        schema = etree.XMLSchema(etree.parse(str(path)))
+    except etree.XMLSchemaParseError as exc:
+        return {"xsd_available": True, "valid": None, "errors": [f"Invalid XSD: {exc}"]}
+    try:
+        doc = etree.fromstring(xml_string.encode("utf-8"))
+    except etree.XMLSyntaxError as exc:
+        return {"xsd_available": True, "valid": False, "errors": [f"XML parse error: {exc}"]}
+
+    valid = bool(schema.validate(doc))
+    errors = [] if valid else [f"line {e.line}: {e.message}" for e in schema.error_log]
+    return {"xsd_available": True, "valid": valid, "errors": errors}
+
+
+def validate_gbxml(xml_string: str, xsd_path: str | Path | None = None) -> dict[str, object]:
+    """Run structural validation, plus XSD validation when a schema path is given.
+
+    Returns the structural result augmented with an ``xsd`` key. When no XSD path
+    is supplied, ``xsd`` reports that schema validation was not performed.
+    """
+    result = validate_gbxml_structure(xml_string)
+    if xsd_path is None:
+        result["xsd"] = {
+            "xsd_available": False,
+            "valid": None,
+            "errors": ["No XSD path provided; structural validation only"],
+        }
+    else:
+        result["xsd"] = validate_gbxml_against_xsd(xml_string, xsd_path)
+    return result

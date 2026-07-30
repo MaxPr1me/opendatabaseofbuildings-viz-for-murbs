@@ -56,6 +56,10 @@ class ClassificationConfig(BaseModel):
 
     pathway: str = "option_c"  # "option_c", "precision", or "tiered"
     minimum_murb_units: int = 4
+    minimum_murb_storeys: int = 4
+    murb_height_threshold_m: float = 12.0
+    large_footprint_m2: float = 600.0
+    type_normalization_path: str = "config/type_normalization.yaml"
     precision_levels: list[str] = Field(
         default_factory=lambda: ["confirmed_murb", "high_confidence_murb"]
     )

@@ -198,7 +198,6 @@ def vertex_count(geom: Geometry) -> int:
     """Count total vertices in the geometry."""
     if geom is None or geom.is_empty:
         return 0
-    geom.exterior.coords if isinstance(geom, Polygon) else []
     if isinstance(geom, Polygon):
         total = len(geom.exterior.coords)
         for interior in geom.interiors:

@@ -2,7 +2,11 @@
 
 from pathlib import Path
 
-from murb_geometry.gbxml.validator import validate_gbxml_structure
+from murb_geometry.gbxml.validator import (
+    validate_gbxml,
+    validate_gbxml_against_xsd,
+    validate_gbxml_structure,
+)
 
 
 def test_validate_valid_gbxml() -> None:
@@ -53,3 +57,40 @@ def test_validate_actual_output() -> None:
     assert result["valid"] is True
     assert result["stats"]["surfaces"] > 0
     assert result["stats"]["storeys"] > 0
+
+
+def test_validate_gbxml_no_xsd_reports_not_performed() -> None:
+    """validate_gbxml without an XSD path runs structural checks only."""
+    xml = '<?xml version="1.0" ?><gbXML xmlns="http://www.gbxml.org/schema"></gbXML>'
+    result = validate_gbxml(xml)
+    assert "xsd" in result
+    assert result["xsd"]["xsd_available"] is False
+    assert result["xsd"]["valid"] is None
+
+
+def test_validate_against_missing_xsd(tmp_path) -> None:
+    """A missing XSD file is reported, not raised."""
+    result = validate_gbxml_against_xsd("<root/>", tmp_path / "nope.xsd")
+    assert result["xsd_available"] is False
+    assert result["valid"] is None
+
+
+def test_validate_against_xsd_pass_and_fail(tmp_path) -> None:
+    """lxml XSD validation reports pass and fail against a minimal schema."""
+    xsd = tmp_path / "mini.xsd"
+    xsd.write_text(
+        '<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">'
+        '<xs:element name="root"><xs:complexType><xs:sequence>'
+        '<xs:element name="child" type="xs:string"/>'
+        "</xs:sequence></xs:complexType></xs:element></xs:schema>",
+        encoding="utf-8",
+    )
+    ok = validate_gbxml_against_xsd("<root><child>x</child></root>", xsd)
+    assert ok["xsd_available"] is True
+    assert ok["valid"] is True
+    assert ok["errors"] == []
+
+    bad = validate_gbxml_against_xsd("<root><wrong/></root>", xsd)
+    assert bad["xsd_available"] is True
+    assert bad["valid"] is False
+    assert len(bad["errors"]) > 0

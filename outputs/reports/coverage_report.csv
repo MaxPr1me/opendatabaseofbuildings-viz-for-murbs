@@ -1,0 +1,13 @@
+province,total_records,precision_murbs,tiered_murbs,pct_tiered,dominant_positive_tier,confirmed,high_confidence,probable,possible
+AB,1334404,19,16414,1.2301,probable_murb,0,19,12127,4268
+BC,1303603,482,10163,0.7796,possible_murb,192,290,4064,5617
+MB,656775,0,0,0.0,,0,0,0,0
+NB,661827,2498,3979,0.6012,confirmed_murb,1603,895,98,1383
+NL,187694,0,0,0.0,,0,0,0,0
+NS,528307,2671,2888,0.5467,high_confidence_murb,189,2482,0,217
+NT,11811,0,72,0.6096,possible_murb,0,0,0,72
+ON,5695485,1953,23478,0.4122,probable_murb,1027,926,14237,7288
+PE,85856,0,0,0.0,,0,0,0,0
+QC,3679721,0,2549,0.0693,possible_murb,0,0,0,2549
+SK,259461,0,0,0.0,,0,0,0,0
+YT,12485,0,0,0.0,,0,0,0,0

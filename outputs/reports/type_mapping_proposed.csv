@@ -1,0 +1,968 @@
+﻿type_value,total_count,pct_of_typed,cumulative_pct,provinces,currently_mapped_to,proposed_category,proposed_murb_positive
+Residential,616944,28.9569,28.9569,AB;BC;NS;NT;ON,residential,residential,False
+General,218243,10.2435,39.2004,AB;BC;ON,UNMAPPED -> dropped,,False
+Résidence,142671,6.6964,45.8968,QC,UNMAPPED -> dropped,residential,False
+Single Family Dwelling,134333,6.3051,52.2019,AB;BC;NB;ON,residential_single,residential_single,False
+Garage - Annexe - Remise,127242,5.9722,58.1741,QC,UNMAPPED -> dropped,other,False
+Residential Garage,119061,5.5883,63.7624,AB,UNMAPPED -> dropped,other,False
+Shed,75565,3.5467,67.3091,BC;ON,other,other,False
+Residence,75498,3.5436,70.8527,NB,UNMAPPED -> dropped,residential,False
+Résidentielle,74947,3.5177,74.3704,QC,UNMAPPED -> dropped,residential,False
+Single / Semi / Duplex,55742,2.6163,76.9867,ON,UNMAPPED -> dropped,low_rise_residential,False
+Detached House,45730,2.1464,79.1331,ON,UNMAPPED -> dropped,residential_single,False
+Single-Family Home,42663,2.0024,81.1355,BC;ON,UNMAPPED -> dropped,residential_single,False
+Detached,36366,1.7069,82.8424,ON,residential_single,residential_single,False
+Résidentiel,31142,1.4617,84.3041,ON;QC,UNMAPPED -> dropped,residential,False
+Commercial,27585,1.2947,85.5988,AB;BC;NS;NT;ON;QC,commercial,commercial,False
+Résidentiel et commercial,24130,1.1326,86.7314,QC,UNMAPPED -> dropped,mixed_use,False
+Garage,16461,0.7726,87.504,NB;ON,other,other,False
+General/Residential,15758,0.7396,88.2436,ON,UNMAPPED -> dropped,residential,False
+Accessory,15452,0.7253,88.9689,AB;BC;NS;ON,UNMAPPED -> dropped,other,False
+Farm,13738,0.6448,89.6137,BC;ON,UNMAPPED -> dropped,other,False
+Unclassified,11736,0.5508,90.1645,AB,UNMAPPED -> dropped,,False
+Barn,10912,0.5122,90.6767,BC;NB;ON,other,other,False
+Townhouse,10284,0.4827,91.1594,ON,townhouse,low_rise_residential,False
+Industrial,7355,0.3452,91.5046,BC;NS;NT;ON,industrial,industrial,False
+Ancillary,6030,0.283,91.7876,NT,UNMAPPED -> dropped,other,False
+Kiln,5942,0.2789,92.0665,ON,UNMAPPED -> dropped,other,False
+Detached Garage,5593,0.2625,92.329,BC;ON,UNMAPPED -> dropped,other,False
+Two Unit Dwelling,4894,0.2297,92.5587,NB,UNMAPPED -> dropped,low_rise_residential,False
+Outbuilding,4784,0.2245,92.7832,BC,UNMAPPED -> dropped,other,False
+Mobile Home,4777,0.2242,93.0074,BC;ON,UNMAPPED -> dropped,,False
+Emerging Residential,4442,0.2085,93.2159,ON,UNMAPPED -> dropped,residential,False
+MultiFamily,4391,0.2061,93.422,BC,UNMAPPED -> dropped,multi_residential,True
+Semi-Detached,4058,0.1905,93.6125,ON,semi_detached,low_rise_residential,False
+Detatched Garage,3780,0.1774,93.7899,ON,UNMAPPED -> dropped,other,False
+Structure,3616,0.1697,93.9596,BC,UNMAPPED -> dropped,,False
+Bâtiment commercial,3222,0.1512,94.1108,QC,UNMAPPED -> dropped,commercial,False
+Multi-Family Dwelling,3220,0.1511,94.2619,AB;BC;ON,UNMAPPED -> dropped,multi_residential,True
+Piscine privée,3189,0.1497,94.4116,QC,UNMAPPED -> dropped,other,False
+Single-Family Detached Home,3024,0.1419,94.5535,AB;BC;ON,UNMAPPED -> dropped,residential_single,False
+School,2936,0.1378,94.6913,AB;BC;NB;NS;ON,institutional,institutional,False
+Place of Worship,2891,0.1357,94.827,BC;NB;NS;ON,UNMAPPED -> dropped,institutional,False
+Recreation,2845,0.1335,94.9605,BC;NT;ON,UNMAPPED -> dropped,institutional,False
+Duplex,2767,0.1299,95.0904,AB;BC;NS;ON,UNMAPPED -> dropped,low_rise_residential,False
+Unknown,2700,0.1267,95.2171,BC;NS;ON,UNMAPPED -> dropped,,False
+Single Unit Dwelling,2696,0.1265,95.3436,NS;ON,UNMAPPED -> dropped,residential_single,False
+Low Density Residential,2591,0.1216,95.4652,ON,UNMAPPED -> dropped,residential,False
+Cottage / Camp,2395,0.1124,95.5776,NB,UNMAPPED -> dropped,other,False
+Two Unit House,2352,0.1104,95.688,ON,UNMAPPED -> dropped,low_rise_residential,False
+Multi Family Dwelling,2245,0.1054,95.7934,ON,UNMAPPED -> dropped,multi_residential,True
+Heritage Building,2222,0.1043,95.8977,AB;BC,UNMAPPED -> dropped,,False
+Residential-Duplex,2215,0.104,96.0017,BC,UNMAPPED -> dropped,low_rise_residential,False
+LR,2186,0.1026,96.1043,ON,UNMAPPED -> dropped,,False
+Miscellaneous,2154,0.1011,96.2054,BC,UNMAPPED -> dropped,,False
+Resort Dwelling,2128,0.0999,96.3053,ON,UNMAPPED -> dropped,residential,False
+Multiple,2011,0.0944,96.3997,ON,UNMAPPED -> dropped,,False
+Industrial Facility,1875,0.088,96.4877,NB;ON,UNMAPPED -> dropped,industrial,False
+ORM_Boundary,1654,0.0776,96.5653,ON,UNMAPPED -> dropped,,False
+Services,1648,0.0774,96.6427,BC;QC,UNMAPPED -> dropped,commercial,False
+Seasonal Dwelling,1625,0.0763,96.719,ON,UNMAPPED -> dropped,other,False
+Multi-Unit Dwelling,1619,0.076,96.795,NB;NS,UNMAPPED -> dropped,multi_residential,True
+Residential-Low Rise,1549,0.0727,96.8677,BC,UNMAPPED -> dropped,residential,False
+Production et extraction de richesses naturelles,1477,0.0693,96.937,QC,UNMAPPED -> dropped,industrial,False
+Building Under Construction,1445,0.0678,97.0048,AB,UNMAPPED -> dropped,,False
+Silo,1445,0.0678,97.0726,ON;QC,UNMAPPED -> dropped,industrial,False
+Apartment,1414,0.0664,97.139,BC;NS;ON,apartment,apartment,True
+Bâtiment industriel,1393,0.0654,97.2044,QC,UNMAPPED -> dropped,industrial,False
+Commerciale,1361,0.0639,97.2683,QC,UNMAPPED -> dropped,commercial,False
+Commercial or Retail Facility,1282,0.0602,97.3285,NB;ON,UNMAPPED -> dropped,commercial,False
+Other,1274,0.0598,97.3883,BC;ON,UNMAPPED -> dropped,,False
+Trailer,1252,0.0588,97.4471,ON,UNMAPPED -> dropped,,False
+Commercial / Business,1245,0.0584,97.5055,NB,UNMAPPED -> dropped,commercial,False
+Greenhouse,1234,0.0579,97.5634,BC;NB;NS;ON,UNMAPPED -> dropped,other,False
+Institutional,1224,0.0574,97.6208,BC;ON,institutional,institutional,False
+Comprehensive Development,1184,0.0556,97.6764,BC,UNMAPPED -> dropped,,False
+Government / Military,1122,0.0527,97.7291,ON,UNMAPPED -> dropped,institutional,False
+Office,965,0.0453,97.7744,BC;NS;ON,commercial,commercial,False
+Restaurant,923,0.0433,97.8177,BC;NS;ON,UNMAPPED -> dropped,commercial,False
+Urban_Centre,858,0.0403,97.858,ON,UNMAPPED -> dropped,,False
+Industries manufacturières,824,0.0387,97.8967,QC,UNMAPPED -> dropped,industrial,False
+Warehouse,804,0.0377,97.9344,NS;ON,UNMAPPED -> dropped,commercial,False
+Camp,785,0.0368,97.9712,NS,UNMAPPED -> dropped,other,False
+Education,736,0.0345,98.0057,BC;NB;ON,UNMAPPED -> dropped,,False
+Bar / Restaurant,724,0.034,98.0397,NS;ON,UNMAPPED -> dropped,commercial,False
+Community Centre,709,0.0333,98.073,BC;NB;NS;ON,UNMAPPED -> dropped,,False
+Education Facility,675,0.0317,98.1047,NB;ON,UNMAPPED -> dropped,,False
+Miscellaneous (Park Buildings/Structures),663,0.0311,98.1358,AB,UNMAPPED -> dropped,other,False
+"Transports, communications et services publics",613,0.0288,98.1646,QC,UNMAPPED -> dropped,commercial,False
+Multi-Family Residential,611,0.0287,98.1933,BC,UNMAPPED -> dropped,multi_residential,True
+Casernes de pompiers,605,0.0284,98.2217,QC,UNMAPPED -> dropped,,False
+Other Retail,603,0.0283,98.25,NS,UNMAPPED -> dropped,commercial,False
+"Culturel, récréatif et de loisirs",584,0.0274,98.2774,QC,UNMAPPED -> dropped,,False
+Rowhouse,574,0.0269,98.3043,ON,UNMAPPED -> dropped,low_rise_residential,False
+Triplex,570,0.0268,98.3311,NS;ON,UNMAPPED -> dropped,low_rise_residential,False
+Condominium,562,0.0264,98.3575,ON,condominium,condominium,True
+Fourplex,559,0.0262,98.3837,NS;ON,UNMAPPED -> dropped,low_rise_residential,False
+School Colleges,554,0.026,98.4097,AB,UNMAPPED -> dropped,institutional,False
+École,541,0.0254,98.4351,QC,UNMAPPED -> dropped,institutional,False
+out,534,0.0251,98.4602,BC,UNMAPPED -> dropped,,False
+Accomodation,533,0.025,98.4852,NS;ON,UNMAPPED -> dropped,,False
+Bâtiment municipal,520,0.0244,98.5096,QC,UNMAPPED -> dropped,institutional,False
+Manufacturing,499,0.0234,98.533,ON,UNMAPPED -> dropped,industrial,False
+Townhouse/Apartment/Walk Up - R3,498,0.0234,98.5564,AB,UNMAPPED -> dropped,apartment,True
+Agricultural,492,0.0231,98.5795,BC;NB;ON,other,other,False
+Government,455,0.0214,98.6009,NB;NT;ON,institutional,institutional,False
+Boathouse,451,0.0212,98.6221,ON,UNMAPPED -> dropped,,False
+Religious,449,0.0211,98.6432,AB;BC;NB;ON,UNMAPPED -> dropped,,False
+Other Service,437,0.0205,98.6637,NS,UNMAPPED -> dropped,commercial,False
+ComB,434,0.0204,98.6841,ON,UNMAPPED -> dropped,,False
+Vacant,434,0.0204,98.7045,NS;ON,UNMAPPED -> dropped,,False
+Immeubles non exploités et étendues d'eau,423,0.0199,98.7244,QC,UNMAPPED -> dropped,,False
+Utility,396,0.0186,98.743,BC;ON,UNMAPPED -> dropped,other,False
+Community Facility,392,0.0184,98.7614,BC;ON,UNMAPPED -> dropped,,False
+Cultural,383,0.018,98.7794,NB;ON,UNMAPPED -> dropped,,False
+Réservoir,370,0.0174,98.7968,QC,UNMAPPED -> dropped,,False
+Rural Residential,366,0.0172,98.814,BC,UNMAPPED -> dropped,residential,False
+Detached House + SU,352,0.0165,98.8305,ON,UNMAPPED -> dropped,residential_single,False
+Open Space,339,0.0159,98.8464,ON,UNMAPPED -> dropped,,False
+Three Unit Dwelling,331,0.0155,98.8619,NB,UNMAPPED -> dropped,low_rise_residential,False
+Agricultural/Rural,331,0.0155,98.8774,ON,UNMAPPED -> dropped,other,False
+Fire Station,325,0.0153,98.8927,AB;BC;NB;NS;ON;SK,UNMAPPED -> dropped,institutional,False
+Carport,323,0.0152,98.9079,BC;ON,UNMAPPED -> dropped,other,False
+Storage,312,0.0146,98.9225,BC;ON,UNMAPPED -> dropped,other,False
+Public Elementary School,305,0.0143,98.9368,ON;SK,UNMAPPED -> dropped,institutional,False
+Elementary School,303,0.0142,98.951,BC;ON,UNMAPPED -> dropped,institutional,False
+Commercial Residential,295,0.0138,98.9648,ON,UNMAPPED -> dropped,commercial,False
+Church,280,0.0131,98.9779,AB;BC;NS;ON,institutional,institutional,False
+"Culturelle, récréative et de loisirs",280,0.0131,98.991,QC,UNMAPPED -> dropped,,False
+Retail and Residence,276,0.013,99.004,ON,UNMAPPED -> dropped,commercial,False
+Bâtiment agricole,275,0.0129,99.0169,QC,UNMAPPED -> dropped,,False
+Special Uses,275,0.0129,99.0298,ON,UNMAPPED -> dropped,,False
+"Transport, communication et services",262,0.0123,99.0421,QC,UNMAPPED -> dropped,commercial,False
+Secondary Suite,261,0.0123,99.0544,NS,UNMAPPED -> dropped,,False
+Repair Garage,260,0.0122,99.0666,NS;ON,UNMAPPED -> dropped,other,False
+École primaire,249,0.0117,99.0783,QC,UNMAPPED -> dropped,institutional,False
+Ba,246,0.0115,99.0898,ON,UNMAPPED -> dropped,,False
+QUONSET,235,0.011,99.1008,ON,UNMAPPED -> dropped,,False
+Public School,223,0.0105,99.1113,BC;NS;ON,UNMAPPED -> dropped,institutional,False
+Plex,222,0.0104,99.1217,ON,UNMAPPED -> dropped,low_rise_residential,False
+Bâtiment public,213,0.01,99.1317,QC,UNMAPPED -> dropped,institutional,False
+Library,213,0.01,99.1417,AB;BC;NB;NS;ON,UNMAPPED -> dropped,institutional,False
+Townhouse/Fourplex - R4,209,0.0098,99.1515,AB,UNMAPPED -> dropped,low_rise_residential,False
+Hospital,200,0.0094,99.1609,AB;BC;NB;NS;ON;SK,institutional,institutional,False
+Cabin,200,0.0094,99.1703,BC;NB;ON,UNMAPPED -> dropped,other,False
+Parking Garage,196,0.0092,99.1795,AB;NB;ON,UNMAPPED -> dropped,other,False
+Utility Facility,195,0.0092,99.1887,NS,UNMAPPED -> dropped,other,False
+Mobile Home Residential - MHR,190,0.0089,99.1976,AB,UNMAPPED -> dropped,residential,False
+Organisme communautaire et centre de loisirs,186,0.0087,99.2063,QC,UNMAPPED -> dropped,,False
+Daycare,185,0.0087,99.215,AB;NB;NS;ON,UNMAPPED -> dropped,,False
+Mixed Use,184,0.0086,99.2236,BC;NS,mixed_use,mixed_use,False
+Social Club,180,0.0084,99.232,NS,UNMAPPED -> dropped,,False
+Park,169,0.0079,99.2399,BC;NB;ON,other,other,False
+Édifice municipal,166,0.0078,99.2477,QC,UNMAPPED -> dropped,institutional,False
+Storage Tank,165,0.0077,99.2554,BC,UNMAPPED -> dropped,other,False
+Park Facility,163,0.0077,99.2631,NS;ON,UNMAPPED -> dropped,other,False
+General_Employment,163,0.0077,99.2708,ON,UNMAPPED -> dropped,,False
+Multiple Use,162,0.0076,99.2784,BC,UNMAPPED -> dropped,,False
+Commercial - Service/Retail/Office,162,0.0076,99.286,AB,UNMAPPED -> dropped,commercial,False
+IndBuild,162,0.0076,99.2936,ON,UNMAPPED -> dropped,,False
+Shopping Centre,159,0.0075,99.3011,AB;BC;NB;NS;ON,UNMAPPED -> dropped,,False
+Museum,159,0.0075,99.3086,AB;BC;NB;NS;ON,UNMAPPED -> dropped,,False
+Mobile Home Park - MHP,158,0.0074,99.316,AB,UNMAPPED -> dropped,other,False
+Tank,157,0.0074,99.3234,BC,UNMAPPED -> dropped,,False
+Post Secondary School,155,0.0073,99.3307,NB;NS;ON,UNMAPPED -> dropped,institutional,False
+Factor/Plant,154,0.0072,99.3379,NS,UNMAPPED -> dropped,,False
+Public Areas,154,0.0072,99.3451,BC,UNMAPPED -> dropped,institutional,False
+NHS,152,0.0071,99.3522,ON,UNMAPPED -> dropped,,False
+Washroom,152,0.0071,99.3593,BC,UNMAPPED -> dropped,other,False
+Gas Station,141,0.0066,99.3659,NB;NS;ON,UNMAPPED -> dropped,,False
+Group Home,140,0.0066,99.3725,NB;NS,UNMAPPED -> dropped,,False
+Addition,139,0.0065,99.379,BC;ON,UNMAPPED -> dropped,,False
+Restaurant / Eating Establishment,139,0.0065,99.3855,NB;ON,UNMAPPED -> dropped,commercial,False
+Seniors Home,139,0.0065,99.392,NB;ON,UNMAPPED -> dropped,,False
+Heritage Site,136,0.0064,99.3984,BC,UNMAPPED -> dropped,,False
+Low Rise Residential,136,0.0064,99.4048,BC;ON,UNMAPPED -> dropped,residential,False
+Worship Centre,135,0.0063,99.4111,ON,UNMAPPED -> dropped,institutional,False
+Hotel/Visitor Accommodation,134,0.0063,99.4174,AB,UNMAPPED -> dropped,commercial,False
+Infrastructure,133,0.0062,99.4236,ON,UNMAPPED -> dropped,,False
+Dormitory,132,0.0062,99.4298,NS;ON,UNMAPPED -> dropped,,False
+Airport,132,0.0062,99.436,NT;ON,UNMAPPED -> dropped,,False
+École secondaire et professionnelle,132,0.0062,99.4422,QC,UNMAPPED -> dropped,institutional,False
+Hotel / Motel,130,0.0061,99.4483,AB;NS;ON,UNMAPPED -> dropped,commercial,False
+ComFac,128,0.006,99.4543,ON,UNMAPPED -> dropped,,False
+LRT Stations and Shelters,127,0.006,99.4603,AB,UNMAPPED -> dropped,,False
+Hôpital,126,0.0059,99.4662,QC,UNMAPPED -> dropped,institutional,False
+Cemetery,126,0.0059,99.4721,AB;BC;ON,UNMAPPED -> dropped,,False
+Recreation Facility,122,0.0057,99.4778,BC;NS;ON;SK,UNMAPPED -> dropped,institutional,False
+Fish Shed,121,0.0057,99.4835,NS,UNMAPPED -> dropped,other,False
+Personal Service,118,0.0055,99.489,NS,UNMAPPED -> dropped,commercial,False
+Medical Office,117,0.0055,99.4945,NS,UNMAPPED -> dropped,commercial,False
+Municipal,116,0.0054,99.4999,BC;ON;QC,UNMAPPED -> dropped,institutional,False
+Apartment Block,113,0.0053,99.5052,BC,UNMAPPED -> dropped,apartment,True
+Auto Dealership,111,0.0052,99.5104,NB;NS,UNMAPPED -> dropped,,False
+Supermarket,111,0.0052,99.5156,NS;ON,UNMAPPED -> dropped,,False
+comm,107,0.005,99.5206,BC,UNMAPPED -> dropped,,False
+Greenhouse / Nursery,105,0.0049,99.5255,ON,UNMAPPED -> dropped,other,False
+Golf Course,105,0.0049,99.5304,BC;ON,UNMAPPED -> dropped,,False
+Commerce,103,0.0048,99.5352,QC,UNMAPPED -> dropped,,False
+Point of Interest,103,0.0048,99.54,ON,UNMAPPED -> dropped,,False
+Shelter,101,0.0047,99.5447,BC;ON,UNMAPPED -> dropped,,False
+Shop,101,0.0047,99.5494,BC;ON,UNMAPPED -> dropped,commercial,False
+Hotel,101,0.0047,99.5541,BC;NB;NT;ON,UNMAPPED -> dropped,commercial,False
+Catholic Elementary School,100,0.0047,99.5588,ON,UNMAPPED -> dropped,institutional,False
+Ski,100,0.0047,99.5635,BC,UNMAPPED -> dropped,,False
+Sixplex,100,0.0047,99.5682,ON,UNMAPPED -> dropped,,False
+High-rise Residential,98,0.0046,99.5728,ON,UNMAPPED -> dropped,residential,False
+Église,98,0.0046,99.5774,QC,UNMAPPED -> dropped,institutional,False
+Residential-High Rise,97,0.0046,99.582,BC,UNMAPPED -> dropped,residential,False
+Medical,97,0.0046,99.5866,BC;ON,UNMAPPED -> dropped,,False
+Mixed Office / Light Employment,96,0.0045,99.5911,ON,UNMAPPED -> dropped,commercial,False
+Lift Station,95,0.0045,99.5956,BC;NB,UNMAPPED -> dropped,,False
+Nursing Home,95,0.0045,99.6001,AB;NB;NS;ON,UNMAPPED -> dropped,,False
+Serre,92,0.0043,99.6044,QC,UNMAPPED -> dropped,other,False
+Hôtel,88,0.0041,99.6085,QC,UNMAPPED -> dropped,,False
+Arena,87,0.0041,99.6126,AB;BC;NB;ON;SK,UNMAPPED -> dropped,institutional,False
+Marina,84,0.0039,99.6165,ON,UNMAPPED -> dropped,,False
+Livestock Shelter,83,0.0039,99.6204,AB,UNMAPPED -> dropped,,False
+Retirement Home,83,0.0039,99.6243,ON,UNMAPPED -> dropped,,False
+Baseball Facility,82,0.0038,99.6281,ON,UNMAPPED -> dropped,,False
+Grain Elevator,81,0.0038,99.6319,AB;BC;MB;ON;QC;SK,UNMAPPED -> dropped,industrial,False
+Religious Structure,81,0.0038,99.6357,NB,UNMAPPED -> dropped,,False
+Seniors Residential Complex,81,0.0038,99.6395,NS,UNMAPPED -> dropped,residential,False
+Airport Facility,80,0.0038,99.6433,NB;ON,UNMAPPED -> dropped,,False
+High Rise Apartment,79,0.0037,99.647,BC;ON,apartment,apartment,True
+Chalet,78,0.0037,99.6507,QC,UNMAPPED -> dropped,,False
+Lakeshore Residential Building,76,0.0036,99.6543,ON,UNMAPPED -> dropped,residential,False
+Recreational,76,0.0036,99.6579,ON,UNMAPPED -> dropped,institutional,False
+Community,75,0.0035,99.6614,AB;BC;ON,UNMAPPED -> dropped,,False
+Fiveplex,73,0.0034,99.6648,ON,UNMAPPED -> dropped,,False
+Museum / Gallery,73,0.0034,99.6682,BC;ON,UNMAPPED -> dropped,,False
+Pump Station,71,0.0033,99.6715,NS,UNMAPPED -> dropped,,False
+Commercial Storage,71,0.0033,99.6748,NS,UNMAPPED -> dropped,commercial,False
+Industriel,71,0.0033,99.6781,QC,UNMAPPED -> dropped,industrial,False
+Bank,70,0.0033,99.6814,NB;NS;ON,UNMAPPED -> dropped,,False
+Agriculture Facility,69,0.0032,99.6846,NS,UNMAPPED -> dropped,other,False
+Railroad Facility,68,0.0032,99.6878,ON,UNMAPPED -> dropped,,False
+Pit/Quarry,67,0.0031,99.6909,ON,UNMAPPED -> dropped,,False
+Fire Hall,65,0.0031,99.694,AB;BC;NS;ON,UNMAPPED -> dropped,,False
+Grocery Store,64,0.003,99.697,NB;ON,UNMAPPED -> dropped,commercial,False
+Shopping Mall / Complex,63,0.003,99.7,NB;ON,UNMAPPED -> dropped,,False
+Station de métro,63,0.003,99.703,QC,UNMAPPED -> dropped,,False
+Industrial/General,62,0.0029,99.7059,AB,UNMAPPED -> dropped,industrial,False
+Bâtiment historique / patrimonial,61,0.0029,99.7088,QC,UNMAPPED -> dropped,,False
+Piscine publique,61,0.0029,99.7117,QC,UNMAPPED -> dropped,other,False
+Religious Facility,59,0.0028,99.7145,ON,UNMAPPED -> dropped,,False
+Centre communautaire,58,0.0027,99.7172,QC,UNMAPPED -> dropped,,False
+Amenity,58,0.0027,99.7199,BC,UNMAPPED -> dropped,,False
+Théâtre / salle de spectacle / petit lieu de diffusion,57,0.0027,99.7226,QC,UNMAPPED -> dropped,,False
+Fire,57,0.0027,99.7253,AB;BC;ON,UNMAPPED -> dropped,,False
+Studio/Rehearsal,55,0.0026,99.7279,BC,UNMAPPED -> dropped,,False
+Purpose Built,53,0.0025,99.7304,ON,UNMAPPED -> dropped,,False
+Institutionnel,51,0.0024,99.7328,QC,UNMAPPED -> dropped,institutional,False
+Municipal Facility,51,0.0024,99.7352,AB;NB;ON,UNMAPPED -> dropped,institutional,False
+Community Hall,49,0.0023,99.7375,AB;BC;ON,UNMAPPED -> dropped,,False
+General Recreation or Landmark Facility,49,0.0023,99.7398,ON,UNMAPPED -> dropped,institutional,False
+Government Service,47,0.0022,99.742,ON,UNMAPPED -> dropped,institutional,False
+Parcs,46,0.0022,99.7442,QC,UNMAPPED -> dropped,,False
+Mixed Industrial/Commercial,46,0.0022,99.7464,AB,UNMAPPED -> dropped,industrial,False
+Secondary School,46,0.0022,99.7486,BC;ON,UNMAPPED -> dropped,institutional,False
+Police Station,46,0.0022,99.7508,AB;BC;NB;NS;ON;SK,UNMAPPED -> dropped,institutional,False
+Recreation Centre,46,0.0022,99.753,AB;BC;NB;NS;ON,UNMAPPED -> dropped,institutional,False
+Retail,45,0.0021,99.7551,ON,commercial,commercial,False
+Bunkhouse,45,0.0021,99.7572,ON,UNMAPPED -> dropped,,False
+Derelict / Abandoned,45,0.0021,99.7593,NS,UNMAPPED -> dropped,,False
+Fort,45,0.0021,99.7614,ON,UNMAPPED -> dropped,,False
+House,45,0.0021,99.7635,ON,residential_single,residential_single,False
+Energy Facility,44,0.0021,99.7656,NB;ON,UNMAPPED -> dropped,,False
+Mixed Use - Residential with Service/Retail/Office,42,0.002,99.7676,AB,UNMAPPED -> dropped,mixed_use,False
+Institutional Residence / Dorm / Barracks,42,0.002,99.7696,ON,UNMAPPED -> dropped,institutional,False
+Land Use Contract,42,0.002,99.7716,BC,UNMAPPED -> dropped,,False
+Lieu d'interprétation,41,0.0019,99.7735,QC,UNMAPPED -> dropped,,False
+Health or Medical Facility,41,0.0019,99.7754,NB;ON,UNMAPPED -> dropped,,False
+Childcare,41,0.0019,99.7773,BC;ON,UNMAPPED -> dropped,,False
+Musée,40,0.0019,99.7792,QC,UNMAPPED -> dropped,,False
+Senior,40,0.0019,99.7811,BC,UNMAPPED -> dropped,,False
+Water Supply or Treatment Facility,40,0.0019,99.783,NB;ON,UNMAPPED -> dropped,,False
+Community/Recreation Centre,39,0.0018,99.7848,ON,UNMAPPED -> dropped,institutional,False
+Granny Flat,38,0.0018,99.7866,ON,UNMAPPED -> dropped,,False
+Nursing and Retirement Home,38,0.0018,99.7884,ON,UNMAPPED -> dropped,,False
+Treatment Plant,38,0.0018,99.7902,NS,UNMAPPED -> dropped,,False
+Solar Facility,37,0.0017,99.7919,ON,UNMAPPED -> dropped,,False
+Cégep et université,36,0.0017,99.7936,QC,UNMAPPED -> dropped,institutional,False
+Provincial Facility,36,0.0017,99.7953,NB;ON,UNMAPPED -> dropped,,False
+Fish Plant,36,0.0017,99.797,NS,UNMAPPED -> dropped,,False
+Funeral Home,35,0.0016,99.7986,NB;NS;ON,UNMAPPED -> dropped,,False
+Community Resource,35,0.0016,99.8002,ON,UNMAPPED -> dropped,,False
+Recycling Facility,34,0.0016,99.8018,NS;ON,UNMAPPED -> dropped,,False
+Independent School,34,0.0016,99.8034,BC,UNMAPPED -> dropped,institutional,False
+Laboratory/Research,34,0.0016,99.805,NS,UNMAPPED -> dropped,,False
+Police Facility,34,0.0016,99.8066,ON,UNMAPPED -> dropped,institutional,False
+Major Institutional,34,0.0016,99.8082,ON,UNMAPPED -> dropped,institutional,False
+Public Utilities,34,0.0016,99.8098,AB,UNMAPPED -> dropped,institutional,False
+Ski Hill,33,0.0015,99.8113,ON,UNMAPPED -> dropped,,False
+Administrative,33,0.0015,99.8128,AB;BC;ON,UNMAPPED -> dropped,,False
+OS,32,0.0015,99.8143,ON,UNMAPPED -> dropped,,False
+Washroom facility//Toilettes,31,0.0015,99.8158,AB;NS;ON;QC;YT,UNMAPPED -> dropped,other,False
+Dup / 4plex,31,0.0015,99.8173,BC,UNMAPPED -> dropped,,False
+Model Home,30,0.0014,99.8187,ON,UNMAPPED -> dropped,,False
+Boarding House,30,0.0014,99.8201,NS,UNMAPPED -> dropped,residential_single,False
+Centre sportif intérieur,30,0.0014,99.8215,QC,UNMAPPED -> dropped,,False
+Brewery,30,0.0014,99.8229,NS;ON,UNMAPPED -> dropped,,False
+Public High School,30,0.0014,99.8243,ON;SK,UNMAPPED -> dropped,institutional,False
+Garbage and Recycling,29,0.0014,99.8257,BC,UNMAPPED -> dropped,,False
+Community Space,28,0.0013,99.827,BC,UNMAPPED -> dropped,,False
+Strip Mall,27,0.0013,99.8283,NS,UNMAPPED -> dropped,,False
+Motel,27,0.0013,99.8296,ON,UNMAPPED -> dropped,commercial,False
+Centre de service gouvernemental,27,0.0013,99.8309,QC,UNMAPPED -> dropped,commercial,False
+City,27,0.0013,99.8322,NT,UNMAPPED -> dropped,,False
+Caserne de pompiers,26,0.0012,99.8334,QC,UNMAPPED -> dropped,,False
+Information or Communication Facility,26,0.0012,99.8346,NB;ON,UNMAPPED -> dropped,,False
+Detached Garage + SU,26,0.0012,99.8358,ON,UNMAPPED -> dropped,other,False
+UB,26,0.0012,99.837,ON,UNMAPPED -> dropped,,False
+Residential Care Facility,26,0.0012,99.8382,NS,UNMAPPED -> dropped,residential,False
+Separate Elementary School,25,0.0012,99.8394,SK,UNMAPPED -> dropped,institutional,False
+Veterinary Clinic,25,0.0012,99.8406,NS,UNMAPPED -> dropped,,False
+Adult Residential Facility,25,0.0012,99.8418,NB,UNMAPPED -> dropped,residential,False
+Health / Medical Facility,25,0.0012,99.843,NB,UNMAPPED -> dropped,,False
+Theatre,25,0.0012,99.8442,AB;NB;NS;ON,UNMAPPED -> dropped,,False
+Police de quartier,25,0.0012,99.8454,QC,UNMAPPED -> dropped,institutional,False
+Other Recreation,25,0.0012,99.8466,BC,UNMAPPED -> dropped,institutional,False
+Bed & Breakfast,24,0.0011,99.8477,NS,UNMAPPED -> dropped,,False
+Fire Station / EMS Station,24,0.0011,99.8488,NB;ON,UNMAPPED -> dropped,institutional,False
+Golf,24,0.0011,99.8499,BC,UNMAPPED -> dropped,,False
+Post Office,24,0.0011,99.851,AB;BC;NS;ON,UNMAPPED -> dropped,commercial,False
+Detached garage,23,0.0011,99.8521,ON,UNMAPPED -> dropped,other,False
+Parking Structure,23,0.0011,99.8532,NS,UNMAPPED -> dropped,,False
+Transportation Facility,23,0.0011,99.8543,NB;ON,UNMAPPED -> dropped,,False
+Health Centre,23,0.0011,99.8554,ON,UNMAPPED -> dropped,,False
+D,23,0.0011,99.8565,ON,UNMAPPED -> dropped,,False
+Public Works Depot,23,0.0011,99.8576,NS,UNMAPPED -> dropped,institutional,False
+Emergency,22,0.001,99.8586,ON,UNMAPPED -> dropped,,False
+Cafe,22,0.001,99.8596,ON,UNMAPPED -> dropped,,False
+Multi-Use,22,0.001,99.8606,BC,UNMAPPED -> dropped,,False
+Theatre / Performance,22,0.001,99.8616,BC,UNMAPPED -> dropped,,False
+Alternative Education,22,0.001,99.8626,ON,UNMAPPED -> dropped,,False
+Other Institutional,22,0.001,99.8636,AB,UNMAPPED -> dropped,institutional,False
+Bibliothèque,22,0.001,99.8646,QC,UNMAPPED -> dropped,,False
+Transport,22,0.001,99.8656,BC,UNMAPPED -> dropped,,False
+Aréna,21,0.001,99.8666,QC,UNMAPPED -> dropped,,False
+FD,21,0.001,99.8676,ON,UNMAPPED -> dropped,,False
+Centre commercial,21,0.001,99.8686,QC,UNMAPPED -> dropped,commercial,False
+Prefabricated,21,0.001,99.8696,ON,UNMAPPED -> dropped,,False
+Park Pavilion,21,0.001,99.8706,ON,UNMAPPED -> dropped,other,False
+Bibliothèque publique,20,0.0009,99.8715,QC,UNMAPPED -> dropped,,False
+SCHL,20,0.0009,99.8724,NT,UNMAPPED -> dropped,,False
+Airport Support,20,0.0009,99.8733,NS,UNMAPPED -> dropped,,False
+Piscine intérieure,20,0.0009,99.8742,QC,UNMAPPED -> dropped,other,False
+Semi-Detached + SU,20,0.0009,99.8751,ON,UNMAPPED -> dropped,low_rise_residential,False
+Lumber Mill / Saw Mill,20,0.0009,99.876,NS;ON,UNMAPPED -> dropped,,False
+Grandstand / Stadium,20,0.0009,99.8769,BC,UNMAPPED -> dropped,,False
+Historic Sites,19,0.0009,99.8778,ON,UNMAPPED -> dropped,,False
+Service consulaire,19,0.0009,99.8787,QC,UNMAPPED -> dropped,commercial,False
+Adu,19,0.0009,99.8796,ON,UNMAPPED -> dropped,,False
+G,19,0.0009,99.8805,ON,UNMAPPED -> dropped,,False
+High School,19,0.0009,99.8814,ON,UNMAPPED -> dropped,institutional,False
+University,19,0.0009,99.8823,ON,UNMAPPED -> dropped,institutional,False
+Broiler,18,0.0008,99.8831,ON,UNMAPPED -> dropped,,False
+Park: Municipal,18,0.0008,99.8839,ON,UNMAPPED -> dropped,institutional,False
+Private School,18,0.0008,99.8847,NS;ON,UNMAPPED -> dropped,institutional,False
+Community Pharmacy,18,0.0008,99.8855,NB,UNMAPPED -> dropped,,False
+Art Gallery,18,0.0008,99.8863,NS;ON,UNMAPPED -> dropped,,False
+Emergency Services,17,0.0008,99.8871,ON,UNMAPPED -> dropped,commercial,False
+Department of Community Services Office,17,0.0008,99.8879,NS,UNMAPPED -> dropped,commercial,False
+Salle de spectacle,17,0.0008,99.8887,QC,UNMAPPED -> dropped,,False
+Mixed Use - Residential with Visitor Accommodation,16,0.0008,99.8895,AB,UNMAPPED -> dropped,mixed_use,False
+Dining,16,0.0008,99.8903,ON,UNMAPPED -> dropped,,False
+Quarry,16,0.0008,99.8911,NB,UNMAPPED -> dropped,,False
+Pool,16,0.0008,99.8919,BC;NB;NS;ON,UNMAPPED -> dropped,other,False
+Private Elementary School,16,0.0008,99.8927,ON,UNMAPPED -> dropped,institutional,False
+Federal Government,16,0.0008,99.8935,NB,UNMAPPED -> dropped,institutional,False
+Coverall,15,0.0007,99.8942,ON,UNMAPPED -> dropped,,False
+RCMP STATION,15,0.0007,99.8949,NS,UNMAPPED -> dropped,,False
+Long Term Care,15,0.0007,99.8956,ON,UNMAPPED -> dropped,,False
+Centre d'exposition,15,0.0007,99.8963,QC,UNMAPPED -> dropped,,False
+Attraction,15,0.0007,99.897,BC,UNMAPPED -> dropped,,False
+Low Rise Apartment,15,0.0007,99.8977,BC;ON,apartment,apartment,True
+Train Station,14,0.0007,99.8984,BC;ON,UNMAPPED -> dropped,,False
+Cafe / Restaurant,14,0.0007,99.8991,AB;ON,UNMAPPED -> dropped,commercial,False
+Financial Institution,14,0.0007,99.8998,NB,UNMAPPED -> dropped,institutional,False
+Public Washroom: Seasonal,14,0.0007,99.9005,ON,UNMAPPED -> dropped,institutional,False
+EMS Station,14,0.0007,99.9012,ON,UNMAPPED -> dropped,,False
+Mining Facility,14,0.0007,99.9019,NS,UNMAPPED -> dropped,,False
+Bar / Restaurant / Performance,14,0.0007,99.9026,ON,UNMAPPED -> dropped,commercial,False
+Seasonal Washroom,14,0.0007,99.9033,SK,UNMAPPED -> dropped,other,False
+General Hotel,14,0.0007,99.904,ON,UNMAPPED -> dropped,commercial,False
+Pavilion,14,0.0007,99.9047,ON,UNMAPPED -> dropped,,False
+Community Hall/Centre,13,0.0006,99.9053,BC,UNMAPPED -> dropped,,False
+Warehourse (Retail / Wholesale),13,0.0006,99.9059,ON,UNMAPPED -> dropped,commercial,False
+Nursing Home / Long Term Care,13,0.0006,99.9065,ON,UNMAPPED -> dropped,,False
+Fire Services,13,0.0006,99.9071,ON,UNMAPPED -> dropped,commercial,False
+Power Plant,13,0.0006,99.9077,NS,UNMAPPED -> dropped,,False
+Maintenance Yard,13,0.0006,99.9083,ON,UNMAPPED -> dropped,,False
+Stadium,13,0.0006,99.9089,AB;BC,UNMAPPED -> dropped,,False
+Police,13,0.0006,99.9095,AB;BC;NB;ON,UNMAPPED -> dropped,institutional,False
+Attached Garage,13,0.0006,99.9101,ON,UNMAPPED -> dropped,other,False
+Cafe / Restaurant / Bar,13,0.0006,99.9107,BC,UNMAPPED -> dropped,commercial,False
+Special Care Home,12,0.0006,99.9113,NB,UNMAPPED -> dropped,,False
+Water Supply and Treatment,12,0.0006,99.9119,NB,UNMAPPED -> dropped,,False
+Paramedic Base,12,0.0006,99.9125,NS,UNMAPPED -> dropped,,False
+Gallery,12,0.0006,99.9131,BC,UNMAPPED -> dropped,,False
+"Fitness/Recreation, Community Centres",12,0.0006,99.9137,ON,UNMAPPED -> dropped,institutional,False
+Post Secondary Institution,12,0.0006,99.9143,ON,UNMAPPED -> dropped,institutional,False
+Parks Canada offices//Bureaux de Parcs Canada,12,0.0006,99.9149,AB;BC;NS;ON;QC,UNMAPPED -> dropped,commercial,False
+Private Franchise Utilities,12,0.0006,99.9155,AB,UNMAPPED -> dropped,,False
+Operations,12,0.0006,99.9161,BC;ON,UNMAPPED -> dropped,,False
+Correctional Facility,12,0.0006,99.9167,BC;NS;ON,UNMAPPED -> dropped,,False
+Public Elementary (French),12,0.0006,99.9173,ON,UNMAPPED -> dropped,institutional,False
+Event Centre,12,0.0006,99.9179,NS,UNMAPPED -> dropped,,False
+Well Pump House,12,0.0006,99.9185,ON,UNMAPPED -> dropped,residential_single,False
+Apartments-Elevators - R5,12,0.0006,99.9191,AB,UNMAPPED -> dropped,apartment,True
+Seniors Residence,12,0.0006,99.9197,ON,UNMAPPED -> dropped,residential,False
+Railyard,12,0.0006,99.9203,NB,UNMAPPED -> dropped,,False
+Childcare / Daycare Facility,11,0.0005,99.9208,ON,UNMAPPED -> dropped,,False
+Emergency Response / Law Enforcement,11,0.0005,99.9213,ON,UNMAPPED -> dropped,,False
+Homeless Shelter,11,0.0005,99.9218,NS;ON,UNMAPPED -> dropped,,False
+Historic Sites / Government,11,0.0005,99.9223,ON,UNMAPPED -> dropped,institutional,False
+Courthouse,11,0.0005,99.9228,NB;NS;ON,UNMAPPED -> dropped,,False
+College,11,0.0005,99.9233,NB;ON,UNMAPPED -> dropped,institutional,False
+Lighthouse,11,0.0005,99.9238,NB;NS,UNMAPPED -> dropped,,False
+Zoo,11,0.0005,99.9243,NB;ON,UNMAPPED -> dropped,,False
+Édifice administratif,11,0.0005,99.9248,QC,UNMAPPED -> dropped,,False
+Other School,11,0.0005,99.9253,SK,UNMAPPED -> dropped,institutional,False
+Prison / Correctional Facility,11,0.0005,99.9258,ON,UNMAPPED -> dropped,,False
+Ferry Terminal,11,0.0005,99.9263,NS,UNMAPPED -> dropped,,False
+Multi-Use (Commercial / Low Rise Residential),11,0.0005,99.9268,BC,UNMAPPED -> dropped,commercial,False
+Golf Course Facility,11,0.0005,99.9273,ON,UNMAPPED -> dropped,,False
+Inn,11,0.0005,99.9278,ON,UNMAPPED -> dropped,,False
+Womens Prison,11,0.0005,99.9283,NS,UNMAPPED -> dropped,,False
+Water Pumping Station,10,0.0005,99.9288,ON,UNMAPPED -> dropped,,False
+Picnic Area,10,0.0005,99.9293,ON,UNMAPPED -> dropped,,False
+Pharmacy,10,0.0005,99.9298,NB;NS;ON,UNMAPPED -> dropped,,False
+Arts,10,0.0005,99.9303,AB;BC;ON,UNMAPPED -> dropped,,False
+Ambulance Facility,10,0.0005,99.9308,ON,UNMAPPED -> dropped,institutional,False
+Clinique,10,0.0005,99.9313,QC,UNMAPPED -> dropped,,False
+Communication Tower,10,0.0005,99.9318,ON,UNMAPPED -> dropped,,False
+Section 23 Program,10,0.0005,99.9323,ON,UNMAPPED -> dropped,,False
+Catholic School,10,0.0005,99.9328,ON,UNMAPPED -> dropped,institutional,False
+Public Water Supply Well,10,0.0005,99.9333,ON,UNMAPPED -> dropped,institutional,False
+Car Dealership,10,0.0005,99.9338,NS,UNMAPPED -> dropped,,False
+Berge,10,0.0005,99.9343,QC,UNMAPPED -> dropped,,False
+Family Health Teams,9,0.0004,99.9347,ON,UNMAPPED -> dropped,,False
+Federal Facility,9,0.0004,99.9351,ON,UNMAPPED -> dropped,,False
+CHRC,9,0.0004,99.9355,NT,UNMAPPED -> dropped,,False
+Booster Station,9,0.0004,99.9359,BC,UNMAPPED -> dropped,,False
+Apartment (Low Rise),9,0.0004,99.9363,BC,UNMAPPED -> dropped,apartment,True
+Swimming Pool,9,0.0004,99.9367,BC,UNMAPPED -> dropped,other,False
+Emergency Medical Services,9,0.0004,99.9371,ON,UNMAPPED -> dropped,commercial,False
+Auberge de jeunesse,9,0.0004,99.9375,QC,UNMAPPED -> dropped,,False
+RCMP,9,0.0004,99.9379,BC,UNMAPPED -> dropped,,False
+Walk-In Clinic,9,0.0004,99.9383,BC;ON,UNMAPPED -> dropped,,False
+Garden Suite,9,0.0004,99.9387,ON,UNMAPPED -> dropped,,False
+Public (school closed),8,0.0004,99.9391,ON,UNMAPPED -> dropped,institutional,False
+Petroleum / Oil / Lubricants Storage Tank,8,0.0004,99.9395,ON,UNMAPPED -> dropped,other,False
+Outdoor Storage Yard,8,0.0004,99.9399,AB,UNMAPPED -> dropped,other,False
+Supervised,8,0.0004,99.9403,NS,UNMAPPED -> dropped,,False
+Bureau Accès Montréal et bureaux municipaux,8,0.0004,99.9407,QC,UNMAPPED -> dropped,commercial,False
+Historic Site / Point of Interest,8,0.0004,99.9411,ON,UNMAPPED -> dropped,,False
+Government Centre,8,0.0004,99.9415,ON,UNMAPPED -> dropped,institutional,False
+Studio,8,0.0004,99.9419,BC,UNMAPPED -> dropped,,False
+Cinéma,8,0.0004,99.9423,QC,UNMAPPED -> dropped,,False
+Recreation Complex,8,0.0004,99.9427,AB,UNMAPPED -> dropped,institutional,False
+Seniors Centre,8,0.0004,99.9431,AB;BC;ON,UNMAPPED -> dropped,,False
+Adult Learning,8,0.0004,99.9435,ON,UNMAPPED -> dropped,,False
+Water Tower,7,0.0003,99.9438,AB;NS;ON,UNMAPPED -> dropped,,False
+Public Washroom,7,0.0003,99.9441,AB;NS;ON,UNMAPPED -> dropped,institutional,False
+Place of Worship / Performance,7,0.0003,99.9444,ON,UNMAPPED -> dropped,institutional,False
+Place of Worship / Historic Sites,7,0.0003,99.9447,ON,UNMAPPED -> dropped,institutional,False
+Municipal Office,7,0.0003,99.945,ON,UNMAPPED -> dropped,institutional,False
+Municipal Administration,7,0.0003,99.9453,ON,UNMAPPED -> dropped,institutional,False
+General Recreation Facility,7,0.0003,99.9456,NB,UNMAPPED -> dropped,institutional,False
+Education / Performance,7,0.0003,99.9459,ON,UNMAPPED -> dropped,,False
+Medical Clinic,7,0.0003,99.9462,NS,UNMAPPED -> dropped,,False
+Storage Shed,7,0.0003,99.9465,BC,UNMAPPED -> dropped,other,False
+Recreational Other,7,0.0003,99.9468,AB,UNMAPPED -> dropped,institutional,False
+Amusement / Water Park,7,0.0003,99.9471,ON,UNMAPPED -> dropped,other,False
+Credit Union,7,0.0003,99.9474,ON,UNMAPPED -> dropped,,False
+Recreation and Community Centre,7,0.0003,99.9477,BC,UNMAPPED -> dropped,institutional,False
+Pump House,7,0.0003,99.948,BC;ON,UNMAPPED -> dropped,residential_single,False
+Transit,7,0.0003,99.9483,ON,UNMAPPED -> dropped,,False
+Centre sportif,7,0.0003,99.9486,QC,UNMAPPED -> dropped,,False
+Theatre / Opera,7,0.0003,99.9489,ON,UNMAPPED -> dropped,,False
+Synagogue,7,0.0003,99.9492,BC;ON;QC,UNMAPPED -> dropped,,False
+Chapelle,7,0.0003,99.9495,QC,UNMAPPED -> dropped,,False
+Bureau Accès Montréal,7,0.0003,99.9498,QC,UNMAPPED -> dropped,commercial,False
+Ambulance Station,7,0.0003,99.9501,ON,UNMAPPED -> dropped,institutional,False
+Accommodation//Hébergement,7,0.0003,99.9504,AB,UNMAPPED -> dropped,,False
+Catholic Elementary (French),6,0.0003,99.9507,ON,UNMAPPED -> dropped,,False
+Bureau municipal lavallois,6,0.0003,99.951,QC,UNMAPPED -> dropped,institutional,False
+Ambulance,6,0.0003,99.9513,AB;SK,UNMAPPED -> dropped,institutional,False
+Hôtel de ville / mairie,6,0.0003,99.9516,QC,UNMAPPED -> dropped,,False
+Service communautaire,6,0.0003,99.9519,QC,UNMAPPED -> dropped,commercial,False
+Community College/University,6,0.0003,99.9522,ON,UNMAPPED -> dropped,institutional,False
+Single-family semi-detached,6,0.0003,99.9525,ON,UNMAPPED -> dropped,low_rise_residential,False
+Sports Complex,6,0.0003,99.9528,ON,UNMAPPED -> dropped,,False
+Centre culturel,6,0.0003,99.9531,QC,UNMAPPED -> dropped,,False
+Sports Facility,6,0.0003,99.9534,ON,UNMAPPED -> dropped,,False
+Spray Paint Operation,6,0.0003,99.9537,NS,UNMAPPED -> dropped,,False
+Salt Dome,6,0.0003,99.954,NS,UNMAPPED -> dropped,,False
+Comfort Station,6,0.0003,99.9543,ON,UNMAPPED -> dropped,,False
+Gymnase,6,0.0003,99.9546,QC,UNMAPPED -> dropped,,False
+Adult Service Centre,6,0.0003,99.9549,NS,UNMAPPED -> dropped,commercial,False
+Heritage properties,6,0.0003,99.9552,ON,UNMAPPED -> dropped,,False
+High Rise Residential,6,0.0003,99.9555,BC,UNMAPPED -> dropped,residential,False
+Movie Theatre,6,0.0003,99.9558,BC;NS,UNMAPPED -> dropped,,False
+Health,6,0.0003,99.9561,ON,UNMAPPED -> dropped,,False
+Parkade,6,0.0003,99.9564,BC,UNMAPPED -> dropped,,False
+Public Pool,6,0.0003,99.9567,ON,UNMAPPED -> dropped,institutional,False
+GO Station,6,0.0003,99.957,ON,UNMAPPED -> dropped,,False
+Plaza,6,0.0003,99.9573,ON,UNMAPPED -> dropped,,False
+RAIL TERMINAL,6,0.0003,99.9576,NS,UNMAPPED -> dropped,,False
+Armoury,6,0.0003,99.9579,NS;ON,UNMAPPED -> dropped,,False
+Cultural or Heritage,6,0.0003,99.9582,NB,UNMAPPED -> dropped,,False
+Retirement Residence,6,0.0003,99.9585,ON,UNMAPPED -> dropped,residential,False
+Operations Centre,6,0.0003,99.9588,BC,UNMAPPED -> dropped,,False
+Shopping,5,0.0002,99.959,BC;NS,UNMAPPED -> dropped,,False
+Composting Facility,5,0.0002,99.9592,NS,UNMAPPED -> dropped,,False
+INTAKE,5,0.0002,99.9594,BC,UNMAPPED -> dropped,,False
+Social Services,5,0.0002,99.9596,NB,UNMAPPED -> dropped,commercial,False
+Sports Arena / Stadium,5,0.0002,99.9598,NB;ON,UNMAPPED -> dropped,institutional,False
+Long Term Care Facility,5,0.0002,99.96,ON,UNMAPPED -> dropped,,False
+Caserne de Pompier,5,0.0002,99.9602,QC,UNMAPPED -> dropped,,False
+Bar / Retail,5,0.0002,99.9604,ON,UNMAPPED -> dropped,commercial,False
+Broadcast Studio,5,0.0002,99.9606,NS,UNMAPPED -> dropped,,False
+arm,5,0.0002,99.9608,ON,UNMAPPED -> dropped,,False
+Bus Terminal,5,0.0002,99.961,NS,UNMAPPED -> dropped,,False
+Adult Learning Centre,5,0.0002,99.9612,ON,UNMAPPED -> dropped,,False
+Cafe / Retail,5,0.0002,99.9614,ON,UNMAPPED -> dropped,commercial,False
+Supporting Institution,5,0.0002,99.9616,ON,UNMAPPED -> dropped,institutional,False
+County Building,5,0.0002,99.9618,AB,UNMAPPED -> dropped,,False
+Penitentiary,5,0.0002,99.962,ON,UNMAPPED -> dropped,,False
+"Gallery/Exhibition, Retail",5,0.0002,99.9622,ON,UNMAPPED -> dropped,commercial,False
+Facility,5,0.0002,99.9624,BC,UNMAPPED -> dropped,,False
+Police Services,5,0.0002,99.9626,ON,UNMAPPED -> dropped,institutional,False
+Refuse Facility,5,0.0002,99.9628,NS,UNMAPPED -> dropped,,False
+Archive,5,0.0002,99.963,NS,UNMAPPED -> dropped,,False
+Developmental Building,5,0.0002,99.9632,ON,UNMAPPED -> dropped,,False
+Railway,5,0.0002,99.9634,AB,UNMAPPED -> dropped,,False
+Municipal Hall,5,0.0002,99.9636,BC,UNMAPPED -> dropped,institutional,False
+Museum / Historic Sites,5,0.0002,99.9638,ON,UNMAPPED -> dropped,,False
+MusicDance,5,0.0002,99.964,BC,UNMAPPED -> dropped,,False
+NSCC,5,0.0002,99.9642,NS,UNMAPPED -> dropped,,False
+Peel Living,5,0.0002,99.9644,ON,UNMAPPED -> dropped,,False
+Motel Units,5,0.0002,99.9646,NS,UNMAPPED -> dropped,commercial,False
+Veterinary Hospital / Clinic,5,0.0002,99.9648,ON,UNMAPPED -> dropped,institutional,False
+Waste Management,5,0.0002,99.965,NB,UNMAPPED -> dropped,,False
+Heliport,4,0.0002,99.9652,AB,UNMAPPED -> dropped,,False
+Bar / Restaurant / Performance / Gallery / Exhibition,4,0.0002,99.9654,ON,UNMAPPED -> dropped,commercial,False
+Cafe / Bakery,4,0.0002,99.9656,ON,UNMAPPED -> dropped,,False
+Transit Depot,4,0.0002,99.9658,NS,UNMAPPED -> dropped,,False
+Middle School,4,0.0002,99.966,ON,UNMAPPED -> dropped,institutional,False
+Civic,4,0.0002,99.9662,BC,UNMAPPED -> dropped,,False
+Chemical Facility,4,0.0002,99.9664,ON,UNMAPPED -> dropped,,False
+StrongStart BC,4,0.0002,99.9666,BC,UNMAPPED -> dropped,,False
+Telephone Facility,4,0.0002,99.9668,ON,UNMAPPED -> dropped,,False
+Trailhead Pit Toilet,4,0.0002,99.967,AB,UNMAPPED -> dropped,,False
+Multi-Use (Commercial / Multi-Family),4,0.0002,99.9672,BC,UNMAPPED -> dropped,multi_residential,True
+Mining Operations,4,0.0002,99.9674,ON,UNMAPPED -> dropped,,False
+Hospital / Medical Centre,4,0.0002,99.9676,ON,UNMAPPED -> dropped,institutional,False
+Organization,4,0.0002,99.9678,BC,UNMAPPED -> dropped,,False
+General Administration,4,0.0002,99.968,ON,UNMAPPED -> dropped,,False
+Service / Édifice municipal,4,0.0002,99.9682,QC,UNMAPPED -> dropped,institutional,False
+Separate High School,4,0.0002,99.9684,SK,UNMAPPED -> dropped,institutional,False
+Clubhouse,4,0.0002,99.9686,ON,UNMAPPED -> dropped,,False
+Coffee shop//Casse-croûte,4,0.0002,99.9688,AB;QC,UNMAPPED -> dropped,commercial,False
+Ice Arena,4,0.0002,99.969,ON,UNMAPPED -> dropped,institutional,False
+Aquaculture Facility,4,0.0002,99.9692,NS,UNMAPPED -> dropped,,False
+Curling Club,4,0.0002,99.9694,NS;ON;SK,UNMAPPED -> dropped,,False
+Fire Department,4,0.0002,99.9696,BC;ON,UNMAPPED -> dropped,,False
+Fire Management Headquarters,4,0.0002,99.9698,ON,UNMAPPED -> dropped,,False
+Performance Space - Indoor Venue,4,0.0002,99.97,BC,UNMAPPED -> dropped,,False
+Outpatient Clinic,4,0.0002,99.9702,ON,UNMAPPED -> dropped,,False
+Gare de train,4,0.0002,99.9704,QC,UNMAPPED -> dropped,,False
+Family Resource Centre,4,0.0002,99.9706,ON,UNMAPPED -> dropped,,False
+Public Operations,4,0.0002,99.9708,AB,UNMAPPED -> dropped,institutional,False
+Unique Store,4,0.0002,99.971,AB,UNMAPPED -> dropped,commercial,False
+Trucking Firm,4,0.0002,99.9712,ON,UNMAPPED -> dropped,,False
+Bar / Performance,4,0.0002,99.9714,ON,UNMAPPED -> dropped,commercial,False
+Education / Retail,4,0.0002,99.9716,ON,UNMAPPED -> dropped,commercial,False
+Poste de police de quartier,4,0.0002,99.9718,QC,UNMAPPED -> dropped,institutional,False
+Arts Centre,4,0.0002,99.972,AB;NB;ON,UNMAPPED -> dropped,,False
+Recycling Depot,4,0.0002,99.9722,BC;ON,UNMAPPED -> dropped,,False
+Parking Lot Structure / Garage,4,0.0002,99.9724,ON,UNMAPPED -> dropped,other,False
+County Department Office,4,0.0002,99.9726,AB,UNMAPPED -> dropped,commercial,False
+Historic Sites / Park,3,0.0001,99.9727,ON,UNMAPPED -> dropped,other,False
+Care Occupancy,3,0.0001,99.9728,ON,UNMAPPED -> dropped,,False
+Centre de récupération et de tri,3,0.0001,99.9729,QC,UNMAPPED -> dropped,,False
+Palais de justice / cour,3,0.0001,99.973,QC,UNMAPPED -> dropped,,False
+Ontario Works/Social Housing/Child Services,3,0.0001,99.9731,ON,UNMAPPED -> dropped,commercial,False
+Hockey Arena,3,0.0001,99.9732,ON,UNMAPPED -> dropped,institutional,False
+Catholic High School,3,0.0001,99.9733,ON,UNMAPPED -> dropped,institutional,False
+Cafe / Restaurant / Retail,3,0.0001,99.9734,ON,UNMAPPED -> dropped,commercial,False
+Bank of Canada,3,0.0001,99.9735,ON,UNMAPPED -> dropped,,False
+Bus Station / Dispatch Facility,3,0.0001,99.9736,ON,UNMAPPED -> dropped,,False
+City Facility,3,0.0001,99.9737,ON,UNMAPPED -> dropped,,False
+Care and Treatment Occupancy,3,0.0001,99.9738,ON,UNMAPPED -> dropped,,False
+Stables,3,0.0001,99.9739,BC;ON,UNMAPPED -> dropped,,False
+Legislative,3,0.0001,99.974,BC;NS,UNMAPPED -> dropped,,False
+Water Reservoir,3,0.0001,99.9741,BC,UNMAPPED -> dropped,,False
+Workshop,3,0.0001,99.9742,BC;ON,UNMAPPED -> dropped,,False
+Library / Museum / Theatre,3,0.0001,99.9743,BC,UNMAPPED -> dropped,institutional,False
+Information Centre,3,0.0001,99.9744,BC;NS,UNMAPPED -> dropped,,False
+Public Works Garage,3,0.0001,99.9745,ON,UNMAPPED -> dropped,institutional,False
+Radio / TV Broadcast Facility,3,0.0001,99.9746,NB;ON,UNMAPPED -> dropped,,False
+Employment Services,3,0.0001,99.9747,NB;ON,UNMAPPED -> dropped,commercial,False
+Floating Dock,3,0.0001,99.9748,BC,UNMAPPED -> dropped,,False
+Frm,3,0.0001,99.9749,ON,UNMAPPED -> dropped,,False
+EarlyON,3,0.0001,99.975,ON,UNMAPPED -> dropped,,False
+Library / Government,3,0.0001,99.9751,ON,UNMAPPED -> dropped,institutional,False
+Bar,3,0.0001,99.9752,ON,UNMAPPED -> dropped,commercial,False
+Elementary and Secondary School,3,0.0001,99.9753,ON,UNMAPPED -> dropped,institutional,False
+Manufacturing Facility,3,0.0001,99.9754,ON,UNMAPPED -> dropped,industrial,False
+Doctors Office,3,0.0001,99.9755,BC,UNMAPPED -> dropped,commercial,False
+Dry Cleaning,3,0.0001,99.9756,NS,UNMAPPED -> dropped,,False
+Future Development Building,3,0.0001,99.9757,ON,UNMAPPED -> dropped,,False
+Poste de police,3,0.0001,99.9758,QC,UNMAPPED -> dropped,institutional,False
+Medical Facility,3,0.0001,99.9759,NB,UNMAPPED -> dropped,,False
+Retail / Education / Event,3,0.0001,99.976,ON,UNMAPPED -> dropped,commercial,False
+Garden Centre Greenhouse,3,0.0001,99.9761,AB,UNMAPPED -> dropped,other,False
+Gare,3,0.0001,99.9762,QC,UNMAPPED -> dropped,,False
+"Restaurant, Bar, Historic Sites",3,0.0001,99.9763,ON,UNMAPPED -> dropped,commercial,False
+Cottage,3,0.0001,99.9764,ON,UNMAPPED -> dropped,,False
+Concession,3,0.0001,99.9765,BC,UNMAPPED -> dropped,,False
+Community Services Agency,3,0.0001,99.9766,ON,UNMAPPED -> dropped,commercial,False
+Cour municipale,3,0.0001,99.9767,QC,UNMAPPED -> dropped,institutional,False
+Community Centre / Fitness / Recreation,3,0.0001,99.9768,ON,UNMAPPED -> dropped,institutional,False
+General Residential,3,0.0001,99.9769,ON,UNMAPPED -> dropped,residential,False
+Genearl,3,0.0001,99.977,ON,UNMAPPED -> dropped,,False
+Government / Historic Sites,3,0.0001,99.9771,ON,UNMAPPED -> dropped,institutional,False
+Child Care Centre/Preschool,3,0.0001,99.9772,ON,UNMAPPED -> dropped,institutional,False
+Paper / Pulp Mill,3,0.0001,99.9773,ON,UNMAPPED -> dropped,,False
+Community/Rec Centre - City,3,0.0001,99.9774,ON,UNMAPPED -> dropped,,False
+Art Centre,3,0.0001,99.9775,BC,UNMAPPED -> dropped,,False
+Animal Shelter,3,0.0001,99.9776,AB;BC;ON,UNMAPPED -> dropped,,False
+Mental Health,3,0.0001,99.9777,ON,UNMAPPED -> dropped,,False
+Historic Sites / Education,3,0.0001,99.9778,ON,UNMAPPED -> dropped,,False
+Medical Centre,3,0.0001,99.9779,ON,UNMAPPED -> dropped,,False
+Railroad Station,3,0.0001,99.978,ON,UNMAPPED -> dropped,,False
+RAMP,3,0.0001,99.9781,BC,UNMAPPED -> dropped,,False
+Service-Transportation,3,0.0001,99.9782,ON,UNMAPPED -> dropped,commercial,False
+Local Commercial,3,0.0001,99.9783,AB,UNMAPPED -> dropped,commercial,False
+HRP SATELLITE,3,0.0001,99.9784,NS,UNMAPPED -> dropped,,False
+Single Family Semi-Detached Home,3,0.0001,99.9785,ON,UNMAPPED -> dropped,low_rise_residential,False
+Seaplane Anchorage / Aerodrome,3,0.0001,99.9786,ON,UNMAPPED -> dropped,,False
+Casino,2,0.0001,99.9787,NB;ON,UNMAPPED -> dropped,,False
+Centres et galeries d'art,2,0.0001,99.9788,QC,UNMAPPED -> dropped,,False
+Montessori School,2,0.0001,99.9789,ON,UNMAPPED -> dropped,institutional,False
+Mosque,2,0.0001,99.979,BC;ON,UNMAPPED -> dropped,,False
+Multi Commercial,2,0.0001,99.9791,NS,UNMAPPED -> dropped,commercial,False
+Laundromat,2,0.0001,99.9792,NS,UNMAPPED -> dropped,,False
+Academic Institution,2,0.0001,99.9793,ON,UNMAPPED -> dropped,institutional,False
+Aerospace,2,0.0001,99.9794,NB,UNMAPPED -> dropped,,False
+Law Enforcement,2,0.0001,99.9795,ON,UNMAPPED -> dropped,,False
+Legion,2,0.0001,99.9796,NS,UNMAPPED -> dropped,,False
+Bar / Restaurant / Retail,2,0.0001,99.9797,ON,UNMAPPED -> dropped,commercial,False
+Accessory Dwelling Unit,2,0.0001,99.9798,ON,UNMAPPED -> dropped,other,False
+Aircraft Maintenance Facility,2,0.0001,99.9799,ON,UNMAPPED -> dropped,,False
+Mid Rise Apartment,2,0.0001,99.98,BC,UNMAPPED -> dropped,apartment,True
+Multi-Use (Commercial / High Rise Residential),2,0.0001,99.9801,BC,UNMAPPED -> dropped,commercial,False
+COOP,2,0.0001,99.9802,ON,UNMAPPED -> dropped,,False
+Change Room,2,0.0001,99.9803,BC,UNMAPPED -> dropped,,False
+Cafe / Bar / Performance / Retail,2,0.0001,99.9804,ON,UNMAPPED -> dropped,commercial,False
+Church Hall,2,0.0001,99.9805,NS,UNMAPPED -> dropped,institutional,False
+Church: Chapel,2,0.0001,99.9806,ON,UNMAPPED -> dropped,institutional,False
+Municipal Operations,2,0.0001,99.9807,ON,UNMAPPED -> dropped,institutional,False
+Military Facility,2,0.0001,99.9808,NB,UNMAPPED -> dropped,,False
+HOSP,2,0.0001,99.9809,NT,UNMAPPED -> dropped,,False
+Gymnasium,2,0.0001,99.981,ON,UNMAPPED -> dropped,,False
+Grocery Store / Big Box Store,2,0.0001,99.9811,NB,UNMAPPED -> dropped,commercial,False
+Museum & Archives,2,0.0001,99.9812,ON,UNMAPPED -> dropped,,False
+HRP COMMUNITY,2,0.0001,99.9813,NS,UNMAPPED -> dropped,,False
+S,2,0.0001,99.9814,ON,UNMAPPED -> dropped,,False
+Paramedic,2,0.0001,99.9815,ON,UNMAPPED -> dropped,,False
+Continuing / Community Education,2,0.0001,99.9816,ON,UNMAPPED -> dropped,,False
+Retreat/Spa,2,0.0001,99.9817,AB,UNMAPPED -> dropped,,False
+Cultural Centre,2,0.0001,99.9818,ON,UNMAPPED -> dropped,,False
+Sawmill - Medium,2,0.0001,99.9819,ON,UNMAPPED -> dropped,,False
+"Gallery/Exhibition, Education",2,0.0001,99.982,ON,UNMAPPED -> dropped,,False
+Chicken Coop,2,0.0001,99.9821,ON,UNMAPPED -> dropped,,False
+Information and Communication,2,0.0001,99.9822,NB,UNMAPPED -> dropped,,False
+Services publics et sociaux,2,0.0001,99.9823,QC,UNMAPPED -> dropped,commercial,False
+Justice,2,0.0001,99.9824,BC,UNMAPPED -> dropped,,False
+Social,2,0.0001,99.9825,ON,UNMAPPED -> dropped,,False
+OPP,2,0.0001,99.9826,ON,UNMAPPED -> dropped,,False
+Natural Gas Facility,2,0.0001,99.9827,ON,UNMAPPED -> dropped,,False
+Hazard Land Building,2,0.0001,99.9828,ON,UNMAPPED -> dropped,,False
+Ops Training,2,0.0001,99.9829,ON,UNMAPPED -> dropped,,False
+General / Residential,2,0.0001,99.983,ON,UNMAPPED -> dropped,residential,False
+Liquor Store,2,0.0001,99.9831,NB,UNMAPPED -> dropped,commercial,False
+Service-Other,2,0.0001,99.9832,ON,UNMAPPED -> dropped,commercial,False
+Community Health Centre,2,0.0001,99.9833,ON,UNMAPPED -> dropped,,False
+Community Access Station,2,0.0001,99.9834,BC,UNMAPPED -> dropped,,False
+Crematorium,2,0.0001,99.9835,NS,UNMAPPED -> dropped,,False
+Court,2,0.0001,99.9836,AB;ON,UNMAPPED -> dropped,,False
+Dental Facility,2,0.0001,99.9837,ON,UNMAPPED -> dropped,,False
+Regional Rehabilitation Centre,2,0.0001,99.9838,NS,UNMAPPED -> dropped,,False
+Rehabilitation Centre,2,0.0001,99.9839,NB;ON,UNMAPPED -> dropped,,False
+Residential/Commercial,2,0.0001,99.984,NB,UNMAPPED -> dropped,mixed_use,False
+Resort Residential Accessory,2,0.0001,99.9841,ON,UNMAPPED -> dropped,other,False
+Performance / Retail,2,0.0001,99.9842,ON,UNMAPPED -> dropped,commercial,False
+Retail / Education,2,0.0001,99.9843,ON,UNMAPPED -> dropped,commercial,False
+Financial Services Company,2,0.0001,99.9844,ON,UNMAPPED -> dropped,commercial,False
+Pier,2,0.0001,99.9845,BC,UNMAPPED -> dropped,,False
+Fitness/Recreation,2,0.0001,99.9846,ON,UNMAPPED -> dropped,institutional,False
+Food Bank,2,0.0001,99.9847,NS;ON,UNMAPPED -> dropped,,False
+Food Industry Facility,2,0.0001,99.9848,ON,UNMAPPED -> dropped,,False
+CulturalIndustries,2,0.0001,99.9849,BC,UNMAPPED -> dropped,,False
+Curling Facility,2,0.0001,99.985,ON,UNMAPPED -> dropped,,False
+Performing Arts / Theatres,2,0.0001,99.9851,ON,UNMAPPED -> dropped,,False
+Apartment (High Rise),2,0.0001,99.9852,BC,UNMAPPED -> dropped,apartment,True
+Independent,2,0.0001,99.9853,BC,UNMAPPED -> dropped,,False
+Duplex + SU,2,0.0001,99.9854,ON,UNMAPPED -> dropped,low_rise_residential,False
+Market,2,0.0001,99.9855,ON,UNMAPPED -> dropped,,False
+Family and Children Services,2,0.0001,99.9856,ON,UNMAPPED -> dropped,commercial,False
+Recycling,2,0.0001,99.9857,BC,UNMAPPED -> dropped,,False
+Dock Ramp,2,0.0001,99.9858,BC,UNMAPPED -> dropped,,False
+Energy,2,0.0001,99.9859,NB,UNMAPPED -> dropped,,False
+Automotive Manufacturing Facility,2,0.0001,99.986,ON,UNMAPPED -> dropped,industrial,False
+EHS,2,0.0001,99.9861,NS,UNMAPPED -> dropped,,False
+Enloquéceme,2,0.0001,99.9862,ON,UNMAPPED -> dropped,,False
+Public Washroom: Year-round,2,0.0001,99.9863,ON,UNMAPPED -> dropped,institutional,False
+Public Health Office,2,0.0001,99.9864,ON,UNMAPPED -> dropped,institutional,False
+Indéfini,2,0.0001,99.9865,QC,UNMAPPED -> dropped,,False
+Transportation,2,0.0001,99.9866,ON,UNMAPPED -> dropped,,False
+Youth Centre,2,0.0001,99.9867,BC,UNMAPPED -> dropped,,False
+Winter warming hut//Abri hivernal,2,0.0001,99.9868,QC,UNMAPPED -> dropped,,False
+Weigh Station / Inspection Station,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Wilderness Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Winery,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+YMCA,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Youth Services,1,0.0,99.9868,NB,UNMAPPED -> dropped,commercial,False
+Waste Transfer Station,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Water Purification Plant,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Banking or Finance Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Bar / Cafe,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Bar / Cafe / Restaurant / Performance,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Information,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Business and Personal Services,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+C,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Bar / Restaurant / Retail / Performance,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Bed and Breakfast,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Bowling Alley,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Tunnel,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Urgent Care,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+armGeneral/Residential,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential,False
+Public Secondary School,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Public Transportation Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Pulp / Paper / Paperboard,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Pump Building,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+QUINSET,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+RECC,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Educatioinal,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Education / Fitness / Recreation,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Education / Gallery / Exhibition,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Arts Program Facility,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Auditorium / Concert Hall,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Autre,1,0.0,99.9868,QC,UNMAPPED -> dropped,,False
+Backyard Suite,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Bank and Offices,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Faarm,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Enforcement and Bylaw,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Event / Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+FRENCH SEPARATE ELEMENTARY,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Arts Booking Facility,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Public Health,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Education / Government / Historic Sites / Library,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Education / Museum / Historic Sites,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Educationsl,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Electric Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Recreation Centre/Ice Arena,1,0.0,99.9868,AB,UNMAPPED -> dropped,institutional,False
+Recycling Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Detached Suite,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Distillery,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Drinking water processing plant//Usine de traitement des eaux,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Indoor Swimming Pool,1,0.0,99.9868,ON,UNMAPPED -> dropped,other,False
+Major Shopping,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Mall,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Manufacturing Warehouse,1,0.0,99.9868,ON,UNMAPPED -> dropped,industrial,False
+Medical Facility/Offices,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Medical Testing / ISenses / Immunization,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Medium Hazard Industrial,1,0.0,99.9868,ON,UNMAPPED -> dropped,industrial,False
+Farmers Market,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Fire / Life Safety Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Private High School,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Private Irrigation Utilities,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Private and Express Shipping Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Processing Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Professional Centre,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Provincial Government Offices,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Provincial Logistics Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Psychiatric Treatment Facility,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Historic Sites / Library,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Historic Sites / Museum,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+ECOLE ACADIENNE,1,0.0,99.9868,NS,UNMAPPED -> dropped,institutional,False
+Arboretum / Botanical Garden,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Art Museum,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Recycling Station,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Cultural Services,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Cultural Spaces and Facilities,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+"Performance, Gallery/Exhibition, Museum",1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Former Elementary School,1,0.0,99.9868,NB,UNMAPPED -> dropped,institutional,False
+Police Office,1,0.0,99.9868,NB,UNMAPPED -> dropped,institutional,False
+Port Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Port Facility: Passenger Terminal,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Post-Secondary Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Poste de distribution utilités publiques,1,0.0,99.9868,QC,UNMAPPED -> dropped,,False
+DND / Military Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Detachd garage,1,0.0,99.9868,ON,UNMAPPED -> dropped,other,False
+Refinery,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Regional Fire Management Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Resort Residential Dwelling,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential,False
+"Restaurant, Bar, Gallery/Exhibition",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Restaurant, Bar, Performance",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Restaurant, Cafe, Bar, Performance",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Restaurant, Cafe, Performance",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Restaurant, Education",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Performance / Community Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Performance / Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+"Gallery/Exhibition, Creation, Education",1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+"Gallery/Exhibition, Creation, Retail, Education",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Gallery/Exhibition, Event, Education",1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+"Gallery/Exhibition, Museum, Retail, Education",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Gallery/Exhibition, Performance, Retail, Rehearsal, Creation",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Gallery/Exhibition, Retail, Creation",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Gallery/Exhibition, Retail, Creation, Education",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Performance Space - Outdoor Venue,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+"Restaurant, Performance",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+"Restaurant, Retail",1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Retail / Cafe,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Retail / Performance / Park,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+County Office,1,0.0,99.9868,AB,UNMAPPED -> dropped,commercial,False
+Creation / Education / Gallery / Exhibition,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Creation / Historic Sites / Education / Event,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Golf Club,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Outdoor Theatre / Amphitheatre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+POLC,1,0.0,99.9868,NT,UNMAPPED -> dropped,,False
+Pagoda,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Paramedic Facilities - Satellite Station,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Park Operations Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,other,False
+Park Shelter,1,0.0,99.9868,NS,UNMAPPED -> dropped,other,False
+Parking,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Parking Shelter,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Parks and Rec Maintenance Shed,1,0.0,99.9868,NS,UNMAPPED -> dropped,other,False
+Peel Builds,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Rugby Clubhouse,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+SG,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Sawmill - Large,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community Rec/Centre - Board Run,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community/Rec Centre - Private,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community/Rec Centre AOCC,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Convent,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Corporate Training Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+School District,1,0.0,99.9868,NB,UNMAPPED -> dropped,institutional,False
+Community Centre / Education / Event / Historic Sites / Fitness / Recreation,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Community Centre / Education / Historic Sites,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community Centres / Creation / Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community Centres / Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community Centres / Performance / Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Community Group,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Commercial - Mid Rise,1,0.0,99.9868,BC,UNMAPPED -> dropped,commercial,False
+Commercial and Office,1,0.0,99.9868,NS,UNMAPPED -> dropped,commercial,False
+Commerciall,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Government or Military Facility,1,0.0,99.9868,NB,UNMAPPED -> dropped,institutional,False
+Grocery,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Office Space,1,0.0,99.9868,NB,UNMAPPED -> dropped,commercial,False
+Ontario Provincial Police,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Gas,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Gatehouse,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Genera/Residential,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential,False
+General/Reidential,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+General/residential,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential,False
+Service Canada,1,0.0,99.9868,NS,UNMAPPED -> dropped,commercial,False
+Service Station,1,0.0,99.9868,NB,UNMAPPED -> dropped,commercial,False
+Single-family detached home and attached garage,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential_single,False
+Institutional Pharmacy,1,0.0,99.9868,NB,UNMAPPED -> dropped,institutional,False
+Interim Long Term Care Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+LEASE,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Lighthouse property//Propriété du phare,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Lodge,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Hall,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Hand digitized,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Hanger,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Hatchery,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Headquarters,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Museum Antique Gallery,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Musée municipal,1,0.0,99.9868,QC,UNMAPPED -> dropped,institutional,False
+NPP,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Observatory,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Government / Community Centre / Education / Event / Historic Sites,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Government Heritage Building,1,0.0,99.9868,BC,UNMAPPED -> dropped,institutional,False
+Lodging,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Mail Service,1,0.0,99.9868,NB,UNMAPPED -> dropped,commercial,False
+Maintenance,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Ski Area / Ski Resort,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Special Purpose Home,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Children and Youth Mental Health,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Church: Cathedral,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+City Hall,1,0.0,99.9868,BC,UNMAPPED -> dropped,,False
+Mini storage warehouse,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Health Clinic,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Municipal Wastewater Treatment Plant,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Museum / Education / Event / Performance,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Museum / Historic Sites / Places of Worship / Performance,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Grocery Store / Complex,1,0.0,99.9868,NB,UNMAPPED -> dropped,commercial,False
+HRP HEADQUARTERS,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Clinic,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Stage,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Steel Plant,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Storage / Warehouse,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Storage Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,other,False
+Canadian Redcross,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Cannabis Store,1,0.0,99.9868,NB,UNMAPPED -> dropped,commercial,False
+Canteen,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Car Wash,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Care Facility,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Temple,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Tennis Club,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Tennis Courts,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Tertiary Tanker Base,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Toll Booth / Plaza,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Tourist Centre,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Tourist Information,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Tower,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Town Hall,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Train/Bus Station,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Multi Human Services Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Multi Recreation Facility,1,0.0,99.9868,AB,UNMAPPED -> dropped,institutional,False
+Multi-Use (Commercial / Mid Rise Residential),1,0.0,99.9868,BC,UNMAPPED -> dropped,commercial,False
+Multi-Use (Commercial / Townhouse Residential),1,0.0,99.9868,BC,UNMAPPED -> dropped,low_rise_residential,False
+Historical Building,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Historical Sites,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Horse facility//Installation pour cheval,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+Hospice Care Facility,1,0.0,99.9868,NB,UNMAPPED -> dropped,,False
+Hospital//Hôpital,1,0.0,99.9868,AB,UNMAPPED -> dropped,institutional,False
+Hospital/Health Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Training Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Transit Centre (Park & Ride),1,0.0,99.9868,AB,UNMAPPED -> dropped,other,False
+CMHA AND BANK,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+COMMONWORKS OFFICE BUILDING,1,0.0,99.9868,NS,UNMAPPED -> dropped,commercial,False
+Cafe / Bakery / Restaurant,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Cafe / Bar / Performance,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Cafe / Creation,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Cafe / Performance,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Cafe / Visual Art / Retail,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Air Force Club,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Air Traffic Control Centre,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Veneer,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Veterinary Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Visitor centre//Centre des visiteurs,1,0.0,99.9868,AB,UNMAPPED -> dropped,,False
+WELL HOUSE,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential_single,False
+WPP,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Waldorf School,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Warehouse (Retail / Wholesale),1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Health Services,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Heritage House,1,0.0,99.9868,ON,UNMAPPED -> dropped,residential_single,False
+Airport Terminal,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Ambulance Service,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Bus Services - Operations Garages,1,0.0,99.9868,ON,UNMAPPED -> dropped,commercial,False
+Bus Station,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Water Tank,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Water Treatment Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Water Treatment Plant,1,0.0,99.9868,NS,UNMAPPED -> dropped,,False
+Waterworks,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+v,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Library / Education,1,0.0,99.9868,ON,UNMAPPED -> dropped,institutional,False
+Agricole,1,0.0,99.9868,QC,UNMAPPED -> dropped,,False
+Banking and Finance Facility,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
+Agence internationale,1,0.0,99.9868,QC,UNMAPPED -> dropped,,False
+117,1,0.0,99.9868,ON,UNMAPPED -> dropped,,False
