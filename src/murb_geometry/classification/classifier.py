@@ -226,8 +226,7 @@ def classify_building(
             rule_name="murb_type_unverified",
             evidence_fields=["type"],
             reasoning=(
-                f"MURB type '{type_normalized}' without storey/unit corroboration "
-                "-> potential MURB"
+                f"MURB type '{type_normalized}' without storey/unit corroboration -> potential MURB"
             ),
         )
 

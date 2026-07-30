@@ -48,7 +48,5 @@ def test_metric_distribution_by_confidence() -> None:
             "footprint_area_m2": [600.0, 800.0, 720.0],
         }
     )
-    fig = charts.metric_distribution_by_confidence(
-        df, "footprint_area_m2", "Area", "Area (m2)"
-    )
+    fig = charts.metric_distribution_by_confidence(df, "footprint_area_m2", "Area", "Area (m2)")
     assert isinstance(fig, go.Figure)
